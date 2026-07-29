@@ -1,0 +1,1 @@
+SUBSYSTEM=="watchdog", KERNEL=="watchdog*", GROUP="watchdog", MODE="0660"

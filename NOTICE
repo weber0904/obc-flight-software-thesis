@@ -1,0 +1,11 @@
+OBC Flight Software Thesis
+Copyright 2026 CHEN, YOU-JUN
+
+This product includes software developed by the F Prime project. F Prime
+copyright and attribution notices are preserved in lib/fprime/NOTICE.txt.
+
+This product includes libcsp/csp-es under the MIT License and TooJPEG under its
+bundled zlib-style license. See THIRD_PARTY_NOTICES.md and LICENSES/.
+
+The Apache License 2.0 applies only to original project material unless a file
+or dependency directory states another license.

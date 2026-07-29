@@ -1,0 +1,77 @@
+{
+  "spdxVersion": "SPDX-2.3",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "obc-flight-software-thesis-submission-v1",
+  "documentNamespace": "https://github.com/weber0904/obc-flight-software-thesis/sbom/thesis-submission-v1",
+  "creationInfo": {
+    "created": "2026-07-29T00:00:00Z",
+    "creators": [
+      "Person: CHEN, YOU-JUN",
+      "Tool: repository-publication-inventory"
+    ]
+  },
+  "packages": [
+    {
+      "name": "obc-flight-software-thesis",
+      "SPDXID": "SPDXRef-Package-OBC",
+      "versionInfo": "thesis-submission-v1",
+      "downloadLocation": "https://github.com/weber0904/obc-flight-software-thesis",
+      "licenseConcluded": "Apache-2.0",
+      "licenseDeclared": "Apache-2.0",
+      "copyrightText": "Copyright 2026 CHEN, YOU-JUN",
+      "filesAnalyzed": false
+    },
+    {
+      "name": "fprime",
+      "SPDXID": "SPDXRef-Package-FPrime",
+      "versionInfo": "v4.1.0+obc.8",
+      "downloadLocation": "git+https://github.com/weber0904/fprime.git@54f02168c676d5b61990d7a48ea9c61b9a8d0b5f",
+      "licenseConcluded": "Apache-2.0",
+      "licenseDeclared": "Apache-2.0",
+      "copyrightText": "See lib/fprime/NOTICE.txt",
+      "filesAnalyzed": false
+    },
+    {
+      "name": "libcsp-csp-es",
+      "SPDXID": "SPDXRef-Package-Libcsp",
+      "versionInfo": "v2.1+obc.2",
+      "downloadLocation": "git+https://github.com/weber0904/csp-es.git@241b756a7fb5af1ba0967183b4a2b5843f77ebdb",
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "See lib/libcsp/LICENSE",
+      "filesAnalyzed": false
+    },
+    {
+      "name": "TooJPEG",
+      "SPDXID": "SPDXRef-Package-TooJPEG",
+      "downloadLocation": "NOASSERTION",
+      "licenseConcluded": "Zlib",
+      "licenseDeclared": "Zlib",
+      "copyrightText": "See OBC/Components/PayloadOpsController/third_party/toojpeg/LICENSE",
+      "filesAnalyzed": false
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-OBC"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-OBC",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-FPrime"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-OBC",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-Libcsp"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-OBC",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-TooJPEG"
+    }
+  ]
+}

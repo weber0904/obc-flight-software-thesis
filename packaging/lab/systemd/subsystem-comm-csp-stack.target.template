@@ -1,0 +1,7 @@
+[Unit]
+Description=Subsystem COMM CSP Lab Stack
+Wants=__EPS_SERVICE_NAME__ __ADCS_SERVICE_NAME__ __COMM_SERVICE_NAME__
+After=network-online.target __EPS_ADCS_CAN_SERVICE_NAME__ __COMM_CAN_SERVICE_NAME__
+
+[Install]
+WantedBy=multi-user.target

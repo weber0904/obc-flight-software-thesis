@@ -1,0 +1,30 @@
+# fprime items
+logs/
+cmake-build-*
+build-artifacts/
+build-fprime-*
+*-template
+*.template.cpp
+*.template.hpp
+runtime/
+!OBC/Runtime/
+!OBC/Runtime/**
+OBC/Components/BootManager/runtime/
+
+
+# Misc
+/venv/
+/fprime-venv
+/.idea/
+/.vscode/
+/.codex/config.toml
+.DS_Store
+*.gcov
+__pycache__/
+*.pyc
+/.codex_thesis_work/
+.codex/environments
+
+# Public release local configuration
+/config/security/command-auth.ini
+/release-assets/

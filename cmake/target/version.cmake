@@ -1,0 +1,45 @@
+####
+# Project-local override of F' version target generation.
+#
+# This keeps Raspberry Pi target builds on synced workspaces from falling back to
+# the framework default version string when `.git` is intentionally omitted.
+####
+set(FPRIME__PROJECT_VERSION_INFO_SCRIPT "${CMAKE_CURRENT_LIST_DIR}/version/generate_version_info.py")
+
+function(version_add_global_target TARGET)
+    set(OUTPUT_DIR "${CMAKE_BINARY_DIR}/versions")
+    set(OUTPUT_HPP "${OUTPUT_DIR}/version.hpp")
+    set(OUTPUT_CPP "${OUTPUT_DIR}/version.cpp")
+    set(OUTPUT_JSON "${OUTPUT_DIR}/version.json")
+    file(MAKE_DIRECTORY ${OUTPUT_DIR})
+
+    set(OPTIONAL_CHECK_ARG)
+    string(REGEX REPLACE ";" ":" FPRIME_LIBRARY_LOCATIONS_CSV "${FPRIME_LIBRARY_LOCATIONS}")
+    if (FPRIME_CHECK_FRAMEWORK_VERSION)
+        set(OPTIONAL_CHECK_ARG "--check")
+    endif()
+
+    add_custom_command(OUTPUT "${OUTPUT_HPP}" "${OUTPUT_CPP}" "${OUTPUT_JSON}"
+        COMMAND "${CMAKE_COMMAND}"
+            -E env "PYTHONPATH=${PYTHONPATH}:${CMAKE_CURRENT_LIST_DIR}/version"
+                    "FPRIME_PROJECT_ROOT=${FPRIME_PROJECT_ROOT}"
+                    "FPRIME_FRAMEWORK_PATH=${FPRIME_FRAMEWORK_PATH}"
+                    "FPRIME_LIBRARY_LOCATIONS=${FPRIME_LIBRARY_LOCATIONS_CSV}"
+                    "FPRIME_FRAMEWORK_VERSION_OVERRIDE=$ENV{FPRIME_FRAMEWORK_VERSION_OVERRIDE}"
+                    "FPRIME_PROJECT_VERSION_OVERRIDE=$ENV{FPRIME_PROJECT_VERSION_OVERRIDE}"
+            "${FPRIME__PROJECT_VERSION_INFO_SCRIPT}" "${OUTPUT_DIR}" "${OPTIONAL_CHECK_ARG}"
+        COMMAND "${CMAKE_COMMAND}" -E copy_if_different "${OUTPUT_HPP}.tmp" "${OUTPUT_HPP}"
+        COMMAND "${CMAKE_COMMAND}" -E copy_if_different "${OUTPUT_CPP}.tmp" "${OUTPUT_CPP}"
+        COMMAND "${CMAKE_COMMAND}" -E copy_if_different "${OUTPUT_JSON}.tmp" "${OUTPUT_JSON}"
+        WORKING_DIRECTORY "${FPRIME_PROJECT_ROOT}"
+    )
+    add_custom_target("${TARGET}_generate" DEPENDS ${OUTPUT_JSON})
+    add_library("${TARGET}" "${OUTPUT_CPP}")
+    target_link_libraries("${TARGET}" PUBLIC "Fw_Types")
+endfunction()
+
+function(version_add_deployment_target MODULE TARGET SOURCES DEPENDENCIES FULL_DEPENDENCIES)
+endfunction()
+
+function(version_add_module_target MODULE_NAME TARGET_NAME SOURCE_FILES DEPENDENCIES)
+endfunction(version_add_module_target)
