@@ -1,0 +1,1711 @@
+{
+  "asset": {
+    "archivePrefix": "obc-flight-software-thesis-evidence-thesis-submission-v1/records/payload-target-capture-sanity-v1/artifacts/",
+    "downloadUrl": "https://github.com/weber0904/obc-flight-software-thesis/releases/download/thesis-submission-v1/obc-flight-software-thesis-evidence-thesis-submission-v1.tar.gz",
+    "name": "obc-flight-software-thesis-evidence-thesis-submission-v1.tar.gz",
+    "sha256": "128a4f86dbfc09c2adf1e26afb1ea84dcba5d35d8f6f30897c189514fdf0add3"
+  },
+  "fileCount": 155,
+  "files": [
+    {
+      "mediaType": "text",
+      "publicBytes": 499,
+      "publicSha256": "f6afb2de579a15e8e1a2bfc6a2ae76ec1c95484f101844231287f5f58ff14960",
+      "redactions": {
+        "target-user-path": 1
+      },
+      "relativePath": "2026-07-06-target-formal-rerun/manifest.json",
+      "sourceBytes": 502,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-06-target-formal-rerun/manifest.json",
+      "sourceSha256": "abaa122d46bb72c8c95a59deac6b845be2720b9cea4200faed8666e87efee8ed"
+    },
+    {
+      "mediaType": "binary",
+      "publicBytes": 1092,
+      "publicSha256": "a02011d2ec61e347aabb72de408ad2c54a7f0bd07e79a28c3ec569a90818d67f",
+      "redactions": {},
+      "relativePath": "2026-07-06-target-formal-rerun/probe-root/captures/sband/gds-to-southbound.bin",
+      "sourceBytes": 1092,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-06-target-formal-rerun/probe-root/captures/sband/gds-to-southbound.bin",
+      "sourceSha256": "a02011d2ec61e347aabb72de408ad2c54a7f0bd07e79a28c3ec569a90818d67f"
+    },
+    {
+      "mediaType": "binary",
+      "publicBytes": 331136,
+      "publicSha256": "484e5f7efa1f4b572fa6a0bba9e4e1ec7ca8d7e990db92164bbcd0aded7ea532",
+      "redactions": {},
+      "relativePath": "2026-07-06-target-formal-rerun/probe-root/captures/sband/southbound-to-gds.bin",
+      "sourceBytes": 331136,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-06-target-formal-rerun/probe-root/captures/sband/southbound-to-gds.bin",
+      "sourceSha256": "484e5f7efa1f4b572fa6a0bba9e4e1ec7ca8d7e990db92164bbcd0aded7ea532"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 9447,
+      "publicSha256": "7c19e29ddc7fbab6f5726c75b32984e8c29f1151526d2869d9dd824cbce11a1b",
+      "redactions": {
+        "lab-serial-identifier": 2,
+        "target-user-path": 1
+      },
+      "relativePath": "2026-07-06-target-formal-rerun/probe-root/diagnostics/checkpoints.jsonl",
+      "sourceBytes": 9428,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-06-target-formal-rerun/probe-root/diagnostics/checkpoints.jsonl",
+      "sourceSha256": "9b4f8f26dc707c675464146468176c3ade2f0b0150f31cb869101f86c9a7ff39"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 138,
+      "publicSha256": "c8f91ae4c66cfc2ee133eb7e65df2bd6a7e0abc8ba583c5d217c70df0d45d1e6",
+      "redactions": {},
+      "relativePath": "2026-07-06-target-formal-rerun/probe-root/diagnostics/cleanup-status.json",
+      "sourceBytes": 138,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-06-target-formal-rerun/probe-root/diagnostics/cleanup-status.json",
+      "sourceSha256": "c8f91ae4c66cfc2ee133eb7e65df2bd6a7e0abc8ba583c5d217c70df0d45d1e6"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 19505,
+      "publicSha256": "70d48d913bfa30b8edca8ff9c24cacb1b9923db3c7f89b804b7b21eb91bfa4e1",
+      "redactions": {
+        "target-user-path": 2
+      },
+      "relativePath": "2026-07-06-target-formal-rerun/probe-root/diagnostics/journal-snapshots/node5-bootstrap-ready.log",
+      "sourceBytes": 19511,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-06-target-formal-rerun/probe-root/diagnostics/journal-snapshots/node5-bootstrap-ready.log",
+      "sourceSha256": "db284285b09ea377ad064cd870ce8ac79c3686fa8db7863dd0639a01349f9686"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 6789,
+      "publicSha256": "93489a8b6f39ea59170a36fbe5c7ed87979d663781ddf067e173e5fe219183d3",
+      "redactions": {
+        "source-repository-path": 1,
+        "ssh-user": 2,
+        "target-user-path": 26
+      },
+      "relativePath": "2026-07-06-target-formal-rerun/probe-root/diagnostics/secure-auth-keystore-provenance.json",
+      "sourceBytes": 6884,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-06-target-formal-rerun/probe-root/diagnostics/secure-auth-keystore-provenance.json",
+      "sourceSha256": "390426599ea8a165205ceaa719f28b62d5726b3507b7550273d76032460f7e73"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 195,
+      "publicSha256": "a0a40dbfe6613423d9e20917d038bb9c1e23d2bf6a23bbf3418dc2a3771b2ca3",
+      "redactions": {
+        "source-repository-path": 2
+      },
+      "relativePath": "2026-07-06-target-formal-rerun/probe-root/diagnostics/security-server-sim.log",
+      "sourceBytes": 237,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-06-target-formal-rerun/probe-root/diagnostics/security-server-sim.log",
+      "sourceSha256": "15569d62364f654bcfa2bceb31d28d98de6d206606a562c90acd5d0b934ef2c0"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 7178,
+      "publicSha256": "ae5595e20967fbbaf327f1a0eb89cf96f0c92a7d925910ad505fafba8965ee79",
+      "redactions": {
+        "local-user-name": 3,
+        "ssh-user": 1,
+        "target-user-path": 21
+      },
+      "relativePath": "2026-07-06-target-formal-rerun/probe-root/diagnostics/service-snapshots/probe-start-obc-service.json",
+      "sourceBytes": 7233,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-06-target-formal-rerun/probe-root/diagnostics/service-snapshots/probe-start-obc-service.json",
+      "sourceSha256": "0f9c6b674ffbc01e2fce62230b6c6da78daaf44678fb35bdf06291671f122cb6"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 2639,
+      "publicSha256": "08406fb3fa477d2814a31b1f4456f80f0ccb7d6d89880398a0b844264611730f",
+      "redactions": {
+        "local-user-name": 3,
+        "ssh-user": 1,
+        "target-user-path": 6
+      },
+      "relativePath": "2026-07-06-target-formal-rerun/probe-root/diagnostics/service-snapshots/probe-start-sband-comm.json",
+      "sourceBytes": 2649,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-06-target-formal-rerun/probe-root/diagnostics/service-snapshots/probe-start-sband-comm.json",
+      "sourceSha256": "6d7ab2711c6d9ba0bcbb67c8da8f418f1dcbc6f96b3c55a838090181c1e5639d"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 794,
+      "publicSha256": "fb2a73f1b163d6c935a63221ba727ac2e5b8d406e498a5c1595885809bc2ae2a",
+      "redactions": {
+        "ssh-user": 1
+      },
+      "relativePath": "2026-07-06-target-formal-rerun/probe-root/diagnostics/service-snapshots/probe-start-sband-stack.json",
+      "sourceBytes": 792,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-06-target-formal-rerun/probe-root/diagnostics/service-snapshots/probe-start-sband-stack.json",
+      "sourceSha256": "e9394c2add052bcccbaff2fb364964e920ff76cc44bd01ad2165b51c5dac0ac5"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 2649,
+      "publicSha256": "84701c3c33b545566f00b87e9fe3f7163b6c9ca1a35a3e8a5c2252a980116c9e",
+      "redactions": {
+        "local-user-name": 3,
+        "ssh-user": 1,
+        "target-user-path": 6
+      },
+      "relativePath": "2026-07-06-target-formal-rerun/probe-root/diagnostics/service-snapshots/probe-start-uhf-comm.json",
+      "sourceBytes": 2659,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-06-target-formal-rerun/probe-root/diagnostics/service-snapshots/probe-start-uhf-comm.json",
+      "sourceSha256": "5db97e47b0e1b86094c9230f9749d0d6c20b91d1f0e37c83af2ca10b215244d0"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 784,
+      "publicSha256": "be7e46f1f0a82c857cadf743031cadaf7840a7c254528a3f64204009e2145d8d",
+      "redactions": {
+        "ssh-user": 1
+      },
+      "relativePath": "2026-07-06-target-formal-rerun/probe-root/diagnostics/service-snapshots/probe-start-uhf-stack.json",
+      "sourceBytes": 782,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-06-target-formal-rerun/probe-root/diagnostics/service-snapshots/probe-start-uhf-stack.json",
+      "sourceSha256": "46505ca56ff4e02777e3e260355033fd23f59ff06872a1da5353be3953713670"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 264,
+      "publicSha256": "6b4e3f7acd25886ec18f52ccfb5eea79cfc0b1f5d695551fe048ece8a3d041b7",
+      "redactions": {},
+      "relativePath": "2026-07-06-target-formal-rerun/probe-root/diagnostics/service-snapshots/subsystem-baseline-sband.json",
+      "sourceBytes": 264,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-06-target-formal-rerun/probe-root/diagnostics/service-snapshots/subsystem-baseline-sband.json",
+      "sourceSha256": "6b4e3f7acd25886ec18f52ccfb5eea79cfc0b1f5d695551fe048ece8a3d041b7"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 7178,
+      "publicSha256": "786de434adc1eb398983eea7683d0743dfd3a8d65c6307a1b2d93d9fa675bd22",
+      "redactions": {
+        "local-user-name": 3,
+        "ssh-user": 1,
+        "target-user-path": 21
+      },
+      "relativePath": "2026-07-06-target-formal-rerun/probe-root/diagnostics/service-snapshots/subsystem-external-baseline-sband-obc-service.json",
+      "sourceBytes": 7233,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-06-target-formal-rerun/probe-root/diagnostics/service-snapshots/subsystem-external-baseline-sband-obc-service.json",
+      "sourceSha256": "f4c1a54b73364d826700ef7d83e02086f1ca17c39570f96a5970785d801aa82f"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 2639,
+      "publicSha256": "f878ef28890a4116100326fe9dc17c6ffe0cf9b677899af15c5a95274295d280",
+      "redactions": {
+        "local-user-name": 3,
+        "ssh-user": 1,
+        "target-user-path": 6
+      },
+      "relativePath": "2026-07-06-target-formal-rerun/probe-root/diagnostics/service-snapshots/subsystem-external-baseline-sband-sband-comm.json",
+      "sourceBytes": 2649,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-06-target-formal-rerun/probe-root/diagnostics/service-snapshots/subsystem-external-baseline-sband-sband-comm.json",
+      "sourceSha256": "5208e683d6c215d9305524a8394cc4f13d7ed077538a26e6d0e2c00d50f04be8"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 794,
+      "publicSha256": "927077581c79fb34eb69f5be6bd95fc120d9e39f0b444534d012e790cb6b2b03",
+      "redactions": {
+        "ssh-user": 1
+      },
+      "relativePath": "2026-07-06-target-formal-rerun/probe-root/diagnostics/service-snapshots/subsystem-external-baseline-sband-sband-stack.json",
+      "sourceBytes": 792,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-06-target-formal-rerun/probe-root/diagnostics/service-snapshots/subsystem-external-baseline-sband-sband-stack.json",
+      "sourceSha256": "2d942f46863ba0103ba880a2944c33f5580b7bf22f68cd54cd89eed89f520da5"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 2649,
+      "publicSha256": "2bb238d3df8d63ee53f8321e6f97c90c37d421dd18257d33d30fef6422719ec4",
+      "redactions": {
+        "local-user-name": 3,
+        "ssh-user": 1,
+        "target-user-path": 6
+      },
+      "relativePath": "2026-07-06-target-formal-rerun/probe-root/diagnostics/service-snapshots/subsystem-external-baseline-sband-uhf-comm.json",
+      "sourceBytes": 2659,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-06-target-formal-rerun/probe-root/diagnostics/service-snapshots/subsystem-external-baseline-sband-uhf-comm.json",
+      "sourceSha256": "5fa527128e3612b16caf1715028ea2ebe19451b2a03b17aa22f3fdc6b9b6b62b"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 784,
+      "publicSha256": "a692ad5b64def3f308eb37a07e0ab2969d626a9eeb971264dac6ac4cc876b7ba",
+      "redactions": {
+        "ssh-user": 1
+      },
+      "relativePath": "2026-07-06-target-formal-rerun/probe-root/diagnostics/service-snapshots/subsystem-external-baseline-sband-uhf-stack.json",
+      "sourceBytes": 782,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-06-target-formal-rerun/probe-root/diagnostics/service-snapshots/subsystem-external-baseline-sband-uhf-stack.json",
+      "sourceSha256": "98dae8d7bf79746e06f29e6aea9b8cc4df56cd54cf438e9ad109e4628b1fbe8c"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 14912,
+      "publicSha256": "91c91cb108922ef7c50ab5541ab5be66792462f3b0aba8f3c838150c89a69806",
+      "redactions": {
+        "target-user-path": 1
+      },
+      "relativePath": "2026-07-06-target-formal-rerun/probe-root/payload-target-capture-sanity-summary.json",
+      "sourceBytes": 14915,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-06-target-formal-rerun/probe-root/payload-target-capture-sanity-summary.json",
+      "sourceSha256": "700d9011cc40ce583737a6d61dcfce74f3708f1c47bac14ba5da27df5a584638"
+    },
+    {
+      "mediaType": "binary",
+      "publicBytes": 59336,
+      "publicSha256": "e6c1d3ffb3cf22cc45b11dff9c5917041cc5340b49b6baae8bee3d59cb0af06d",
+      "redactions": {},
+      "relativePath": "2026-07-06-target-formal-rerun/probe-root/reference-capture/rpicam-reference-vga.jpg",
+      "sourceBytes": 59336,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-06-target-formal-rerun/probe-root/reference-capture/rpicam-reference-vga.jpg",
+      "sourceSha256": "e6c1d3ffb3cf22cc45b11dff9c5917041cc5340b49b6baae8bee3d59cb0af06d"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 79041,
+      "publicSha256": "8acaeb8ed3388256c918fe9fc8470bf31f337f2e6977c7cecb659a9c054a74aa",
+      "redactions": {
+        "source-repository-path": 1
+      },
+      "relativePath": "2026-07-06-target-formal-rerun/probe-root/sband-ground/gds-runtime/gateway.log",
+      "sourceBytes": 79062,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-06-target-formal-rerun/probe-root/sband-ground/gds-runtime/gateway.log",
+      "sourceSha256": "ae6ccde768f2df5538654ed37ce6ab9d19a5e6ae5411f980e29541e330345b1d"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 3547,
+      "publicSha256": "9b96fb6306e78a8b31386c23dc68049243f6802c5619a1a97bf28897a367beac",
+      "redactions": {},
+      "relativePath": "2026-07-06-target-formal-rerun/probe-root/sband-ground/gds-runtime/gds-files/gds-logs/ThreadedTCP.log",
+      "sourceBytes": 3547,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-06-target-formal-rerun/probe-root/sband-ground/gds-runtime/gds-files/gds-logs/ThreadedTCP.log",
+      "sourceSha256": "9b96fb6306e78a8b31386c23dc68049243f6802c5619a1a97bf28897a367beac"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 435,
+      "publicSha256": "5fed437e35838ab97c51273ca2e709971b6ab7b055e6689d0c8580d2b8c53d3a",
+      "redactions": {},
+      "relativePath": "2026-07-06-target-formal-rerun/probe-root/sband-ground/gds-runtime/gds-files/gds-logs/comm.py.log",
+      "sourceBytes": 435,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-06-target-formal-rerun/probe-root/sband-ground/gds-runtime/gds-files/gds-logs/comm.py.log",
+      "sourceSha256": "5fed437e35838ab97c51273ca2e709971b6ab7b055e6689d0c8580d2b8c53d3a"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 67,
+      "publicSha256": "5325479c4eb3317486711d5e787a3a8b1492a013ea09d491b3f01d1d5db86e1f",
+      "redactions": {},
+      "relativePath": "2026-07-06-target-formal-rerun/probe-root/sband-ground/gds-runtime/gds-files/gds-logs/custom-data-handlers-app/-c.log",
+      "sourceBytes": 67,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-06-target-formal-rerun/probe-root/sband-ground/gds-runtime/gds-files/gds-logs/custom-data-handlers-app/-c.log",
+      "sourceSha256": "5325479c4eb3317486711d5e787a3a8b1492a013ea09d491b3f01d1d5db86e1f"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 67,
+      "publicSha256": "3822d466c9a8d749701a5797292b74ce8a0344b6a33bf4856b4d95532fc1778d",
+      "redactions": {},
+      "relativePath": "2026-07-06-target-formal-rerun/probe-root/sband-ground/gds-runtime/gds-files/gds-logs/fprime-gds.log",
+      "sourceBytes": 67,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-06-target-formal-rerun/probe-root/sband-ground/gds-runtime/gds-files/gds-logs/fprime-gds.log",
+      "sourceSha256": "3822d466c9a8d749701a5797292b74ce8a0344b6a33bf4856b4d95532fc1778d"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 1062,
+      "publicSha256": "4bb41c5a8ebe5687aef7e303c5acec8ed75903eabd1df716b8551c5d9b931a12",
+      "redactions": {
+        "source-repository-path": 1
+      },
+      "relativePath": "2026-07-06-target-formal-rerun/probe-root/sband-ground/gds-runtime/gds.log",
+      "sourceBytes": 1083,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-06-target-formal-rerun/probe-root/sband-ground/gds-runtime/gds.log",
+      "sourceSha256": "7083881795a739b8e81810eaaaf81111511a44fb3faa373dd9f156ba820ae479"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 1684526,
+      "publicSha256": "e8535e012b3cd1595dc46dd2bbb468ddc4938ee1762d4d04ede54632af26d0a4",
+      "redactions": {},
+      "relativePath": "2026-07-06-target-formal-rerun/probe-root/sband-ground/native-cli/channel.log",
+      "sourceBytes": 1684526,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-06-target-formal-rerun/probe-root/sband-ground/native-cli/channel.log",
+      "sourceSha256": "e8535e012b3cd1595dc46dd2bbb468ddc4938ee1762d4d04ede54632af26d0a4"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 0,
+      "publicSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "redactions": {},
+      "relativePath": "2026-07-06-target-formal-rerun/probe-root/sband-ground/native-cli/command.log",
+      "sourceBytes": 0,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-06-target-formal-rerun/probe-root/sband-ground/native-cli/command.log",
+      "sourceSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 10928,
+      "publicSha256": "a3a0978044e01d09e4e2019c586afd68b6a23f63a4e277e9f3acb0f4c576733c",
+      "redactions": {},
+      "relativePath": "2026-07-06-target-formal-rerun/probe-root/sband-ground/native-cli/event.log",
+      "sourceBytes": 10928,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-06-target-formal-rerun/probe-root/sband-ground/native-cli/event.log",
+      "sourceSha256": "a3a0978044e01d09e4e2019c586afd68b6a23f63a4e277e9f3acb0f4c576733c"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 67,
+      "publicSha256": "7a22cda702848528e360ef4aed4330e2c113a6dfb56063975923955e93af3a17",
+      "redactions": {},
+      "relativePath": "2026-07-06-target-formal-rerun/probe-root/sband-ground/native-cli/fprime-cli.log",
+      "sourceBytes": 67,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-06-target-formal-rerun/probe-root/sband-ground/native-cli/fprime-cli.log",
+      "sourceSha256": "7a22cda702848528e360ef4aed4330e2c113a6dfb56063975923955e93af3a17"
+    },
+    {
+      "mediaType": "binary",
+      "publicBytes": 301915,
+      "publicSha256": "885769f2eba6059f6453ae70ca410faa84f31f606c511e54db20dbbad5157843",
+      "redactions": {},
+      "relativePath": "2026-07-06-target-formal-rerun/probe-root/sband-ground/native-cli/recv.bin",
+      "sourceBytes": 301915,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-06-target-formal-rerun/probe-root/sband-ground/native-cli/recv.bin",
+      "sourceSha256": "885769f2eba6059f6453ae70ca410faa84f31f606c511e54db20dbbad5157843"
+    },
+    {
+      "mediaType": "binary",
+      "publicBytes": 0,
+      "publicSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "redactions": {},
+      "relativePath": "2026-07-06-target-formal-rerun/probe-root/sband-ground/native-cli/sent.bin",
+      "sourceBytes": 0,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-06-target-formal-rerun/probe-root/sband-ground/native-cli/sent.bin",
+      "sourceSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 11456,
+      "publicSha256": "78b1bb904d8a59f0f860c782b53e8f3fd2361d8673eb29c123171ff315702edb",
+      "redactions": {
+        "source-repository-path": 2
+      },
+      "relativePath": "2026-07-06-target-formal-rerun/probe-root/sband-ground/process-control/passive-cli.log",
+      "sourceBytes": 11498,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-06-target-formal-rerun/probe-root/sband-ground/process-control/passive-cli.log",
+      "sourceSha256": "6c77a5495bdbf4bfc8077df469579c32e3af354e35305514b305701c64c62531"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 4128,
+      "publicSha256": "1c6a95155928c9119c6d16d53d0d5ea0770cc4341cbb2edfb1d061d2fa3484f6",
+      "redactions": {},
+      "relativePath": "2026-07-06-target-formal-rerun/probe-root/sband-ground/process-control/raw-command.log",
+      "sourceBytes": 4128,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-06-target-formal-rerun/probe-root/sband-ground/process-control/raw-command.log",
+      "sourceSha256": "1c6a95155928c9119c6d16d53d0d5ea0770cc4341cbb2edfb1d061d2fa3484f6"
+    },
+    {
+      "mediaType": "binary",
+      "publicBytes": 51337,
+      "publicSha256": "a4d80a31448a9ab51c5a6853a1a72abc3c43495af32f61851b4284fa8fa41f77",
+      "redactions": {},
+      "relativePath": "2026-07-06-target-formal-rerun/probe-root/source-artifacts/auto/data-products/Dp_268673025_1783302643_00523046.fdp",
+      "sourceBytes": 51337,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-06-target-formal-rerun/probe-root/source-artifacts/auto/data-products/Dp_268673025_1783302643_00523046.fdp",
+      "sourceSha256": "a4d80a31448a9ab51c5a6853a1a72abc3c43495af32f61851b4284fa8fa41f77"
+    },
+    {
+      "mediaType": "binary",
+      "publicBytes": 614400,
+      "publicSha256": "b283a51637d6960e3ca589ffb77a9216eb1ba26b56acddde0b7544555e66f6d3",
+      "redactions": {},
+      "relativePath": "2026-07-06-target-formal-rerun/probe-root/source-artifacts/auto/persistent-data/payload/camera/PIC30.bin",
+      "sourceBytes": 614400,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-06-target-formal-rerun/probe-root/source-artifacts/auto/persistent-data/payload/camera/PIC30.bin",
+      "sourceSha256": "b283a51637d6960e3ca589ffb77a9216eb1ba26b56acddde0b7544555e66f6d3"
+    },
+    {
+      "mediaType": "binary",
+      "publicBytes": 51018,
+      "publicSha256": "1c55950c23418d06c775d0af75323187ffe240ea4502e867833fb2f710e4bf62",
+      "redactions": {},
+      "relativePath": "2026-07-06-target-formal-rerun/probe-root/source-artifacts/auto/persistent-data/payload/camera/PIC30.jpg",
+      "sourceBytes": 51018,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-06-target-formal-rerun/probe-root/source-artifacts/auto/persistent-data/payload/camera/PIC30.jpg",
+      "sourceSha256": "1c55950c23418d06c775d0af75323187ffe240ea4502e867833fb2f710e4bf62"
+    },
+    {
+      "mediaType": "binary",
+      "publicBytes": 51337,
+      "publicSha256": "a4d80a31448a9ab51c5a6853a1a72abc3c43495af32f61851b4284fa8fa41f77",
+      "redactions": {},
+      "relativePath": "2026-07-06-target-formal-rerun/probe-root/source-artifacts/deterministic/data-products/Dp_268673025_1783302643_00523046.fdp",
+      "sourceBytes": 51337,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-06-target-formal-rerun/probe-root/source-artifacts/deterministic/data-products/Dp_268673025_1783302643_00523046.fdp",
+      "sourceSha256": "a4d80a31448a9ab51c5a6853a1a72abc3c43495af32f61851b4284fa8fa41f77"
+    },
+    {
+      "mediaType": "binary",
+      "publicBytes": 16876,
+      "publicSha256": "7eb77455005385265c3cbc1fa81e86ae404984e84f48fce4490ddf36b0a872a9",
+      "redactions": {},
+      "relativePath": "2026-07-06-target-formal-rerun/probe-root/source-artifacts/deterministic/data-products/Dp_268673025_1783302692_00523253.fdp",
+      "sourceBytes": 16876,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-06-target-formal-rerun/probe-root/source-artifacts/deterministic/data-products/Dp_268673025_1783302692_00523253.fdp",
+      "sourceSha256": "7eb77455005385265c3cbc1fa81e86ae404984e84f48fce4490ddf36b0a872a9"
+    },
+    {
+      "mediaType": "binary",
+      "publicBytes": 614400,
+      "publicSha256": "1187f20f82283780939c45d7647a7f346a3574801a6cd47603599e1b919955b6",
+      "redactions": {},
+      "relativePath": "2026-07-06-target-formal-rerun/probe-root/source-artifacts/deterministic/persistent-data/payload/camera/PIC31.bin",
+      "sourceBytes": 614400,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-06-target-formal-rerun/probe-root/source-artifacts/deterministic/persistent-data/payload/camera/PIC31.bin",
+      "sourceSha256": "1187f20f82283780939c45d7647a7f346a3574801a6cd47603599e1b919955b6"
+    },
+    {
+      "mediaType": "binary",
+      "publicBytes": 16557,
+      "publicSha256": "28a49df76e735cdc69f7e98d98736746588af555a3626e2489e206f2f8bd0403",
+      "redactions": {},
+      "relativePath": "2026-07-06-target-formal-rerun/probe-root/source-artifacts/deterministic/persistent-data/payload/camera/PIC31.jpg",
+      "sourceBytes": 16557,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-06-target-formal-rerun/probe-root/source-artifacts/deterministic/persistent-data/payload/camera/PIC31.jpg",
+      "sourceSha256": "28a49df76e735cdc69f7e98d98736746588af555a3626e2489e206f2f8bd0403"
+    },
+    {
+      "mediaType": "binary",
+      "publicBytes": 51018,
+      "publicSha256": "1c55950c23418d06c775d0af75323187ffe240ea4502e867833fb2f710e4bf62",
+      "redactions": {},
+      "relativePath": "2026-07-06-target-formal-rerun/probe-root/source-decode/auto/PREVIEW_JPEG/Dp_268673025_1783302643_00523046.jpg",
+      "sourceBytes": 51018,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-06-target-formal-rerun/probe-root/source-decode/auto/PREVIEW_JPEG/Dp_268673025_1783302643_00523046.jpg",
+      "sourceSha256": "1c55950c23418d06c775d0af75323187ffe240ea4502e867833fb2f710e4bf62"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 541585,
+      "publicSha256": "465894c2bc48a8885bbe6b3f6de4804813b891b40e4688d4466077a11a6ec979",
+      "redactions": {},
+      "relativePath": "2026-07-06-target-formal-rerun/probe-root/source-decode/auto/PREVIEW_JPEG/decode-primary/Dp_268673025_1783302643_00523046.json",
+      "sourceBytes": 541585,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-06-target-formal-rerun/probe-root/source-decode/auto/PREVIEW_JPEG/decode-primary/Dp_268673025_1783302643_00523046.json",
+      "sourceSha256": "465894c2bc48a8885bbe6b3f6de4804813b891b40e4688d4466077a11a6ec979"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 451,
+      "publicSha256": "1efe8c316f293372b85278e49ea1d7553555535ce3c8ee52139541a4f26c0ea5",
+      "redactions": {
+        "source-repository-path": 3
+      },
+      "relativePath": "2026-07-06-target-formal-rerun/probe-root/source-decode/auto/PREVIEW_JPEG/decode-primary/decode.log",
+      "sourceBytes": 514,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-06-target-formal-rerun/probe-root/source-decode/auto/PREVIEW_JPEG/decode-primary/decode.log",
+      "sourceSha256": "926b5028e68a2f6dec1ca147f803572178b6137810026d1ee0fecf703b7e3974"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 631,
+      "publicSha256": "e526e24afaaa44ed0439c344876b74870f090e1be00d0f1415a37a6826285a23",
+      "redactions": {},
+      "relativePath": "2026-07-06-target-formal-rerun/probe-root/source-decode/auto/PREVIEW_JPEG/extract.log",
+      "sourceBytes": 631,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-06-target-formal-rerun/probe-root/source-decode/auto/PREVIEW_JPEG/extract.log",
+      "sourceSha256": "e526e24afaaa44ed0439c344876b74870f090e1be00d0f1415a37a6826285a23"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 541585,
+      "publicSha256": "465894c2bc48a8885bbe6b3f6de4804813b891b40e4688d4466077a11a6ec979",
+      "redactions": {},
+      "relativePath": "2026-07-06-target-formal-rerun/probe-root/source-decode/auto/PREVIEW_JPEG/family-members/Dp_268673025_1783302643_00523046/Dp_268673025_1783302643_00523046.json",
+      "sourceBytes": 541585,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-06-target-formal-rerun/probe-root/source-decode/auto/PREVIEW_JPEG/family-members/Dp_268673025_1783302643_00523046/Dp_268673025_1783302643_00523046.json",
+      "sourceSha256": "465894c2bc48a8885bbe6b3f6de4804813b891b40e4688d4466077a11a6ec979"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 451,
+      "publicSha256": "1efe8c316f293372b85278e49ea1d7553555535ce3c8ee52139541a4f26c0ea5",
+      "redactions": {
+        "source-repository-path": 3
+      },
+      "relativePath": "2026-07-06-target-formal-rerun/probe-root/source-decode/auto/PREVIEW_JPEG/family-members/Dp_268673025_1783302643_00523046/decode.log",
+      "sourceBytes": 514,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-06-target-formal-rerun/probe-root/source-decode/auto/PREVIEW_JPEG/family-members/Dp_268673025_1783302643_00523046/decode.log",
+      "sourceSha256": "926b5028e68a2f6dec1ca147f803572178b6137810026d1ee0fecf703b7e3974"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 3099,
+      "publicSha256": "1bbc4e02fc0fcdfc91327000ae3163e11dbbe2eb25ad3e9eb708464278c81e7e",
+      "redactions": {},
+      "relativePath": "2026-07-06-target-formal-rerun/probe-root/source-decode/auto/PREVIEW_JPEG/payload-fdp-summary.json",
+      "sourceBytes": 3099,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-06-target-formal-rerun/probe-root/source-decode/auto/PREVIEW_JPEG/payload-fdp-summary.json",
+      "sourceSha256": "1bbc4e02fc0fcdfc91327000ae3163e11dbbe2eb25ad3e9eb708464278c81e7e"
+    },
+    {
+      "mediaType": "binary",
+      "publicBytes": 16557,
+      "publicSha256": "28a49df76e735cdc69f7e98d98736746588af555a3626e2489e206f2f8bd0403",
+      "redactions": {},
+      "relativePath": "2026-07-06-target-formal-rerun/probe-root/source-decode/deterministic/PREVIEW_JPEG/Dp_268673025_1783302692_00523253.jpg",
+      "sourceBytes": 16557,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-06-target-formal-rerun/probe-root/source-decode/deterministic/PREVIEW_JPEG/Dp_268673025_1783302692_00523253.jpg",
+      "sourceSha256": "28a49df76e735cdc69f7e98d98736746588af555a3626e2489e206f2f8bd0403"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 176545,
+      "publicSha256": "139f1bb139eb68f1476cc278bee6edc2d5dbf231250036351a93b4e8c3f02bcb",
+      "redactions": {},
+      "relativePath": "2026-07-06-target-formal-rerun/probe-root/source-decode/deterministic/PREVIEW_JPEG/decode-primary/Dp_268673025_1783302692_00523253.json",
+      "sourceBytes": 176545,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-06-target-formal-rerun/probe-root/source-decode/deterministic/PREVIEW_JPEG/decode-primary/Dp_268673025_1783302692_00523253.json",
+      "sourceSha256": "139f1bb139eb68f1476cc278bee6edc2d5dbf231250036351a93b4e8c3f02bcb"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 460,
+      "publicSha256": "3a62f011b80fe393bc4eb29eec6fe07cc4f167dd2905070f912862beb774562e",
+      "redactions": {
+        "source-repository-path": 3
+      },
+      "relativePath": "2026-07-06-target-formal-rerun/probe-root/source-decode/deterministic/PREVIEW_JPEG/decode-primary/decode.log",
+      "sourceBytes": 523,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-06-target-formal-rerun/probe-root/source-decode/deterministic/PREVIEW_JPEG/decode-primary/decode.log",
+      "sourceSha256": "e66d905a88ad50772dfb8d0f57b99a87bc59595a68158d31261bc26b833a9301"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 649,
+      "publicSha256": "e23b3c2283359738d8c13b948683502cc4b70e88b6207587fa49bafb534f5156",
+      "redactions": {},
+      "relativePath": "2026-07-06-target-formal-rerun/probe-root/source-decode/deterministic/PREVIEW_JPEG/extract.log",
+      "sourceBytes": 649,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-06-target-formal-rerun/probe-root/source-decode/deterministic/PREVIEW_JPEG/extract.log",
+      "sourceSha256": "e23b3c2283359738d8c13b948683502cc4b70e88b6207587fa49bafb534f5156"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 541585,
+      "publicSha256": "465894c2bc48a8885bbe6b3f6de4804813b891b40e4688d4466077a11a6ec979",
+      "redactions": {},
+      "relativePath": "2026-07-06-target-formal-rerun/probe-root/source-decode/deterministic/PREVIEW_JPEG/family-members/Dp_268673025_1783302643_00523046/Dp_268673025_1783302643_00523046.json",
+      "sourceBytes": 541585,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-06-target-formal-rerun/probe-root/source-decode/deterministic/PREVIEW_JPEG/family-members/Dp_268673025_1783302643_00523046/Dp_268673025_1783302643_00523046.json",
+      "sourceSha256": "465894c2bc48a8885bbe6b3f6de4804813b891b40e4688d4466077a11a6ec979"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 460,
+      "publicSha256": "08cf640be46c44d8c600c48f840e1b98000c179ae2b05a8ac0b446c82a93d4fc",
+      "redactions": {
+        "source-repository-path": 3
+      },
+      "relativePath": "2026-07-06-target-formal-rerun/probe-root/source-decode/deterministic/PREVIEW_JPEG/family-members/Dp_268673025_1783302643_00523046/decode.log",
+      "sourceBytes": 523,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-06-target-formal-rerun/probe-root/source-decode/deterministic/PREVIEW_JPEG/family-members/Dp_268673025_1783302643_00523046/decode.log",
+      "sourceSha256": "b0f451aadcf22a10a25e91a1638410c0caae1d5e12ce8400105509581781d9a6"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 176545,
+      "publicSha256": "139f1bb139eb68f1476cc278bee6edc2d5dbf231250036351a93b4e8c3f02bcb",
+      "redactions": {},
+      "relativePath": "2026-07-06-target-formal-rerun/probe-root/source-decode/deterministic/PREVIEW_JPEG/family-members/Dp_268673025_1783302692_00523253/Dp_268673025_1783302692_00523253.json",
+      "sourceBytes": 176545,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-06-target-formal-rerun/probe-root/source-decode/deterministic/PREVIEW_JPEG/family-members/Dp_268673025_1783302692_00523253/Dp_268673025_1783302692_00523253.json",
+      "sourceSha256": "139f1bb139eb68f1476cc278bee6edc2d5dbf231250036351a93b4e8c3f02bcb"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 460,
+      "publicSha256": "3a62f011b80fe393bc4eb29eec6fe07cc4f167dd2905070f912862beb774562e",
+      "redactions": {
+        "source-repository-path": 3
+      },
+      "relativePath": "2026-07-06-target-formal-rerun/probe-root/source-decode/deterministic/PREVIEW_JPEG/family-members/Dp_268673025_1783302692_00523253/decode.log",
+      "sourceBytes": 523,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-06-target-formal-rerun/probe-root/source-decode/deterministic/PREVIEW_JPEG/family-members/Dp_268673025_1783302692_00523253/decode.log",
+      "sourceSha256": "e66d905a88ad50772dfb8d0f57b99a87bc59595a68158d31261bc26b833a9301"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 3147,
+      "publicSha256": "94961ead53bfb7e6fc6d8c46c593bd339f7cbc2ece942baddb227446e98ea305",
+      "redactions": {},
+      "relativePath": "2026-07-06-target-formal-rerun/probe-root/source-decode/deterministic/PREVIEW_JPEG/payload-fdp-summary.json",
+      "sourceBytes": 3147,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-06-target-formal-rerun/probe-root/source-decode/deterministic/PREVIEW_JPEG/payload-fdp-summary.json",
+      "sourceSha256": "94961ead53bfb7e6fc6d8c46c593bd339f7cbc2ece942baddb227446e98ea305"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 1463,
+      "publicSha256": "a0f2c06eeb42c3e0956ae7e73d405313ff8fc8d3ff8bfdffeb82cf8ba1a75815",
+      "redactions": {},
+      "relativePath": "2026-07-06-target-formal-rerun/probe-root/status.log",
+      "sourceBytes": 1463,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-06-target-formal-rerun/probe-root/status.log",
+      "sourceSha256": "a0f2c06eeb42c3e0956ae7e73d405313ff8fc8d3ff8bfdffeb82cf8ba1a75815"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 1670,
+      "publicSha256": "6549db5081bdd99fa0b9b26639aba9ff8e1e4bcb724758b4f75a40628dcb3ff6",
+      "redactions": {},
+      "relativePath": "2026-07-06-target-formal-rerun/probe-root/summary.log",
+      "sourceBytes": 1670,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-06-target-formal-rerun/probe-root/summary.log",
+      "sourceSha256": "6549db5081bdd99fa0b9b26639aba9ff8e1e4bcb724758b4f75a40628dcb3ff6"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 499,
+      "publicSha256": "6e507b1d4370f22312689751f275ab49e234a602e141cd8f02739f8201949044",
+      "redactions": {
+        "target-user-path": 1
+      },
+      "relativePath": "2026-07-07-target-formal-rerun/manifest.json",
+      "sourceBytes": 502,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/manifest.json",
+      "sourceSha256": "9820cc300f7312ba5c76bbac7ccea814a1c1eaa442e9f94163954a43f4a1ee16"
+    },
+    {
+      "mediaType": "binary",
+      "publicBytes": 1890,
+      "publicSha256": "699814c7bee48a79cc314d9d4f428426f750d939a15e5b22e5fac92245681db6",
+      "redactions": {},
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/captures/sband/gds-to-southbound.bin",
+      "sourceBytes": 1890,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/captures/sband/gds-to-southbound.bin",
+      "sourceSha256": "699814c7bee48a79cc314d9d4f428426f750d939a15e5b22e5fac92245681db6"
+    },
+    {
+      "mediaType": "binary",
+      "publicBytes": 647360,
+      "publicSha256": "1a8c20019593fddea8c0211f8f7fd7b859acbb97e0cc8fe695453b375cddd442",
+      "redactions": {},
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/captures/sband/southbound-to-gds.bin",
+      "sourceBytes": 647360,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/captures/sband/southbound-to-gds.bin",
+      "sourceSha256": "1a8c20019593fddea8c0211f8f7fd7b859acbb97e0cc8fe695453b375cddd442"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 14302,
+      "publicSha256": "2f69fa86f7664d2426f0264123baebbf03eb1651c3af0acae89bc397fb8a315a",
+      "redactions": {
+        "lab-serial-identifier": 2,
+        "target-user-path": 1
+      },
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/diagnostics/checkpoints.jsonl",
+      "sourceBytes": 14283,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/diagnostics/checkpoints.jsonl",
+      "sourceSha256": "8285d3ce1c968b81117668ec0d00d9683972e01f58efd164545d95d5b357f412"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 138,
+      "publicSha256": "c7fe402dc26b9e55e89101e09359e2481cb64e7ac36237343790696b1e0b7c86",
+      "redactions": {},
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/diagnostics/cleanup-status.json",
+      "sourceBytes": 138,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/diagnostics/cleanup-status.json",
+      "sourceSha256": "c7fe402dc26b9e55e89101e09359e2481cb64e7ac36237343790696b1e0b7c86"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 19364,
+      "publicSha256": "89c3897d705556f6f5236235154c353e1761da74f0c00fc0bafb1e9c107b70c9",
+      "redactions": {
+        "target-user-path": 2
+      },
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/diagnostics/journal-snapshots/node5-bootstrap-ready.log",
+      "sourceBytes": 19370,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/diagnostics/journal-snapshots/node5-bootstrap-ready.log",
+      "sourceSha256": "caae034be9513f39da97f4e70071cb838739a0663ec4d8f166de45682d029fd6"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 6705,
+      "publicSha256": "0771fd0aba08ced013bbd712d4863c776e3e7345bad6be7a3cbfda442ddc29c6",
+      "redactions": {
+        "source-repository-path": 1,
+        "ssh-user": 2,
+        "target-user-path": 26
+      },
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/diagnostics/secure-auth-keystore-provenance.json",
+      "sourceBytes": 6800,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/diagnostics/secure-auth-keystore-provenance.json",
+      "sourceSha256": "33e37ac10f8d444d2771371d02e5bc4ecaefd9f980805f2bdd7c1aed9aaf7e11"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 195,
+      "publicSha256": "24eb96ec038a9f320a9db2746c6a90802efba0569c22df6341d1b49bd5fe7185",
+      "redactions": {
+        "source-repository-path": 2
+      },
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/diagnostics/security-server-sim.log",
+      "sourceBytes": 237,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/diagnostics/security-server-sim.log",
+      "sourceSha256": "88e2514319163f702d1a9a58bd627a0e197b2f6ab64bf12a483942b6da874a5c"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 7178,
+      "publicSha256": "30ba06e8fedfddf5ed6ae5857716a66cf669eb83e934c766b9260359b6bd27fb",
+      "redactions": {
+        "local-user-name": 3,
+        "ssh-user": 1,
+        "target-user-path": 21
+      },
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/diagnostics/service-snapshots/probe-start-obc-service.json",
+      "sourceBytes": 7233,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/diagnostics/service-snapshots/probe-start-obc-service.json",
+      "sourceSha256": "12f319e4ddf610ba278841f9b78ddcc8b73c084685452bc94268bb2eda92408c"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 2639,
+      "publicSha256": "e16c65a243757466a4dc388083f8893678817c914063d22c9fbe6778d8eeaacd",
+      "redactions": {
+        "local-user-name": 3,
+        "ssh-user": 1,
+        "target-user-path": 6
+      },
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/diagnostics/service-snapshots/probe-start-sband-comm.json",
+      "sourceBytes": 2649,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/diagnostics/service-snapshots/probe-start-sband-comm.json",
+      "sourceSha256": "cbcc7d305cee4b24381b63865ed964b613cbba73c60e981e9affd261c6224b66"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 794,
+      "publicSha256": "dcf97b0036a3deadf9b9e072f9b19ac5e041bc3f504f80440c1d19bb7d0a974b",
+      "redactions": {
+        "ssh-user": 1
+      },
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/diagnostics/service-snapshots/probe-start-sband-stack.json",
+      "sourceBytes": 792,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/diagnostics/service-snapshots/probe-start-sband-stack.json",
+      "sourceSha256": "2cb275b7648e0bae6fd0b87aaac2f9585d7a9261888cdbf0dbeedbc62b72b945"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 2656,
+      "publicSha256": "9415784786a48b6554279ecf2234d1910d3234f763f9cfb19b5620d5ff28844d",
+      "redactions": {
+        "local-user-name": 3,
+        "ssh-user": 1,
+        "target-user-path": 6
+      },
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/diagnostics/service-snapshots/probe-start-uhf-comm.json",
+      "sourceBytes": 2666,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/diagnostics/service-snapshots/probe-start-uhf-comm.json",
+      "sourceSha256": "fac5c8a11a231755f83a5fc95644c6fbe1065942f726e8fe65e6e30c1001fc4e"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 784,
+      "publicSha256": "674314d2ae16401d73ca1cbeac7d9469c945ee12e280e34ab267964978e061af",
+      "redactions": {
+        "ssh-user": 1
+      },
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/diagnostics/service-snapshots/probe-start-uhf-stack.json",
+      "sourceBytes": 782,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/diagnostics/service-snapshots/probe-start-uhf-stack.json",
+      "sourceSha256": "1b11eeb3280016e558762adbec6623a64ef47efed524c9e07c34ade45329171f"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 264,
+      "publicSha256": "6b4e3f7acd25886ec18f52ccfb5eea79cfc0b1f5d695551fe048ece8a3d041b7",
+      "redactions": {},
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/diagnostics/service-snapshots/subsystem-baseline-sband.json",
+      "sourceBytes": 264,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/diagnostics/service-snapshots/subsystem-baseline-sband.json",
+      "sourceSha256": "6b4e3f7acd25886ec18f52ccfb5eea79cfc0b1f5d695551fe048ece8a3d041b7"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 7178,
+      "publicSha256": "1744c130a8bfcd88bc11106b8bbfb7e35dc53c201abd540ad816042360be70c3",
+      "redactions": {
+        "local-user-name": 3,
+        "ssh-user": 1,
+        "target-user-path": 21
+      },
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/diagnostics/service-snapshots/subsystem-external-baseline-sband-obc-service.json",
+      "sourceBytes": 7233,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/diagnostics/service-snapshots/subsystem-external-baseline-sband-obc-service.json",
+      "sourceSha256": "527a92f08f98e9ad684c678a3384869a687f354b7400d8b5f6826d609cf03caa"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 2639,
+      "publicSha256": "6fd337b89ecad742c9cbff4925febe0fe30cf6c4278a90e7584109ec7f13e7bb",
+      "redactions": {
+        "local-user-name": 3,
+        "ssh-user": 1,
+        "target-user-path": 6
+      },
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/diagnostics/service-snapshots/subsystem-external-baseline-sband-sband-comm.json",
+      "sourceBytes": 2649,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/diagnostics/service-snapshots/subsystem-external-baseline-sband-sband-comm.json",
+      "sourceSha256": "38dc3ad1665f5c12ebf6700840bc72562f7d3c81c11026da509f58679dac628c"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 794,
+      "publicSha256": "96eb1fe61590b1d29b7fe5292489bb911ddc921f787bc9fd16352832a0dba045",
+      "redactions": {
+        "ssh-user": 1
+      },
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/diagnostics/service-snapshots/subsystem-external-baseline-sband-sband-stack.json",
+      "sourceBytes": 792,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/diagnostics/service-snapshots/subsystem-external-baseline-sband-sband-stack.json",
+      "sourceSha256": "3b8e3d640b62f1a0f03cab6167ce45d7963cff61e46d5347916172f81c9fe245"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 2656,
+      "publicSha256": "d9ee911d6c59b690282923f539fb1a056a3c9a26ad7028f9945bd11da325ecc6",
+      "redactions": {
+        "local-user-name": 3,
+        "ssh-user": 1,
+        "target-user-path": 6
+      },
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/diagnostics/service-snapshots/subsystem-external-baseline-sband-uhf-comm.json",
+      "sourceBytes": 2666,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/diagnostics/service-snapshots/subsystem-external-baseline-sband-uhf-comm.json",
+      "sourceSha256": "9010b4a645c6e555d700962be27dbf012f6b905df610cca3cf9eba7d8c66cfca"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 784,
+      "publicSha256": "77860ea56aba7f7947c704ace1ffabeae6ce78ecf8db862d45c1b422d3a9d5d8",
+      "redactions": {
+        "ssh-user": 1
+      },
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/diagnostics/service-snapshots/subsystem-external-baseline-sband-uhf-stack.json",
+      "sourceBytes": 782,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/diagnostics/service-snapshots/subsystem-external-baseline-sband-uhf-stack.json",
+      "sourceSha256": "592aa3240cfbdaf8e77360274229407bfa3e0be78ff90f6cddff9d9842dee2d1"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 28538,
+      "publicSha256": "6c861df5d8dd0507c85a1310050a070c6f874d7f352b72cce46d87981824f675",
+      "redactions": {
+        "target-user-path": 1
+      },
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/payload-target-capture-sanity-summary.json",
+      "sourceBytes": 28541,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/payload-target-capture-sanity-summary.json",
+      "sourceSha256": "27a8d941e7d6aafe703c8a74e6bd536fbe47f5ff75ed1c800cc76ad5c6cb632c"
+    },
+    {
+      "mediaType": "binary",
+      "publicBytes": 59732,
+      "publicSha256": "5024ca7224ea03a3ad43277b71c54e3dcd71b1c48f1339f16e22b5cfb6664cb2",
+      "redactions": {},
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/reference-capture/rpicam-reference-vga.jpg",
+      "sourceBytes": 59732,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/reference-capture/rpicam-reference-vga.jpg",
+      "sourceSha256": "5024ca7224ea03a3ad43277b71c54e3dcd71b1c48f1339f16e22b5cfb6664cb2"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 151746,
+      "publicSha256": "7793d5d60f40119269c2d4bdfe53f57b2c7b714c73948470a0484de94abc25dc",
+      "redactions": {
+        "source-repository-path": 1
+      },
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/sband-ground/gds-runtime/gateway.log",
+      "sourceBytes": 151767,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/sband-ground/gds-runtime/gateway.log",
+      "sourceSha256": "c3a2f3d4de204fc0660af616903a06181a1043b90040e8e0684309d53cb26999"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 5987,
+      "publicSha256": "f7218b2d7b80b08233feaa8626955bf8537376c1ab7ea2dc71df010c5afb3de3",
+      "redactions": {},
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/sband-ground/gds-runtime/gds-files/gds-logs/ThreadedTCP.log",
+      "sourceBytes": 5987,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/sband-ground/gds-runtime/gds-files/gds-logs/ThreadedTCP.log",
+      "sourceSha256": "f7218b2d7b80b08233feaa8626955bf8537376c1ab7ea2dc71df010c5afb3de3"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 532,
+      "publicSha256": "0dde7643b4cfb0428f423d3971a739a0c5abaf920d34b21427f6cd5c6fd2b272",
+      "redactions": {},
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/sband-ground/gds-runtime/gds-files/gds-logs/comm.py.log",
+      "sourceBytes": 532,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/sband-ground/gds-runtime/gds-files/gds-logs/comm.py.log",
+      "sourceSha256": "0dde7643b4cfb0428f423d3971a739a0c5abaf920d34b21427f6cd5c6fd2b272"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 67,
+      "publicSha256": "61daaf812b8867c0c72067513d8038f95340741ce6da9a1d1aee1190d522983a",
+      "redactions": {},
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/sband-ground/gds-runtime/gds-files/gds-logs/custom-data-handlers-app/-c.log",
+      "sourceBytes": 67,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/sband-ground/gds-runtime/gds-files/gds-logs/custom-data-handlers-app/-c.log",
+      "sourceSha256": "61daaf812b8867c0c72067513d8038f95340741ce6da9a1d1aee1190d522983a"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 67,
+      "publicSha256": "b80d0e778ab747e6ac98b3f7c3b9a590435743f6e720cc9203dcda10bb1222d3",
+      "redactions": {},
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/sband-ground/gds-runtime/gds-files/gds-logs/fprime-gds.log",
+      "sourceBytes": 67,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/sband-ground/gds-runtime/gds-files/gds-logs/fprime-gds.log",
+      "sourceSha256": "b80d0e778ab747e6ac98b3f7c3b9a590435743f6e720cc9203dcda10bb1222d3"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 1197,
+      "publicSha256": "099b907cb500fc497f06318569700200548de20fdafe5738778025f59d7c7132",
+      "redactions": {
+        "source-repository-path": 1
+      },
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/sband-ground/gds-runtime/gds.log",
+      "sourceBytes": 1218,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/sband-ground/gds-runtime/gds.log",
+      "sourceSha256": "84d6399ae135d0857cc8e365da890295dc4060f2893345e225271e68715cefc6"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 3297861,
+      "publicSha256": "39cefd3e023dda389e35bf9047f7021d0fe632a4b6d804de9b7c1c1dd08abc88",
+      "redactions": {},
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/sband-ground/native-cli/channel.log",
+      "sourceBytes": 3297861,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/sband-ground/native-cli/channel.log",
+      "sourceSha256": "39cefd3e023dda389e35bf9047f7021d0fe632a4b6d804de9b7c1c1dd08abc88"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 0,
+      "publicSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "redactions": {},
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/sband-ground/native-cli/command.log",
+      "sourceBytes": 0,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/sband-ground/native-cli/command.log",
+      "sourceSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 22700,
+      "publicSha256": "3ae1b5724d83842935567b038f15d6c0d7f27064512ee763e3ef182163b0d8cc",
+      "redactions": {},
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/sband-ground/native-cli/event.log",
+      "sourceBytes": 22700,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/sband-ground/native-cli/event.log",
+      "sourceSha256": "3ae1b5724d83842935567b038f15d6c0d7f27064512ee763e3ef182163b0d8cc"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 67,
+      "publicSha256": "108d3369f7dd8d76cc8963a6b045369c4749cc508cb6365966225881e1bfc8b0",
+      "redactions": {},
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/sband-ground/native-cli/fprime-cli.log",
+      "sourceBytes": 67,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/sband-ground/native-cli/fprime-cli.log",
+      "sourceSha256": "108d3369f7dd8d76cc8963a6b045369c4749cc508cb6365966225881e1bfc8b0"
+    },
+    {
+      "mediaType": "binary",
+      "publicBytes": 595600,
+      "publicSha256": "0c21062431694b5e0986eb22ba45f47e6be3fcbd9910c2211c70bd46fe24e301",
+      "redactions": {},
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/sband-ground/native-cli/recv.bin",
+      "sourceBytes": 595600,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/sband-ground/native-cli/recv.bin",
+      "sourceSha256": "0c21062431694b5e0986eb22ba45f47e6be3fcbd9910c2211c70bd46fe24e301"
+    },
+    {
+      "mediaType": "binary",
+      "publicBytes": 0,
+      "publicSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "redactions": {},
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/sband-ground/native-cli/sent.bin",
+      "sourceBytes": 0,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/sband-ground/native-cli/sent.bin",
+      "sourceSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 23483,
+      "publicSha256": "2074b19c7142b27155800bf276f2c0b201e5b0f1c2f6b0477bd81d52316b168a",
+      "redactions": {
+        "source-repository-path": 2
+      },
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/sband-ground/process-control/passive-cli.log",
+      "sourceBytes": 23525,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/sband-ground/process-control/passive-cli.log",
+      "sourceSha256": "f44fbdf09185672963285edd64480dea838ed8ce7ed41b31b33e0f99ef1ac07d"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 7467,
+      "publicSha256": "a55612d6b692dccb23e9fac03635b6bebda2128f0e41da8cf493122af02c510b",
+      "redactions": {},
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/sband-ground/process-control/raw-command.log",
+      "sourceBytes": 7467,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/sband-ground/process-control/raw-command.log",
+      "sourceSha256": "a55612d6b692dccb23e9fac03635b6bebda2128f0e41da8cf493122af02c510b"
+    },
+    {
+      "mediaType": "binary",
+      "publicBytes": 44819,
+      "publicSha256": "cab621bcdb00fa12e9fc41bfb12be0e8f3be669f9c331cf8b1cdfa8b466467e5",
+      "redactions": {},
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/source-artifacts/auto/data-products/Dp_268673025_1783382245_00075615.fdp",
+      "sourceBytes": 44819,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/source-artifacts/auto/data-products/Dp_268673025_1783382245_00075615.fdp",
+      "sourceSha256": "cab621bcdb00fa12e9fc41bfb12be0e8f3be669f9c331cf8b1cdfa8b466467e5"
+    },
+    {
+      "mediaType": "binary",
+      "publicBytes": 614400,
+      "publicSha256": "1ad4171510d5fea6fbf4ad2abdab2ca9fc433afec6fd5d7327ba2b7f2fc38f27",
+      "redactions": {},
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/source-artifacts/auto/persistent-data/payload/camera/PIC30.bin",
+      "sourceBytes": 614400,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/source-artifacts/auto/persistent-data/payload/camera/PIC30.bin",
+      "sourceSha256": "1ad4171510d5fea6fbf4ad2abdab2ca9fc433afec6fd5d7327ba2b7f2fc38f27"
+    },
+    {
+      "mediaType": "binary",
+      "publicBytes": 44500,
+      "publicSha256": "23c0286995160b1823ed50d987dee236450740056a8636a1e1d79be5b86d009e",
+      "redactions": {},
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/source-artifacts/auto/persistent-data/payload/camera/PIC30.jpg",
+      "sourceBytes": 44500,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/source-artifacts/auto/persistent-data/payload/camera/PIC30.jpg",
+      "sourceSha256": "23c0286995160b1823ed50d987dee236450740056a8636a1e1d79be5b86d009e"
+    },
+    {
+      "mediaType": "binary",
+      "publicBytes": 44819,
+      "publicSha256": "cab621bcdb00fa12e9fc41bfb12be0e8f3be669f9c331cf8b1cdfa8b466467e5",
+      "redactions": {},
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/source-artifacts/deterministic-flipped/data-products/Dp_268673025_1783382245_00075615.fdp",
+      "sourceBytes": 44819,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/source-artifacts/deterministic-flipped/data-products/Dp_268673025_1783382245_00075615.fdp",
+      "sourceSha256": "cab621bcdb00fa12e9fc41bfb12be0e8f3be669f9c331cf8b1cdfa8b466467e5"
+    },
+    {
+      "mediaType": "binary",
+      "publicBytes": 45306,
+      "publicSha256": "f375f0863ba08cc44f4d537434801e0dc978c9c831a9078a62ac6b2d400a60a8",
+      "redactions": {},
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/source-artifacts/deterministic-flipped/data-products/Dp_268673025_1783382294_00073015.fdp",
+      "sourceBytes": 45306,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/source-artifacts/deterministic-flipped/data-products/Dp_268673025_1783382294_00073015.fdp",
+      "sourceSha256": "f375f0863ba08cc44f4d537434801e0dc978c9c831a9078a62ac6b2d400a60a8"
+    },
+    {
+      "mediaType": "binary",
+      "publicBytes": 45170,
+      "publicSha256": "e04df65f119e823adfa3dfcbd2ee70b827ced728c14f9a75a84e52c357be7bd1",
+      "redactions": {},
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/source-artifacts/deterministic-flipped/data-products/Dp_268673025_1783382349_00073368.fdp",
+      "sourceBytes": 45170,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/source-artifacts/deterministic-flipped/data-products/Dp_268673025_1783382349_00073368.fdp",
+      "sourceSha256": "e04df65f119e823adfa3dfcbd2ee70b827ced728c14f9a75a84e52c357be7bd1"
+    },
+    {
+      "mediaType": "binary",
+      "publicBytes": 17612,
+      "publicSha256": "39d4759ff964355593956ffe3344e2b1292597e978390b82cefa7cbff7d4b014",
+      "redactions": {},
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/source-artifacts/deterministic-flipped/data-products/Dp_268673025_1783382502_00072983.fdp",
+      "sourceBytes": 17612,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/source-artifacts/deterministic-flipped/data-products/Dp_268673025_1783382502_00072983.fdp",
+      "sourceSha256": "39d4759ff964355593956ffe3344e2b1292597e978390b82cefa7cbff7d4b014"
+    },
+    {
+      "mediaType": "binary",
+      "publicBytes": 614400,
+      "publicSha256": "7f918c8b37926e3dcb85473625aec3dc940d363a89984cb1e5ee998be27293cf",
+      "redactions": {},
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/source-artifacts/deterministic-flipped/persistent-data/payload/camera/PIC33.bin",
+      "sourceBytes": 614400,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/source-artifacts/deterministic-flipped/persistent-data/payload/camera/PIC33.bin",
+      "sourceSha256": "7f918c8b37926e3dcb85473625aec3dc940d363a89984cb1e5ee998be27293cf"
+    },
+    {
+      "mediaType": "binary",
+      "publicBytes": 17293,
+      "publicSha256": "132f0a32959499182f9bec1383387370282b82e48731bd1ee2a5c0eef7351395",
+      "redactions": {},
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/source-artifacts/deterministic-flipped/persistent-data/payload/camera/PIC33.jpg",
+      "sourceBytes": 17293,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/source-artifacts/deterministic-flipped/persistent-data/payload/camera/PIC33.jpg",
+      "sourceSha256": "132f0a32959499182f9bec1383387370282b82e48731bd1ee2a5c0eef7351395"
+    },
+    {
+      "mediaType": "binary",
+      "publicBytes": 44819,
+      "publicSha256": "cab621bcdb00fa12e9fc41bfb12be0e8f3be669f9c331cf8b1cdfa8b466467e5",
+      "redactions": {},
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/source-artifacts/deterministic-followup/data-products/Dp_268673025_1783382245_00075615.fdp",
+      "sourceBytes": 44819,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/source-artifacts/deterministic-followup/data-products/Dp_268673025_1783382245_00075615.fdp",
+      "sourceSha256": "cab621bcdb00fa12e9fc41bfb12be0e8f3be669f9c331cf8b1cdfa8b466467e5"
+    },
+    {
+      "mediaType": "binary",
+      "publicBytes": 45306,
+      "publicSha256": "f375f0863ba08cc44f4d537434801e0dc978c9c831a9078a62ac6b2d400a60a8",
+      "redactions": {},
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/source-artifacts/deterministic-followup/data-products/Dp_268673025_1783382294_00073015.fdp",
+      "sourceBytes": 45306,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/source-artifacts/deterministic-followup/data-products/Dp_268673025_1783382294_00073015.fdp",
+      "sourceSha256": "f375f0863ba08cc44f4d537434801e0dc978c9c831a9078a62ac6b2d400a60a8"
+    },
+    {
+      "mediaType": "binary",
+      "publicBytes": 45170,
+      "publicSha256": "e04df65f119e823adfa3dfcbd2ee70b827ced728c14f9a75a84e52c357be7bd1",
+      "redactions": {},
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/source-artifacts/deterministic-followup/data-products/Dp_268673025_1783382349_00073368.fdp",
+      "sourceBytes": 45170,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/source-artifacts/deterministic-followup/data-products/Dp_268673025_1783382349_00073368.fdp",
+      "sourceSha256": "e04df65f119e823adfa3dfcbd2ee70b827ced728c14f9a75a84e52c357be7bd1"
+    },
+    {
+      "mediaType": "binary",
+      "publicBytes": 614400,
+      "publicSha256": "34c3b1c8a65920fc9da4280a47f2532479e0fa0c5e46572d9e170c5614a0e132",
+      "redactions": {},
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/source-artifacts/deterministic-followup/persistent-data/payload/camera/PIC32.bin",
+      "sourceBytes": 614400,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/source-artifacts/deterministic-followup/persistent-data/payload/camera/PIC32.bin",
+      "sourceSha256": "34c3b1c8a65920fc9da4280a47f2532479e0fa0c5e46572d9e170c5614a0e132"
+    },
+    {
+      "mediaType": "binary",
+      "publicBytes": 44851,
+      "publicSha256": "1d71abc15a3fc9e023479c681f01d408c09e8901eeef3e045f5bad7c92fce362",
+      "redactions": {},
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/source-artifacts/deterministic-followup/persistent-data/payload/camera/PIC32.jpg",
+      "sourceBytes": 44851,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/source-artifacts/deterministic-followup/persistent-data/payload/camera/PIC32.jpg",
+      "sourceSha256": "1d71abc15a3fc9e023479c681f01d408c09e8901eeef3e045f5bad7c92fce362"
+    },
+    {
+      "mediaType": "binary",
+      "publicBytes": 44819,
+      "publicSha256": "cab621bcdb00fa12e9fc41bfb12be0e8f3be669f9c331cf8b1cdfa8b466467e5",
+      "redactions": {},
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/source-artifacts/deterministic/data-products/Dp_268673025_1783382245_00075615.fdp",
+      "sourceBytes": 44819,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/source-artifacts/deterministic/data-products/Dp_268673025_1783382245_00075615.fdp",
+      "sourceSha256": "cab621bcdb00fa12e9fc41bfb12be0e8f3be669f9c331cf8b1cdfa8b466467e5"
+    },
+    {
+      "mediaType": "binary",
+      "publicBytes": 45306,
+      "publicSha256": "f375f0863ba08cc44f4d537434801e0dc978c9c831a9078a62ac6b2d400a60a8",
+      "redactions": {},
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/source-artifacts/deterministic/data-products/Dp_268673025_1783382294_00073015.fdp",
+      "sourceBytes": 45306,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/source-artifacts/deterministic/data-products/Dp_268673025_1783382294_00073015.fdp",
+      "sourceSha256": "f375f0863ba08cc44f4d537434801e0dc978c9c831a9078a62ac6b2d400a60a8"
+    },
+    {
+      "mediaType": "binary",
+      "publicBytes": 614400,
+      "publicSha256": "d08a317db2c89d357bfe4476fce61cc5dd9174e3715907d63fedf831b84f8596",
+      "redactions": {},
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/source-artifacts/deterministic/persistent-data/payload/camera/PIC31.bin",
+      "sourceBytes": 614400,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/source-artifacts/deterministic/persistent-data/payload/camera/PIC31.bin",
+      "sourceSha256": "d08a317db2c89d357bfe4476fce61cc5dd9174e3715907d63fedf831b84f8596"
+    },
+    {
+      "mediaType": "binary",
+      "publicBytes": 44987,
+      "publicSha256": "1533d4b16de0262a025278087e5bc7c978ee0302f7df9efdf1db9baf2fe8429b",
+      "redactions": {},
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/source-artifacts/deterministic/persistent-data/payload/camera/PIC31.jpg",
+      "sourceBytes": 44987,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/source-artifacts/deterministic/persistent-data/payload/camera/PIC31.jpg",
+      "sourceSha256": "1533d4b16de0262a025278087e5bc7c978ee0302f7df9efdf1db9baf2fe8429b"
+    },
+    {
+      "mediaType": "binary",
+      "publicBytes": 44500,
+      "publicSha256": "23c0286995160b1823ed50d987dee236450740056a8636a1e1d79be5b86d009e",
+      "redactions": {},
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/source-decode/auto/PREVIEW_JPEG/Dp_268673025_1783382245_00075615.jpg",
+      "sourceBytes": 44500,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/source-decode/auto/PREVIEW_JPEG/Dp_268673025_1783382245_00075615.jpg",
+      "sourceSha256": "23c0286995160b1823ed50d987dee236450740056a8636a1e1d79be5b86d009e"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 473125,
+      "publicSha256": "58f3b4674ed3df17c2f71de7f5bb45c8f875a06da6e01b3e10ffbafa14457db7",
+      "redactions": {},
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/source-decode/auto/PREVIEW_JPEG/decode-primary/Dp_268673025_1783382245_00075615.json",
+      "sourceBytes": 473125,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/source-decode/auto/PREVIEW_JPEG/decode-primary/Dp_268673025_1783382245_00075615.json",
+      "sourceSha256": "58f3b4674ed3df17c2f71de7f5bb45c8f875a06da6e01b3e10ffbafa14457db7"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 451,
+      "publicSha256": "dc6afee25f5c7fdfc0011ccb37d8947f668fcaf22070889a0ceb7b3366bb9596",
+      "redactions": {
+        "source-repository-path": 3
+      },
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/source-decode/auto/PREVIEW_JPEG/decode-primary/decode.log",
+      "sourceBytes": 514,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/source-decode/auto/PREVIEW_JPEG/decode-primary/decode.log",
+      "sourceSha256": "176baf8a8e0f28b2e3230f3bba9f2a5e12f24e09d02afe5874a0fe244ad8e621"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 631,
+      "publicSha256": "42616d621dc361e74576d1c45d544cd44cf5927619676be0ce6707b9268013f3",
+      "redactions": {},
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/source-decode/auto/PREVIEW_JPEG/extract.log",
+      "sourceBytes": 631,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/source-decode/auto/PREVIEW_JPEG/extract.log",
+      "sourceSha256": "42616d621dc361e74576d1c45d544cd44cf5927619676be0ce6707b9268013f3"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 473125,
+      "publicSha256": "58f3b4674ed3df17c2f71de7f5bb45c8f875a06da6e01b3e10ffbafa14457db7",
+      "redactions": {},
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/source-decode/auto/PREVIEW_JPEG/family-members/Dp_268673025_1783382245_00075615/Dp_268673025_1783382245_00075615.json",
+      "sourceBytes": 473125,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/source-decode/auto/PREVIEW_JPEG/family-members/Dp_268673025_1783382245_00075615/Dp_268673025_1783382245_00075615.json",
+      "sourceSha256": "58f3b4674ed3df17c2f71de7f5bb45c8f875a06da6e01b3e10ffbafa14457db7"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 451,
+      "publicSha256": "dc6afee25f5c7fdfc0011ccb37d8947f668fcaf22070889a0ceb7b3366bb9596",
+      "redactions": {
+        "source-repository-path": 3
+      },
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/source-decode/auto/PREVIEW_JPEG/family-members/Dp_268673025_1783382245_00075615/decode.log",
+      "sourceBytes": 514,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/source-decode/auto/PREVIEW_JPEG/family-members/Dp_268673025_1783382245_00075615/decode.log",
+      "sourceSha256": "176baf8a8e0f28b2e3230f3bba9f2a5e12f24e09d02afe5874a0fe244ad8e621"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 3124,
+      "publicSha256": "170818469c4ef5d9890ced0a3f119f1b176d8b3f31c7eea06111b6d31b70750d",
+      "redactions": {},
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/source-decode/auto/PREVIEW_JPEG/payload-fdp-summary.json",
+      "sourceBytes": 3124,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/source-decode/auto/PREVIEW_JPEG/payload-fdp-summary.json",
+      "sourceSha256": "170818469c4ef5d9890ced0a3f119f1b176d8b3f31c7eea06111b6d31b70750d"
+    },
+    {
+      "mediaType": "binary",
+      "publicBytes": 17293,
+      "publicSha256": "132f0a32959499182f9bec1383387370282b82e48731bd1ee2a5c0eef7351395",
+      "redactions": {},
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/source-decode/deterministic-flipped/PREVIEW_JPEG/Dp_268673025_1783382502_00072983.jpg",
+      "sourceBytes": 17293,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/source-decode/deterministic-flipped/PREVIEW_JPEG/Dp_268673025_1783382502_00072983.jpg",
+      "sourceSha256": "132f0a32959499182f9bec1383387370282b82e48731bd1ee2a5c0eef7351395"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 184641,
+      "publicSha256": "c797476cc65efbe5dbbf7962ba207736b88d66bb226dfc719c64616affba822c",
+      "redactions": {},
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/source-decode/deterministic-flipped/PREVIEW_JPEG/decode-primary/Dp_268673025_1783382502_00072983.json",
+      "sourceBytes": 184641,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/source-decode/deterministic-flipped/PREVIEW_JPEG/decode-primary/Dp_268673025_1783382502_00072983.json",
+      "sourceSha256": "c797476cc65efbe5dbbf7962ba207736b88d66bb226dfc719c64616affba822c"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 468,
+      "publicSha256": "435c41579f77b1136debc00063bf8682bb5ac603fcc9a47fd01dfa62b051d219",
+      "redactions": {
+        "source-repository-path": 3
+      },
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/source-decode/deterministic-flipped/PREVIEW_JPEG/decode-primary/decode.log",
+      "sourceBytes": 531,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/source-decode/deterministic-flipped/PREVIEW_JPEG/decode-primary/decode.log",
+      "sourceSha256": "607d2b183192d28e3aa5533952432bf4b22fb181d4010e5357b768ef024fd872"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 665,
+      "publicSha256": "97b72052893c4c1b2d22e3e154e5d1c45771d116ea9a60da9720f890977fa05f",
+      "redactions": {},
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/source-decode/deterministic-flipped/PREVIEW_JPEG/extract.log",
+      "sourceBytes": 665,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/source-decode/deterministic-flipped/PREVIEW_JPEG/extract.log",
+      "sourceSha256": "97b72052893c4c1b2d22e3e154e5d1c45771d116ea9a60da9720f890977fa05f"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 473125,
+      "publicSha256": "58f3b4674ed3df17c2f71de7f5bb45c8f875a06da6e01b3e10ffbafa14457db7",
+      "redactions": {},
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/source-decode/deterministic-flipped/PREVIEW_JPEG/family-members/Dp_268673025_1783382245_00075615/Dp_268673025_1783382245_00075615.json",
+      "sourceBytes": 473125,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/source-decode/deterministic-flipped/PREVIEW_JPEG/family-members/Dp_268673025_1783382245_00075615/Dp_268673025_1783382245_00075615.json",
+      "sourceSha256": "58f3b4674ed3df17c2f71de7f5bb45c8f875a06da6e01b3e10ffbafa14457db7"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 468,
+      "publicSha256": "fc843527e0dcde5f9970dab9771f221c8186b47d9ce015e01772d4e941ba3b16",
+      "redactions": {
+        "source-repository-path": 3
+      },
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/source-decode/deterministic-flipped/PREVIEW_JPEG/family-members/Dp_268673025_1783382245_00075615/decode.log",
+      "sourceBytes": 531,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/source-decode/deterministic-flipped/PREVIEW_JPEG/family-members/Dp_268673025_1783382245_00075615/decode.log",
+      "sourceSha256": "e793128fffda1a6b38dd2e37365e8f23700a7bbae6339285aa6ce021b0aa7872"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 478466,
+      "publicSha256": "c5a5e3073bdea7005fcb613294eb8080b583e30c3e330c9c23a6d8a03a4245b3",
+      "redactions": {},
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/source-decode/deterministic-flipped/PREVIEW_JPEG/family-members/Dp_268673025_1783382294_00073015/Dp_268673025_1783382294_00073015.json",
+      "sourceBytes": 478466,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/source-decode/deterministic-flipped/PREVIEW_JPEG/family-members/Dp_268673025_1783382294_00073015/Dp_268673025_1783382294_00073015.json",
+      "sourceSha256": "c5a5e3073bdea7005fcb613294eb8080b583e30c3e330c9c23a6d8a03a4245b3"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 468,
+      "publicSha256": "84736ddc2e9e7a3bcbe6f14f977ebc325a4ee5ad98e509f3351baa515793f609",
+      "redactions": {
+        "source-repository-path": 3
+      },
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/source-decode/deterministic-flipped/PREVIEW_JPEG/family-members/Dp_268673025_1783382294_00073015/decode.log",
+      "sourceBytes": 531,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/source-decode/deterministic-flipped/PREVIEW_JPEG/family-members/Dp_268673025_1783382294_00073015/decode.log",
+      "sourceSha256": "f937cce48f8ae35d959a6cc60ee6d9da1025559cfce0f7e728a00550c75e515f"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 477239,
+      "publicSha256": "283723bbfc901bd7f106e82a7c6fee195d85f11dcbdaa97f5caa39702e85e7d1",
+      "redactions": {},
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/source-decode/deterministic-flipped/PREVIEW_JPEG/family-members/Dp_268673025_1783382349_00073368/Dp_268673025_1783382349_00073368.json",
+      "sourceBytes": 477239,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/source-decode/deterministic-flipped/PREVIEW_JPEG/family-members/Dp_268673025_1783382349_00073368/Dp_268673025_1783382349_00073368.json",
+      "sourceSha256": "283723bbfc901bd7f106e82a7c6fee195d85f11dcbdaa97f5caa39702e85e7d1"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 468,
+      "publicSha256": "1b85c427e70450017e6cfb17b68facdf00b1598926362bcd8ba6c43310a1f110",
+      "redactions": {
+        "source-repository-path": 3
+      },
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/source-decode/deterministic-flipped/PREVIEW_JPEG/family-members/Dp_268673025_1783382349_00073368/decode.log",
+      "sourceBytes": 531,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/source-decode/deterministic-flipped/PREVIEW_JPEG/family-members/Dp_268673025_1783382349_00073368/decode.log",
+      "sourceSha256": "02abee5e06919ad912ad8e9d748854dd34b871026abaaab8e1ea6c9823ad4378"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 184641,
+      "publicSha256": "c797476cc65efbe5dbbf7962ba207736b88d66bb226dfc719c64616affba822c",
+      "redactions": {},
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/source-decode/deterministic-flipped/PREVIEW_JPEG/family-members/Dp_268673025_1783382502_00072983/Dp_268673025_1783382502_00072983.json",
+      "sourceBytes": 184641,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/source-decode/deterministic-flipped/PREVIEW_JPEG/family-members/Dp_268673025_1783382502_00072983/Dp_268673025_1783382502_00072983.json",
+      "sourceSha256": "c797476cc65efbe5dbbf7962ba207736b88d66bb226dfc719c64616affba822c"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 468,
+      "publicSha256": "435c41579f77b1136debc00063bf8682bb5ac603fcc9a47fd01dfa62b051d219",
+      "redactions": {
+        "source-repository-path": 3
+      },
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/source-decode/deterministic-flipped/PREVIEW_JPEG/family-members/Dp_268673025_1783382502_00072983/decode.log",
+      "sourceBytes": 531,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/source-decode/deterministic-flipped/PREVIEW_JPEG/family-members/Dp_268673025_1783382502_00072983/decode.log",
+      "sourceSha256": "607d2b183192d28e3aa5533952432bf4b22fb181d4010e5357b768ef024fd872"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 3204,
+      "publicSha256": "acc91b8bfcddfae102a7afec9317aaa6f01885c5e94a834d604874527a40582f",
+      "redactions": {},
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/source-decode/deterministic-flipped/PREVIEW_JPEG/payload-fdp-summary.json",
+      "sourceBytes": 3204,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/source-decode/deterministic-flipped/PREVIEW_JPEG/payload-fdp-summary.json",
+      "sourceSha256": "acc91b8bfcddfae102a7afec9317aaa6f01885c5e94a834d604874527a40582f"
+    },
+    {
+      "mediaType": "binary",
+      "publicBytes": 44851,
+      "publicSha256": "1d71abc15a3fc9e023479c681f01d408c09e8901eeef3e045f5bad7c92fce362",
+      "redactions": {},
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/source-decode/deterministic-followup/PREVIEW_JPEG/Dp_268673025_1783382349_00073368.jpg",
+      "sourceBytes": 44851,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/source-decode/deterministic-followup/PREVIEW_JPEG/Dp_268673025_1783382349_00073368.jpg",
+      "sourceSha256": "1d71abc15a3fc9e023479c681f01d408c09e8901eeef3e045f5bad7c92fce362"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 477239,
+      "publicSha256": "283723bbfc901bd7f106e82a7c6fee195d85f11dcbdaa97f5caa39702e85e7d1",
+      "redactions": {},
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/source-decode/deterministic-followup/PREVIEW_JPEG/decode-primary/Dp_268673025_1783382349_00073368.json",
+      "sourceBytes": 477239,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/source-decode/deterministic-followup/PREVIEW_JPEG/decode-primary/Dp_268673025_1783382349_00073368.json",
+      "sourceSha256": "283723bbfc901bd7f106e82a7c6fee195d85f11dcbdaa97f5caa39702e85e7d1"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 469,
+      "publicSha256": "ece20a0affa3cf08b6af3d7c3f78ced848b9e77a9c96e8dd606f156254c68744",
+      "redactions": {
+        "source-repository-path": 3
+      },
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/source-decode/deterministic-followup/PREVIEW_JPEG/decode-primary/decode.log",
+      "sourceBytes": 532,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/source-decode/deterministic-followup/PREVIEW_JPEG/decode-primary/decode.log",
+      "sourceSha256": "a3bf272173e44b0e48e8f07853f5a0176b917a549acf9e6331c457901771a1d1"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 667,
+      "publicSha256": "5550e4402d4522dab98cf2ed01b2f9b78f76a685d7385078dda0e01f842312b8",
+      "redactions": {},
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/source-decode/deterministic-followup/PREVIEW_JPEG/extract.log",
+      "sourceBytes": 667,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/source-decode/deterministic-followup/PREVIEW_JPEG/extract.log",
+      "sourceSha256": "5550e4402d4522dab98cf2ed01b2f9b78f76a685d7385078dda0e01f842312b8"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 473125,
+      "publicSha256": "58f3b4674ed3df17c2f71de7f5bb45c8f875a06da6e01b3e10ffbafa14457db7",
+      "redactions": {},
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/source-decode/deterministic-followup/PREVIEW_JPEG/family-members/Dp_268673025_1783382245_00075615/Dp_268673025_1783382245_00075615.json",
+      "sourceBytes": 473125,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/source-decode/deterministic-followup/PREVIEW_JPEG/family-members/Dp_268673025_1783382245_00075615/Dp_268673025_1783382245_00075615.json",
+      "sourceSha256": "58f3b4674ed3df17c2f71de7f5bb45c8f875a06da6e01b3e10ffbafa14457db7"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 469,
+      "publicSha256": "30a175991a07aa8784595fbf8727551b7f40ec0bb785729f8ad796c64b4d38a6",
+      "redactions": {
+        "source-repository-path": 3
+      },
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/source-decode/deterministic-followup/PREVIEW_JPEG/family-members/Dp_268673025_1783382245_00075615/decode.log",
+      "sourceBytes": 532,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/source-decode/deterministic-followup/PREVIEW_JPEG/family-members/Dp_268673025_1783382245_00075615/decode.log",
+      "sourceSha256": "f64340a5bd486a23da7b6b34072090213724625e6d2388c7e426d338c847276e"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 478466,
+      "publicSha256": "c5a5e3073bdea7005fcb613294eb8080b583e30c3e330c9c23a6d8a03a4245b3",
+      "redactions": {},
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/source-decode/deterministic-followup/PREVIEW_JPEG/family-members/Dp_268673025_1783382294_00073015/Dp_268673025_1783382294_00073015.json",
+      "sourceBytes": 478466,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/source-decode/deterministic-followup/PREVIEW_JPEG/family-members/Dp_268673025_1783382294_00073015/Dp_268673025_1783382294_00073015.json",
+      "sourceSha256": "c5a5e3073bdea7005fcb613294eb8080b583e30c3e330c9c23a6d8a03a4245b3"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 469,
+      "publicSha256": "6cdd2c491dfa44914925a0f9f9f5027298ab799461ff2dcb23fe21c480636b1a",
+      "redactions": {
+        "source-repository-path": 3
+      },
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/source-decode/deterministic-followup/PREVIEW_JPEG/family-members/Dp_268673025_1783382294_00073015/decode.log",
+      "sourceBytes": 532,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/source-decode/deterministic-followup/PREVIEW_JPEG/family-members/Dp_268673025_1783382294_00073015/decode.log",
+      "sourceSha256": "5978265cda67c1c303e850b8ed2d350d481b5042d7ea6145bc9f083e9f36b2fa"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 477239,
+      "publicSha256": "283723bbfc901bd7f106e82a7c6fee195d85f11dcbdaa97f5caa39702e85e7d1",
+      "redactions": {},
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/source-decode/deterministic-followup/PREVIEW_JPEG/family-members/Dp_268673025_1783382349_00073368/Dp_268673025_1783382349_00073368.json",
+      "sourceBytes": 477239,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/source-decode/deterministic-followup/PREVIEW_JPEG/family-members/Dp_268673025_1783382349_00073368/Dp_268673025_1783382349_00073368.json",
+      "sourceSha256": "283723bbfc901bd7f106e82a7c6fee195d85f11dcbdaa97f5caa39702e85e7d1"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 469,
+      "publicSha256": "ece20a0affa3cf08b6af3d7c3f78ced848b9e77a9c96e8dd606f156254c68744",
+      "redactions": {
+        "source-repository-path": 3
+      },
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/source-decode/deterministic-followup/PREVIEW_JPEG/family-members/Dp_268673025_1783382349_00073368/decode.log",
+      "sourceBytes": 532,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/source-decode/deterministic-followup/PREVIEW_JPEG/family-members/Dp_268673025_1783382349_00073368/decode.log",
+      "sourceSha256": "a3bf272173e44b0e48e8f07853f5a0176b917a549acf9e6331c457901771a1d1"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 3208,
+      "publicSha256": "149a544c443fbfc7af69f20500cc4f90c9eb1f132101fddadba245cf54ca0e0a",
+      "redactions": {},
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/source-decode/deterministic-followup/PREVIEW_JPEG/payload-fdp-summary.json",
+      "sourceBytes": 3208,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/source-decode/deterministic-followup/PREVIEW_JPEG/payload-fdp-summary.json",
+      "sourceSha256": "149a544c443fbfc7af69f20500cc4f90c9eb1f132101fddadba245cf54ca0e0a"
+    },
+    {
+      "mediaType": "binary",
+      "publicBytes": 44987,
+      "publicSha256": "1533d4b16de0262a025278087e5bc7c978ee0302f7df9efdf1db9baf2fe8429b",
+      "redactions": {},
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/source-decode/deterministic/PREVIEW_JPEG/Dp_268673025_1783382294_00073015.jpg",
+      "sourceBytes": 44987,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/source-decode/deterministic/PREVIEW_JPEG/Dp_268673025_1783382294_00073015.jpg",
+      "sourceSha256": "1533d4b16de0262a025278087e5bc7c978ee0302f7df9efdf1db9baf2fe8429b"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 478466,
+      "publicSha256": "c5a5e3073bdea7005fcb613294eb8080b583e30c3e330c9c23a6d8a03a4245b3",
+      "redactions": {},
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/source-decode/deterministic/PREVIEW_JPEG/decode-primary/Dp_268673025_1783382294_00073015.json",
+      "sourceBytes": 478466,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/source-decode/deterministic/PREVIEW_JPEG/decode-primary/Dp_268673025_1783382294_00073015.json",
+      "sourceSha256": "c5a5e3073bdea7005fcb613294eb8080b583e30c3e330c9c23a6d8a03a4245b3"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 460,
+      "publicSha256": "a26e6656ceb7bcc75167eb1230987f56a5e94332a07ea119ce0bbe865065e31e",
+      "redactions": {
+        "source-repository-path": 3
+      },
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/source-decode/deterministic/PREVIEW_JPEG/decode-primary/decode.log",
+      "sourceBytes": 523,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/source-decode/deterministic/PREVIEW_JPEG/decode-primary/decode.log",
+      "sourceSha256": "4d7056c2d41ba1b30795547f74e3a744391421db447a5a0d2cbd34e8fb182f3b"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 649,
+      "publicSha256": "f9549b056742a4352ddd172aff5efd9a557fa048648c56b4fd50a605ab7a90c6",
+      "redactions": {},
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/source-decode/deterministic/PREVIEW_JPEG/extract.log",
+      "sourceBytes": 649,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/source-decode/deterministic/PREVIEW_JPEG/extract.log",
+      "sourceSha256": "f9549b056742a4352ddd172aff5efd9a557fa048648c56b4fd50a605ab7a90c6"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 473125,
+      "publicSha256": "58f3b4674ed3df17c2f71de7f5bb45c8f875a06da6e01b3e10ffbafa14457db7",
+      "redactions": {},
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/source-decode/deterministic/PREVIEW_JPEG/family-members/Dp_268673025_1783382245_00075615/Dp_268673025_1783382245_00075615.json",
+      "sourceBytes": 473125,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/source-decode/deterministic/PREVIEW_JPEG/family-members/Dp_268673025_1783382245_00075615/Dp_268673025_1783382245_00075615.json",
+      "sourceSha256": "58f3b4674ed3df17c2f71de7f5bb45c8f875a06da6e01b3e10ffbafa14457db7"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 460,
+      "publicSha256": "99ea3d09ba742cb5295d3b4babba2fd841850c279abec0ff7d2c95a738e2f16b",
+      "redactions": {
+        "source-repository-path": 3
+      },
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/source-decode/deterministic/PREVIEW_JPEG/family-members/Dp_268673025_1783382245_00075615/decode.log",
+      "sourceBytes": 523,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/source-decode/deterministic/PREVIEW_JPEG/family-members/Dp_268673025_1783382245_00075615/decode.log",
+      "sourceSha256": "9d8e12d3e85468915d8167439d7c10a7fbc0032950d974781e52599bee4d3777"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 478466,
+      "publicSha256": "c5a5e3073bdea7005fcb613294eb8080b583e30c3e330c9c23a6d8a03a4245b3",
+      "redactions": {},
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/source-decode/deterministic/PREVIEW_JPEG/family-members/Dp_268673025_1783382294_00073015/Dp_268673025_1783382294_00073015.json",
+      "sourceBytes": 478466,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/source-decode/deterministic/PREVIEW_JPEG/family-members/Dp_268673025_1783382294_00073015/Dp_268673025_1783382294_00073015.json",
+      "sourceSha256": "c5a5e3073bdea7005fcb613294eb8080b583e30c3e330c9c23a6d8a03a4245b3"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 460,
+      "publicSha256": "a26e6656ceb7bcc75167eb1230987f56a5e94332a07ea119ce0bbe865065e31e",
+      "redactions": {
+        "source-repository-path": 3
+      },
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/source-decode/deterministic/PREVIEW_JPEG/family-members/Dp_268673025_1783382294_00073015/decode.log",
+      "sourceBytes": 523,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/source-decode/deterministic/PREVIEW_JPEG/family-members/Dp_268673025_1783382294_00073015/decode.log",
+      "sourceSha256": "4d7056c2d41ba1b30795547f74e3a744391421db447a5a0d2cbd34e8fb182f3b"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 3171,
+      "publicSha256": "6efb895f696ad33f400d28edc1b83766d4a01e1e5c486e2b762f9e7ed70bf2bb",
+      "redactions": {},
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/source-decode/deterministic/PREVIEW_JPEG/payload-fdp-summary.json",
+      "sourceBytes": 3171,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/source-decode/deterministic/PREVIEW_JPEG/payload-fdp-summary.json",
+      "sourceSha256": "6efb895f696ad33f400d28edc1b83766d4a01e1e5c486e2b762f9e7ed70bf2bb"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 2793,
+      "publicSha256": "69c0d7e65304812020f6a92c976fdc8e3509d087c924ef7be94abf3bdb930c3e",
+      "redactions": {},
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/status.log",
+      "sourceBytes": 2793,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/status.log",
+      "sourceSha256": "69c0d7e65304812020f6a92c976fdc8e3509d087c924ef7be94abf3bdb930c3e"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 2167,
+      "publicSha256": "7f55ec119c91d96da75adf82cc6bea8062e9ed7e2ff07c0fa85d79cb8d8b674d",
+      "redactions": {},
+      "relativePath": "2026-07-07-target-formal-rerun/probe-root/summary.log",
+      "sourceBytes": 2167,
+      "sourcePath": "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/summary.log",
+      "sourceSha256": "7f55ec119c91d96da75adf82cc6bea8062e9ed7e2ff07c0fa85d79cb8d8b674d"
+    }
+  ],
+  "publicBytes": 20248062,
+  "recordId": "payload-target-capture-sanity-v1",
+  "releaseTag": "thesis-submission-v1",
+  "schemaVersion": 1,
+  "sourceBytes": 20249971,
+  "sourceCommit": "142683f20ba46f59f894f594f2caf71dfeddf16f"
+}

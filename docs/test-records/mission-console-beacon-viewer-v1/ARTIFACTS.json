@@ -1,0 +1,111 @@
+{
+  "asset": {
+    "archivePrefix": "obc-flight-software-thesis-evidence-thesis-submission-v1/records/mission-console-beacon-viewer-v1/artifacts/",
+    "downloadUrl": "https://github.com/weber0904/obc-flight-software-thesis/releases/download/thesis-submission-v1/obc-flight-software-thesis-evidence-thesis-submission-v1.tar.gz",
+    "name": "obc-flight-software-thesis-evidence-thesis-submission-v1.tar.gz",
+    "sha256": "128a4f86dbfc09c2adf1e26afb1ea84dcba5d35d8f6f30897c189514fdf0add3"
+  },
+  "fileCount": 8,
+  "files": [
+    {
+      "mediaType": "text",
+      "publicBytes": 1186,
+      "publicSha256": "7683e6e96c0454e1f917dbd121049d7a6f178815fa96ccf7745355e027d7b4f4",
+      "redactions": {},
+      "relativePath": "2026-07-09-demo-ready/hosted/beacon-history.json",
+      "sourceBytes": 1186,
+      "sourcePath": "docs/test-records/mission-console-beacon-viewer-v1/artifacts/2026-07-09-demo-ready/hosted/beacon-history.json",
+      "sourceSha256": "7683e6e96c0454e1f917dbd121049d7a6f178815fa96ccf7745355e027d7b4f4"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 1135,
+      "publicSha256": "d78e4912655e7b7c156a07105a82c871fbb05153f41d8b3b3f1e3bce3834f96f",
+      "redactions": {},
+      "relativePath": "2026-07-09-demo-ready/hosted/beacon-latest.json",
+      "sourceBytes": 1135,
+      "sourcePath": "docs/test-records/mission-console-beacon-viewer-v1/artifacts/2026-07-09-demo-ready/hosted/beacon-latest.json",
+      "sourceSha256": "d78e4912655e7b7c156a07105a82c871fbb05153f41d8b3b3f1e3bce3834f96f"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 6022,
+      "publicSha256": "723e3d7d7003357fb7fb95a910e61970250e612a369ee003fd97387224f57480",
+      "redactions": {
+        "source-repository-path": 6
+      },
+      "relativePath": "2026-07-09-demo-ready/hosted/dashboard.json",
+      "sourceBytes": 6148,
+      "sourcePath": "docs/test-records/mission-console-beacon-viewer-v1/artifacts/2026-07-09-demo-ready/hosted/dashboard.json",
+      "sourceSha256": "526d9d686465b241b1a33ad6aafb8233869c8cb6f242d70d4ecbe470d46cad4c"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 6751,
+      "publicSha256": "2e3cbb22a93e52510afe12209c21bb8d27455b5f24677cf3030b94afc4a4dbf8",
+      "redactions": {
+        "source-repository-path": 2
+      },
+      "relativePath": "2026-07-09-demo-ready/hosted/hosted-manifest.json",
+      "sourceBytes": 6793,
+      "sourcePath": "docs/test-records/mission-console-beacon-viewer-v1/artifacts/2026-07-09-demo-ready/hosted/hosted-manifest.json",
+      "sourceSha256": "7c29be5d7b6d775732dad116e60771108dbbb4a545e42e6bf21de4bceeb94c04"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 1227,
+      "publicSha256": "088dd0dfd4b6c99e2730b83015a18a7dc92d7cb4ae31fa33fdca3c57d4d7d411",
+      "redactions": {},
+      "relativePath": "2026-07-09-demo-ready/target/beacon-history.json",
+      "sourceBytes": 1227,
+      "sourcePath": "docs/test-records/mission-console-beacon-viewer-v1/artifacts/2026-07-09-demo-ready/target/beacon-history.json",
+      "sourceSha256": "088dd0dfd4b6c99e2730b83015a18a7dc92d7cb4ae31fa33fdca3c57d4d7d411"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 1169,
+      "publicSha256": "95a5653ae59ac5517135d4795280fb548735f49e640eabd33174a3e83ea121a9",
+      "redactions": {},
+      "relativePath": "2026-07-09-demo-ready/target/beacon-latest.json",
+      "sourceBytes": 1169,
+      "sourcePath": "docs/test-records/mission-console-beacon-viewer-v1/artifacts/2026-07-09-demo-ready/target/beacon-latest.json",
+      "sourceSha256": "95a5653ae59ac5517135d4795280fb548735f49e640eabd33174a3e83ea121a9"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 11041,
+      "publicSha256": "cf6d645a77e6da84ee694f0346f7bd4e28f0327c957e68056dc56c884edc79cb",
+      "redactions": {
+        "lab-serial-identifier": 2,
+        "source-repository-path": 6,
+        "ssh-user": 16,
+        "target-user-path": 2
+      },
+      "relativePath": "2026-07-09-demo-ready/target/dashboard.json",
+      "sourceBytes": 11119,
+      "sourcePath": "docs/test-records/mission-console-beacon-viewer-v1/artifacts/2026-07-09-demo-ready/target/dashboard.json",
+      "sourceSha256": "85ea6def099342dfaea79e30fb10797ea988d736bc7c7978012f557a0b70aba8"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 6307,
+      "publicSha256": "41873224b790372bc9ed18edf13a88f488e386270bc6a837bf474f084a25f841",
+      "redactions": {
+        "lab-serial-identifier": 1,
+        "source-repository-path": 2,
+        "ssh-user": 8,
+        "target-user-path": 1
+      },
+      "relativePath": "2026-07-09-demo-ready/target/target-manifest.json",
+      "sourceBytes": 6325,
+      "sourcePath": "docs/test-records/mission-console-beacon-viewer-v1/artifacts/2026-07-09-demo-ready/target/target-manifest.json",
+      "sourceSha256": "c9f01b4c2cf25d48ed6e5e9280e330d067b63c9805369f7a2e6443aa6e5f737a"
+    }
+  ],
+  "publicBytes": 34838,
+  "recordId": "mission-console-beacon-viewer-v1",
+  "releaseTag": "thesis-submission-v1",
+  "schemaVersion": 1,
+  "sourceBytes": 35102,
+  "sourceCommit": "142683f20ba46f59f894f594f2caf71dfeddf16f"
+}

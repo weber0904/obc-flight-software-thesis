@@ -1,0 +1,962 @@
+{
+  "asset": {
+    "archivePrefix": "obc-flight-software-thesis-evidence-thesis-submission-v1/records/payload-persistent-session-still-retirement-v1/artifacts/",
+    "downloadUrl": "https://github.com/weber0904/obc-flight-software-thesis/releases/download/thesis-submission-v1/obc-flight-software-thesis-evidence-thesis-submission-v1.tar.gz",
+    "name": "obc-flight-software-thesis-evidence-thesis-submission-v1.tar.gz",
+    "sha256": "128a4f86dbfc09c2adf1e26afb1ea84dcba5d35d8f6f30897c189514fdf0add3"
+  },
+  "fileCount": 87,
+  "files": [
+    {
+      "mediaType": "text",
+      "publicBytes": 398,
+      "publicSha256": "db132d10f94b7fb308720f706e9d77c0182f849d65010d698539c35f9f2063b4",
+      "redactions": {},
+      "relativePath": "2026-07-06-local-ready/hosted/manifest.json",
+      "sourceBytes": 398,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/hosted/manifest.json",
+      "sourceSha256": "db132d10f94b7fb308720f706e9d77c0182f849d65010d698539c35f9f2063b4"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 2314,
+      "publicSha256": "cebe86af77e527ec674a2ecc60cd9ebd1466f1480a7c2c5e86a31dfe6e514868",
+      "redactions": {},
+      "relativePath": "2026-07-06-local-ready/hosted/probe-root/payload-persistent-session-hosted-summary.json",
+      "sourceBytes": 2314,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/hosted/probe-root/payload-persistent-session-hosted-summary.json",
+      "sourceSha256": "cebe86af77e527ec674a2ecc60cd9ebd1466f1480a7c2c5e86a31dfe6e514868"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 288,
+      "publicSha256": "c7722a162b1e3a22427c12d7384b5c5f6632a01205f6f0ac0f35ad13f2c2c432",
+      "redactions": {
+        "source-repository-path": 2
+      },
+      "relativePath": "2026-07-06-local-ready/hosted/probe-root/security-server.log",
+      "sourceBytes": 330,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/hosted/probe-root/security-server.log",
+      "sourceSha256": "2a6aaaf60b7a30f4e4bdb2fdefe335ecd6509c8d2372607d19031f309e1bc6ea"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 589,
+      "publicSha256": "91567297b25fbd81e43674cb5b756dffead6c2ece693ed12ba2574559016fc09",
+      "redactions": {},
+      "relativePath": "2026-07-06-local-ready/hosted/probe-root/summary.log",
+      "sourceBytes": 589,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/hosted/probe-root/summary.log",
+      "sourceSha256": "91567297b25fbd81e43674cb5b756dffead6c2ece693ed12ba2574559016fc09"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 512,
+      "publicSha256": "e85ae864f9f64aa5fccad0d1d76d8037ec4e8215bf532f4ef9c02b384903a767",
+      "redactions": {
+        "target-user-path": 1
+      },
+      "relativePath": "2026-07-06-local-ready/target/manifest.json",
+      "sourceBytes": 515,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/manifest.json",
+      "sourceSha256": "93167d06d032720805cc25f96fb57122a91702b528ca68396466ff4ff73e1b3b"
+    },
+    {
+      "mediaType": "binary",
+      "publicBytes": 1807,
+      "publicSha256": "323529def2906b10bff731f90af1fe5fefd9137fbbc7ed36a2474827407551e9",
+      "redactions": {},
+      "relativePath": "2026-07-06-local-ready/target/probe-root/captures/sband/gds-to-southbound.bin",
+      "sourceBytes": 1807,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/captures/sband/gds-to-southbound.bin",
+      "sourceSha256": "323529def2906b10bff731f90af1fe5fefd9137fbbc7ed36a2474827407551e9"
+    },
+    {
+      "mediaType": "binary",
+      "publicBytes": 537344,
+      "publicSha256": "a6e2543e49214a2bd409c5364ff44080370f3883ff8b7239e5df2b1512a1a0e6",
+      "redactions": {},
+      "relativePath": "2026-07-06-local-ready/target/probe-root/captures/sband/southbound-to-gds.bin",
+      "sourceBytes": 537344,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/captures/sband/southbound-to-gds.bin",
+      "sourceSha256": "a6e2543e49214a2bd409c5364ff44080370f3883ff8b7239e5df2b1512a1a0e6"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 12681,
+      "publicSha256": "9b0fc451625a28b86670ebd26c2c4de429fafdf9898d5857ac92304f857735d7",
+      "redactions": {
+        "lab-serial-identifier": 2,
+        "target-user-path": 1
+      },
+      "relativePath": "2026-07-06-local-ready/target/probe-root/diagnostics/checkpoints.jsonl",
+      "sourceBytes": 12662,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/diagnostics/checkpoints.jsonl",
+      "sourceSha256": "b103961545a47b5853acaef33788c8efc9b70216b767f50ab1844160af2c19f5"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 138,
+      "publicSha256": "c3a40a932d881ee15e83c3dd65f73adbc431f0e42dbd3e0da25dc2e6809c46cd",
+      "redactions": {},
+      "relativePath": "2026-07-06-local-ready/target/probe-root/diagnostics/cleanup-status.json",
+      "sourceBytes": 138,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/diagnostics/cleanup-status.json",
+      "sourceSha256": "c3a40a932d881ee15e83c3dd65f73adbc431f0e42dbd3e0da25dc2e6809c46cd"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 19630,
+      "publicSha256": "9a881dcf9759b2148ab48d0585da158ae942a38c20371939dccc86226422e1a5",
+      "redactions": {
+        "target-user-path": 2
+      },
+      "relativePath": "2026-07-06-local-ready/target/probe-root/diagnostics/journal-snapshots/node5-bootstrap-ready.log",
+      "sourceBytes": 19636,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/diagnostics/journal-snapshots/node5-bootstrap-ready.log",
+      "sourceSha256": "b2f671d616ba5ba7fc8ff080c674f46d5e650b6997f9e0fcd55b00e904209d30"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 6795,
+      "publicSha256": "1ac7d589c2a15aa7490932dfad55ebbe52c946c9ed8abb706073bd9312ebc5e6",
+      "redactions": {
+        "source-repository-path": 1,
+        "ssh-user": 2,
+        "target-user-path": 26
+      },
+      "relativePath": "2026-07-06-local-ready/target/probe-root/diagnostics/secure-auth-keystore-provenance.json",
+      "sourceBytes": 6890,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/diagnostics/secure-auth-keystore-provenance.json",
+      "sourceSha256": "3df837b9a71c94a954562aa5933927f24695292b5374a64986daffc3f147bd74"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 195,
+      "publicSha256": "08e8efdf003792c6ba7aa9a741560270aad92bde977e35598076beee6dfc0c2e",
+      "redactions": {
+        "source-repository-path": 2
+      },
+      "relativePath": "2026-07-06-local-ready/target/probe-root/diagnostics/security-server-sim.log",
+      "sourceBytes": 237,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/diagnostics/security-server-sim.log",
+      "sourceSha256": "c5f9fae846e0f28c252ee7c01ac96b602227789dbc81ac772860ac1cafefa98f"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 7181,
+      "publicSha256": "70dbaca4bf58323ec8370587e86fa711434295ad94bed2b53320e4b3bf8d568f",
+      "redactions": {
+        "local-user-name": 3,
+        "ssh-user": 1,
+        "target-user-path": 21
+      },
+      "relativePath": "2026-07-06-local-ready/target/probe-root/diagnostics/service-snapshots/probe-start-obc-service.json",
+      "sourceBytes": 7236,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/diagnostics/service-snapshots/probe-start-obc-service.json",
+      "sourceSha256": "1aa7add2b6061a92b8e89d995ba9f4a68403f6335ea939700cfb2f389eb678f6"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 2639,
+      "publicSha256": "cd7975fcc55f349a1c3ae0c68e12acb33c6aa85846d7d939c495049cbccc3bbd",
+      "redactions": {
+        "local-user-name": 3,
+        "ssh-user": 1,
+        "target-user-path": 6
+      },
+      "relativePath": "2026-07-06-local-ready/target/probe-root/diagnostics/service-snapshots/probe-start-sband-comm.json",
+      "sourceBytes": 2649,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/diagnostics/service-snapshots/probe-start-sband-comm.json",
+      "sourceSha256": "843adee67d6ec57d2711bbc2c642fceef69440b2abf1ab6baee9cd4ad625929b"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 794,
+      "publicSha256": "27b87ac85611ffc7caa05713a0862ae6f2462e0066d4f6052be6f5411423b4d0",
+      "redactions": {
+        "ssh-user": 1
+      },
+      "relativePath": "2026-07-06-local-ready/target/probe-root/diagnostics/service-snapshots/probe-start-sband-stack.json",
+      "sourceBytes": 792,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/diagnostics/service-snapshots/probe-start-sband-stack.json",
+      "sourceSha256": "c46a4feae2ab0a9b7ae17f51d00178b271de13b2c3ae48b06a5b81a79e4dfa9c"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 2656,
+      "publicSha256": "f9968f7fb9dba003d8d9ddad0cf2a953391a10848c73a5711da9301812302b57",
+      "redactions": {
+        "local-user-name": 3,
+        "ssh-user": 1,
+        "target-user-path": 6
+      },
+      "relativePath": "2026-07-06-local-ready/target/probe-root/diagnostics/service-snapshots/probe-start-uhf-comm.json",
+      "sourceBytes": 2666,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/diagnostics/service-snapshots/probe-start-uhf-comm.json",
+      "sourceSha256": "1eaefea596be4081c23996c5272d02708115d13cea0af26b6b8515279f5451b1"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 784,
+      "publicSha256": "2e1ef388a96063d5f5a86410ddc44a40637dc597d1359fd1df27f82e59edeeff",
+      "redactions": {
+        "ssh-user": 1
+      },
+      "relativePath": "2026-07-06-local-ready/target/probe-root/diagnostics/service-snapshots/probe-start-uhf-stack.json",
+      "sourceBytes": 782,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/diagnostics/service-snapshots/probe-start-uhf-stack.json",
+      "sourceSha256": "ce3abc12ea62000741ec68a36f760eff53c3d9fc918498756d33a0144cba341c"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 264,
+      "publicSha256": "6b4e3f7acd25886ec18f52ccfb5eea79cfc0b1f5d695551fe048ece8a3d041b7",
+      "redactions": {},
+      "relativePath": "2026-07-06-local-ready/target/probe-root/diagnostics/service-snapshots/subsystem-baseline-sband.json",
+      "sourceBytes": 264,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/diagnostics/service-snapshots/subsystem-baseline-sband.json",
+      "sourceSha256": "6b4e3f7acd25886ec18f52ccfb5eea79cfc0b1f5d695551fe048ece8a3d041b7"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 7181,
+      "publicSha256": "97d4f6c7ec3289ff22b36314b72ae4a8b8943ae5475974117a02ba0b5cd53012",
+      "redactions": {
+        "local-user-name": 3,
+        "ssh-user": 1,
+        "target-user-path": 21
+      },
+      "relativePath": "2026-07-06-local-ready/target/probe-root/diagnostics/service-snapshots/subsystem-external-baseline-sband-obc-service.json",
+      "sourceBytes": 7236,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/diagnostics/service-snapshots/subsystem-external-baseline-sband-obc-service.json",
+      "sourceSha256": "498b037e2fffd66b1122feeaa2c5f9881c45feab15a83b706ac448b5b3d4425f"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 2639,
+      "publicSha256": "d1d6908683c00b58029fd16affa22e2752364139c2bb13d3d1e030109367edc1",
+      "redactions": {
+        "local-user-name": 3,
+        "ssh-user": 1,
+        "target-user-path": 6
+      },
+      "relativePath": "2026-07-06-local-ready/target/probe-root/diagnostics/service-snapshots/subsystem-external-baseline-sband-sband-comm.json",
+      "sourceBytes": 2649,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/diagnostics/service-snapshots/subsystem-external-baseline-sband-sband-comm.json",
+      "sourceSha256": "cb6650bdd4d2d53ec4875f847b85ff4686595a0897cb7bd192c004f09abf7972"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 794,
+      "publicSha256": "040db8c7f3d9ea44f86e15326cb728d73f018dd09c35e6e5c288e6e53280fea1",
+      "redactions": {
+        "ssh-user": 1
+      },
+      "relativePath": "2026-07-06-local-ready/target/probe-root/diagnostics/service-snapshots/subsystem-external-baseline-sband-sband-stack.json",
+      "sourceBytes": 792,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/diagnostics/service-snapshots/subsystem-external-baseline-sband-sband-stack.json",
+      "sourceSha256": "4a014491fc4a9fdda5a5a49df82595115d2190af5a7fce861ccb0466be2f5a40"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 2656,
+      "publicSha256": "c90de25ce3a34c03f4da746d5003f1c13948c981d605df9dea8b0a547663add2",
+      "redactions": {
+        "local-user-name": 3,
+        "ssh-user": 1,
+        "target-user-path": 6
+      },
+      "relativePath": "2026-07-06-local-ready/target/probe-root/diagnostics/service-snapshots/subsystem-external-baseline-sband-uhf-comm.json",
+      "sourceBytes": 2666,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/diagnostics/service-snapshots/subsystem-external-baseline-sband-uhf-comm.json",
+      "sourceSha256": "130068d825c5ab5ed74db547538311d57664cc4fdf4adaad17ffdb8151f39cfb"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 784,
+      "publicSha256": "c289f1355e2223e9194ffd38731e7bba2c1f35f110061f8c6a1b8441f2c2f6b6",
+      "redactions": {
+        "ssh-user": 1
+      },
+      "relativePath": "2026-07-06-local-ready/target/probe-root/diagnostics/service-snapshots/subsystem-external-baseline-sband-uhf-stack.json",
+      "sourceBytes": 782,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/diagnostics/service-snapshots/subsystem-external-baseline-sband-uhf-stack.json",
+      "sourceSha256": "4f3c0609f6cc34fb4456a7879ce5253dfa49e83ba1f6e66e913e1c0f6dfa937b"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 21983,
+      "publicSha256": "81c082771dffe76491a47ea6d6dd78b4de8f79dffe53b96fe3f7081e8220d7a2",
+      "redactions": {
+        "target-user-path": 1
+      },
+      "relativePath": "2026-07-06-local-ready/target/probe-root/payload-target-capture-sanity-summary.json",
+      "sourceBytes": 21986,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/payload-target-capture-sanity-summary.json",
+      "sourceSha256": "ff34d8be175b4a6100e431edb378d670b9232e183f494323fdb1916a25f861d0"
+    },
+    {
+      "mediaType": "binary",
+      "publicBytes": 17573,
+      "publicSha256": "3cf3f21846c8cd4ab24ca575716096c568d5656634739163e323184476374b25",
+      "redactions": {},
+      "relativePath": "2026-07-06-local-ready/target/probe-root/reference-capture/rpicam-reference-vga.jpg",
+      "sourceBytes": 17573,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/reference-capture/rpicam-reference-vga.jpg",
+      "sourceSha256": "3cf3f21846c8cd4ab24ca575716096c568d5656634739163e323184476374b25"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 128983,
+      "publicSha256": "99358f9dd54df5e08e86420627978e1676b818d04a899104e1c95b1dfd2edddf",
+      "redactions": {
+        "source-repository-path": 1
+      },
+      "relativePath": "2026-07-06-local-ready/target/probe-root/sband-ground/gds-runtime/gateway.log",
+      "sourceBytes": 129004,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/sband-ground/gds-runtime/gateway.log",
+      "sourceSha256": "e635e8553f43072a81fc436515acc55121c96d0d8ee5bd4c12c130fb1cdf686c"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 5255,
+      "publicSha256": "6d64ad957a6bf3de598d6e15bc7ec308dc69a6df7822e5f139fb81b08e96cfb0",
+      "redactions": {},
+      "relativePath": "2026-07-06-local-ready/target/probe-root/sband-ground/gds-runtime/gds-files/gds-logs/ThreadedTCP.log",
+      "sourceBytes": 5255,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/sband-ground/gds-runtime/gds-files/gds-logs/ThreadedTCP.log",
+      "sourceSha256": "6d64ad957a6bf3de598d6e15bc7ec308dc69a6df7822e5f139fb81b08e96cfb0"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 435,
+      "publicSha256": "502aef785a5fe6ce4f7e0e8f16a85facc5e760d1b86d032c7ac31a65fcb67f11",
+      "redactions": {},
+      "relativePath": "2026-07-06-local-ready/target/probe-root/sband-ground/gds-runtime/gds-files/gds-logs/comm.py.log",
+      "sourceBytes": 435,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/sband-ground/gds-runtime/gds-files/gds-logs/comm.py.log",
+      "sourceSha256": "502aef785a5fe6ce4f7e0e8f16a85facc5e760d1b86d032c7ac31a65fcb67f11"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 67,
+      "publicSha256": "475a10e343f74e043e52708117b65c175c07b75dea737e3c5043da314e042fc2",
+      "redactions": {},
+      "relativePath": "2026-07-06-local-ready/target/probe-root/sband-ground/gds-runtime/gds-files/gds-logs/custom-data-handlers-app/-c.log",
+      "sourceBytes": 67,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/sband-ground/gds-runtime/gds-files/gds-logs/custom-data-handlers-app/-c.log",
+      "sourceSha256": "475a10e343f74e043e52708117b65c175c07b75dea737e3c5043da314e042fc2"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 67,
+      "publicSha256": "d692d08eb0ac5c8b31b799afb910764c56c112b7c1a6c8a6d5986108da97e685",
+      "redactions": {},
+      "relativePath": "2026-07-06-local-ready/target/probe-root/sband-ground/gds-runtime/gds-files/gds-logs/fprime-gds.log",
+      "sourceBytes": 67,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/sband-ground/gds-runtime/gds-files/gds-logs/fprime-gds.log",
+      "sourceSha256": "d692d08eb0ac5c8b31b799afb910764c56c112b7c1a6c8a6d5986108da97e685"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 1062,
+      "publicSha256": "e1cd3b5996f732969f7106cacdfb9b36f07a461e9a25bb7de8871baca734e36d",
+      "redactions": {
+        "source-repository-path": 1
+      },
+      "relativePath": "2026-07-06-local-ready/target/probe-root/sband-ground/gds-runtime/gds.log",
+      "sourceBytes": 1083,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/sband-ground/gds-runtime/gds.log",
+      "sourceSha256": "e72bccee7a0b97c0913b81f943b5ea41c033d52d63a3ecec250373e5d0749979"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 2775582,
+      "publicSha256": "5a1bda8c36664092b9bc6e4a42f6dd52dca3ce0fb9d09ce8df97feecdf2efbca",
+      "redactions": {},
+      "relativePath": "2026-07-06-local-ready/target/probe-root/sband-ground/native-cli/channel.log",
+      "sourceBytes": 2775582,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/sband-ground/native-cli/channel.log",
+      "sourceSha256": "5a1bda8c36664092b9bc6e4a42f6dd52dca3ce0fb9d09ce8df97feecdf2efbca"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 0,
+      "publicSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "redactions": {},
+      "relativePath": "2026-07-06-local-ready/target/probe-root/sband-ground/native-cli/command.log",
+      "sourceBytes": 0,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/sband-ground/native-cli/command.log",
+      "sourceSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 18897,
+      "publicSha256": "b0107c5f395ad49fb2630c6fd43413c83ab1e266089347cae51ac7ecaa9ed2b4",
+      "redactions": {},
+      "relativePath": "2026-07-06-local-ready/target/probe-root/sband-ground/native-cli/event.log",
+      "sourceBytes": 18897,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/sband-ground/native-cli/event.log",
+      "sourceSha256": "b0107c5f395ad49fb2630c6fd43413c83ab1e266089347cae51ac7ecaa9ed2b4"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 67,
+      "publicSha256": "48ae1ed8ee36353f396b305d81a435d47062d30913839256645bfcae90dcc11c",
+      "redactions": {},
+      "relativePath": "2026-07-06-local-ready/target/probe-root/sband-ground/native-cli/fprime-cli.log",
+      "sourceBytes": 67,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/sband-ground/native-cli/fprime-cli.log",
+      "sourceSha256": "48ae1ed8ee36353f396b305d81a435d47062d30913839256645bfcae90dcc11c"
+    },
+    {
+      "mediaType": "binary",
+      "publicBytes": 497237,
+      "publicSha256": "e3d8a4b87d8a7b6306a963ce37e71a17fe7ef5de886edbbca8a17136cfac865d",
+      "redactions": {},
+      "relativePath": "2026-07-06-local-ready/target/probe-root/sband-ground/native-cli/recv.bin",
+      "sourceBytes": 497237,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/sband-ground/native-cli/recv.bin",
+      "sourceSha256": "e3d8a4b87d8a7b6306a963ce37e71a17fe7ef5de886edbbca8a17136cfac865d"
+    },
+    {
+      "mediaType": "binary",
+      "publicBytes": 0,
+      "publicSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "redactions": {},
+      "relativePath": "2026-07-06-local-ready/target/probe-root/sband-ground/native-cli/sent.bin",
+      "sourceBytes": 0,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/sband-ground/native-cli/sent.bin",
+      "sourceSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 19610,
+      "publicSha256": "6a857b3475c99a83ee2b5dfc26b5af7b547883e0367e51b56ac74004d9d7eedc",
+      "redactions": {
+        "source-repository-path": 2
+      },
+      "relativePath": "2026-07-06-local-ready/target/probe-root/sband-ground/process-control/passive-cli.log",
+      "sourceBytes": 19652,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/sband-ground/process-control/passive-cli.log",
+      "sourceSha256": "1d75e490c1ee007becc8a1a9513a574f7f3b91452953f54f29069749390ae4da"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 7146,
+      "publicSha256": "94f78fe23bc5911274f04d472b8be99f278d535578d6bb07cea1cc30e265f520",
+      "redactions": {},
+      "relativePath": "2026-07-06-local-ready/target/probe-root/sband-ground/process-control/raw-command.log",
+      "sourceBytes": 7146,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/sband-ground/process-control/raw-command.log",
+      "sourceSha256": "94f78fe23bc5911274f04d472b8be99f278d535578d6bb07cea1cc30e265f520"
+    },
+    {
+      "mediaType": "binary",
+      "publicBytes": 14170,
+      "publicSha256": "9af044c99989c42af1dc78d89a4130c360aa3df3b15001f06e57e37a7f9b7a47",
+      "redactions": {},
+      "relativePath": "2026-07-06-local-ready/target/probe-root/source-artifacts/auto/data-products/Dp_268673025_1783347749_00947150.fdp",
+      "sourceBytes": 14170,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/source-artifacts/auto/data-products/Dp_268673025_1783347749_00947150.fdp",
+      "sourceSha256": "9af044c99989c42af1dc78d89a4130c360aa3df3b15001f06e57e37a7f9b7a47"
+    },
+    {
+      "mediaType": "binary",
+      "publicBytes": 614400,
+      "publicSha256": "f79cd73fd68db0fd848ed7bfc891fbce46538ff23f353a687a5f95bbc69e6d01",
+      "redactions": {},
+      "relativePath": "2026-07-06-local-ready/target/probe-root/source-artifacts/auto/persistent-data/payload/camera/PIC30.bin",
+      "sourceBytes": 614400,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/source-artifacts/auto/persistent-data/payload/camera/PIC30.bin",
+      "sourceSha256": "f79cd73fd68db0fd848ed7bfc891fbce46538ff23f353a687a5f95bbc69e6d01"
+    },
+    {
+      "mediaType": "binary",
+      "publicBytes": 13851,
+      "publicSha256": "aa435f5efa7c7d6e329d4c89ae11e2b3d54c1e50202218e317c96b78cfe88f5a",
+      "redactions": {},
+      "relativePath": "2026-07-06-local-ready/target/probe-root/source-artifacts/auto/persistent-data/payload/camera/PIC30.jpg",
+      "sourceBytes": 13851,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/source-artifacts/auto/persistent-data/payload/camera/PIC30.jpg",
+      "sourceSha256": "aa435f5efa7c7d6e329d4c89ae11e2b3d54c1e50202218e317c96b78cfe88f5a"
+    },
+    {
+      "mediaType": "binary",
+      "publicBytes": 14170,
+      "publicSha256": "9af044c99989c42af1dc78d89a4130c360aa3df3b15001f06e57e37a7f9b7a47",
+      "redactions": {},
+      "relativePath": "2026-07-06-local-ready/target/probe-root/source-artifacts/deterministic-followup/data-products/Dp_268673025_1783347749_00947150.fdp",
+      "sourceBytes": 14170,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/source-artifacts/deterministic-followup/data-products/Dp_268673025_1783347749_00947150.fdp",
+      "sourceSha256": "9af044c99989c42af1dc78d89a4130c360aa3df3b15001f06e57e37a7f9b7a47"
+    },
+    {
+      "mediaType": "binary",
+      "publicBytes": 8431,
+      "publicSha256": "a2ccb168d0e7691037f2154b8ef50ce96f7434a654444432bad33e9ea7f5e706",
+      "redactions": {},
+      "relativePath": "2026-07-06-local-ready/target/probe-root/source-artifacts/deterministic-followup/data-products/Dp_268673025_1783347796_00948416.fdp",
+      "sourceBytes": 8431,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/source-artifacts/deterministic-followup/data-products/Dp_268673025_1783347796_00948416.fdp",
+      "sourceSha256": "a2ccb168d0e7691037f2154b8ef50ce96f7434a654444432bad33e9ea7f5e706"
+    },
+    {
+      "mediaType": "binary",
+      "publicBytes": 8354,
+      "publicSha256": "88703a5381ae4036490c141c16812de175c96efbfbdbbe7a279a07fb6a7acf1e",
+      "redactions": {},
+      "relativePath": "2026-07-06-local-ready/target/probe-root/source-artifacts/deterministic-followup/data-products/Dp_268673025_1783347843_00948901.fdp",
+      "sourceBytes": 8354,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/source-artifacts/deterministic-followup/data-products/Dp_268673025_1783347843_00948901.fdp",
+      "sourceSha256": "88703a5381ae4036490c141c16812de175c96efbfbdbbe7a279a07fb6a7acf1e"
+    },
+    {
+      "mediaType": "binary",
+      "publicBytes": 614400,
+      "publicSha256": "5163a7246ebf73bd69fa2fb303cb76396f6b2d8ba10b81217118626af25b498b",
+      "redactions": {},
+      "relativePath": "2026-07-06-local-ready/target/probe-root/source-artifacts/deterministic-followup/persistent-data/payload/camera/PIC32.bin",
+      "sourceBytes": 614400,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/source-artifacts/deterministic-followup/persistent-data/payload/camera/PIC32.bin",
+      "sourceSha256": "5163a7246ebf73bd69fa2fb303cb76396f6b2d8ba10b81217118626af25b498b"
+    },
+    {
+      "mediaType": "binary",
+      "publicBytes": 8035,
+      "publicSha256": "280a2754f8eee70a357ffed0c2230dde9b50f2d5238eaa75226ae8c1fc597a61",
+      "redactions": {},
+      "relativePath": "2026-07-06-local-ready/target/probe-root/source-artifacts/deterministic-followup/persistent-data/payload/camera/PIC32.jpg",
+      "sourceBytes": 8035,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/source-artifacts/deterministic-followup/persistent-data/payload/camera/PIC32.jpg",
+      "sourceSha256": "280a2754f8eee70a357ffed0c2230dde9b50f2d5238eaa75226ae8c1fc597a61"
+    },
+    {
+      "mediaType": "binary",
+      "publicBytes": 14170,
+      "publicSha256": "9af044c99989c42af1dc78d89a4130c360aa3df3b15001f06e57e37a7f9b7a47",
+      "redactions": {},
+      "relativePath": "2026-07-06-local-ready/target/probe-root/source-artifacts/deterministic/data-products/Dp_268673025_1783347749_00947150.fdp",
+      "sourceBytes": 14170,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/source-artifacts/deterministic/data-products/Dp_268673025_1783347749_00947150.fdp",
+      "sourceSha256": "9af044c99989c42af1dc78d89a4130c360aa3df3b15001f06e57e37a7f9b7a47"
+    },
+    {
+      "mediaType": "binary",
+      "publicBytes": 8431,
+      "publicSha256": "a2ccb168d0e7691037f2154b8ef50ce96f7434a654444432bad33e9ea7f5e706",
+      "redactions": {},
+      "relativePath": "2026-07-06-local-ready/target/probe-root/source-artifacts/deterministic/data-products/Dp_268673025_1783347796_00948416.fdp",
+      "sourceBytes": 8431,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/source-artifacts/deterministic/data-products/Dp_268673025_1783347796_00948416.fdp",
+      "sourceSha256": "a2ccb168d0e7691037f2154b8ef50ce96f7434a654444432bad33e9ea7f5e706"
+    },
+    {
+      "mediaType": "binary",
+      "publicBytes": 614400,
+      "publicSha256": "e173f8de799b8e353c7a07033324eba0cd02754110efeb98bfe0924ca5205a3b",
+      "redactions": {},
+      "relativePath": "2026-07-06-local-ready/target/probe-root/source-artifacts/deterministic/persistent-data/payload/camera/PIC31.bin",
+      "sourceBytes": 614400,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/source-artifacts/deterministic/persistent-data/payload/camera/PIC31.bin",
+      "sourceSha256": "e173f8de799b8e353c7a07033324eba0cd02754110efeb98bfe0924ca5205a3b"
+    },
+    {
+      "mediaType": "binary",
+      "publicBytes": 8112,
+      "publicSha256": "a720f60710c7ea0e6590e035e7cc28bca24b18c7ce2e27fdcc1cd67d444e8f21",
+      "redactions": {},
+      "relativePath": "2026-07-06-local-ready/target/probe-root/source-artifacts/deterministic/persistent-data/payload/camera/PIC31.jpg",
+      "sourceBytes": 8112,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/source-artifacts/deterministic/persistent-data/payload/camera/PIC31.jpg",
+      "sourceSha256": "a720f60710c7ea0e6590e035e7cc28bca24b18c7ce2e27fdcc1cd67d444e8f21"
+    },
+    {
+      "mediaType": "binary",
+      "publicBytes": 13851,
+      "publicSha256": "aa435f5efa7c7d6e329d4c89ae11e2b3d54c1e50202218e317c96b78cfe88f5a",
+      "redactions": {},
+      "relativePath": "2026-07-06-local-ready/target/probe-root/source-decode/auto/PREVIEW_JPEG/Dp_268673025_1783347749_00947150.jpg",
+      "sourceBytes": 13851,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/source-decode/auto/PREVIEW_JPEG/Dp_268673025_1783347749_00947150.jpg",
+      "sourceSha256": "aa435f5efa7c7d6e329d4c89ae11e2b3d54c1e50202218e317c96b78cfe88f5a"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 146797,
+      "publicSha256": "5b5261f17c66145a2e02ae12273ddacdd11401fd64e8bcad5339d6e534f7c038",
+      "redactions": {},
+      "relativePath": "2026-07-06-local-ready/target/probe-root/source-decode/auto/PREVIEW_JPEG/decode-primary/Dp_268673025_1783347749_00947150.json",
+      "sourceBytes": 146797,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/source-decode/auto/PREVIEW_JPEG/decode-primary/Dp_268673025_1783347749_00947150.json",
+      "sourceSha256": "5b5261f17c66145a2e02ae12273ddacdd11401fd64e8bcad5339d6e534f7c038"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 451,
+      "publicSha256": "01a565994b86e57cebe8ce2cd963701bb97fbd780f8f34e5e0ee698ebbaff844",
+      "redactions": {
+        "source-repository-path": 3
+      },
+      "relativePath": "2026-07-06-local-ready/target/probe-root/source-decode/auto/PREVIEW_JPEG/decode-primary/decode.log",
+      "sourceBytes": 514,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/source-decode/auto/PREVIEW_JPEG/decode-primary/decode.log",
+      "sourceSha256": "ed5cd9ca3d8098c1dc0c9adea8655a9c238195cdf54ab45acffb3698b4b44770"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 631,
+      "publicSha256": "b36c145f04e37ab5e71686b8240cd30f6584a91d24056ed67f8b43c7ea22d837",
+      "redactions": {},
+      "relativePath": "2026-07-06-local-ready/target/probe-root/source-decode/auto/PREVIEW_JPEG/extract.log",
+      "sourceBytes": 631,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/source-decode/auto/PREVIEW_JPEG/extract.log",
+      "sourceSha256": "b36c145f04e37ab5e71686b8240cd30f6584a91d24056ed67f8b43c7ea22d837"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 146797,
+      "publicSha256": "5b5261f17c66145a2e02ae12273ddacdd11401fd64e8bcad5339d6e534f7c038",
+      "redactions": {},
+      "relativePath": "2026-07-06-local-ready/target/probe-root/source-decode/auto/PREVIEW_JPEG/family-members/Dp_268673025_1783347749_00947150/Dp_268673025_1783347749_00947150.json",
+      "sourceBytes": 146797,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/source-decode/auto/PREVIEW_JPEG/family-members/Dp_268673025_1783347749_00947150/Dp_268673025_1783347749_00947150.json",
+      "sourceSha256": "5b5261f17c66145a2e02ae12273ddacdd11401fd64e8bcad5339d6e534f7c038"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 451,
+      "publicSha256": "01a565994b86e57cebe8ce2cd963701bb97fbd780f8f34e5e0ee698ebbaff844",
+      "redactions": {
+        "source-repository-path": 3
+      },
+      "relativePath": "2026-07-06-local-ready/target/probe-root/source-decode/auto/PREVIEW_JPEG/family-members/Dp_268673025_1783347749_00947150/decode.log",
+      "sourceBytes": 514,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/source-decode/auto/PREVIEW_JPEG/family-members/Dp_268673025_1783347749_00947150/decode.log",
+      "sourceSha256": "ed5cd9ca3d8098c1dc0c9adea8655a9c238195cdf54ab45acffb3698b4b44770"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 3099,
+      "publicSha256": "8de3cbae695cc69cc65c98137d85d78a67c99109f246be3fcafe1b61f9d146f5",
+      "redactions": {},
+      "relativePath": "2026-07-06-local-ready/target/probe-root/source-decode/auto/PREVIEW_JPEG/payload-fdp-summary.json",
+      "sourceBytes": 3099,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/source-decode/auto/PREVIEW_JPEG/payload-fdp-summary.json",
+      "sourceSha256": "8de3cbae695cc69cc65c98137d85d78a67c99109f246be3fcafe1b61f9d146f5"
+    },
+    {
+      "mediaType": "binary",
+      "publicBytes": 8035,
+      "publicSha256": "280a2754f8eee70a357ffed0c2230dde9b50f2d5238eaa75226ae8c1fc597a61",
+      "redactions": {},
+      "relativePath": "2026-07-06-local-ready/target/probe-root/source-decode/deterministic-followup/PREVIEW_JPEG/Dp_268673025_1783347843_00948901.jpg",
+      "sourceBytes": 8035,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/source-decode/deterministic-followup/PREVIEW_JPEG/Dp_268673025_1783347843_00948901.jpg",
+      "sourceSha256": "280a2754f8eee70a357ffed0c2230dde9b50f2d5238eaa75226ae8c1fc597a61"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 85884,
+      "publicSha256": "10e83a4b2e55085ebdb0a25f4d097d26625e07b16ac5ad903ff0bf96f466e9fa",
+      "redactions": {},
+      "relativePath": "2026-07-06-local-ready/target/probe-root/source-decode/deterministic-followup/PREVIEW_JPEG/decode-primary/Dp_268673025_1783347843_00948901.json",
+      "sourceBytes": 85884,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/source-decode/deterministic-followup/PREVIEW_JPEG/decode-primary/Dp_268673025_1783347843_00948901.json",
+      "sourceSha256": "10e83a4b2e55085ebdb0a25f4d097d26625e07b16ac5ad903ff0bf96f466e9fa"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 469,
+      "publicSha256": "a15ae5616dbce4b417950c03dd10b87b603baa02a9f57ed7c57e9783b96753f5",
+      "redactions": {
+        "source-repository-path": 3
+      },
+      "relativePath": "2026-07-06-local-ready/target/probe-root/source-decode/deterministic-followup/PREVIEW_JPEG/decode-primary/decode.log",
+      "sourceBytes": 532,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/source-decode/deterministic-followup/PREVIEW_JPEG/decode-primary/decode.log",
+      "sourceSha256": "07dca47687dce48cbf88dc5745eed9f7d0fa6b7381694c4ffb753ef7c79d2773"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 666,
+      "publicSha256": "473ba0da1a2471b55e6824310851953d59de5ac16bde4b84a3ef72e3fb8d8c10",
+      "redactions": {},
+      "relativePath": "2026-07-06-local-ready/target/probe-root/source-decode/deterministic-followup/PREVIEW_JPEG/extract.log",
+      "sourceBytes": 666,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/source-decode/deterministic-followup/PREVIEW_JPEG/extract.log",
+      "sourceSha256": "473ba0da1a2471b55e6824310851953d59de5ac16bde4b84a3ef72e3fb8d8c10"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 146797,
+      "publicSha256": "5b5261f17c66145a2e02ae12273ddacdd11401fd64e8bcad5339d6e534f7c038",
+      "redactions": {},
+      "relativePath": "2026-07-06-local-ready/target/probe-root/source-decode/deterministic-followup/PREVIEW_JPEG/family-members/Dp_268673025_1783347749_00947150/Dp_268673025_1783347749_00947150.json",
+      "sourceBytes": 146797,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/source-decode/deterministic-followup/PREVIEW_JPEG/family-members/Dp_268673025_1783347749_00947150/Dp_268673025_1783347749_00947150.json",
+      "sourceSha256": "5b5261f17c66145a2e02ae12273ddacdd11401fd64e8bcad5339d6e534f7c038"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 469,
+      "publicSha256": "d876857aef1be66082a68f88d9d723423eccbdaf3c7a54b8214248d7f45b8f85",
+      "redactions": {
+        "source-repository-path": 3
+      },
+      "relativePath": "2026-07-06-local-ready/target/probe-root/source-decode/deterministic-followup/PREVIEW_JPEG/family-members/Dp_268673025_1783347749_00947150/decode.log",
+      "sourceBytes": 532,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/source-decode/deterministic-followup/PREVIEW_JPEG/family-members/Dp_268673025_1783347749_00947150/decode.log",
+      "sourceSha256": "919b628a235b627c7e6537db4ebcb1c3e0fc9e3991589a9e53d8d39c4e9a7545"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 86411,
+      "publicSha256": "867f440dda9115e6c4617a3a698c8f22bba61fbfabac4d0f74adf0eadcb274a7",
+      "redactions": {},
+      "relativePath": "2026-07-06-local-ready/target/probe-root/source-decode/deterministic-followup/PREVIEW_JPEG/family-members/Dp_268673025_1783347796_00948416/Dp_268673025_1783347796_00948416.json",
+      "sourceBytes": 86411,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/source-decode/deterministic-followup/PREVIEW_JPEG/family-members/Dp_268673025_1783347796_00948416/Dp_268673025_1783347796_00948416.json",
+      "sourceSha256": "867f440dda9115e6c4617a3a698c8f22bba61fbfabac4d0f74adf0eadcb274a7"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 469,
+      "publicSha256": "7aeec786bcae64c78c3126c4f3b38a32d86cf21c818032dc2bac9d1fdcc1e3ef",
+      "redactions": {
+        "source-repository-path": 3
+      },
+      "relativePath": "2026-07-06-local-ready/target/probe-root/source-decode/deterministic-followup/PREVIEW_JPEG/family-members/Dp_268673025_1783347796_00948416/decode.log",
+      "sourceBytes": 532,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/source-decode/deterministic-followup/PREVIEW_JPEG/family-members/Dp_268673025_1783347796_00948416/decode.log",
+      "sourceSha256": "d8b4136133a886a6a30d6f13ff72d0a82bc851fca48ccd15efce2bd421e7d230"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 85884,
+      "publicSha256": "10e83a4b2e55085ebdb0a25f4d097d26625e07b16ac5ad903ff0bf96f466e9fa",
+      "redactions": {},
+      "relativePath": "2026-07-06-local-ready/target/probe-root/source-decode/deterministic-followup/PREVIEW_JPEG/family-members/Dp_268673025_1783347843_00948901/Dp_268673025_1783347843_00948901.json",
+      "sourceBytes": 85884,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/source-decode/deterministic-followup/PREVIEW_JPEG/family-members/Dp_268673025_1783347843_00948901/Dp_268673025_1783347843_00948901.json",
+      "sourceSha256": "10e83a4b2e55085ebdb0a25f4d097d26625e07b16ac5ad903ff0bf96f466e9fa"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 469,
+      "publicSha256": "a15ae5616dbce4b417950c03dd10b87b603baa02a9f57ed7c57e9783b96753f5",
+      "redactions": {
+        "source-repository-path": 3
+      },
+      "relativePath": "2026-07-06-local-ready/target/probe-root/source-decode/deterministic-followup/PREVIEW_JPEG/family-members/Dp_268673025_1783347843_00948901/decode.log",
+      "sourceBytes": 532,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/source-decode/deterministic-followup/PREVIEW_JPEG/family-members/Dp_268673025_1783347843_00948901/decode.log",
+      "sourceSha256": "07dca47687dce48cbf88dc5745eed9f7d0fa6b7381694c4ffb753ef7c79d2773"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 3180,
+      "publicSha256": "d0920d54d02b75d75c5567ed017272016537e28dcd8d4088ff2c927aeb551d6b",
+      "redactions": {},
+      "relativePath": "2026-07-06-local-ready/target/probe-root/source-decode/deterministic-followup/PREVIEW_JPEG/payload-fdp-summary.json",
+      "sourceBytes": 3180,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/source-decode/deterministic-followup/PREVIEW_JPEG/payload-fdp-summary.json",
+      "sourceSha256": "d0920d54d02b75d75c5567ed017272016537e28dcd8d4088ff2c927aeb551d6b"
+    },
+    {
+      "mediaType": "binary",
+      "publicBytes": 8112,
+      "publicSha256": "a720f60710c7ea0e6590e035e7cc28bca24b18c7ce2e27fdcc1cd67d444e8f21",
+      "redactions": {},
+      "relativePath": "2026-07-06-local-ready/target/probe-root/source-decode/deterministic/PREVIEW_JPEG/Dp_268673025_1783347796_00948416.jpg",
+      "sourceBytes": 8112,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/source-decode/deterministic/PREVIEW_JPEG/Dp_268673025_1783347796_00948416.jpg",
+      "sourceSha256": "a720f60710c7ea0e6590e035e7cc28bca24b18c7ce2e27fdcc1cd67d444e8f21"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 86411,
+      "publicSha256": "867f440dda9115e6c4617a3a698c8f22bba61fbfabac4d0f74adf0eadcb274a7",
+      "redactions": {},
+      "relativePath": "2026-07-06-local-ready/target/probe-root/source-decode/deterministic/PREVIEW_JPEG/decode-primary/Dp_268673025_1783347796_00948416.json",
+      "sourceBytes": 86411,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/source-decode/deterministic/PREVIEW_JPEG/decode-primary/Dp_268673025_1783347796_00948416.json",
+      "sourceSha256": "867f440dda9115e6c4617a3a698c8f22bba61fbfabac4d0f74adf0eadcb274a7"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 460,
+      "publicSha256": "6fd01dd6b01ef7e699c3e5dd949497b5498b802270211a84fd77255e7dceea17",
+      "redactions": {
+        "source-repository-path": 3
+      },
+      "relativePath": "2026-07-06-local-ready/target/probe-root/source-decode/deterministic/PREVIEW_JPEG/decode-primary/decode.log",
+      "sourceBytes": 523,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/source-decode/deterministic/PREVIEW_JPEG/decode-primary/decode.log",
+      "sourceSha256": "92599def46689a684e23ead2547c7a46f820d7b44b93e992041a659dccf39798"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 648,
+      "publicSha256": "ee59e0f5af09ca9b9f6c8d929111b29daf2c1ffeaa36ea1f0d4f2950f92c54ce",
+      "redactions": {},
+      "relativePath": "2026-07-06-local-ready/target/probe-root/source-decode/deterministic/PREVIEW_JPEG/extract.log",
+      "sourceBytes": 648,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/source-decode/deterministic/PREVIEW_JPEG/extract.log",
+      "sourceSha256": "ee59e0f5af09ca9b9f6c8d929111b29daf2c1ffeaa36ea1f0d4f2950f92c54ce"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 146797,
+      "publicSha256": "5b5261f17c66145a2e02ae12273ddacdd11401fd64e8bcad5339d6e534f7c038",
+      "redactions": {},
+      "relativePath": "2026-07-06-local-ready/target/probe-root/source-decode/deterministic/PREVIEW_JPEG/family-members/Dp_268673025_1783347749_00947150/Dp_268673025_1783347749_00947150.json",
+      "sourceBytes": 146797,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/source-decode/deterministic/PREVIEW_JPEG/family-members/Dp_268673025_1783347749_00947150/Dp_268673025_1783347749_00947150.json",
+      "sourceSha256": "5b5261f17c66145a2e02ae12273ddacdd11401fd64e8bcad5339d6e534f7c038"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 460,
+      "publicSha256": "cf27edc216c4b6203584bffed1bb98df40dacd3d4b03d2e03b98610c1c870847",
+      "redactions": {
+        "source-repository-path": 3
+      },
+      "relativePath": "2026-07-06-local-ready/target/probe-root/source-decode/deterministic/PREVIEW_JPEG/family-members/Dp_268673025_1783347749_00947150/decode.log",
+      "sourceBytes": 523,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/source-decode/deterministic/PREVIEW_JPEG/family-members/Dp_268673025_1783347749_00947150/decode.log",
+      "sourceSha256": "151f6e91ae52744517676447fdfc90cb9cda6bb2b4e4d4cb27424c7c3be97d45"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 86411,
+      "publicSha256": "867f440dda9115e6c4617a3a698c8f22bba61fbfabac4d0f74adf0eadcb274a7",
+      "redactions": {},
+      "relativePath": "2026-07-06-local-ready/target/probe-root/source-decode/deterministic/PREVIEW_JPEG/family-members/Dp_268673025_1783347796_00948416/Dp_268673025_1783347796_00948416.json",
+      "sourceBytes": 86411,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/source-decode/deterministic/PREVIEW_JPEG/family-members/Dp_268673025_1783347796_00948416/Dp_268673025_1783347796_00948416.json",
+      "sourceSha256": "867f440dda9115e6c4617a3a698c8f22bba61fbfabac4d0f74adf0eadcb274a7"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 460,
+      "publicSha256": "6fd01dd6b01ef7e699c3e5dd949497b5498b802270211a84fd77255e7dceea17",
+      "redactions": {
+        "source-repository-path": 3
+      },
+      "relativePath": "2026-07-06-local-ready/target/probe-root/source-decode/deterministic/PREVIEW_JPEG/family-members/Dp_268673025_1783347796_00948416/decode.log",
+      "sourceBytes": 523,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/source-decode/deterministic/PREVIEW_JPEG/family-members/Dp_268673025_1783347796_00948416/decode.log",
+      "sourceSha256": "92599def46689a684e23ead2547c7a46f820d7b44b93e992041a659dccf39798"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 3144,
+      "publicSha256": "5f6e66a509edf725d2c24139d8045367d1c1ad02e98cab86eaf41de312cfad93",
+      "redactions": {},
+      "relativePath": "2026-07-06-local-ready/target/probe-root/source-decode/deterministic/PREVIEW_JPEG/payload-fdp-summary.json",
+      "sourceBytes": 3144,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/source-decode/deterministic/PREVIEW_JPEG/payload-fdp-summary.json",
+      "sourceSha256": "5f6e66a509edf725d2c24139d8045367d1c1ad02e98cab86eaf41de312cfad93"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 2394,
+      "publicSha256": "1eab48ef961dafde31a006ff08a4b61e244bdd2f3c7ab2485bdd72cda34a3a03",
+      "redactions": {},
+      "relativePath": "2026-07-06-local-ready/target/probe-root/status.log",
+      "sourceBytes": 2394,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/status.log",
+      "sourceSha256": "1eab48ef961dafde31a006ff08a4b61e244bdd2f3c7ab2485bdd72cda34a3a03"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 1959,
+      "publicSha256": "1394535c973d31c0a8c4d139b2b674802af789d1d5b0e5488f3df9e3c544c47d",
+      "redactions": {},
+      "relativePath": "2026-07-06-local-ready/target/probe-root/summary.log",
+      "sourceBytes": 1959,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-06-local-ready/target/probe-root/summary.log",
+      "sourceSha256": "1394535c973d31c0a8c4d139b2b674802af789d1d5b0e5488f3df9e3c544c47d"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 700,
+      "publicSha256": "5a2b5908572dbadd61ffa1e75bc1f3faf1db20a93d4673bd4ef3449b85f52cc8",
+      "redactions": {},
+      "relativePath": "2026-07-07-local-ready/hosted/manifest.json",
+      "sourceBytes": 700,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-07-local-ready/hosted/manifest.json",
+      "sourceSha256": "5a2b5908572dbadd61ffa1e75bc1f3faf1db20a93d4673bd4ef3449b85f52cc8"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 2348,
+      "publicSha256": "d2a50d29e2d60c38a2d7595934b47852c37528156801f8b0aa244668e1a30a89",
+      "redactions": {},
+      "relativePath": "2026-07-07-local-ready/hosted/probe-root/payload-persistent-session-hosted-summary.json",
+      "sourceBytes": 2348,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-07-local-ready/hosted/probe-root/payload-persistent-session-hosted-summary.json",
+      "sourceSha256": "d2a50d29e2d60c38a2d7595934b47852c37528156801f8b0aa244668e1a30a89"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 288,
+      "publicSha256": "96025211f51344778bd6c0ef157fc090272d3ec9ae9652b7161a92003786543e",
+      "redactions": {
+        "source-repository-path": 2
+      },
+      "relativePath": "2026-07-07-local-ready/hosted/probe-root/security-server.log",
+      "sourceBytes": 330,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-07-local-ready/hosted/probe-root/security-server.log",
+      "sourceSha256": "d2a17619c226ecd12f6bcaa1f7e4c3b5889a34d88b45f8515f14ceab1c170b38"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 603,
+      "publicSha256": "7efa45a603dc7edcef8948e6134020e0a012780c2f745e752266544b380e6ffc",
+      "redactions": {},
+      "relativePath": "2026-07-07-local-ready/hosted/probe-root/summary.log",
+      "sourceBytes": 603,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-07-local-ready/hosted/probe-root/summary.log",
+      "sourceSha256": "7efa45a603dc7edcef8948e6134020e0a012780c2f745e752266544b380e6ffc"
+    },
+    {
+      "mediaType": "binary",
+      "publicBytes": 1083,
+      "publicSha256": "a9ca9bd2e4bd3554a7709bf15f643432c6afdcc055fac8694987e62b4c1762b7",
+      "redactions": {},
+      "relativePath": "2026-07-07-local-ready/hosted/stack-root/captures/sband-gds-to-southbound.bin",
+      "sourceBytes": 1083,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-07-local-ready/hosted/stack-root/captures/sband-gds-to-southbound.bin",
+      "sourceSha256": "a9ca9bd2e4bd3554a7709bf15f643432c6afdcc055fac8694987e62b4c1762b7"
+    },
+    {
+      "mediaType": "binary",
+      "publicBytes": 57344,
+      "publicSha256": "218e4567a2a1711c6c6f12fed6473e67a3e969c0f81556cb133c7474719a2b97",
+      "redactions": {},
+      "relativePath": "2026-07-07-local-ready/hosted/stack-root/captures/sband-southbound-to-gds.bin",
+      "sourceBytes": 57344,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-07-local-ready/hosted/stack-root/captures/sband-southbound-to-gds.bin",
+      "sourceSha256": "218e4567a2a1711c6c6f12fed6473e67a3e969c0f81556cb133c7474719a2b97"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 4643,
+      "publicSha256": "50a12619ca7f3b09126f55aaf91c8da6d71d2dd40afcc82bf9200cd26f6cce95",
+      "redactions": {},
+      "relativePath": "2026-07-07-local-ready/hosted/stack-root/manifest.json",
+      "sourceBytes": 4643,
+      "sourcePath": "docs/test-records/payload-persistent-session-still-retirement-v1/artifacts/2026-07-07-local-ready/hosted/stack-root/manifest.json",
+      "sourceSha256": "50a12619ca7f3b09126f55aaf91c8da6d71d2dd40afcc82bf9200cd26f6cce95"
+    }
+  ],
+  "publicBytes": 7181026,
+  "recordId": "payload-persistent-session-still-retirement-v1",
+  "releaseTag": "thesis-submission-v1",
+  "schemaVersion": 1,
+  "sourceBytes": 7182033,
+  "sourceCommit": "142683f20ba46f59f894f594f2caf71dfeddf16f"
+}
