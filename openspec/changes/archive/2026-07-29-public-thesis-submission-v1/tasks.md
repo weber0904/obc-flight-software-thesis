@@ -40,7 +40,7 @@
 
 ## 6. OpenSpec And CI Reconciliation
 
-- [ ] 6.1 Sync release-profile and modified capability requirements into the public main specs
+- [x] 6.1 Sync release-profile and modified capability requirements into the public main specs
 - [x] 6.2 Update governance and consistency checks for the curated public document and evidence model
 - [x] 6.3 Add pull-request, main, tag, and manual GitHub Actions gates
 - [x] 6.4 Add clean-clone, manifest, documentation, script, evidence, credential, and dependency validation
@@ -50,6 +50,6 @@
 - [x] 7.1 Run OpenSpec validation, source/public inventory checks, secret scan, link checks, and static language checks
 - [x] 7.2 Run fresh F Prime generate/build, UT generate/build, and check-all
 - [x] 7.3 Run the selected fresh hosted secure-auth, CSP, observability, per-band, Mission Console, and Chapter 5 route probes
-- [ ] 7.4 Verify a recursive clean clone follows the README and leaves a clean worktree
-- [ ] 7.5 Finish test-record evidence, archive the OpenSpec change, reconcile the baseline matrix, and reach zero active changes
-- [ ] 7.6 Create the planned local Conventional Commit sequence and stop before push for explicit approval
+- [x] 7.4 Verify a recursive clean clone follows the README and leaves a clean worktree
+- [x] 7.5 Finish test-record evidence, archive the OpenSpec change, reconcile the baseline matrix, and reach zero active changes
+- [x] 7.6 Create the planned local Conventional Commit sequence and stop before push for explicit approval

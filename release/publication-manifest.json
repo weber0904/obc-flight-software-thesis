@@ -2,8 +2,8 @@
   "counts": {
     "exclude": 101,
     "externalize": 1045,
-    "include": 2106,
-    "transform": 264
+    "include": 2097,
+    "transform": 273
   },
   "files": [
     {
@@ -27547,13 +27547,13 @@
       "reason": "shipped from the fixed source baseline"
     },
     {
-      "disposition": "include",
+      "disposition": "transform",
       "mode": "100644",
       "object": "926830ec192407682a60b40512d87a8a3b3cb460",
       "objectType": "blob",
       "path": "openspec/specs/architecture-review/spec.md",
       "publicPath": "openspec/specs/architecture-review/spec.md",
-      "reason": "shipped from the fixed source baseline"
+      "reason": "curated for the public environment or release governance"
     },
     {
       "disposition": "include",
@@ -27565,13 +27565,13 @@
       "reason": "shipped from the fixed source baseline"
     },
     {
-      "disposition": "include",
+      "disposition": "transform",
       "mode": "100644",
       "object": "528eb0688bd055756c9c1e7ab94c209ecf4b5b78",
       "objectType": "blob",
       "path": "openspec/specs/codex-skills/spec.md",
       "publicPath": "openspec/specs/codex-skills/spec.md",
-      "reason": "shipped from the fixed source baseline"
+      "reason": "curated for the public environment or release governance"
     },
     {
       "disposition": "include",
@@ -27601,22 +27601,22 @@
       "reason": "shipped from the fixed source baseline"
     },
     {
-      "disposition": "include",
+      "disposition": "transform",
       "mode": "100644",
       "object": "e85a2b5a883f881bed490db7c35e1fde5c6a5193",
       "objectType": "blob",
       "path": "openspec/specs/delivery-workflow/spec.md",
       "publicPath": "openspec/specs/delivery-workflow/spec.md",
-      "reason": "shipped from the fixed source baseline"
+      "reason": "curated for the public environment or release governance"
     },
     {
-      "disposition": "include",
+      "disposition": "transform",
       "mode": "100644",
       "object": "b21e092a08fce7000dd7da451d7a09b1eda06237",
       "objectType": "blob",
       "path": "openspec/specs/documentation-governance/spec.md",
       "publicPath": "openspec/specs/documentation-governance/spec.md",
-      "reason": "shipped from the fixed source baseline"
+      "reason": "curated for the public environment or release governance"
     },
     {
       "disposition": "include",
@@ -27664,13 +27664,13 @@
       "reason": "shipped from the fixed source baseline"
     },
     {
-      "disposition": "include",
+      "disposition": "transform",
       "mode": "100644",
       "object": "2d2dbbd75b975d6a64edd3b3692f038ba27607b3",
       "objectType": "blob",
       "path": "openspec/specs/interface-contract-index/spec.md",
       "publicPath": "openspec/specs/interface-contract-index/spec.md",
-      "reason": "shipped from the fixed source baseline"
+      "reason": "curated for the public environment or release governance"
     },
     {
       "disposition": "include",
@@ -27745,13 +27745,13 @@
       "reason": "shipped from the fixed source baseline"
     },
     {
-      "disposition": "include",
+      "disposition": "transform",
       "mode": "100644",
       "object": "7075a682436ff70261d75723da1043e18d49d2a2",
       "objectType": "blob",
       "path": "openspec/specs/planning-docs/spec.md",
       "publicPath": "openspec/specs/planning-docs/spec.md",
-      "reason": "shipped from the fixed source baseline"
+      "reason": "curated for the public environment or release governance"
     },
     {
       "disposition": "transform",
@@ -27763,13 +27763,13 @@
       "reason": "curated for the public environment or release governance"
     },
     {
-      "disposition": "include",
+      "disposition": "transform",
       "mode": "100644",
       "object": "bfd7718104666fcaf11dcf1b7c1cb8f0bb9d5609",
       "objectType": "blob",
       "path": "openspec/specs/project-reporting/spec.md",
       "publicPath": "openspec/specs/project-reporting/spec.md",
-      "reason": "shipped from the fixed source baseline"
+      "reason": "curated for the public environment or release governance"
     },
     {
       "disposition": "include",
@@ -27826,22 +27826,22 @@
       "reason": "shipped from the fixed source baseline"
     },
     {
-      "disposition": "include",
+      "disposition": "transform",
       "mode": "100644",
       "object": "bf43d35b9fd4dd5054d56bfb69aa15ffb7afba7d",
       "objectType": "blob",
       "path": "openspec/specs/verification-evidence/spec.md",
       "publicPath": "openspec/specs/verification-evidence/spec.md",
-      "reason": "shipped from the fixed source baseline"
+      "reason": "curated for the public environment or release governance"
     },
     {
-      "disposition": "include",
+      "disposition": "transform",
       "mode": "100644",
       "object": "bb2f23fc294b24fcba49e54abdf196edfc10f973",
       "objectType": "blob",
       "path": "openspec/specs/verification-path-registry/spec.md",
       "publicPath": "openspec/specs/verification-path-registry/spec.md",
-      "reason": "shipped from the fixed source baseline"
+      "reason": "curated for the public environment or release governance"
     },
     {
       "disposition": "include",
@@ -31672,6 +31672,20 @@
     "docs/test-records/payload-raw-preview-dual-artifact-v1/ARTIFACTS.json",
     "docs/test-records/payload-target-capture-sanity-v1/ARTIFACTS.json",
     "docs/test-records/public-thesis-submission-v1/README.md",
+    "openspec/changes/archive/2026-07-29-public-thesis-submission-v1/.openspec.yaml",
+    "openspec/changes/archive/2026-07-29-public-thesis-submission-v1/design.md",
+    "openspec/changes/archive/2026-07-29-public-thesis-submission-v1/proposal.md",
+    "openspec/changes/archive/2026-07-29-public-thesis-submission-v1/specs/architecture-review/spec.md",
+    "openspec/changes/archive/2026-07-29-public-thesis-submission-v1/specs/codex-skills/spec.md",
+    "openspec/changes/archive/2026-07-29-public-thesis-submission-v1/specs/delivery-workflow/spec.md",
+    "openspec/changes/archive/2026-07-29-public-thesis-submission-v1/specs/documentation-governance/spec.md",
+    "openspec/changes/archive/2026-07-29-public-thesis-submission-v1/specs/interface-contract-index/spec.md",
+    "openspec/changes/archive/2026-07-29-public-thesis-submission-v1/specs/planning-docs/spec.md",
+    "openspec/changes/archive/2026-07-29-public-thesis-submission-v1/specs/project-reporting/spec.md",
+    "openspec/changes/archive/2026-07-29-public-thesis-submission-v1/specs/public-release-profile/spec.md",
+    "openspec/changes/archive/2026-07-29-public-thesis-submission-v1/specs/verification-evidence/spec.md",
+    "openspec/changes/archive/2026-07-29-public-thesis-submission-v1/specs/verification-path-registry/spec.md",
+    "openspec/changes/archive/2026-07-29-public-thesis-submission-v1/tasks.md",
     "openspec/changes/public-thesis-submission-v1/.openspec.yaml",
     "openspec/changes/public-thesis-submission-v1/design.md",
     "openspec/changes/public-thesis-submission-v1/proposal.md",
@@ -31686,6 +31700,7 @@
     "openspec/changes/public-thesis-submission-v1/specs/verification-evidence/spec.md",
     "openspec/changes/public-thesis-submission-v1/specs/verification-path-registry/spec.md",
     "openspec/changes/public-thesis-submission-v1/tasks.md",
+    "openspec/specs/public-release-profile/spec.md",
     "release/RELEASE_PROVENANCE.md",
     "release/SHA256SUMS",
     "release/publication-manifest.json",

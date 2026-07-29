@@ -1,3 +1,17 @@
+## ADDED Requirements
+
+### Requirement: Public Architecture Review Uses Canonical Current Documents
+The public repository SHALL preserve architecture-review decisions through
+archived OpenSpec while routing current review through canonical architecture,
+interface, verification, and evidence documents instead of a point-in-time
+review package.
+
+#### Scenario: Reviewer needs the current architecture assessment
+- **WHEN** a reviewer follows the public documentation index
+- **THEN** the reviewer SHALL reach current canonical documents
+- **AND** archived architecture-review changes SHALL remain available as
+  historical decision provenance
+
 ## REMOVED Requirements
 
 ### Requirement: Checked-In Technical Architecture Review Package

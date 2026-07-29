@@ -36,6 +36,7 @@
     "platform-baseline",
     "persistent-fault-ring",
     "project-reporting",
+    "public-release-profile",
     "resource-storage",
     "scenario-driven-validation",
     "storage-health",
@@ -2747,6 +2748,29 @@
         "docs/test-records/mission-console-display-replay-hardening-v1/README.md"
       ],
       "exception": "Mission Console hosted operator-surface follow-up: normalizes displayed finite decimal measurements to at most two fractional digits while preserving integer and identity-bearing text, and extends the existing Packet Lab replay case to recover a fully validated secure-command-v2 packet from stock-GDS native capture bytes without displacing synthetic descriptor parsing. It adds no endpoint, F' command, wire-format change, target/RF claim, or second command authority."
+    },
+    {
+      "archivedChange": "2026-07-29-public-thesis-submission-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "architecture-review",
+        "codex-skills",
+        "delivery-workflow",
+        "documentation-governance",
+        "interface-contract-index",
+        "planning-docs",
+        "project-reporting",
+        "public-release-profile",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "docs/test-records/public-thesis-submission-v1/README.md",
+        "release/RELEASE_PROVENANCE.md",
+        "docs/evidence/catalog.json"
+      ],
+      "exception": "Curated thesis-publication slice: fixes the development-source and dependency commits, preserves all OpenSpec capabilities and archived decisions, replaces stale current entrypoints with canonical release-aligned documents, externalizes raw evidence into a deterministic checksummed asset, removes deployable credentials and personal environment defaults, applies dependency attribution and modification notices, and gates publication on a clean recursive clone, full F Prime build/test checks, and selected fresh hosted proofs. Prior target/lab records remain commit-scoped previously demonstrated evidence and do not become fresh hardware claims for the public tag."
     }
   ]
 }

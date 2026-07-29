@@ -373,20 +373,6 @@ how freshness and file-size policy are controlled without reading helper code.
 - **AND** it SHALL state that `HK_TREND_TARGET_FILE_BYTES` is the persistent
   target-size control bounded by the current reliable-transfer ceiling
 
-### Requirement: Interface Index Records The Mission Console Companion Reference
-
-`docs/interfaces.md` and adjacent current-baseline documentation SHALL treat
-`docs/roadmap/mission-console-phase1-handoff.md` as the companion reference for
-Mission Console Phase 1 implementation assumptions and authority reuse.
-
-#### Scenario: Reviewers can find the Mission Console planning reference
-- **WHEN** reviewers inspect the Mission Console or manual-ops related sections
-  of the interface index and current roadmap docs
-- **THEN** they SHALL be able to see that
-  `mission-console-phase1-handoff.md` is the companion planning reference
-- **AND** the docs SHALL NOT silently describe a conflicting baseline or helper
-  dependency order.
-
 ### Requirement: Interface Index Records Mission Console Readback Categories
 
 `docs/interfaces.md` SHALL record the Mission Console distinction between
@@ -413,4 +399,15 @@ non-claims.
   observation
 - **AND** they SHALL NOT describe the surface as a generic fuzzing framework,
   flight operator plane, or alternate secure authority.
+
+### Requirement: Interface Index Records Public Keystore Provisioning
+`docs/interfaces.md` SHALL distinguish the tracked example keystore, ignored
+hosted runtime copy, packaging-time target input, installed fixed path, and
+prohibition on runtime command-auth injection.
+
+#### Scenario: Reviewer inspects command-auth configuration
+- **WHEN** the public interface index describes secure command provisioning
+- **THEN** it SHALL state that example keys are non-deployable
+- **AND** it SHALL record `OBC_PACKAGE_KEYSTORE_PATH` as packaging-only
+- **AND** it SHALL preserve the fixed installed runtime path and manifest digest
 

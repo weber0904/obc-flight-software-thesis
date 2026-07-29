@@ -111,17 +111,6 @@ The delivery workflow SHALL provide a repo-local consistency check that fails wh
 - **WHEN** the checked-in reconciliation Markdown differs from the generated output for the checked-in JSON source
 - **THEN** the repo-local consistency check SHALL fail and instruct the developer to regenerate the Markdown surface
 
-### Requirement: Repository Agent Onboarding Entrypoint
-The repository SHALL provide a repo-root `AGENTS.md` file that acts as the first checked-in onboarding surface for future agents, and that file SHALL point agents at the project README, the formal delivery workflow spec, the validation-path registry, and the relevant repository-owned skills without acting as a competing second workflow specification. OpenSpec-generated Codex skills under `.codex/skills/openspec-*` MAY coexist there, but they SHALL be treated as OpenSpec-managed artifacts refreshed by `openspec update`, not as hand-curated repository governance files.
-
-#### Scenario: AGENTS read-first list stays narrow
-- **WHEN** a new agent starts from a fresh checkout of the repository
-- **THEN** `AGENTS.md` SHALL direct that agent first to `README.md`, `openspec/specs/delivery-workflow/spec.md`, and `docs/verification-path-registry.md`, while allowing the narrative workflow document to remain an optional follow-up reference
-
-#### Scenario: OpenSpec-generated Codex skills stay tool-managed
-- **WHEN** the repository uses OpenSpec-generated Codex skills under `.codex/skills/openspec-*`
-- **THEN** those files SHALL be refreshed through OpenSpec tooling such as `openspec update`, and governance cleanup SHALL NOT remove them by hand
-
 ### Requirement: Component-Test Baseline Checker
 The delivery workflow SHALL provide a repo-local checker that enumerates real repository components and fails when one lacks the required classic F' component harness registration.
 
@@ -219,3 +208,18 @@ The delivery workflow SHALL distinguish branch-verifiable documentation from pos
 - **WHEN** a post-merge documentation update touches any file outside `docs/roadmap/*` or changes formal workflow, verification evidence, architecture truth, or operator instructions
 - **THEN** that update SHALL use the normal branch and review flow
 - **AND** it SHALL NOT use the roadmap reconciliation shortcut on `main`
+
+### Requirement: Public Thesis Release Uses A Separate Governed Repository
+The thesis release SHALL be assembled on a dedicated branch of the public
+repository from a fixed source commit and SHALL use PR, CI, merge, annotated
+tag, and GitHub Release gates.
+
+#### Scenario: Public release reaches local-ready
+- **WHEN** implementation, documentation, evidence, OpenSpec sync/archive, and
+  clean-clone validation are complete
+- **THEN** the branch SHALL remain local until explicit push approval
+- **AND** the eventual PR SHALL be ready-for-review rather than draft
+
+#### Scenario: Public release reaches tag-ready
+- **WHEN** the public PR is merged and required CI is green
+- **THEN** the exact merged commit SHALL be the only allowed tag target
