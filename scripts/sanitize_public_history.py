@@ -24,12 +24,12 @@ def selected(path: str) -> bool:
     if path.startswith("openspec/"):
         return True
     if (
-        path.startswith("docs/test-records/")
+        path.startswith("evidence/records/")
         and "/artifacts/" not in path
         and candidate.name != "README.md"
     ):
         return True
-    return path == "docs/verification-path-registry.md"
+    return path == "evidence/verification-path-registry.md"
 
 
 def main() -> int:

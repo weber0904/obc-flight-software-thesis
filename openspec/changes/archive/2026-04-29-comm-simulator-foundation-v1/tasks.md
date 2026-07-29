@@ -19,5 +19,5 @@
 
 - [x] 4.1 Run the fresh local gate with `bash scripts/run_verification_ci.sh build-artifacts/comm-simulator-foundation-v1-closeout`.
 - [x] 4.2 Run the focused gateway compatibility probe with `bash scripts/run_comm_csp_ground_gateway_probe.sh`.
-- [x] 4.3 Add `docs/test-records/comm-simulator-foundation-v1/README.md` with clear proof boundaries.
+- [x] 4.3 Add `evidence/records/comm-simulator-foundation-v1/README.md` with clear proof boundaries.
 - [x] 4.4 Run `openspec validate comm-simulator-foundation-v1` and `openspec validate --specs`, then archive the change through OpenSpec.

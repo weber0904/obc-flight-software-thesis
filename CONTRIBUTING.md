@@ -1,39 +1,54 @@
 # Contributing
 
-This repository is a curated public thesis release of a larger development
-workspace. Contributions must preserve its distinction between current
-behavior, historical evidence, and unproven future scope.
+## Development Workflow
 
-## Workflow
+1. Create a `feature/`, `fix/`, `docs/`, or `hotfix/` branch.
+2. Create an OpenSpec change for behavior, interface, verification, packaging,
+   or workflow changes.
+3. Implement code, tests, documentation, and evidence together.
+4. Build before running a runtime probe.
+5. Run the relevant focused probes and the repository gate.
+6. Validate and archive the OpenSpec change.
+7. Submit a pull request with the verification results.
 
-1. Create a dedicated `feature/`, `fix/`, `docs/`, or `hotfix/` branch.
-2. Use an OpenSpec change for product, interface, verification, packaging, or
-   governance changes.
-3. Update code, current documentation, and evidence in the same branch.
-4. Run `bash scripts/run_verification_ci.sh`.
-5. Run the focused repository-owned hosted probe for the claim being changed.
-6. Validate and archive the OpenSpec change before release closeout.
-7. Open a ready-for-review pull request and wait for required CI.
+Documentation-only corrections may use the normal branch and pull-request
+workflow when they do not change a formal contract.
 
-## Verification Rules
+## Build And Test
 
-- Start from `docs/verification-path-registry.md`; do not select a nearby old
-  wrapper by filename.
-- Target/lab work follows A/B/C ownership:
-  `ensure_target_comm_lab_baseline.sh`,
-  `ensure_ground_dual_gds_baseline.sh`, then the probe-owned functional test.
-- A real component under `OBC/Components/` must retain its classic F Prime
-  TesterBase/GTestBase unit-test harness.
-- Hosted probes use fresh builds, isolated runtime roots and ports, bounded
-  assertions, and managed cleanup.
-- New executable scripts must be registered in
-  `scripts/verification-manifest.json`.
+Use the repository virtual environment for F Prime commands:
 
-## Documentation And Evidence
+```bash
+fprime-venv/bin/fprime-util generate -f
+fprime-venv/bin/fprime-util build
+bash scripts/run_verification_ci.sh
+```
 
-- English current documents are canonical.
-- Traditional Chinese is retained for the thesis claim map and demo workflow.
-- Preserve exact environment and non-claim boundaries.
-- Keep test-record summaries in Git; raw artifacts belong in the checksummed
-  release evidence asset.
-- Never commit `config/security/command-auth.ini` or another real credential.
+For a focused component change, run its classic F Prime
+`TesterBase`/`GTestBase` test executable in addition to the full gate. Helper
+logic with nontrivial behavior requires direct unit coverage.
+
+## Runtime Probes
+
+- Review the capability layer in
+  [`docs/verification.md`](docs/verification.md).
+- Select the registered path in
+  [`evidence/verification-path-registry.md`](evidence/verification-path-registry.md).
+- Hosted probes use isolated runtime roots and ports and clean up their own
+  processes.
+- Target probes prepare the target with
+  `scripts/ensure_target_comm_lab_baseline.sh`, prepare the ground side with
+  `scripts/ensure_ground_dual_gds_baseline.sh`, and then run the functional
+  probe.
+- Register executable scripts in `scripts/verification-manifest.json`.
+
+## Specifications And Evidence
+
+- Normative requirements belong in `openspec/specs/`.
+- Formal changes belong in `openspec/changes/` and are archived when complete.
+- Operator-facing behavior belongs in `docs/`.
+- A reusable verification result belongs in `evidence/records/`.
+- Large captures and binary artifacts are indexed by `evidence/catalog.json`.
+
+Do not commit private keys, live credentials, host inventories, device serial
+numbers, or personal data.

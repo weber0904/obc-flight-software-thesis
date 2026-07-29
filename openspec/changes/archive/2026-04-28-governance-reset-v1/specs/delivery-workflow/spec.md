@@ -33,7 +33,7 @@ The delivery workflow SHALL begin each formal repository change from a dedicated
 - **THEN** the active branch SHALL use one of the allowed prefixes and SHALL reuse the same `<change-name>` suffix for traceability
 
 ### Requirement: Baseline Reconciliation Matrix
-The repository SHALL keep `docs/baseline-reconciliation-matrix.json` as the only manually maintained reconciliation source and SHALL keep `docs/baseline-reconciliation-matrix.md` as a generated review surface derived from that JSON source.
+The repository SHALL keep `openspec/reconciliation/baseline-reconciliation-matrix.json` as the only manually maintained reconciliation source and SHALL keep `openspec/reconciliation/baseline-reconciliation-matrix.md` as a generated review surface derived from that JSON source.
 
 #### Scenario: Generated review surface stays aligned with the JSON source
 - **WHEN** the reconciliation JSON is edited
@@ -51,7 +51,7 @@ The repository SHALL provide a repo-root `AGENTS.md` file that acts as the first
 
 #### Scenario: AGENTS read-first list stays narrow
 - **WHEN** a new agent starts from a fresh checkout of the repository
-- **THEN** `AGENTS.md` SHALL direct that agent first to `README.md`, `openspec/specs/delivery-workflow/spec.md`, and `docs/verification-path-registry.md`, while allowing the narrative workflow document to remain an optional follow-up reference
+- **THEN** `AGENTS.md` SHALL direct that agent first to `README.md`, `openspec/specs/delivery-workflow/spec.md`, and `evidence/verification-path-registry.md`, while allowing the narrative workflow document to remain an optional follow-up reference
 
 #### Scenario: OpenSpec-generated Codex skills stay tool-managed
 - **WHEN** the repository uses OpenSpec-generated Codex skills under `.codex/skills/openspec-*`

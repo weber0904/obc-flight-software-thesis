@@ -10,7 +10,7 @@ The repository SHALL provide a repo-local verification gate script that records 
 
 ### Requirement: Evidence Template
 
-The repository SHALL provide a reusable markdown template for change-level evidence records under `docs/test-records/templates/`.
+The repository SHALL provide a reusable markdown template for change-level evidence records under `evidence/records/templates/`.
 
 #### Scenario: Later change needs a consistent evidence structure
 - **WHEN** a later capability change records automated or constrained-validation evidence
@@ -18,7 +18,7 @@ The repository SHALL provide a reusable markdown template for change-level evide
 
 ### Requirement: Verification CI Evidence
 
-The first verification CI slice SHALL record the shared script, workflow coverage, and local verification result under `docs/test-records/verification-ci-v1/`.
+The first verification CI slice SHALL record the shared script, workflow coverage, and local verification result under `evidence/records/verification-ci-v1/`.
 
 #### Scenario: CI baseline is reviewable after implementation
 - **WHEN** the verification CI change completes

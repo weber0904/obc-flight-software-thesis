@@ -67,7 +67,7 @@ Alternatives considered:
 
 - [Target dependency drift] -> Keep the Raspberry Pi bootstrap steps in checked-in scripts and record the observed toolchain state in evidence.
 - [UART still unavailable after target integration] -> Treat the target TCP mock and restart-based validation as the first slice, and keep missing serial-cable or radio-specific checks explicitly labeled `Blocked-HW`.
-- [Remote execution changes are harder to debug] -> Prefer small repo-local helpers with logged commands and capture the target output under `docs/test-records/`.
+- [Remote execution changes are harder to debug] -> Prefer small repo-local helpers with logged commands and capture the target output under `evidence/records/`.
 - [Portable artifact discovery can pick the wrong build tree] -> Scope the helper to the known OBC deployment and dictionary layout and fail loudly when no unique match exists.
 
 ## Migration Plan

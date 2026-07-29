@@ -22,6 +22,6 @@ The `feature/libcsp-internal-network-base` branch now contains the corrected lib
 
 ## Impact
 
-- Affected docs/evidence: README, verification matrix, reconciliation matrix, reporting package wording, and `docs/test-records/libcsp-base-mainline-release-v1/`.
+- Affected docs/evidence: README, verification matrix, reconciliation matrix, reporting package wording, and `evidence/records/libcsp-base-mainline-release-v1/`.
 - Affected runtime code: none expected.
 - Affected scripts: no required behavior change.

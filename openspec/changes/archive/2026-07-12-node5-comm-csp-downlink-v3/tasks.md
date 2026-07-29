@@ -15,7 +15,7 @@
 
 - [x] 3.1 Extend or replace COMM unit tests to cover `v3` probe, data/control split, resend, commit retry, and receiver idempotence.
 - [x] 3.2 Add focused hosted `v3` transport proof tooling and rerun local verification.
-- [x] 3.3 Complete governed target official payload `.fdp` proof and fold the final hosted/target results into docs/test-records/runbooks.
+- [x] 3.3 Complete governed target official payload `.fdp` proof and fold the final hosted/target results into evidence/records/runbooks.
   - Current branch-local status as of 2026-07-09:
     - focused hosted `2048/2032` rerun remains requalified after the hosted-only `csp_zmqproxy` `1024`-byte capture-task fix
     - governed target secure-auth transport comparator now passes at `DOWNLINK_V3_MAX_DATA_BYTES=2032` with `COMM_GROUNDLINK_DOWNLINK_V3_WINDOW_FRAMES_OVERRIDE=1`; evidence root:

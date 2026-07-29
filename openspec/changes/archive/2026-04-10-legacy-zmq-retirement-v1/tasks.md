@@ -24,7 +24,7 @@
 ## 5. Docs And Evidence
 
 - [x] 5.1 Update README, simulator README, narrative docs, verification matrix, and registry.
-- [x] 5.2 Add `docs/test-records/legacy-zmq-retirement-v1/README.md`.
+- [x] 5.2 Add `evidence/records/legacy-zmq-retirement-v1/README.md`.
 - [x] 5.3 Update reporting-package wording where direct-ZMQ fallback could be inferred.
 
 ## 6. Validation

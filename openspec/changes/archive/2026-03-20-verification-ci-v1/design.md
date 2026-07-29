@@ -48,7 +48,7 @@ Alternative considered:
 
 ### Decision: Standardize evidence through a checked-in template
 
-The project will add a markdown template under `docs/test-records/templates/` so later changes can capture environment, commands, results, constrained statuses, and notes in a uniform structure.
+The project will add a markdown template under `evidence/records/templates/` so later changes can capture environment, commands, results, constrained statuses, and notes in a uniform structure.
 
 Alternative considered:
 

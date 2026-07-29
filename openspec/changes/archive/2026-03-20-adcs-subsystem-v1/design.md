@@ -69,7 +69,7 @@ Alternative considered:
 3. Add the `AdcsBridge` component and its focused unit tests.
 4. Add the host integration test for the ADCS simulator and client path.
 5. Run the normal build, UT build, unit tests, and host integration test.
-6. Record evidence under `docs/test-records/adcs-subsystem-v1/`.
+6. Record evidence under `evidence/records/adcs-subsystem-v1/`.
 7. Validate and archive the change.
 
 ## Open Questions

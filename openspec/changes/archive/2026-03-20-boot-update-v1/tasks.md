@@ -15,5 +15,5 @@
 
 ## 4. Capture evidence and close the change
 
-- [x] 4.1 Record the implementation and verification results under `docs/test-records/boot-update-v1/`
+- [x] 4.1 Record the implementation and verification results under `evidence/records/boot-update-v1/`
 - [x] 4.2 Run `openspec validate boot-update-v1` and archive the change after the implementation and evidence are complete

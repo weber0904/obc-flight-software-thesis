@@ -78,7 +78,7 @@ Alternative considered:
 4. Add any missing baseline directories or placeholders required for the near-term project layout.
 5. Run `fprime-venv/bin/fprime-util generate`.
 6. Run `fprime-venv/bin/fprime-util build`.
-7. Record the bootstrap evidence under `docs/test-records/bootstrap-fprime-platform/`.
+7. Record the bootstrap evidence under `evidence/records/bootstrap-fprime-platform/`.
 8. Validate the change and leave it ready for archive once tasks are complete.
 
 ## Open Questions

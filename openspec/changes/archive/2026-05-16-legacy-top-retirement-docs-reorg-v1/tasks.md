@@ -27,7 +27,7 @@
 
 ## 5. Evidence And Verification
 
-- [x] 5.1 Add `docs/test-records/legacy-top-retirement-docs-reorg-v1/README.md`.
+- [x] 5.1 Add `evidence/records/legacy-top-retirement-docs-reorg-v1/README.md`.
 - [x] 5.2 Run forbidden-reference checks and repo consistency checks.
 - [x] 5.3 Run active deployment generation, build, unit-test generation, unit-test build, and full verification CI.
 - [x] 5.4 Run focused hosted CCSDS S-band and UHF adoption probes after the fresh build.

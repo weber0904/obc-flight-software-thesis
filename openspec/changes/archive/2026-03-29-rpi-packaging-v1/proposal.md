@@ -25,5 +25,5 @@ None.
 ## Impact
 
 - Affected code: `scripts/`, shared shell helpers, and packaging templates/assets.
-- Affected docs: `README.md`, `docs/README.md`, `obc-dev-spec/`, and `docs/test-records/`.
+- Affected docs: `README.md`, `docs/README.md`, `obc-dev-spec/`, and `evidence/records/`.
 - Affected systems: local host packaging workflow, Raspberry Pi install root, and installed target launch operations over SSH.

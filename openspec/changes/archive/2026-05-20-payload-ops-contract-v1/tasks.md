@@ -51,8 +51,8 @@
 
 - [x] 5.1 Update `docs/interfaces.md`,
   `docs/architecture/current-development-architecture.md`,
-  `docs/verification-path-registry.md`, and add
-  `docs/test-records/payload-ops-contract-v1/README.md`.
+  `evidence/verification-path-registry.md`, and add
+  `evidence/records/payload-ops-contract-v1/README.md`.
 - [x] 5.2 Run focused tests and probes after a fresh build, recording the
   hosted-versus-target evidence split honestly.
 - [x] 5.3 Run `openspec validate payload-ops-contract-v1`.

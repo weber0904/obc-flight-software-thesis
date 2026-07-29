@@ -29,6 +29,6 @@ None.
 ## Impact
 
 - Adds a repository-owned focused probe under `scripts/`.
-- Adds an evidence record under `docs/test-records/ttc-over-comm-lab-serial-downlink-v1/`.
+- Adds an evidence record under `evidence/records/ttc-over-comm-lab-serial-downlink-v1/`.
 - Updates the COMM roadmap after the proof lands.
 - May tighten probe orchestration or observability for existing COMM ground-link code, but does not change the COMM CSP wire contract, public service ports, GDS interface, or deployment model.

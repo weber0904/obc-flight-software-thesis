@@ -19,8 +19,8 @@
 
 ## 4. Record evidence and registry outcome
 
-- [x] 4.1 Add `docs/test-records/ccsds-ground-link-spike-v1/README.md` with path, framing, APID/sequence observations, file byte matches, exclusions, and recommendation.
-- [x] 4.2 Register the CCSDS hosted path in `docs/verification-path-registry.md` only if the hosted proof passes.
+- [x] 4.1 Add `evidence/records/ccsds-ground-link-spike-v1/README.md` with path, framing, APID/sequence observations, file byte matches, exclusions, and recommendation.
+- [x] 4.2 Register the CCSDS hosted path in `evidence/verification-path-registry.md` only if the hosted proof passes.
 - [x] 4.3 If the proof fails or is inconclusive, record blockers and do not add a reusable registry path.
 
 ## 5. Verify and prepare review boundary

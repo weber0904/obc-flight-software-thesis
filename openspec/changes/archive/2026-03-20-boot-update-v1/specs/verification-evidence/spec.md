@@ -2,7 +2,7 @@
 
 ### Requirement: Boot Implementation Evidence
 
-The first boot/update implementation slice SHALL record its build and `BootManager` unit-test results under `docs/test-records/boot-update-v1/`.
+The first boot/update implementation slice SHALL record its build and `BootManager` unit-test results under `evidence/records/boot-update-v1/`.
 
 #### Scenario: Boot evidence is reviewable after implementation
 - **WHEN** the boot/update change completes

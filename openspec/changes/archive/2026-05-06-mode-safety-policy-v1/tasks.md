@@ -28,7 +28,7 @@
 - [x] 5.1 Run focused helper/component/integration tests after a fresh build.
 - [x] 5.2 Run the hosted focused mode safety probe after a fresh native build.
 - [x] 5.3 Run full local verification with `bash scripts/run_verification_ci.sh <fresh-output-dir>`.
-- [x] 5.4 Record reviewable evidence under `docs/test-records/mode-safety-policy-v1/README.md`.
+- [x] 5.4 Record reviewable evidence under `evidence/records/mode-safety-policy-v1/README.md`.
 - [x] 5.5 Run `openspec validate mode-safety-policy-v1` and `openspec validate --specs`.
 
 ## 6. Closeout

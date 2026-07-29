@@ -19,6 +19,6 @@ The repository now has a formal baseline and a working F' project scaffold, but 
 
 ## Impact
 
-- Affected files: `OBC/Types/`, `OBC/Components/`, `openspec/changes/core-system-contracts-v1/`, `docs/test-records/`
+- Affected files: `OBC/Types/`, `OBC/Components/`, `openspec/changes/core-system-contracts-v1/`, `evidence/records/`
 - Affected systems: shared OBC type definitions, command/tlm/event ownership, future subsystem integration points
 - Dependencies: F' v4.1.0 build environment, generated project-local virtual environment, `fprime-util` regular and unit-test build flows

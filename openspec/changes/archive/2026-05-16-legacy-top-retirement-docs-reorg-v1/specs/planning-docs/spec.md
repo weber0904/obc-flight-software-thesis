@@ -11,7 +11,7 @@ verified scope, delivery workflow, or validation-path registry.
   sequence
 - **THEN** that note SHALL state or imply that it is not a formal baseline
 - **AND** it SHALL NOT override `openspec/specs/`, archived OpenSpec changes,
-  `docs/test-records/`, or `docs/verification-path-registry.md`.
+  `evidence/records/`, or `evidence/verification-path-registry.md`.
 
 ### Requirement: Planning Notes Declare Freshness
 Each active roadmap or handoff note SHALL include enough freshness and

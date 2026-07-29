@@ -80,11 +80,11 @@ def main() -> None:
         }
         if excluded:
             status = "removed-alias" if alias else "historical-evidence-only"
-            owner = "docs/verification-path-registry.md (historical entry or successor)"
+            owner = "evidence/verification-path-registry.md (historical entry or successor)"
         else:
             status = "maintained" if is_maintained_entrypoint(path) else "support/internal"
             owner = (
-                "docs/verification-path-registry.md"
+                "evidence/verification-path-registry.md"
                 if status == "maintained"
                 else "transitive dependency of a maintained entrypoint"
             )
@@ -98,7 +98,7 @@ def main() -> None:
                 "role": role_for(path),
                 "owner": owner,
                 "successor": (
-                    "Select the exact current path from docs/verification-path-registry.md"
+                    "Select the exact current path from evidence/verification-path-registry.md"
                     if excluded
                     else None
                 ),

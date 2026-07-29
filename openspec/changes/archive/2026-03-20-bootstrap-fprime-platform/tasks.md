@@ -15,5 +15,5 @@
 
 ## 4. Capture verification evidence
 
-- [x] 4.1 Record the bootstrap commands, expected outcomes, and summary results under `docs/test-records/bootstrap-fprime-platform/`
+- [x] 4.1 Record the bootstrap commands, expected outcomes, and summary results under `evidence/records/bootstrap-fprime-platform/`
 - [x] 4.2 Review the workspace for any bootstrap-phase limitations or follow-up notes

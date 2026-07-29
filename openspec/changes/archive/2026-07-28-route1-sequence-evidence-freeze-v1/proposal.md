@@ -122,8 +122,8 @@ None.
 
 ## Impact
 
-- Evidence and documentation under `docs/test-records/`,
-  `docs/architecture/`, and `docs/verification-path-registry.md`.
+- Evidence and documentation under `evidence/records/`,
+  `docs/architecture/`, and `evidence/verification-path-registry.md`.
 - Route 1 artifact import/checking scripts and their focused tests.
 - OpenSpec main specifications and reconciliation records.
 - No flight-software, topology, protocol, HTTP, F' command, Mission Console,

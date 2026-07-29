@@ -31,5 +31,5 @@ None.
 - Hosted deployment registration, topology namespace ownership, dictionary discovery, and launch scripts.
 - Hosted S-band/CCSDS probes and old `ComFprime` regression probes.
 - `ground_ttc_gateway` verification-only capture behavior.
-- New evidence under `docs/test-records/ccsds-sband-hosted-adoption-v1/`.
+- New evidence under `evidence/records/ccsds-sband-hosted-adoption-v1/`.
 - README, scripts README, verification-path registry, and untracked pending planning notes.

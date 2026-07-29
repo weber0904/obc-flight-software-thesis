@@ -60,7 +60,7 @@ Bootstrap-phase evidence SHALL be stored under a project documentation path that
 - **THEN** it SHALL be able to find the bootstrap evidence from the repository documentation tree
 
 ### Requirement: EPS Implementation Evidence
-The first EPS implementation slice SHALL record its build, bridge-unit-test, and host transport integration results under `docs/test-records/eps-subsystem-v1/`.
+The first EPS implementation slice SHALL record its build, bridge-unit-test, and host transport integration results under `evidence/records/eps-subsystem-v1/`.
 
 #### Scenario: EPS evidence is reviewable after implementation
 - **WHEN** the EPS subsystem change completes
@@ -74,7 +74,7 @@ Any EPS behavior that still depends on unavailable real hardware or physical pow
 - **THEN** the remaining real-hardware validation gap SHALL be labeled `Blocked-HW`
 
 ### Requirement: ADCS Implementation Evidence
-The first ADCS implementation slice SHALL record its build, bridge-unit-test, and host transport integration results under `docs/test-records/adcs-subsystem-v1/`.
+The first ADCS implementation slice SHALL record its build, bridge-unit-test, and host transport integration results under `evidence/records/adcs-subsystem-v1/`.
 
 #### Scenario: ADCS evidence is reviewable after implementation
 - **WHEN** the ADCS subsystem change completes
@@ -89,7 +89,7 @@ Any ADCS behavior that still depends on unavailable real hardware, physical clos
 
 ### Requirement: Boot Implementation Evidence
 
-The first boot/update implementation slice SHALL record its build and `BootManager` unit-test results under `docs/test-records/boot-update-v1/`.
+The first boot/update implementation slice SHALL record its build and `BootManager` unit-test results under `evidence/records/boot-update-v1/`.
 
 #### Scenario: Boot evidence is reviewable after implementation
 - **WHEN** the boot/update change completes
@@ -113,7 +113,7 @@ The repository SHALL provide a repo-local verification gate script that records 
 
 ### Requirement: Evidence Template
 
-The repository SHALL provide a reusable markdown template for change-level evidence records under `docs/test-records/templates/`.
+The repository SHALL provide a reusable markdown template for change-level evidence records under `evidence/records/templates/`.
 
 #### Scenario: Later change needs a consistent evidence structure
 - **WHEN** a later capability change records automated or constrained-validation evidence
@@ -121,7 +121,7 @@ The repository SHALL provide a reusable markdown template for change-level evide
 
 ### Requirement: Verification CI Evidence
 
-The first verification CI slice SHALL record the shared script, workflow coverage, and local verification result under `docs/test-records/verification-ci-v1/`.
+The first verification CI slice SHALL record the shared script, workflow coverage, and local verification result under `evidence/records/verification-ci-v1/`.
 
 #### Scenario: CI baseline is reviewable after implementation
 - **WHEN** the verification CI change completes
@@ -1229,7 +1229,7 @@ The verification evidence tree SHALL record the commands, artifacts, trust model
 
 #### Scenario: Boot trust evidence is reviewable
 - **WHEN** `boot-trust-chain-v1` completes
-- **THEN** reviewers SHALL be able to inspect the selected manifest schema, signer/trust-anchor model, version policy, runtime files changed, tests run, probes run, and observed pass/fail outcomes from `docs/test-records/boot-trust-chain-v1/`.
+- **THEN** reviewers SHALL be able to inspect the selected manifest schema, signer/trust-anchor model, version policy, runtime files changed, tests run, probes run, and observed pass/fail outcomes from `evidence/records/boot-trust-chain-v1/`.
 
 #### Scenario: Evidence covers trust rejection behavior
 - **WHEN** boot trust-chain evidence is recorded
@@ -2365,7 +2365,7 @@ snapshots, checkpoint stream, summary JSON, cleanup status, and final verdict.
 The verification evidence tree SHALL record the salvaged node-`5` RG3
 contention classification, bounded product fix, and clean-branch verification
 record under
-`docs/test-records/target-node5-rg3-csp-runtime-contention-fix-v1/`.
+`evidence/records/target-node5-rg3-csp-runtime-contention-fix-v1/`.
 
 #### Scenario: Evidence identifies both diagnosis provenance and clean rerun
 
@@ -2771,14 +2771,17 @@ path component below its route/surface directory.
   prevent authoritative campaign PASS.
 
 ### Requirement: Public Evidence Separates Summary From Raw Artifacts
-Public test-record summaries, claims, verdicts, and provenance SHALL remain in
-Git while raw `artifacts/` trees SHALL be externalized to a checksummed release
-asset.
+Public test-record summaries, results, and provenance SHALL remain in Git under
+`evidence/records/`, while raw `artifacts/` trees SHALL be distributed through
+a checksummed release asset.
 
 #### Scenario: Test record has raw artifacts
-- **WHEN** a test record had a source `artifacts/` subtree
-- **THEN** the public record SHALL contain an `ARTIFACTS.json` descriptor
-- **AND** the global catalog SHALL bind it to the tagged release asset
+- **WHEN** a source test record includes an `artifacts/` subtree
+- **THEN** its public `evidence/records/<id>/` directory SHALL contain an
+  `ARTIFACTS.json` descriptor
+- **AND** `evidence/catalog.json` SHALL bind the record and descriptor to the
+  release asset
+- **AND** source and public digests SHALL remain machine-verifiable
 
 ### Requirement: Evidence Redaction Is Reviewable
 Text evidence sanitization SHALL use deterministic rules and SHALL record both

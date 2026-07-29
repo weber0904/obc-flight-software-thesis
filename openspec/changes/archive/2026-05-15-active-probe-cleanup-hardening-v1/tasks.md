@@ -19,7 +19,7 @@
 
 - [x] 4.1 Add a repository-owned cleanup-hardening verification script that interrupts representative hosted, shell, and Raspberry Pi probe flows, verifies rerun success, and confirms no owned helper leftovers remain.
 - [x] 4.2 Rerun the affected active-path hosted and Raspberry Pi probes as regressions after the helper refactor.
-- [x] 4.3 Add `docs/test-records/active-probe-cleanup-hardening-v1/README.md` with the final commands, interruption scenarios, rerun results, and bounded claims.
+- [x] 4.3 Add `evidence/records/active-probe-cleanup-hardening-v1/README.md` with the final commands, interruption scenarios, rerun results, and bounded claims.
 
 ## 5. Closeout
 

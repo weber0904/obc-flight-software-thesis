@@ -26,8 +26,8 @@
 
 ## 4. Evidence And Canonical Docs
 
-- [x] 4.1 Add `docs/test-records/command-auth-envelope-v1/README.md`.
-- [x] 4.2 Update the hosted command ingress authority / envelope / session verification-path entry in `docs/verification-path-registry.md`.
+- [x] 4.1 Add `evidence/records/command-auth-envelope-v1/README.md`.
+- [x] 4.2 Update the hosted command ingress authority / envelope / session verification-path entry in `evidence/verification-path-registry.md`.
 - [x] 4.3 Update `docs/roadmap/README.md` and the relevant roadmap note to mark this change complete and reassess the next recommended closure.
 - [x] 4.4 Update `docs/architecture/current-development-architecture.md` if authenticated command ingress becomes active baseline truth.
 

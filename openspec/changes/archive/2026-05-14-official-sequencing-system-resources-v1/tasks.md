@@ -25,7 +25,7 @@
 ## 5. Hosted Proof and Docs
 
 - [x] 5.1 Add a repository-owned hosted probe for governed sequence upload/admission/execution and `SystemResources`
-- [x] 5.2 Add `docs/test-records/official-sequencing-system-resources-v1/README.md`
+- [x] 5.2 Add `evidence/records/official-sequencing-system-resources-v1/README.md`
 - [x] 5.3 Update architecture, roadmap, operator, and verification-registry documents
 - [x] 5.4 Run fresh focused verification and `openspec validate official-sequencing-system-resources-v1`
 - [x] 5.5 Run `openspec validate --specs`

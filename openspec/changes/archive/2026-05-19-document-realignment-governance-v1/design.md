@@ -42,7 +42,7 @@ The implementation will keep both files as entrypoints, but narrow them to:
 
 Detailed current-baseline facts stay in the existing canonical current-truth
 docs such as `docs/architecture/current-development-architecture.md`,
-`docs/interfaces.md`, `docs/verification-path-registry.md`, and
+`docs/interfaces.md`, `evidence/verification-path-registry.md`, and
 `docs/roadmap/`.
 
 Rejected alternative:

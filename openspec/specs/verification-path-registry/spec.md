@@ -503,7 +503,7 @@ The verification-path registry SHALL preserve the historical hosted bounded `EPS
 #### Scenario: Registry preserves the archived hosted shared recovery closure
 - **WHEN** reviewers inspect the historical `multi-subsystem-fdir-v1` entry
 - **THEN** the registry SHALL identify that archived proof as `detector-local EPS/ADCS/COMM fault injection -> TopCcsds shared RecoveryExecutor -> bounded recovery action -> hosted reboot-equivalent relaunch truth`
-- **AND** it SHALL cite the governing `docs/test-records/multi-subsystem-fdir-v1/README.md` evidence
+- **AND** it SHALL cite the governing `evidence/records/multi-subsystem-fdir-v1/README.md` evidence
 - **AND** it SHALL not imply that the original `run_multi_subsystem_fdir_v1_probe.sh` wrapper remains a maintained rerunnable current proof surface on later baselines
 
 #### Scenario: Registry keeps adjacent recovery paths distinct
@@ -1329,10 +1329,13 @@ verification entrypoint SHALL cite a current registry path or operator surface.
   absent
 
 ### Requirement: Registry Exposes Stable Current And Historical Status
-The public registry SHALL provide a concise current-path index while retaining
-historical entries under stable identifiers and explicit status.
+The repository SHALL present current verification coverage in
+`docs/verification.md` and SHALL retain the detailed path ledger under
+`evidence/verification-path-registry.md` for engineering traceability.
 
 #### Scenario: Reviewer selects a validation path
-- **WHEN** a reviewer looks up a capability
-- **THEN** the maintained path, environment, proof owner, evidence record, and
-  non-claims SHALL be discoverable without selecting a historical wrapper
+- **WHEN** a reviewer starts from the verification overview
+- **THEN** maintained build, test, hosted, and target/lab evidence SHALL be
+  discoverable by capability
+- **AND** readers needing exact path identities SHALL be routed to the detailed
+  evidence ledger

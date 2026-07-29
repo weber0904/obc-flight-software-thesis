@@ -20,8 +20,8 @@
 ## 4. Update docs and evidence
 
 - [x] 4.1 Update simulator and script README surfaces for the new TCP endpoint and S-band probe.
-- [x] 4.2 Add `docs/test-records/sband-tcp-ground-link-v1/README.md` with TT&C and file/downlink proof boundaries.
-- [x] 4.3 Add hosted S-band TCP TT&C and hosted S-band TCP file/downlink entries to `docs/verification-path-registry.md`.
+- [x] 4.2 Add `evidence/records/sband-tcp-ground-link-v1/README.md` with TT&C and file/downlink proof boundaries.
+- [x] 4.3 Add hosted S-band TCP TT&C and hosted S-band TCP file/downlink entries to `evidence/verification-path-registry.md`.
 
 ## 5. Verify, archive, and prepare review boundary
 

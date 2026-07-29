@@ -29,5 +29,5 @@ EPS and ADCS hosted business traffic now both use the repository internal libcsp
 
 - Affected code: EPS/ADCS simulator models, transports, CSP protocol includes, bridge constructors, CMake test/source registration, and scenario replay test code.
 - Affected scripts: shared verification gate plus a new legacy-ZMQ retirement checker.
-- Affected docs/evidence: README, simulator README, formal specs, narrative specs, verification matrix/registry, reconciliation matrix after archive, and `docs/test-records/legacy-zmq-retirement-v1/`.
+- Affected docs/evidence: README, simulator README, formal specs, narrative specs, verification matrix/registry, reconciliation matrix after archive, and `evidence/records/legacy-zmq-retirement-v1/`.
 - Unaffected paths: GDS ground path, external comm/radio/UART path, GPS path, boot/update, mission logic, housekeeping archive behavior, and real hardware bring-up.

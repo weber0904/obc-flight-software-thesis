@@ -49,8 +49,8 @@ evidence.
   - target service-managed node-`5` startup / availability path
   - blocker-focused target probes and evidence surfaces
 - Affected docs:
-  - `docs/test-records/target-node5-telemetry-backpressure-and-restart-stability-v1/README.md`
-  - `docs/verification-path-registry.md`
+  - `evidence/records/target-node5-telemetry-backpressure-and-restart-stability-v1/README.md`
+  - `evidence/verification-path-registry.md`
   - `docs/roadmap/next-work.md`
   - current architecture or interfaces only if the active baseline truth or
     residual-blocker wording changes

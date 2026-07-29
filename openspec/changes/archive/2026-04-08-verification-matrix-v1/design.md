@@ -1,6 +1,6 @@
 ## Context
 
-The repository already enforces a baseline verification gate and preserves detailed evidence under `docs/test-records/`, but the current project-wide answer to "what is actually covered?" still depends on manual repo reading. Earlier controller-style components use classic F' component UT harnesses, while later slices such as GPS, storage health, and housekeeping archive rely more on focused unit tests, integration tests, and hosted probes. That mix is not wrong, but it needs one governed review surface so future maintenance can prioritize real gaps instead of guessing.
+The repository already enforces a baseline verification gate and preserves detailed evidence under `evidence/records/`, but the current project-wide answer to "what is actually covered?" still depends on manual repo reading. Earlier controller-style components use classic F' component UT harnesses, while later slices such as GPS, storage health, and housekeeping archive rely more on focused unit tests, integration tests, and hosted probes. That mix is not wrong, but it needs one governed review surface so future maintenance can prioritize real gaps instead of guessing.
 
 ## Goals / Non-Goals
 
@@ -13,7 +13,7 @@ The repository already enforces a baseline verification gate and preserves detai
 - adding line or branch coverage tooling in this change
 - rewriting the existing tests or probes themselves
 - forcing every newer slice back into a classic F' harness pattern
-- replacing the detailed change-level evidence records in `docs/test-records/`
+- replacing the detailed change-level evidence records in `evidence/records/`
 
 ## Decisions
 

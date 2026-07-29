@@ -66,7 +66,7 @@ encryption, target proof, generic file-uplink governance, or legacy retirement.
 - Affected docs/specs:
   - `docs/interfaces.md`
   - `docs/architecture/current-development-architecture.md`
-  - `docs/verification-path-registry.md`
+  - `evidence/verification-path-registry.md`
   - `openspec/specs/core-system-contracts/spec.md`
   - `openspec/specs/comm-subsystem/spec.md`
   - `openspec/specs/interface-contract-index/spec.md`

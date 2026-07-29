@@ -20,16 +20,10 @@ is_lightweight_path() {
     openspec/changes/archive/*)
       return 0
       ;;
-    docs/architecture/*|docs/architecture-review/*|docs/operator/*|docs/reporting/*|docs/roadmap/*|docs/test-records/*|docs/thesis/*)
+    docs/*.md|docs/operator/*|evidence/*.md|evidence/records/*)
       return 0
       ;;
-    docs/baseline-reconciliation-matrix.json|docs/baseline-reconciliation-matrix.md)
-      return 0
-      ;;
-    docs/README.md|docs/verification-matrix.md|docs/verification-path-registry.md)
-      return 0
-      ;;
-    docs/verification-debugging-lessons.md|docs/integrity-and-hashing.md|docs/target-version-metadata.md)
+    openspec/reconciliation/baseline-reconciliation-matrix.json|openspec/reconciliation/baseline-reconciliation-matrix.md)
       return 0
       ;;
     .codex/skills/*/SKILL.md)

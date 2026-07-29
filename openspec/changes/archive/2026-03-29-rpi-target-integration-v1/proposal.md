@@ -27,5 +27,5 @@ None.
 ## Impact
 
 - Affected code: `scripts/`, `OBC/Main.cpp`, `OBC/Components/BootManager/`, and any shared helpers needed for platform-portable build artifact discovery.
-- Affected docs: `README.md`, `obc-dev-spec/`, and `docs/test-records/`.
+- Affected docs: `README.md`, `obc-dev-spec/`, and `evidence/records/`.
 - Affected systems: local developer host, Raspberry Pi 3B+ target over SSH, and the repo-local GDS / verification workflow.

@@ -23,5 +23,5 @@ None.
 ## Impact
 
 - Affected code: `OBC/Components/BootManager/`
-- Affected docs: `docs/test-records/rpi-target-integration-v1/`
+- Affected docs: `evidence/records/rpi-target-integration-v1/`
 - Affected systems: hosted unit-test environment and Raspberry Pi target boot metadata persistence

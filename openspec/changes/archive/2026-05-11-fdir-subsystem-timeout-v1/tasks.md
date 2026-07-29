@@ -25,7 +25,7 @@
 - [x] 4.2 Cover a transient two-failure case with no `SAFE` fallback and healthy recovery after simulator restart.
 - [x] 4.3 Cover a threshold-crossing case where the third consecutive failure latches fault and triggers exactly one `SAFE` fallback.
 - [x] 4.4 Cover a recovery-after-fault case where simulator restart clears the latched fault and emits recovery evidence.
-- [x] 4.5 Record evidence under `docs/test-records/fdir-subsystem-timeout-v1/README.md` and add a distinct verification-path registry entry for hosted EPS-timeout FDIR.
+- [x] 4.5 Record evidence under `evidence/records/fdir-subsystem-timeout-v1/README.md` and add a distinct verification-path registry entry for hosted EPS-timeout FDIR.
 
 ## 5. Verification And Closeout
 

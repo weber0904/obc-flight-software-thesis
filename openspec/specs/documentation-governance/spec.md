@@ -7,50 +7,32 @@ checked-in documentation aligned with canonical repository truth.
 ## Requirements
 ### Requirement: Repo-Root Documentation Entrypoints Stay Low-Churn
 
-The repository SHALL provide `README.md` and repo-root `AGENTS.md` as the
-first onboarding entrypoints, and those files SHALL summarize the maintained
-scope, source-priority guidance, current document families, and formal workflow
-entrypoints without duplicating large high-churn current-baseline detail that
-already lives in canonical current-truth documents.
+The repository SHALL provide `README.md` and `docs/README.md` as the first
+reader entrypoints. They SHALL summarize the system, route readers by topic,
+and avoid duplicating detailed architecture, interface, operation, or
+verification material.
 
-#### Scenario: Repo-root entrypoints route readers to canonical current truth
-
-- **WHEN** a reader starts from `README.md` or `AGENTS.md`
-- **THEN** those files SHALL direct that reader to the canonical current-truth
-  surfaces such as current architecture, the verification-path registry, formal
-  workflow specs, roadmap notes, and evidence indexes
-- **AND** they SHALL NOT act as competing detailed baseline narratives
+#### Scenario: Reviewer starts at the repository root
+- **WHEN** a reviewer opens `README.md`
+- **THEN** the page SHALL explain the software, principal capabilities, build,
+  verification, security, and license
+- **AND** it SHALL route architecture, interface, operation, specification, and
+  evidence questions to their canonical files
 
 ### Requirement: Current-Facing Narrative Docs Declare Freshness
 
-The repository SHALL require current-facing narrative docs that describe
-current truth or current operator practice to carry explicit status and
-freshness metadata so drift is auditable from the document itself.
+Current reader documents SHALL describe the active system directly. Git
+history, the annotated tag, `release/RELEASE_PROVENANCE.md`, and evidence
+records SHALL provide revision and execution provenance; reader documents
+SHALL NOT require status banners, reconciliation reminders, or author-directed
+release commentary.
 
-#### Scenario: Current-truth doc exposes freshness boundary
-
-- **WHEN** a reader opens a current-facing narrative doc such as the current
-  architecture guide, roadmap notes, interface index, or current operator
-  runbook
-- **THEN** that doc SHALL identify its status
-- **AND** it SHALL declare the reconciliation change, commit, or date that
-  defines its freshness boundary
-
-### Requirement: Current Non-Canonical Packages Mark Scope
-
-The repository SHALL require current but non-canonical package entrypoints such
-as thesis/reference, reporting, and refreshed architecture-review materials to
-explicitly mark their freshness boundary and to state that code, topology,
-specs, the verification-path registry, and evidence remain higher-priority
-current truth.
-
-#### Scenario: Snapshot-style package cannot be misread as baseline authority
-
-- **WHEN** a reader opens a thesis, reporting, or architecture-review entrypoint
-- **THEN** that entrypoint SHALL declare whether it is current, refreshed,
-  stale, or a point-in-time snapshot
-- **AND** it SHALL state that the package does not override higher-priority
-  repository truth
+#### Scenario: Reader opens a current document
+- **WHEN** a reader opens architecture, interface, verification, operator, or
+  thesis documentation
+- **THEN** the document SHALL begin with its technical subject
+- **AND** revision provenance SHALL remain discoverable through version control
+  and linked evidence
 
 ### Requirement: Historical Layers Keep Current/Historical Boundary Clear
 
@@ -70,56 +52,39 @@ current baseline.
 
 ### Requirement: Documentation Governance Checker Enforces The Rules
 
-The repository SHALL provide a repo-local documentation governance checker that
-fails when required current-facing metadata is missing, when current
-non-canonical package entrypoints lack explicit scope or snapshot markers, or
-when current entrypoints still route readers toward retired or superseded
-canonical locations.
+The repository SHALL provide a documentation checker that enforces the
+canonical current-document set, required navigation, valid relative links, and
+capability-first reader prose.
 
-#### Scenario: Missing current-doc metadata fails the checker
-
-- **WHEN** a required current-facing narrative doc lacks status or freshness
-  metadata
-- **THEN** the documentation governance checker SHALL fail and identify the file
-
-#### Scenario: Snapshot package boundary marker is missing
-
-- **WHEN** a thesis, reporting, or architecture-review entrypoint lacks its
-  required non-canonical or snapshot boundary wording
-- **THEN** the documentation governance checker SHALL fail and identify the file
-
-#### Scenario: Retired canonical routing fails the checker
-
-- **WHEN** a current documentation entrypoint still routes readers to a retired
-  planning surface or other superseded canonical location
-- **THEN** the documentation governance checker SHALL fail and report the stale
-  route
+#### Scenario: Documentation structure drifts
+- **WHEN** a reader document is missing, an overlapping document is added, a
+  canonical link is broken, or release-process commentary enters the current
+  layer
+- **THEN** the checker SHALL fail and identify the affected file
 
 ### Requirement: Manual Operator Surface Has Current Runbooks And Indexed Routing
 
-The repository SHALL document the maintained manual dual-GDS operator family as
-current operator guidance with hosted and target runbooks plus indexed routing
-from current repo entrypoints.
+The repository SHALL document hosted operation, target/lab operation, and
+Mission Console through one canonical guide per environment, all discoverable
+from `docs/README.md`.
 
-#### Scenario: Operators can discover the manual surface without reading probe code
-- **WHEN** a reader starts from `README.md`, `docs/README.md`, or
-  `scripts/README.md`
-- **THEN** those current entrypoints SHALL route the reader to the hosted and
-  target manual dual-GDS runbooks and the `scripts/manual_ops/` subtree
-- **AND** the runbooks SHALL cover stack startup, manifest reading, auth,
-  secure command send, governed staged upload, `SEQ_*`, re-auth, and cleanup
-  without requiring probe-code archaeology.
+#### Scenario: Operator selects an environment
+- **WHEN** an operator selects hosted, target/lab, or Mission Console operation
+- **THEN** the applicable guide SHALL cover prerequisites, startup, status,
+  authentication, representative actions, verification, troubleshooting, and
+  cleanup
 
 ### Requirement: Public Documentation Has One Canonical Current Layer
-The public repository SHALL use English canonical architecture, interface,
-verification, contribution, and operator documents, with Traditional Chinese
-limited to the repository summary, thesis claim map, and integrated demo guide.
 
-#### Scenario: Current documentation is indexed
-- **WHEN** a reviewer starts from the root or documentation README
-- **THEN** each current topic SHALL route to one canonical document
-- **AND** historical planning, reporting, review, and thesis-writing packages
-  SHALL NOT appear as current entrypoints
+The repository SHALL keep a compact `docs/` tree containing one canonical
+reader document for architecture, interfaces, verification, thesis navigation,
+and each operator workflow. Detailed evidence and formal governance data SHALL
+live under their dedicated top-level roots.
+
+#### Scenario: Reviewer enters the documentation tree
+- **WHEN** a reviewer opens `docs/README.md`
+- **THEN** every link SHALL answer a distinct reader question
+- **AND** evidence records SHALL be routed through `evidence/README.md`
 
 ### Requirement: Removed Documents Have Explicit Successors
 Every high-value removed document SHALL have an exclusion reason and, where

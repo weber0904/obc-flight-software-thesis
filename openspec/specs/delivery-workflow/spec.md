@@ -98,11 +98,17 @@ The delivery workflow SHALL modernize repository-owned hosted probe cleanup on a
 - **AND** it SHALL NOT claim that failing path as passing proof for the current change
 
 ### Requirement: Baseline Reconciliation Matrix
-The repository SHALL keep `docs/baseline-reconciliation-matrix.json` as the only manually maintained reconciliation source and SHALL keep `docs/baseline-reconciliation-matrix.md` as a generated review surface derived from that JSON source.
+
+The repository SHALL keep
+`openspec/reconciliation/baseline-reconciliation-matrix.json` as the manually
+maintained reconciliation source and
+`openspec/reconciliation/baseline-reconciliation-matrix.md` as its generated
+review surface.
 
 #### Scenario: Generated review surface stays aligned with the JSON source
 - **WHEN** the reconciliation JSON is edited
-- **THEN** the generated Markdown review surface SHALL be regenerated from the JSON source before the change is considered ready for review
+- **THEN** the Markdown review surface SHALL be regenerated before review
+- **AND** repository consistency checks SHALL validate both files
 
 ### Requirement: Repository Consistency Checks
 The delivery workflow SHALL provide a repo-local consistency check that fails when a main spec still carries placeholder Purpose text, when the current capability list diverges from `openspec/specs/`, when an archived change with `tasks.md` is missing from the reconciliation matrix, when the matrix cites a nonexistent capability or evidence path, or when the checked-in reconciliation Markdown no longer matches the generated output derived from the JSON source.
@@ -188,26 +194,17 @@ active OpenSpec change-workspace paths SHALL use `full`.
   documentation governance checker, and `openspec validate --specs`
 
 ### Requirement: Mainline Narrative Documentation Reconciliation
-The delivery workflow SHALL distinguish branch-verifiable documentation from post-merge mainline reconciliation. Documentation whose truth can be reviewed on the originating branch, including formal specs, product behavior descriptions, architecture truth, verification evidence, and operator runbooks, SHALL be updated on that branch before review. `docs/roadmap/*` MAY be updated either on the originating branch when the expected post-merge state is already stable or after merge on `main` when the truthful wording depends on the already-merged mainline state. Any post-merge direct edit on `main` SHALL remain limited to `docs/roadmap/*` progress, dependency, ordering, or handoff reconciliation and SHALL NOT be used for formal workflow, evidence, architecture-truth, or operator-runbook changes.
 
-#### Scenario: Branch-verifiable truth stays with the originating change
-- **WHEN** a change alters formal workflow, product behavior, architecture truth, verification evidence, or operator procedures
-- **THEN** the relevant documentation SHALL be updated on the originating branch before review
-- **AND** the workflow SHALL NOT defer those updates solely because the branch has not merged yet
+The delivery workflow SHALL update branch-verifiable documentation on the
+originating branch before review, including formal specs, product behavior,
+architecture, verification, evidence, and operator procedures.
 
-#### Scenario: Stable roadmap update can ship in the original PR
-- **WHEN** the expected post-merge roadmap, progress, or next-work wording is already stable at review time
-- **THEN** the originating branch MAY include the `docs/roadmap/*` update in the same PR
-
-#### Scenario: Roadmap reconciliation waits for merged main when necessary
-- **WHEN** truthful `docs/roadmap/*` wording depends on the actual merged `main` state, updated merge ordering, or freshly synced mainline progress
-- **THEN** the maintainer MAY reconcile `docs/roadmap/*` directly on `main` after merge
-- **AND** the workflow SHALL NOT require a second follow-on PR solely to restate that merged roadmap state
-
-#### Scenario: Post-merge shortcut stays narrow
-- **WHEN** a post-merge documentation update touches any file outside `docs/roadmap/*` or changes formal workflow, verification evidence, architecture truth, or operator instructions
-- **THEN** that update SHALL use the normal branch and review flow
-- **AND** it SHALL NOT use the roadmap reconciliation shortcut on `main`
+#### Scenario: Branch changes a documented contract
+- **WHEN** a change alters formal workflow, product behavior, architecture,
+  verification, evidence, or operator procedures
+- **THEN** the relevant documentation SHALL be updated on the originating
+  branch
+- **AND** the update SHALL use the normal review workflow
 
 ### Requirement: Public Thesis Release Uses A Separate Governed Repository
 The thesis release SHALL be assembled on a dedicated branch of the public

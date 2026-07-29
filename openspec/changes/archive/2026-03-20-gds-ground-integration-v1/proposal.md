@@ -14,4 +14,4 @@
 
 - Affected specs: `platform-baseline`, `comm-subsystem`, `verification-evidence`, `delivery-workflow`
 - Affected code: `OBC/Top/`, `OBC/Main.cpp`, `scripts/`
-- Affected docs: `obc-dev-spec/`, `docs/test-records/`
+- Affected docs: `obc-dev-spec/`, `evidence/records/`

@@ -25,7 +25,7 @@
 
 ## 5. Close Out
 
-- [x] 5.1 Add `docs/test-records/hosted-obc-runtime-maintainability-v1/README.md` with behavior-preservation evidence and reused path boundaries.
+- [x] 5.1 Add `evidence/records/hosted-obc-runtime-maintainability-v1/README.md` with behavior-preservation evidence and reused path boundaries.
 - [x] 5.2 Archive the OpenSpec change through the governed archive flow after evidence and validation pass.
 - [x] 5.3 Update pending management notes for completed status without adding `pending/` to the PR.
 - [x] 5.4 Prepare a reviewable local git boundary with Conventional Commit title `refactor(runtime): share hosted OBC command dispatch` and do not push.

@@ -32,5 +32,5 @@ The active baseline has converged on `OBC/TopCcsds` plus the `OBC` deployment, w
 
 - Affected build/runtime surfaces: root deployment registration, `OBC/CMakeLists.txt`, `OBC/Top/`, `OBC/MainComFprimeLegacy.cpp`, command authority policy, verification inventory helper paths.
 - Affected scripts: legacy ComFprime wrappers/probes are removed; active lab/target scripts use active dictionary and `OBCApp.*` command names.
-- Affected docs: `README.md`, `AGENTS.md` if needed, `docs/architecture/`, `docs/roadmap/`, `docs/thesis/`, `docs/reporting/`, `docs/interfaces.md`, `docs/verification-path-registry.md`, and related indexes.
+- Affected docs: `README.md`, `AGENTS.md` if needed, `docs/architecture/`, `docs/roadmap/`, `docs/thesis/`, `docs/reporting/`, `docs/interfaces.md`, `evidence/verification-path-registry.md`, and related indexes.
 - Verification requires full CI because build targets and scripts change.

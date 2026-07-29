@@ -17,8 +17,8 @@
 
 ## 4. Evidence And Registry
 
-- [x] 4.1 Add `docs/test-records/hk-data-product-alignment-v2/README.md` with focused tests, probe evidence, exclusions, and path selection.
-- [x] 4.2 Update `docs/verification-path-registry.md` for the default hosted CCSDS S-band official `.fdp` parity path.
+- [x] 4.1 Add `evidence/records/hk-data-product-alignment-v2/README.md` with focused tests, probe evidence, exclusions, and path selection.
+- [x] 4.2 Update `evidence/verification-path-registry.md` for the default hosted CCSDS S-band official `.fdp` parity path.
 - [x] 4.3 Update main specs through OpenSpec archive and post-archive reconciliation.
 
 ## 5. Verification And Closeout

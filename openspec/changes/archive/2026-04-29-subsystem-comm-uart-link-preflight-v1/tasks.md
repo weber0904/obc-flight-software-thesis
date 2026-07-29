@@ -18,7 +18,7 @@
 - [x] 4.1 Run the fresh local verification gate and OpenSpec validations.
 - [x] 4.2 Run the subsystem native-build prep.
 - [x] 4.3 Run the focused UART preflight probe to PASS.
-- [x] 4.4 Record passing hardware evidence under `docs/test-records/subsystem-comm-uart-link-preflight-v1/`.
+- [x] 4.4 Record passing hardware evidence under `evidence/records/subsystem-comm-uart-link-preflight-v1/`.
 - [x] 4.5 Register the new verification path after the focused probe passes.
 
 Final status: LIMITED PASS. The proven repo-owned preflight uses `mac-to-subsystem` direction with `HOST_SERIAL_DEVICE=/dev/cu.usbserial-$COMM_SERIAL_DEVICE`, `SUBSYSTEM_SIM_COMM_DEVICE=/dev/serial0`, and `COMM_BAUDRATE=115200`. `serial-getty@ttyS0` is inactive, serial console has been removed from `/boot/firmware/cmdline.txt`, and `/dev/ttyS0` is `root:dialout crw-rw----`. Follow-up diagnostics found that clean `subsystem.local` cold-first traffic into a passive macOS receiver is not proven by this change.

@@ -6,7 +6,7 @@
 ## 2. Documentation And Evidence
 
 - [x] 2.1 Update review docs so the libcsp integration base is described as the next mainline candidate.
-- [x] 2.2 Add `docs/test-records/libcsp-base-mainline-release-v1/README.md`.
+- [x] 2.2 Add `evidence/records/libcsp-base-mainline-release-v1/README.md`.
 - [x] 2.3 Pre-register the change in the reconciliation matrix for archive readiness.
 
 ## 3. Validation

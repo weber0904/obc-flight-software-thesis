@@ -24,8 +24,8 @@
 
 ## 4. Evidence And Canonical Docs
 
-- [x] 4.1 Add `docs/test-records/command-session-lifecycle-v1/README.md`.
-- [x] 4.2 Update `docs/verification-path-registry.md` for the hosted command ingress authority profile path lifecycle boundary.
+- [x] 4.1 Add `evidence/records/command-session-lifecycle-v1/README.md`.
+- [x] 4.2 Update `evidence/verification-path-registry.md` for the hosted command ingress authority profile path lifecycle boundary.
 - [x] 4.3 Update `docs/roadmap/README.md` and `docs/roadmap/06-openspec-change-breakdown.md` to move the next recommended command/security change to `command-auth-envelope-v1`.
 - [x] 4.4 Update `docs/architecture/current-development-architecture.md` for the new active session lifecycle baseline truth.
 

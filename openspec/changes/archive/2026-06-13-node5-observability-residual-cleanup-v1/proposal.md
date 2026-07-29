@@ -93,8 +93,8 @@ surfaces require same-change requalification.
   - `docs/operator/hosted-per-band-stock-ground-stacks-runbook.md`
   - `docs/operator/target-obc-comm-csp-lab-runbook.md`
   - `docs/operator/hosted-official-sequencing-system-resources-runbook.md`
-  - `docs/verification-path-registry.md`
-  - `docs/test-records/node5-observability-residual-cleanup-v1/README.md`
+  - `evidence/verification-path-registry.md`
+  - `evidence/records/node5-observability-residual-cleanup-v1/README.md`
 - Affected formal artifacts:
   - delta specs for `comm-subsystem`, `core-system-contracts`,
     `interface-contract-index`, `onboard-data-products-and-live-beacon`,

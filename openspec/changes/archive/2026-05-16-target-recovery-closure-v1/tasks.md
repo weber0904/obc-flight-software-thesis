@@ -15,7 +15,7 @@
 
 - [x] 3.1 Update hosted recovery/multi-subsystem/watchdog/persistent-ring probes to assert R2 real process restart where applicable.
 - [x] 3.2 Add a Raspberry Pi target probe that induces ADCS R2 by stopping the ADCS subsystem service, verifies systemd OBC restart, restores ADCS service, and reads back boot metadata.
-- [x] 3.3 Record `docs/test-records/target-recovery-closure-v1/` evidence and update `docs/verification-path-registry.md`.
+- [x] 3.3 Record `evidence/records/target-recovery-closure-v1/` evidence and update `evidence/verification-path-registry.md`.
 
 ## 4. Documentation And OpenSpec Closeout
 

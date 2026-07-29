@@ -38,7 +38,7 @@
   2026-05-28 UHF baseline and the maintained separate per-band stock-stack
   operator truth.
 - [x] 4.3 Add a dedicated hosted per-band stock-stack operator-baseline entry
-  to `docs/verification-path-registry.md` and keep future
+  to `evidence/verification-path-registry.md` and keep future
   `comm-dual-link-orchestration-v1` wording clearly deferred.
 
 ## 5. Verification

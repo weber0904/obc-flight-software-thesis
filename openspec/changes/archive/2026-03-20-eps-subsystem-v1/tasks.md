@@ -16,5 +16,5 @@
 
 ## 4. Capture evidence and close the change
 
-- [x] 4.1 Record the implementation and verification results under `docs/test-records/eps-subsystem-v1/`
+- [x] 4.1 Record the implementation and verification results under `evidence/records/eps-subsystem-v1/`
 - [x] 4.2 Run `openspec validate eps-subsystem-v1` and archive the change after the implementation and evidence are complete

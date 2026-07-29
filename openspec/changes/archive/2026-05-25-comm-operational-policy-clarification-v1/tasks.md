@@ -30,7 +30,7 @@
 - [x] 3.2 Update `docs/roadmap/next-work.md` and
   `docs/architecture/comm-followup-directions.md` so future work picks up only
   the remaining implementation-bearing follow-ons.
-- [x] 3.3 Update `docs/verification-path-registry.md` and
+- [x] 3.3 Update `evidence/verification-path-registry.md` and
   `docs/operator/formal-comm-verification-matrix-v1-runbook.md` to keep
   evidence, current non-claims, and matrix wording aligned with the formal
   clarification.

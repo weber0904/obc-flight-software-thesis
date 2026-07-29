@@ -15,7 +15,7 @@ from typing import Any
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 DEFAULT_CAMPAIGN = (
     ROOT
-    / "docs/test-records/chapter5-integrated-route-closure-v1/artifacts"
+    / "evidence/records/chapter5-integrated-route-closure-v1/artifacts"
     / "2026-07-20-route1-target-abc-rerun"
 )
 DEFAULT_MANIFEST_NAME = "dedup-manifest.json"

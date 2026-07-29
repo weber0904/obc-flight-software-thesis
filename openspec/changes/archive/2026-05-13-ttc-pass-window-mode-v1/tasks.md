@@ -26,8 +26,8 @@
 
 ## 5. Documentation And Evidence
 
-- [x] 5.1 Add `docs/test-records/ttc-pass-window-mode-v1/README.md` with exact commands, results, reused/new validation path notes, and explicit non-claims.
-- [x] 5.2 Update `docs/verification-path-registry.md` for the new hosted TTC pass-window proof path.
+- [x] 5.1 Add `evidence/records/ttc-pass-window-mode-v1/README.md` with exact commands, results, reused/new validation path notes, and explicit non-claims.
+- [x] 5.2 Update `evidence/verification-path-registry.md` for the new hosted TTC pass-window proof path.
 - [x] 5.3 Update `README.md`, `docs/architecture/current-development-architecture.md`, `docs/roadmap/README.md`, `docs/roadmap/01-mode-model-v2.md`, and `docs/roadmap/08-system-architecture-roadmap.md` so the active baseline truth reflects TTC pass-window automation ownership and remaining boundaries.
 
 ## 6. Verification And Closeout

@@ -11,8 +11,8 @@
 
 ## 3. Evidence And Registry
 
-- [x] 3.1 Add `docs/test-records/comm-lab-serial-acquisition-v1/README.md` with commands, endpoints, observed verdict, non-claims, and the TT&C stop context.
-- [x] 3.2 Update `docs/verification-path-registry.md` only if the focused acquisition probe passes.
+- [x] 3.1 Add `evidence/records/comm-lab-serial-acquisition-v1/README.md` with commands, endpoints, observed verdict, non-claims, and the TT&C stop context.
+- [x] 3.2 Update `evidence/verification-path-registry.md` only if the focused acquisition probe passes.
 
 ## 4. Verification And Closeout
 

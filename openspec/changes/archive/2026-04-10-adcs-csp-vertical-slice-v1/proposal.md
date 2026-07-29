@@ -25,5 +25,5 @@ The libcsp-first recovery base has established the hosted internal CSP substrate
 
 - Affected code: `simulators/adcs/*`, `OBC/Components/AdcsBridge/*`, `simulators/CMakeLists.txt`, and hosted stack scripts if they still pass legacy ADCS endpoint assumptions.
 - Affected tests: ADCS transport integration tests, `AdcsBridge` component UT, CSP runtime smoke, and the verification inventory/reporting paths.
-- Affected docs/evidence: `openspec/specs/adcs-subsystem`, verification specs/registry, `obc-dev-spec/04_adcs_subsystem.md`, and `docs/test-records/adcs-csp-vertical-slice-v1/`.
+- Affected docs/evidence: `openspec/specs/adcs-subsystem`, verification specs/registry, `obc-dev-spec/04_adcs_subsystem.md`, and `evidence/records/adcs-csp-vertical-slice-v1/`.
 - Exclusions: no changes to ground GDS path, external comm path, GPS path, real hardware bring-up, scheduler/payload operations, or ADCS flight-control semantics beyond moving the hosted internal transport substrate.

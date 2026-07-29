@@ -72,7 +72,7 @@ live packet visibility open only during an accepted authenticated session.
   - `docs/interfaces.md`
   - `docs/architecture/current-development-architecture.md`
   - maintained hosted/target node-`5` operator runbooks
-  - new `docs/test-records/` evidence record
+  - new `evidence/records/` evidence record
 - Affected proof surfaces:
   - new hosted node-`5` observability-governance probe
   - new target node-`5` observability-governance probe

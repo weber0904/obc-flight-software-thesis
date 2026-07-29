@@ -8,63 +8,67 @@ from pathlib import Path
 from urllib.parse import unquote
 
 ROOT = Path(__file__).resolve().parent.parent
-
-STATUS_RE = re.compile(r"^(?:Status|狀態)[:：]\s*.+$", re.MULTILINE)
-FRESHNESS_RE = re.compile(
-    r"^(?:Last (?:reconciled|reviewed|refreshed)(?: [^:：]+)?|Updated|更新日期)[:：]\s*.+$",
-    re.MULTILINE,
-)
 MARKDOWN_LINK_RE = re.compile(r"\]\(([^)]+)\)")
 
 CURRENT_DOCS = [
+    Path("README.md"),
+    Path("README.zh-TW.md"),
+    Path("CONTRIBUTING.md"),
+    Path("SECURITY.md"),
     Path("docs/README.md"),
-    Path("docs/architecture/README.md"),
-    Path("docs/architecture/current-development-architecture.md"),
-    Path("docs/architecture/project-contributions.md"),
-    Path("docs/architecture/target-flight-design.md"),
-    Path("docs/roadmap/README.md"),
-    Path("docs/roadmap/current-baseline.md"),
-    Path("docs/roadmap/next-work.md"),
+    Path("docs/architecture.md"),
     Path("docs/interfaces.md"),
-    Path("docs/operator/mission-console-phase1-runbook.md"),
-    Path("docs/operator/target-obc-comm-csp-lab-runbook.md"),
-    Path("docs/operator/target-proof-abc-governance.md"),
-    Path("docs/operator/thesis-demo-routes.zh-TW.md"),
-    Path("docs/verification-path-registry.md"),
-    Path("docs/verification-matrix.md"),
-    Path("docs/verification-debugging-lessons.md"),
-    Path("docs/thesis/claim-evidence-map.zh-TW.md"),
+    Path("docs/verification.md"),
+    Path("docs/operator/hosted.md"),
+    Path("docs/operator/mission-console.md"),
+    Path("docs/operator/simulator-controls.zh-TW.md"),
+    Path("docs/operator/target-lab.md"),
+    Path("docs/operator/thesis-demo.zh-TW.md"),
+    Path("docs/thesis.md"),
+    Path("evidence/README.md"),
+    Path("evidence/records/public-thesis-submission-v1/README.md"),
+    Path("release/RELEASE_PROVENANCE.md"),
 ]
 
 ROOT_REQUIRED_LINKS = {
     Path("README.md"): [
-        "docs/architecture/current-development-architecture.md",
-        "docs/verification-matrix.md",
-        "docs/verification-path-registry.md",
+        "docs/architecture.md",
+        "docs/interfaces.md",
+        "docs/verification.md",
+        "docs/README.md",
+        "evidence/README.md",
         "openspec/specs/",
-        "docs/evidence/README.md",
+    ],
+    Path("docs/README.md"): [
+        "architecture.md",
+        "interfaces.md",
+        "verification.md",
+        "operator/hosted.md",
+        "operator/target-lab.md",
+        "operator/mission-console.md",
+        "thesis.md",
+        "../evidence/README.md",
     ],
     Path("CONTRIBUTING.md"): [
-        "docs/verification-path-registry.md",
+        "docs/verification.md",
+        "evidence/verification-path-registry.md",
         "scripts/verification-manifest.json",
     ],
 }
 
-EXCLUDED_CURRENT_PREFIXES = (
-    Path("docs/test-records"),
-    Path("docs/roadmap/archive"),
-)
-
-FORBIDDEN_CURRENT_REFERENCES = (
-    "docs/reporting/",
-    "docs/architecture-review/",
-    "mission-console-phase1-handoff.md",
-    "mission-console-observability-recommendations.md",
-    "comm-followup-directions.md",
-    "formal-comm-verification-matrix-v1-runbook.md",
-    "hosted-official-sequencing-system-resources-runbook.md",
-    "thesis-architecture-draft.md",
-    "AGENTS.md",
+FORBIDDEN_PORTFOLIO_PATTERNS = (
+    re.compile(r"\bcurated public\b", re.IGNORECASE),
+    re.compile(r"\bpublication cleanup\b", re.IGNORECASE),
+    re.compile(r"\bpreviously demonstrated\b", re.IGNORECASE),
+    re.compile(r"\bfresh target\b", re.IGNORECASE),
+    re.compile(r"\bnon-claims?\b", re.IGNORECASE),
+    re.compile(r"\bnot claimed\b", re.IGNORECASE),
+    re.compile(r"\bdoes not claim\b", re.IGNORECASE),
+    re.compile(r"公開版"),
+    re.compile(r"已從公開"),
+    re.compile(r"先前已展示"),
+    re.compile(r"不宣稱"),
+    re.compile(r"沒有在.*重新執行"),
 )
 
 
@@ -75,39 +79,6 @@ def read_text(rel_path: Path) -> str:
         raise RuntimeError(f"missing file: {rel_path}") from None
 
 
-def is_current_markdown(rel_path: Path) -> bool:
-    if rel_path.suffix.lower() != ".md":
-        return False
-    return not any(
-        rel_path == prefix or prefix in rel_path.parents
-        for prefix in EXCLUDED_CURRENT_PREFIXES
-    )
-
-
-def iter_current_markdown() -> list[Path]:
-    roots = [ROOT / "README.md", ROOT / "README.zh-TW.md", ROOT / "CONTRIBUTING.md", ROOT / "docs"]
-    paths: list[Path] = []
-    for candidate in roots:
-        if candidate.is_file():
-            paths.append(candidate.relative_to(ROOT))
-        elif candidate.is_dir():
-            paths.extend(
-                path.relative_to(ROOT)
-                for path in candidate.rglob("*.md")
-                if is_current_markdown(path.relative_to(ROOT))
-            )
-    return sorted(set(paths))
-
-
-def check_metadata(errors: list[str]) -> None:
-    for rel_path in CURRENT_DOCS:
-        text = read_text(rel_path)
-        if not STATUS_RE.search(text):
-            errors.append(f"{rel_path}: missing Status/狀態 metadata")
-        if not FRESHNESS_RE.search(text):
-            errors.append(f"{rel_path}: missing freshness metadata")
-
-
 def check_required_links(errors: list[str]) -> None:
     for rel_path, targets in ROOT_REQUIRED_LINKS.items():
         text = read_text(rel_path)
@@ -116,16 +87,20 @@ def check_required_links(errors: list[str]) -> None:
                 errors.append(f"{rel_path}: missing canonical link target '{target}'")
 
 
-def check_current_references(errors: list[str]) -> None:
-    for rel_path in iter_current_markdown():
+def check_portfolio_language(errors: list[str]) -> None:
+    for rel_path in CURRENT_DOCS:
         text = read_text(rel_path)
-        for forbidden in FORBIDDEN_CURRENT_REFERENCES:
-            if forbidden in text:
-                errors.append(f"{rel_path}: references excluded current path '{forbidden}'")
+        for pattern in FORBIDDEN_PORTFOLIO_PATTERNS:
+            match = pattern.search(text)
+            if match:
+                errors.append(
+                    f"{rel_path}: portfolio prose contains release-process wording "
+                    f"'{match.group(0)}'"
+                )
 
 
 def check_links(errors: list[str]) -> None:
-    for rel_path in iter_current_markdown():
+    for rel_path in CURRENT_DOCS:
         text = read_text(rel_path)
         for raw_target in MARKDOWN_LINK_RE.findall(text):
             target = unquote(raw_target.strip().split("#", 1)[0])
@@ -144,13 +119,38 @@ def check_links(errors: list[str]) -> None:
                 errors.append(f"{rel_path}: broken link '{raw_target}'")
 
 
+def check_docs_surface(errors: list[str]) -> None:
+    allowed = {
+        Path("docs/README.md"),
+        Path("docs/architecture.md"),
+        Path("docs/interfaces.md"),
+        Path("docs/verification.md"),
+        Path("docs/thesis.md"),
+        Path("docs/operator/hosted.md"),
+        Path("docs/operator/mission-console.md"),
+        Path("docs/operator/simulator-controls.zh-TW.md"),
+        Path("docs/operator/target-lab.md"),
+        Path("docs/operator/thesis-demo.zh-TW.md"),
+    }
+    observed = {
+        path.relative_to(ROOT)
+        for path in (ROOT / "docs").rglob("*.md")
+    }
+    if observed != allowed:
+        errors.append(
+            "docs/ Markdown surface is not canonical: "
+            f"missing={sorted(str(path) for path in allowed - observed)}, "
+            f"extra={sorted(str(path) for path in observed - allowed)}"
+        )
+
+
 def run_checks(root: Path = ROOT) -> list[str]:
-    del root  # retained for compatibility with check_repo_consistency.py
+    del root
     errors: list[str] = []
     try:
-        check_metadata(errors)
+        check_docs_surface(errors)
         check_required_links(errors)
-        check_current_references(errors)
+        check_portfolio_language(errors)
         check_links(errors)
     except RuntimeError as exc:
         errors.append(str(exc))
@@ -164,8 +164,8 @@ def main() -> None:
             print(f"FAIL: {error}", file=sys.stderr)
         raise SystemExit(1)
     print("PASS: public documentation governance checks passed")
-    print(f"- current metadata documents: {len(CURRENT_DOCS)}")
-    print(f"- current Markdown files: {len(iter_current_markdown())}")
+    print(f"- canonical reader documents: {len(CURRENT_DOCS)}")
+    print("- docs Markdown files: 10")
 
 
 if __name__ == "__main__":

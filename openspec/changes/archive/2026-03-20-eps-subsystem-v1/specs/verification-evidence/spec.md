@@ -1,7 +1,7 @@
 ## ADDED Requirements
 
 ### Requirement: EPS Implementation Evidence
-The first EPS implementation slice SHALL record its build, bridge-unit-test, and host transport integration results under `docs/test-records/eps-subsystem-v1/`.
+The first EPS implementation slice SHALL record its build, bridge-unit-test, and host transport integration results under `evidence/records/eps-subsystem-v1/`.
 
 #### Scenario: EPS evidence is reviewable after implementation
 - **WHEN** the EPS subsystem change completes

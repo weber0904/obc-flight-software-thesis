@@ -15,4 +15,4 @@ The initial capability queue built the project slices required by the first-vers
 
 - Affected specs: `platform-baseline`, `comm-subsystem`, `delivery-workflow`, `verification-evidence`
 - Affected code: `OBC/Top/`, `OBC/Main.cpp`, component runtime helpers, `simulators/comm/`, `scripts/`
-- Affected docs: `obc-dev-spec/`, `docs/test-records/`
+- Affected docs: `obc-dev-spec/`, `evidence/records/`

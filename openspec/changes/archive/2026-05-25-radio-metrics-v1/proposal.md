@@ -42,7 +42,7 @@ work widens the surface area.
   `openspec/specs/interface-contract-index/spec.md`,
   `docs/interfaces.md`, `docs/architecture/current-development-architecture.md`,
   `docs/roadmap/current-baseline.md`, `docs/roadmap/next-work.md`, and
-  `docs/test-records/radio-metrics-v1/README.md`
+  `evidence/records/radio-metrics-v1/README.md`
 - Affected systems: hosted node-`5` S-band path, hosted node-`6` UHF path,
   hosted direct-TCP fallback path, and the service-managed target/lab default
   node-`5` path

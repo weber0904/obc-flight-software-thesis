@@ -14,7 +14,7 @@
 
 ## 3. Evidence And Discoverability
 
-- [x] 3.1 Add `docs/test-records/current-baseline-assessment-v1/README.md` documenting the checks, consulted truth sources, and bounded conclusions for this slice.
+- [x] 3.1 Add `evidence/records/current-baseline-assessment-v1/README.md` documenting the checks, consulted truth sources, and bounded conclusions for this slice.
 - [x] 3.2 Update top-level documentation indices so the technical architecture-review package is discoverable alongside the professor/PM reporting package.
 
 ## 4. Validation And Finalization

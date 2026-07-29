@@ -13,8 +13,8 @@ from generate_reconciliation_matrix_md import render_markdown
 ROOT = Path(__file__).resolve().parent.parent
 SPECS_DIR = ROOT / "openspec" / "specs"
 ARCHIVE_DIR = ROOT / "openspec" / "changes" / "archive"
-MATRIX_PATH = ROOT / "docs" / "baseline-reconciliation-matrix.json"
-MATRIX_MD_PATH = ROOT / "docs" / "baseline-reconciliation-matrix.md"
+MATRIX_PATH = ROOT / "openspec" / "reconciliation" / "baseline-reconciliation-matrix.json"
+MATRIX_MD_PATH = ROOT / "openspec" / "reconciliation" / "baseline-reconciliation-matrix.md"
 
 PLACEHOLDER_PATTERNS = (
     re.compile(r"\bTBD\b", re.IGNORECASE),

@@ -20,10 +20,10 @@
 
 ## 3. Documentation And Evidence
 
-- [x] 3.1 Add `docs/test-records/target-timing-wcet-profile-proof-v1/README.md`
+- [x] 3.1 Add `evidence/records/target-timing-wcet-profile-proof-v1/README.md`
   and record the declared workload windows, timing observations, slip verdict,
   and residual gaps.
-- [x] 3.2 Update `docs/verification-path-registry.md` with the new target
+- [x] 3.2 Update `evidence/verification-path-registry.md` with the new target
   timing proof path.
 - [x] 3.3 Refresh stale current-baseline docs so they reflect payload v2 /
   helper-backed target payload convergence and the current COMM verification

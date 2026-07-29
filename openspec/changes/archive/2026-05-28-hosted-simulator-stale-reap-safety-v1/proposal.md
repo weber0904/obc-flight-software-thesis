@@ -38,11 +38,11 @@ current target-timing truth.
 - `scripts/probe_process_utils.py`
 - `scripts/per_band_stock_ground_stacks.py`
 - `scripts/run_per_band_stock_ground_stacks_hosted_probe.sh`
-- `docs/test-records/hosted-simulator-stale-reap-safety-v1/README.md`
+- `evidence/records/hosted-simulator-stale-reap-safety-v1/README.md`
 - `docs/operator/hosted-per-band-stock-ground-stacks-runbook.md`
 - `docs/roadmap/current-baseline.md`
 - `docs/architecture/current-development-architecture.md`
-- `docs/verification-path-registry.md`
+- `evidence/verification-path-registry.md`
 - `docs/architecture/comm-followup-directions.md`
 - `docs/interfaces.md`
 - `docs/architecture/target-flight-design.md`

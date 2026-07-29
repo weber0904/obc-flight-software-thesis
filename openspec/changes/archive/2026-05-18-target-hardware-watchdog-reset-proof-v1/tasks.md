@@ -14,7 +14,7 @@
 
 - [x] 3.1 Add or update unit tests for Linux watchdog sink behavior, runtime flag parsing, and recovery exit-policy separation.
 - [x] 3.2 Add a Raspberry Pi hardware watchdog reset probe, including a probe-owned quiet service override and journal-first acceptance, and rerun the existing target `R2` restart probe to prove no regression.
-- [x] 3.3 Record `docs/test-records/target-hardware-watchdog-reset-proof-v1/` evidence and update `docs/verification-path-registry.md`.
+- [x] 3.3 Record `evidence/records/target-hardware-watchdog-reset-proof-v1/` evidence and update `evidence/verification-path-registry.md`.
 
 ## 4. Documentation And OpenSpec Closeout
 

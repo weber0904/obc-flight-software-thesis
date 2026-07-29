@@ -24,5 +24,5 @@ None.
 ## Impact
 
 - Affected code: `OBC/Components/BootManager/`, `OBC/Components/CMakeLists.txt`
-- Affected docs: `openspec/changes/boot-update-v1/`, `docs/test-records/`, `obc-dev-spec/06_boot_update.md`
+- Affected docs: `openspec/changes/boot-update-v1/`, `evidence/records/`, `obc-dev-spec/06_boot_update.md`
 - Dependencies: project `fprime-venv/`, F' normal build and UT build flows, host filesystem access for metadata and staged-image verification

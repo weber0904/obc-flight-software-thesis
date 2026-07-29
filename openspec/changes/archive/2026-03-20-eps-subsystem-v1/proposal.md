@@ -24,5 +24,5 @@ None.
 ## Impact
 
 - Affected code: `simulators/common/`, `simulators/eps/`, `OBC/Components/EpsBridge/`, root `CMakeLists.txt`
-- Affected docs: `openspec/changes/eps-subsystem-v1/`, `docs/test-records/`, `obc-dev-spec/03_eps_subsystem.md`
+- Affected docs: `openspec/changes/eps-subsystem-v1/`, `evidence/records/`, `obc-dev-spec/03_eps_subsystem.md`
 - Dependencies: Homebrew `zeromq`, the project `fprime-venv/`, the F' normal build and UT build flows

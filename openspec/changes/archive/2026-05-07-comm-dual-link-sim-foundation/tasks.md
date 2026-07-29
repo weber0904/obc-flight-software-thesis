@@ -19,8 +19,8 @@
 ## 4. Update docs and evidence
 
 - [x] 4.1 Update simulator and script README surfaces for the new executable and probe names.
-- [x] 4.2 Add `docs/test-records/comm-dual-link-sim-foundation-v1/README.md` with narrow proof boundaries.
-- [x] 4.3 Add the hosted dual-link COMM simulator foundation path to `docs/verification-path-registry.md`.
+- [x] 4.2 Add `evidence/records/comm-dual-link-sim-foundation-v1/README.md` with narrow proof boundaries.
+- [x] 4.3 Add the hosted dual-link COMM simulator foundation path to `evidence/verification-path-registry.md`.
 
 ## 5. Verify, archive, and prepare review boundary
 

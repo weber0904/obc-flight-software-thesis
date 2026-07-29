@@ -24,6 +24,6 @@ GPS live UART cannot be scheduled as near-term work while the Raspberry Pi `/dev
 
 ## Impact
 
-- Affected docs/evidence: README, scripts README, verification matrix, registry, narrative docs, reporting package, and `docs/test-records/serial-resource-allocation-governance-v1/`.
+- Affected docs/evidence: README, scripts README, verification matrix, registry, narrative docs, reporting package, and `evidence/records/serial-resource-allocation-governance-v1/`.
 - Affected runtime code: none.
 - Affected hardware planning: GPS live UART must not use `/dev/serial0` unless a future governed hardware architecture change reassigns that resource.

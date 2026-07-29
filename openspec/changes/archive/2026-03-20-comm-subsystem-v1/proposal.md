@@ -24,5 +24,5 @@ None.
 ## Impact
 
 - Affected code: `OBC/Components/`, `simulators/comm/`, `simulators/CMakeLists.txt`
-- Affected docs: `openspec/changes/comm-subsystem-v1/`, `docs/test-records/`, `obc-dev-spec/05_comm_subsystem.md`, `simulators/README.md`
+- Affected docs: `openspec/changes/comm-subsystem-v1/`, `evidence/records/`, `obc-dev-spec/05_comm_subsystem.md`, `simulators/README.md`
 - Dependencies: project `fprime-venv/`, Homebrew `zeromq` already used by hosted tests, local loopback sockets, PTY support on the host OS

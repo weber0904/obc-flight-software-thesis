@@ -7,5 +7,5 @@
 ## 2. Verification and evidence
 
 - [x] 2.1 Validate both skill folders with the official quick validator and capture the exact commands used.
-- [x] 2.2 Record the skill-format and validation evidence under `docs/test-records/codex-skills-v1/`.
+- [x] 2.2 Record the skill-format and validation evidence under `evidence/records/codex-skills-v1/`.
 - [x] 2.3 Run the normal repository closeout steps for this change, including OpenSpec validation, spec sync, archive, and commit readiness.

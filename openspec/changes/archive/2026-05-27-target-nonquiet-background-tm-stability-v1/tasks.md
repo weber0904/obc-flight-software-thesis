@@ -33,12 +33,12 @@
 ## 4. Evidence And Docs
 
 - [x] 4.1 Record a new evidence report under
-  `docs/test-records/target-nonquiet-background-tm-stability-v1/README.md`
+  `evidence/records/target-nonquiet-background-tm-stability-v1/README.md`
   with exact paths, oracle agreement/divergence, and final classification.
 - [x] 4.2 Update current architecture/current baseline/current COMM follow-up
   docs so they state the resolved boundary without over-claiming closure.
 - [x] 4.3 Update the operator runbook and keep
-  `docs/verification-path-registry.md` unchanged because this change improves
+  `evidence/verification-path-registry.md` unchanged because this change improves
   the diagnosis boundary but does not yet promote a reusable general non-quiet
   node-`6` path.
 

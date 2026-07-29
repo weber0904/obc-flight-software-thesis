@@ -25,6 +25,6 @@
 
 - [x] 4.1 Run affected helper/component tests and catalog check.
 - [x] 4.2 Run focused hosted command authority, envelope metadata, and session sequence probes after a fresh build.
-- [x] 4.3 Add `docs/test-records/command-session-sequence-v1/README.md`.
-- [x] 4.4 Update `docs/verification-path-registry.md` for the active sequence enforcement evidence boundary.
+- [x] 4.3 Add `evidence/records/command-session-sequence-v1/README.md`.
+- [x] 4.4 Update `evidence/verification-path-registry.md` for the active sequence enforcement evidence boundary.
 - [x] 4.5 Run `openspec validate command-session-sequence-v1`, `openspec validate --specs`, and `python3 scripts/check_repo_consistency.py`.

@@ -23,5 +23,5 @@ None.
 ## Impact
 
 - Affected code: `simulators/comm/`, `OBC/Main.cpp`, runtime configuration helpers, and comm integration tests.
-- Affected docs: `README.md`, `obc-dev-spec/05_comm_subsystem.md`, `obc-dev-spec/07_verification_evidence.md`, and `docs/test-records/`.
+- Affected docs: `README.md`, `obc-dev-spec/05_comm_subsystem.md`, `obc-dev-spec/07_verification_evidence.md`, and `evidence/records/`.
 - Affected systems: hosted runtime, Raspberry Pi runtime selection, future real-radio integration path, and comm regression verification.

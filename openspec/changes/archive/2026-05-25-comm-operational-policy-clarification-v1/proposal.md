@@ -76,7 +76,7 @@ accidentally expand from unclear assumptions.
 - Affected docs: `docs/architecture/current-development-architecture.md`,
   `docs/interfaces.md`, `docs/roadmap/current-baseline.md`,
   `docs/roadmap/next-work.md`, `docs/architecture/comm-followup-directions.md`,
-  `docs/verification-path-registry.md`, and
+  `evidence/verification-path-registry.md`, and
   `docs/operator/formal-comm-verification-matrix-v1-runbook.md`
 - Affected systems: hosted S-band node `5`, hosted UHF node `6`, target/lab
   node `5`, target/lab bounded quiet node `6`, and the current

@@ -27,6 +27,6 @@ None.
 ## Impact
 
 - Adds repository-owned probe scripts under `scripts/`.
-- Adds an evidence record under `docs/test-records/comm-ttc-file-downlink-v1/`.
+- Adds an evidence record under `evidence/records/comm-ttc-file-downlink-v1/`.
 - Updates the COMM roadmap, verification-path registry, specs, and reconciliation matrix after archive.
 - Reuses existing `HousekeepingArchive` and F' `FileDownlink`; no product behavior or wire-shape change is intended beyond probe orchestration and governance records.

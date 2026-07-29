@@ -3,7 +3,6 @@
 ## Purpose
 Define the provenance, publication-boundary, credential, evidence, hardware-
 claim, and immutable-tag requirements for the curated public thesis release.
-
 ## Requirements
 ### Requirement: Public Snapshot Has Immutable Provenance
 The public release SHALL identify one development source commit, one public
@@ -71,14 +70,16 @@ stored in a versioned release asset bound by committed checksums.
 - **AND** the release tag SHALL contain the asset SHA-256 and redaction ledger
 
 ### Requirement: Hardware Claims Are Commit Scoped
-Hardware evidence not rerun on the public commit SHALL NOT be described as
-fresh verification of the public tag.
 
-#### Scenario: Public README summarizes target results
-- **WHEN** prior Raspberry Pi or lab evidence is cited
-- **THEN** it SHALL be labeled previously demonstrated or historical
-- **AND** its source commit, date, environment, and release delta SHALL be
-  visible
+Hardware and laboratory result records SHALL identify their execution commit,
+date, environment, commands, and artifact digests. Current reader documents
+SHALL link those records by capability and environment.
+
+#### Scenario: Reviewer follows a hardware result
+- **WHEN** a reviewer selects a Raspberry Pi, UART, SocketCAN, subsystem, or
+  watchdog result
+- **THEN** the linked evidence SHALL expose the exact execution provenance and
+  observations
 
 ### Requirement: Public Tag Is CI Gated And Immutable
 The `thesis-submission-v1` annotated tag SHALL be created only from merged
@@ -93,3 +94,16 @@ public `main` after required CI succeeds and SHALL not subsequently move.
 - **WHEN** a non-security defect is found after publication
 - **THEN** the existing tag SHALL remain unchanged
 - **AND** the correction SHALL use a successor version
+
+### Requirement: Portfolio Documentation Is Capability First
+
+The portfolio-facing README and current documents SHALL explain implemented
+capabilities, architecture, operation, and verification directly.
+
+#### Scenario: Reviewer reads a current document
+- **WHEN** a reader opens README, architecture, interfaces, verification,
+  operator, thesis, security, or release documentation
+- **THEN** the prose SHALL focus on the software and reproducible engineering
+  results
+- **AND** publication-process commentary SHALL remain in machine-readable
+  provenance or formal change history

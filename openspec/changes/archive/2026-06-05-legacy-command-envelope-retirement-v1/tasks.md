@@ -41,6 +41,6 @@
 - [x] 5.8 Run the fresh local verification gate
   `bash scripts/run_verification_ci.sh build-artifacts/verification-ci-local`.
 - [x] 5.9 Record the dependency audit and fresh verification evidence in
-  `docs/test-records/legacy-command-envelope-retirement-v1/README.md`.
+  `evidence/records/legacy-command-envelope-retirement-v1/README.md`.
 - [x] 5.10 Re-run `openspec validate legacy-command-envelope-retirement-v1`
   and `openspec validate --specs` after the final evidence/doc updates.

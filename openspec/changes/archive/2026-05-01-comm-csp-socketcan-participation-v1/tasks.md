@@ -19,8 +19,8 @@
 
 ## 4. Evidence And Closeout
 
-- [x] 4.1 Add `docs/test-records/comm-csp-socketcan-participation-v1/README.md` after the physical probe passes.
-- [x] 4.2 Register the new path in `docs/verification-path-registry.md`.
+- [x] 4.1 Add `evidence/records/comm-csp-socketcan-participation-v1/README.md` after the physical probe passes.
+- [x] 4.2 Register the new path in `evidence/verification-path-registry.md`.
 - [x] 4.3 Update roadmap and reconciliation surfaces after archive.
 - [x] 4.4 Run syntax checks, full local gate, physical probe, OpenSpec validations, repo consistency check, and `git diff --check`.
 - [x] 4.5 Archive the OpenSpec change and prepare a local-ready branch without pushing.

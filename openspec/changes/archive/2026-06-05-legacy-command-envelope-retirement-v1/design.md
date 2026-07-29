@@ -30,7 +30,7 @@ runtime observer contract that current secure auth already reuses.
 | Surface / capability | Current authority source | Latest covering evidence | Active dependency kind | Retirement action |
 |---|---|---|---|---|
 | Hosted secure command baseline | `challenge-handshake-secure-command-v1`, `target-secure-auth-proof-v1`, `uplink-authority-and-key-hardening-v1` | same | none | `rewrite` |
-| Legacy command-envelope metadata / sequence / lifecycle / freshness families | `docs/verification-path-registry.md` entry `45` and legacy citations | secure-auth baseline now covers current command-session truth; legacy records remain history only | docs-only | `rewrite` |
+| Legacy command-envelope metadata / sequence / lifecycle / freshness families | `evidence/verification-path-registry.md` entry `45` and legacy citations | secure-auth baseline now covers current command-session truth; legacy records remain history only | docs-only | `rewrite` |
 | Hosted UHF packet-quiet truth | old hosted packet-quiet record | `uhf-primary-secure-live-benchmark-v1` | docs-only | `rewrite` |
 | Hosted UHF beacon suppress/runtime | historical hosted wrapper still keyed to legacy `SESSION_OPEN` | no dedicated secure-baseline replacement yet | probe-only | `rewrite` |
 | Hosted payload dual-artifact proof | hosted wrapper under entry `71` | newer payload evidence plus governed target proof carry the active branch truth | probe-only | `delete` |

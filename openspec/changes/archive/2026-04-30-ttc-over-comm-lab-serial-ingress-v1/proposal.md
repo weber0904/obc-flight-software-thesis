@@ -29,6 +29,6 @@ None.
 
 - Adds a repository-owned staged probe under `scripts/`.
 - Adds opt-in physical serial acquisition preamble controls to `ground_ttc_gateway`.
-- Adds a bounded evidence record under `docs/test-records/ttc-over-comm-lab-serial-ingress-v1/`.
+- Adds a bounded evidence record under `evidence/records/ttc-over-comm-lab-serial-ingress-v1/`.
 - May register a new verification path only after the staged probe proves its formal boundary.
 - Does not change the COMM CSP wire contract, `ground_ttc_gateway` northbound interface, `fprime-gds`, subsystem build strategy, or OBC target deployment model.

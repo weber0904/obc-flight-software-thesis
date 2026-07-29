@@ -25,7 +25,7 @@
 ## 5. Hosted Proof, Docs, And Governance
 
 - [x] 5.1 Update or add a hosted probe proving S-band staged upload success, UHF backup deny, UHF failover-primary re-auth upload success, malformed handshake rejection, and retained legacy v1 compatibility through the tracked keystore.
-- [x] 5.2 Update `docs/interfaces.md`, `docs/architecture/current-development-architecture.md`, and `docs/verification-path-registry.md` to reflect keystore-backed auth, handshake-only unknown uplink, and staged file-uplink closure.
+- [x] 5.2 Update `docs/interfaces.md`, `docs/architecture/current-development-architecture.md`, and `evidence/verification-path-registry.md` to reflect keystore-backed auth, handshake-only unknown uplink, and staged file-uplink closure.
 - [x] 5.3 Update repo-owned operator/helper docs so maintained workflows no longer rely on `COMMAND_AUTH_*` or `--command-auth-*`.
 
 ## 6. Validation

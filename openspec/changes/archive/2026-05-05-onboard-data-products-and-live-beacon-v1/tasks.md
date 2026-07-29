@@ -24,8 +24,8 @@
 
 - [x] 4.1 Run hosted probe that validates cached subsystem state to reduced state, live beacon decode, official HK trend data-product file generation, and catalog behavior.
 - [x] 4.2 Update debug tooling/evidence so beacon capture is verification-only and not a mission `BEACON_HISTORY` data product.
-- [x] 4.3 Update `docs/test-records/onboard-data-products-and-live-beacon-v1/README.md`.
-- [x] 4.4 Update `docs/verification-matrix.md` and `docs/verification-path-registry.md`.
+- [x] 4.3 Update `evidence/records/onboard-data-products-and-live-beacon-v1/README.md`.
+- [x] 4.4 Update `docs/verification-matrix.md` and `evidence/verification-path-registry.md`.
 
 ## 5. Verification And Governance
 

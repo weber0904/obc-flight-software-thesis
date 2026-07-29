@@ -26,8 +26,8 @@
 
 ## 5. Documentation, Evidence, And Pending Notes
 
-- [x] 5.1 Add `docs/test-records/payload-ttc-mode-entry-v1/README.md` with reproducibility fields, shell evidence, CCSDS/F Prime command evidence, command responses, event excerpts, telemetry snapshots, deferred work, and reused/new verification paths.
-- [x] 5.2 Update `docs/verification-path-registry.md` only for verification path additions or upgrades; otherwise cite the reused default hosted CCSDS S-band path in the evidence record.
+- [x] 5.1 Add `evidence/records/payload-ttc-mode-entry-v1/README.md` with reproducibility fields, shell evidence, CCSDS/F Prime command evidence, command responses, event excerpts, telemetry snapshots, deferred work, and reused/new verification paths.
+- [x] 5.2 Update `evidence/verification-path-registry.md` only for verification path additions or upgrades; otherwise cite the reused default hosted CCSDS S-band path in the evidence record.
 - [x] 5.3 Update `pending/README.md`, `pending/00-baseline-facts.md`, `pending/01-mode-model-v2.md`, `pending/05-fdir-watchdog-auth-scheduler.md`, and `pending/06-openspec-change-breakdown.md` so this change is described as first-version manual PAYLOAD/TTC entry/exit guard only.
 
 ## 6. Verification And Closeout

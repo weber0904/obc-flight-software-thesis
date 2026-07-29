@@ -76,7 +76,7 @@ Alternative considered:
 3. Add the hosted EPS simulator executable and integration test.
 4. Implement `EpsBridge` and its focused unit tests.
 5. Run the normal build, UT build, the bridge unit tests, and the host integration executable.
-6. Record evidence under `docs/test-records/eps-subsystem-v1/`.
+6. Record evidence under `evidence/records/eps-subsystem-v1/`.
 7. Validate and archive the change.
 
 ## Open Questions

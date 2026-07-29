@@ -25,7 +25,7 @@
 - [x] 4.1 Update or add a default hosted CCSDS S-band probe proving a representative authorized command still works through the gate.
 - [x] 4.2 Add hosted configured-profile proof where `uhf-backup` allows one status command and rejects at least one high-authority command with authority evidence and unchanged OBC state.
 - [x] 4.3 Record that file and unknown packet authority are deferred and not covered by UHF backup v1.
-- [x] 4.4 Update `docs/test-records/` and `docs/verification-path-registry.md` for the upgraded command ingress authority semantics.
+- [x] 4.4 Update `evidence/records/` and `evidence/verification-path-registry.md` for the upgraded command ingress authority semantics.
 
 ## 5. Verification And Closeout
 

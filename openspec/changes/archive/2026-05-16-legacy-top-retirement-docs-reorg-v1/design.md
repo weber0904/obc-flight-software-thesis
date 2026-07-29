@@ -61,7 +61,7 @@ gate instead of editing old transcripts.
 ### Make docs homes explicit
 
 Current truth remains under `docs/architecture/`, `docs/operator/`,
-`docs/test-records/`, and `docs/verification-path-registry.md`. Roadmap handoff
+`evidence/records/`, and `evidence/verification-path-registry.md`. Roadmap handoff
 is compressed under `docs/roadmap/`. Repo-tracked thesis material moves to
 `docs/thesis/`. `docs/reporting/` becomes an index for archived or generated
 reporting packages rather than the home for active thesis content. Retired

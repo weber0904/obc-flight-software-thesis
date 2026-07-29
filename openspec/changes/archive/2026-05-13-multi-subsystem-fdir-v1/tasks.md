@@ -26,7 +26,7 @@
 - [x] 4.2 Prove EPS repeated timeout still reaches the shared executor and preserves the existing bounded reset, `SAFE`, clear, and relatch behavior.
 - [x] 4.3 Prove ADCS repeated scheduled poll failure or no-valid-refresh reaches the shared recovery path and performs the bounded ADCS action and escalation flow.
 - [x] 4.4 Prove COMM sustained primary-link failure reaches the shared recovery path, performs executor-owned failover or `SAFE`, and leaves structured recovery status truth.
-- [x] 4.5 Record the proof in `docs/test-records/multi-subsystem-fdir-v1/README.md` and update the verification-path registry for the new hosted path.
+- [x] 4.5 Record the proof in `evidence/records/multi-subsystem-fdir-v1/README.md` and update the verification-path registry for the new hosted path.
 
 ## 5. Verification And Closeout
 

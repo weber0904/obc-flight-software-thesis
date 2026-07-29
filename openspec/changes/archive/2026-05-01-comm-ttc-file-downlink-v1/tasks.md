@@ -13,8 +13,8 @@
 
 ## 3. Evidence And Documentation
 
-- [x] 3.1 Add `docs/test-records/comm-ttc-file-downlink-v1/README.md` after the hosted and physical probes pass.
-- [x] 3.2 Register physical lab serial COMM file/downlink in `docs/verification-path-registry.md` after the formal physical probe passes.
+- [x] 3.1 Add `evidence/records/comm-ttc-file-downlink-v1/README.md` after the hosted and physical probes pass.
+- [x] 3.2 Register physical lab serial COMM file/downlink in `evidence/verification-path-registry.md` after the formal physical probe passes.
 - [x] 3.3 Update `docs/planning/comm-roadmap.md` to move file/downlink out of Next and leave COMM SocketCAN participation as the next roadmap item.
 
 ## 4. Verification And Closeout

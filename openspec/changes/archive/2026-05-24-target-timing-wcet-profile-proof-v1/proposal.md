@@ -50,8 +50,8 @@ service-managed baseline actually proves and what timing gaps still remain.
   - Raspberry Pi release packaging for `payload_camera_backend_helper`
   - new repository-owned target timing/WCET probe entrypoint
 - Affected docs:
-  - `docs/test-records/target-timing-wcet-profile-proof-v1/README.md`
-  - `docs/verification-path-registry.md`
+  - `evidence/records/target-timing-wcet-profile-proof-v1/README.md`
+  - `evidence/verification-path-registry.md`
   - stale current-baseline / architecture / target-design narrative layers
 - Affected formal specs:
   - `interface-contract-index`

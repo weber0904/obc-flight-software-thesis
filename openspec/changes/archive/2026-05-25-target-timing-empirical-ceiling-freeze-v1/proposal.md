@@ -55,8 +55,8 @@ falling back to broad timing `TBD` language.
   - new repository-owned timing closure probe entrypoint and helper
   - target node-`5` timing evidence aggregation for three fresh runs
 - Affected docs:
-  - `docs/test-records/target-timing-empirical-ceiling-freeze-v1/README.md`
-  - `docs/verification-path-registry.md`
+  - `evidence/records/target-timing-empirical-ceiling-freeze-v1/README.md`
+  - `evidence/verification-path-registry.md`
   - `docs/interfaces.md`
   - current-baseline / next-work / architecture docs only if the numeric
     service-managed truth actually changes

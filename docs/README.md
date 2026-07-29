@@ -1,37 +1,24 @@
-# Project Documentation
+# Documentation
 
-Status: canonical public documentation index.  
-Last reconciled: 2026-07-29 for `thesis-submission-v1`.
+Start with the document that matches the question you are investigating.
 
-## Current Truth
+| Topic | Document |
+|---|---|
+| System structure and design decisions | [Architecture](architecture.md) |
+| External and internal contracts | [Interfaces](interfaces.md) |
+| Test strategy and capability coverage | [Verification](verification.md) |
+| Thesis contribution and evidence map | [Thesis Technical Index](thesis.md) |
 
-Read in this order:
+## Operations
 
-1. [Current Architecture](architecture/current-development-architecture.md)
-2. [Interface Contract Index](interfaces.md)
-3. [Verification Matrix](verification-matrix.md)
-4. [Verification Path Registry](verification-path-registry.md)
-5. [Operator Runbooks](operator/)
+| Environment | Guide |
+|---|---|
+| Local hosted simulation and dual-link stacks | [Hosted Operations](operator/hosted.md) |
+| Raspberry Pi and subsystem laboratory setup | [Target And Lab Operations](operator/target-lab.md) |
+| Browser-based ground interface | [Mission Console](operator/mission-console.md) |
+| EPS and ADCS simulator controls | [Simulator Controls（繁體中文）](operator/simulator-controls.zh-TW.md) |
+| Chapter 5 demonstration routes | [論文章節展示流程](operator/thesis-demo.zh-TW.md) |
 
-Source priority is:
-
-1. code, FPP topology, runtime wiring, and package/launch behavior
-2. current test evidence and verification-path registry
-3. `openspec/specs/`
-4. current narrative documents
-5. archived OpenSpec and historical test records for development context
-
-## Document Families
-
-- `architecture/`: current system, contribution boundary, and planned end state
-- `operator/`: maintained hosted, target/lab, Mission Console, and thesis demo
-  procedures
-- `roadmap/`: release status and bounded future work
-- `thesis/`: claim/evidence and source map, not thesis body text
-- `test-records/`: preserved reviewable evidence summaries
-- `evidence/`: public evidence catalog and release-asset policy
-
-Point-in-time reporting packages, stale architecture-review packages,
-implementation handoffs, agent-specific instructions, and thesis prose drafts
-are intentionally absent from this public distribution. Their formal decisions
-remain traceable through OpenSpec and test records.
+Formal requirements are under [`openspec/specs/`](../openspec/specs/). Detailed
+verification records, raw-artifact indexes, and the path registry are under
+[`evidence/`](../evidence/README.md).

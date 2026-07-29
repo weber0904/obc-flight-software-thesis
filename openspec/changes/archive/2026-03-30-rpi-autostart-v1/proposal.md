@@ -25,5 +25,5 @@ None.
 ## Impact
 
 - Affected code: `OBC/Main.cpp`, Raspberry Pi packaging assets, and repo-local `scripts/`.
-- Affected docs: `README.md`, `docs/README.md`, `obc-dev-spec/`, and `docs/test-records/`.
+- Affected docs: `README.md`, `docs/README.md`, `obc-dev-spec/`, and `evidence/records/`.
 - Affected systems: Raspberry Pi install root, systemd service management, and target reboot validation.

@@ -151,7 +151,7 @@ The proof mode writes a dedicated summary JSON including at least:
 - `docs/interfaces.md` stops describing this slice only as frozen future work
   and instead names the exact implementation-bearing branch proven by the
   official run.
-- `docs/verification-path-registry.md` gains one new entry for this new
+- `evidence/verification-path-registry.md` gains one new entry for this new
   target-bearing proof path, but the entry must describe only the branch that
   the official governed run actually proved.
 - `target-nonquiet-background-tm-stability-v1` remains oracle rationale and

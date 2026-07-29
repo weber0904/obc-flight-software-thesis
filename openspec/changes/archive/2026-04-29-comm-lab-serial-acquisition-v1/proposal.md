@@ -26,5 +26,5 @@ None.
 ## Impact
 
 - Adds a focused probe script under `scripts/`.
-- Adds a test record under `docs/test-records/comm-lab-serial-acquisition-v1/`.
+- Adds a test record under `evidence/records/comm-lab-serial-acquisition-v1/`.
 - Does not modify the COMM CSP service contract, `ground_ttc_gateway`, stock F' framing, `fprime-gds`, or target platform build strategy.

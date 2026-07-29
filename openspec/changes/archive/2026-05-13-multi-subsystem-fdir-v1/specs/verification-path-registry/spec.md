@@ -6,7 +6,7 @@ The verification-path registry SHALL register the hosted bounded `EPS + ADCS + C
 #### Scenario: Registry names the hosted shared recovery path
 - **WHEN** the hosted `multi-subsystem-fdir-v1` probe passes
 - **THEN** the registry SHALL identify the newly proven path as `detector-local EPS/ADCS/COMM fault injection -> TopCcsds shared RecoveryExecutor -> bounded recovery action -> hosted reboot-equivalent relaunch truth`
-- **AND** it SHALL cite the governing `docs/test-records/multi-subsystem-fdir-v1/README.md` evidence
+- **AND** it SHALL cite the governing `evidence/records/multi-subsystem-fdir-v1/README.md` evidence
 
 #### Scenario: Registry keeps adjacent recovery paths distinct
 - **WHEN** reviewers inspect the hosted multi-subsystem recovery entry

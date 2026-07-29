@@ -26,8 +26,8 @@
 ## 5. Update docs and evidence
 
 - [x] 5.1 Update simulator and script README surfaces for UHF hosted UART backup ingress and UHF beacon side-channel capture.
-- [x] 5.2 Add `docs/test-records/uhf-uart-backup-link-v1/README.md` with command ingress and beacon proof boundaries.
-- [x] 5.3 Add hosted UHF serial backup TT&C ingress and UHF node-6 beacon path entries to `docs/verification-path-registry.md`.
+- [x] 5.2 Add `evidence/records/uhf-uart-backup-link-v1/README.md` with command ingress and beacon proof boundaries.
+- [x] 5.3 Add hosted UHF serial backup TT&C ingress and UHF node-6 beacon path entries to `evidence/verification-path-registry.md`.
 
 ## 6. Verify, archive, and prepare review boundary
 

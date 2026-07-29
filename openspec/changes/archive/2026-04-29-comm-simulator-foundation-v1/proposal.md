@@ -23,7 +23,7 @@ The repository now has a governed gateway-backed omitted-RF `COMM` path, but the
 - Affected code:
   - `simulators/comm/` for the new model, server refactor, and tests
   - `simulators/CMakeLists.txt` for model build/test registration
-  - `docs/test-records/` for focused evidence
+  - `evidence/records/` for focused evidence
 - Affected interfaces:
   - new C++ model-facing `CommSimConfig` and `CommSimStatus` types
   - no change to the existing CSP packet sizes, services, node id, or service-port allocation

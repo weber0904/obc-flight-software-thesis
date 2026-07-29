@@ -24,12 +24,12 @@
 - [x] 4.2 Add direct helper tests for watchdog policy/config validation and aggregate clear rules.
 - [x] 4.3 Rerun and keep green the affected regressions for `ModeSafetyController`, `EpsFdirController`, and hosted runtime health/status behavior.
 - [x] 4.4 Add `scripts/run_watchdog_v1_probe.sh` with bounded beat-suppression control to prove healthy, warning, latched, suppressed, and recovered hosted behavior on `TopCcsds`.
-- [x] 4.5 Record the results under `docs/test-records/watchdog-v1/README.md` and add a new hosted watchdog verification-path registry entry.
+- [x] 4.5 Record the results under `evidence/records/watchdog-v1/README.md` and add a new hosted watchdog verification-path registry entry.
 
 ## 5. Verification And Closeout
 
 - [x] 5.1 Run a fresh local verification gate with `bash scripts/run_verification_ci.sh build-artifacts/verification-ci-watchdog-v1`.
 - [x] 5.2 Run focused affected `ctest` coverage and `bash scripts/run_watchdog_v1_probe.sh` after the fresh build.
 - [x] 5.3 Run `openspec validate watchdog-v1` and `openspec validate --specs`.
-- [x] 5.4 Update canonical active-baseline docs: `README.md`, `docs/architecture/current-development-architecture.md`, `docs/verification-path-registry.md`, `docs/roadmap/README.md`, and the relevant roadmap note.
+- [x] 5.4 Update canonical active-baseline docs: `README.md`, `docs/architecture/current-development-architecture.md`, `evidence/verification-path-registry.md`, `docs/roadmap/README.md`, and the relevant roadmap note.
 - [ ] 5.5 Archive the change only after implementation, verification, and spec sync are complete.

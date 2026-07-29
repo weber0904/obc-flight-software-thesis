@@ -20,7 +20,7 @@
 
 ## 4. Evidence, Docs, And Validation
 
-- [x] 4.1 Add `docs/test-records/boot-trust-chain-v1/README.md` with bounded hosted/Raspberry Pi evidence claims
-- [x] 4.2 Update `docs/verification-path-registry.md`, README/current architecture, and roadmap docs to match the proven boot trust baseline
+- [x] 4.1 Add `evidence/records/boot-trust-chain-v1/README.md` with bounded hosted/Raspberry Pi evidence claims
+- [x] 4.2 Update `evidence/verification-path-registry.md`, README/current architecture, and roadmap docs to match the proven boot trust baseline
 - [x] 4.3 Run fresh local verification, focused probes, `openspec validate boot-trust-chain-v1`, and `openspec validate --specs`
 - [x] 4.4 Archive/sync the OpenSpec change after implementation and evidence are complete

@@ -47,7 +47,7 @@
 - [x] 5.1 Sync the six main specs so they no longer conflict with the new UHF
   slice.
 - [x] 5.2 Add a dedicated evidence record for `uhf-reliable-transfer-v1`.
-- [x] 5.3 Update `docs/verification-path-registry.md` with distinct hosted and
+- [x] 5.3 Update `evidence/verification-path-registry.md` with distinct hosted and
   target/lab UHF reliable-transfer boundaries adjacent to existing node-`6`
   entries.
 - [x] 5.4 Update current docs and runbooks so the active COMM queue names the

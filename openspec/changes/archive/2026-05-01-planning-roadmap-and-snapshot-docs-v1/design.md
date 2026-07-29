@@ -7,9 +7,9 @@ The change introduces `docs/planning/` as an intentionally non-normative space f
 The governing truth priority for this change is:
 
 1. code, topology, and scripts
-2. archived OpenSpec changes and `docs/test-records/`
+2. archived OpenSpec changes and `evidence/records/`
 3. current main specs under `openspec/specs/`
-4. `docs/verification-path-registry.md`
+4. `evidence/verification-path-registry.md`
 5. narrative, snapshot, reporting, and planning docs
 
 ## Goals / Non-Goals

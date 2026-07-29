@@ -11,7 +11,7 @@
 - [x] 2.2 Update the delta specs for `comm-subsystem`, `core-system-contracts`, `interface-contract-index`, `onboard-data-products-and-live-beacon`, `verification-path-registry`, and `verification-evidence` to match the rebuilt same-change plan.
 - [x] 2.3 Update `docs/interfaces.md` so the node-`5` residual inventory includes current observed exposure and implementation action in addition to owner/component, final bucket, replacement surface, and rationale.
 - [x] 2.4 Update `docs/architecture/current-development-architecture.md`, `docs/roadmap/current-baseline.md`, `docs/roadmap/next-work.md`, and the affected operator runbooks so current branch truth distinguishes keep-live truth, reviewable observability, bounded fresh readback, diagnostics-only residuals, and active detailed `GET_*` requalification work.
-- [x] 2.5 Update `docs/verification-path-registry.md` and `docs/test-records/node5-observability-residual-cleanup-v1/README.md` so they describe an active same-change investigation plus later proof completion rather than a pending immediate closeout rerun.
+- [x] 2.5 Update `evidence/verification-path-registry.md` and `evidence/records/node5-observability-residual-cleanup-v1/README.md` so they describe an active same-change investigation plus later proof completion rather than a pending immediate closeout rerun.
 - [x] 2.6 Keep `openspec/specs/comm-subsystem/spec.md`, `openspec/specs/core-system-contracts/spec.md`, `openspec/specs/interface-contract-index/spec.md`, `openspec/specs/onboard-data-products-and-live-beacon/spec.md`, `openspec/specs/verification-path-registry/spec.md`, and `openspec/specs/verification-evidence/spec.md` aligned with the rebuilt branch contract.
 
 ## 3. Phase 3: Runtime / Probe / Proof-Chain Implementation
@@ -29,7 +29,7 @@
 - [x] 4.3 Rerun touched UTs, including at least `CommController`, `CommEgressMux`, and `WatchdogSupervisor` when those surfaces are changed, plus any touched family bridge or hosted proof support tests.
 - [x] 4.4 Run `openspec validate node5-observability-residual-cleanup-v1` and `openspec validate --specs`.
 - [x] 4.5 Archive `node5-observability-residual-cleanup-v1` only after phases 1-4 agree.
-- [x] 4.6 Update `docs/baseline-reconciliation-matrix.json`, regenerate `docs/baseline-reconciliation-matrix.md`, and run repo consistency checks only after archive.
+- [x] 4.6 Update `openspec/reconciliation/baseline-reconciliation-matrix.json`, regenerate `openspec/reconciliation/baseline-reconciliation-matrix.md`, and run repo consistency checks only after archive.
 - [x] 4.7 Record final commands and verdicts here and leave the branch at local-ready with no push or PR.
 
 ### Phase 4 Status
@@ -64,7 +64,7 @@
     `2026-06-13-node5-observability-residual-cleanup-v1`
 - `4.6` PASS:
   - matrix source updated:
-    `docs/baseline-reconciliation-matrix.json`
+    `openspec/reconciliation/baseline-reconciliation-matrix.json`
   - markdown regenerated:
     `python3 scripts/generate_reconciliation_matrix_md.py`
   - consistency checks:

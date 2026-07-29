@@ -22,7 +22,7 @@
 - [x] 4.1 Refresh the hosted shell regression probe for SoC-guarded `SAFE -> IDLE`, `IDLE -> PAYLOAD`, unchanged `IDLE -> TTC`, and continued operator rejection of `HELL`.
 - [x] 4.2 Refresh the default hosted CCSDS S-band `MODE_SET` probe so it proves accept/reject behavior for SoC-guarded admissions and at least one unavailable-cache fail-closed case.
 - [x] 4.3 Refresh or extend the hosted SoC safety probe so automatic `PAYLOAD -> IDLE` and `< 40%` precedence are covered after a fresh build.
-- [x] 4.4 Record reviewable evidence under `docs/test-records/mode-soc-admission-and-exit-v1/README.md` and update `docs/verification-path-registry.md` only where the existing registered paths are upgraded.
+- [x] 4.4 Record reviewable evidence under `evidence/records/mode-soc-admission-and-exit-v1/README.md` and update `evidence/verification-path-registry.md` only where the existing registered paths are upgraded.
 
 ## 5. Verification And Closeout
 

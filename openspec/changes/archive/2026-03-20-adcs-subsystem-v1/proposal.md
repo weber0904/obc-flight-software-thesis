@@ -24,5 +24,5 @@ None.
 ## Impact
 
 - Affected code: `simulators/common/`, `simulators/adcs/`, `OBC/Components/AdcsBridge/`, `simulators/CMakeLists.txt`, `OBC/Components/CMakeLists.txt`
-- Affected docs: `openspec/changes/adcs-subsystem-v1/`, `docs/test-records/`, `obc-dev-spec/04_adcs_subsystem.md`
+- Affected docs: `openspec/changes/adcs-subsystem-v1/`, `evidence/records/`, `obc-dev-spec/04_adcs_subsystem.md`
 - Dependencies: Homebrew `zeromq`, the project `fprime-venv/`, the F' normal build and UT build flows

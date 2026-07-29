@@ -46,10 +46,10 @@
 ## 5. Documentation And Evidence
 
 - [x] 5.1 Add
-  `docs/test-records/target-node5-telemetry-backpressure-and-restart-stability-v1/README.md`
+  `evidence/records/target-node5-telemetry-backpressure-and-restart-stability-v1/README.md`
   with blocker baseline, commands, observations, product fixes, and final
   verdicts.
-- [x] 5.2 Update `docs/verification-path-registry.md` for any new or narrowed
+- [x] 5.2 Update `evidence/verification-path-registry.md` for any new or narrowed
   blocker-diagnostic path created by this change.
 - [x] 5.3 Update `docs/roadmap/next-work.md` so target timing follow-up work
   reflects these prerequisite product blockers explicitly.

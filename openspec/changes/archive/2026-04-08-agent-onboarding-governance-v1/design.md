@@ -1,6 +1,6 @@
 ## Context
 
-The repository already has a strong formal workflow, but that workflow is distributed across `README.md`, `obc-dev-spec/08_delivery_workflow.md`, `openspec/specs/`, `docs/verification-path-registry.md`, and repo-local skills. Humans who have followed the project over time can reconstruct the intended order, but new AI agents currently have no single repo-root document that says "start here, then follow these formal sources." The result is repeated re-discovery, path confusion, and workflow drift.
+The repository already has a strong formal workflow, but that workflow is distributed across `README.md`, `obc-dev-spec/08_delivery_workflow.md`, `openspec/specs/`, `evidence/verification-path-registry.md`, and repo-local skills. Humans who have followed the project over time can reconstruct the intended order, but new AI agents currently have no single repo-root document that says "start here, then follow these formal sources." The result is repeated re-discovery, path confusion, and workflow drift.
 
 ## Goals / Non-Goals
 

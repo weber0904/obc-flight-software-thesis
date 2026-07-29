@@ -10,8 +10,8 @@
 
 ## 3. Add evidence templates and records
 
-- [x] 3.1 Add a reusable evidence template under `docs/test-records/templates/`
-- [x] 3.2 Record the implementation and local verification results under `docs/test-records/verification-ci-v1/`
+- [x] 3.1 Add a reusable evidence template under `evidence/records/templates/`
+- [x] 3.2 Record the implementation and local verification results under `evidence/records/verification-ci-v1/`
 
 ## 4. Validate and close the change
 

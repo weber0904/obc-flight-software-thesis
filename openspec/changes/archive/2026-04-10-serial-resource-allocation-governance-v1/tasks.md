@@ -7,7 +7,7 @@
 
 - [x] 2.1 Update comm and GPS specs to reserve `/dev/serial0` for comm and block GPS live UART until separate allocation.
 - [x] 2.2 Update README, verification matrix, registry, and reporting package wording.
-- [x] 2.3 Add `docs/test-records/serial-resource-allocation-governance-v1/README.md`.
+- [x] 2.3 Add `evidence/records/serial-resource-allocation-governance-v1/README.md`.
 - [x] 2.4 Pre-register the change in the reconciliation matrix for archive readiness.
 
 ## 3. Validation

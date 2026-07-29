@@ -36,7 +36,7 @@ patches stay out of the mainline change.
   operation currently owns the shared runtime mutex.
 - `verification-evidence`: the repository records the salvaged RG3 blocker
   classification, bounded fix, and clean-branch verification record under
-  `docs/test-records/target-node5-rg3-csp-runtime-contention-fix-v1/`.
+  `evidence/records/target-node5-rg3-csp-runtime-contention-fix-v1/`.
 
 ## Impact
 
@@ -44,8 +44,8 @@ patches stay out of the mainline change.
   - `simulators/csp/CspRuntime.*`
   - `OBC/Components/CommController/*`
 - Affected docs:
-  - `docs/test-records/target-node5-rg3-csp-runtime-contention-fix-v1/README.md`
-  - `docs/verification-path-registry.md`
+  - `evidence/records/target-node5-rg3-csp-runtime-contention-fix-v1/README.md`
+  - `evidence/verification-path-registry.md`
 - Intended non-claims:
   - no scheduler redesign
   - no migration to the future `CspRuntimeOwner` architecture in this change

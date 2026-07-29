@@ -14,7 +14,7 @@ from collections import Counter
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 PUBLICATION_MANIFEST = ROOT / "release/publication-manifest.json"
 VERIFICATION_MANIFEST = ROOT / "scripts/verification-manifest.json"
-EVIDENCE_CATALOG = ROOT / "docs/evidence/catalog.json"
+EVIDENCE_CATALOG = ROOT / "evidence/catalog.json"
 SHA256SUMS = ROOT / "release/SHA256SUMS"
 
 SOURCE_COMMIT = "142683f20ba46f59f894f594f2caf71dfeddf16f"
@@ -38,8 +38,8 @@ REQUIRED = {
     "SECURITY.md",
     "THIRD_PARTY_NOTICES.md",
     "config/security/command-auth.example.ini",
-    "docs/evidence/README.md",
-    "docs/evidence/catalog.json",
+    "evidence/README.md",
+    "evidence/catalog.json",
     "release/RELEASE_PROVENANCE.md",
     "release/SHA256SUMS",
     "release/publication-manifest.json",
@@ -71,7 +71,11 @@ def git_files() -> set[str]:
         ["git", "-C", str(ROOT), "ls-files", "-co", "--exclude-standard"],
         text=True,
     )
-    return {line for line in output.splitlines() if line}
+    return {
+        line
+        for line in output.splitlines()
+        if line and (ROOT / line).exists()
+    }
 
 
 def fail(errors: list[str], message: str) -> None:
@@ -188,7 +192,7 @@ def check_evidence(
         fail(errors, "evidence catalog record count is inconsistent")
 
     summary_entries = {
-        entry["path"]
+        entry["publicPath"]
         for entry in entries
         if re.fullmatch(r"docs/test-records/[^/]+/README\.md", entry["path"])
     }
@@ -246,7 +250,7 @@ def check_evidence(
     artifact_directories = [
         path
         for path in public_paths
-        if path.startswith("docs/test-records/") and "/artifacts/" in path
+        if path.startswith("evidence/records/") and "/artifacts/" in path
     ]
     if artifact_directories:
         fail(errors, f"raw artifact paths leaked into Git: {artifact_directories[:5]}")
@@ -284,7 +288,7 @@ def check_checksums(errors: list[str], catalog: dict) -> None:
         "SBOM.spdx.json",
         "release/publication-manifest.json",
         "scripts/verification-manifest.json",
-        "docs/evidence/catalog.json",
+        "evidence/catalog.json",
     }
     if not required_checksums.issubset(seen):
         fail(errors, "release/SHA256SUMS is missing required release objects")

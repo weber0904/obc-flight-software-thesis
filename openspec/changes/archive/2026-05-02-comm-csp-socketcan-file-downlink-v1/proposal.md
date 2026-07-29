@@ -27,6 +27,6 @@ None.
 ## Impact
 
 - Adds one repository-owned physical probe script.
-- Adds one evidence record under `docs/test-records/comm-csp-socketcan-file-downlink-v1/`.
+- Adds one evidence record under `evidence/records/comm-csp-socketcan-file-downlink-v1/`.
 - Updates the registry, roadmap, and reconciliation surfaces after archive.
 - Does not add a flight command, arbitrary-file downlink command, COMM CSP service port, custom GDS plugin, RF behavior, no-preamble claim, ScenarioBridge/pass automation, or dual-bus redundancy.

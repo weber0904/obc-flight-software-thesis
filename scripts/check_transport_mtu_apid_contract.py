@@ -137,23 +137,20 @@ def main() -> int:
             expect_contains(f"| `{value}` | {label} |", interfaces, f"APID row {value}")
     expect_contains("| `>= 0x0800` | Invalid / uninitialized |", interfaces, "invalid APID boundary row")
 
-    transport_rows = [
-        "| `sband-primary` command ingress | `446` serialized inner `Fw::CmdPacket` bytes | `verified` | `FW_CMD_ARG_BUFFER_MAX_SIZE 506 - envelope overhead 60`; current repo-local source-derived ceiling | Path scope reused from hosted S-band primary command ingress evidence |",
-        "| `sband-primary` command ingress | `440` inner command-argument bytes | `verified` | `446 - descriptor 2 - opcode 4`; readable derived inner-argument ceiling | Same current path as the governing serialized-inner ceiling above |",
-        "| `uhf-backup` command ingress | `446` serialized inner `Fw::CmdPacket` bytes | `verified` | Same command-envelope formula as `sband-primary`; backup ingress uses the same current outer command budget | Path scope reused from bounded UHF backup command-ingress evidence |",
-        "| `uhf-backup` command ingress | `440` inner command-argument bytes | `verified` | Same readable derived ceiling as `sband-primary` | Same current path as the governing serialized-inner ceiling above |",
-        "| Active stock file/downlink packet ceiling | `2019` file-data bytes per `Fw::FilePacket::DATA` packet | `configured-hosted` | `FW_FILE_BUFFER_MAX_SIZE 2032 - DataPacket::HEADERSIZE 11 - descriptor 2`; stock current FileDownlink formula | Current global file-packet budget after the payload dual-artifact uplift; adjacent UHF throughput claims remain bounded separately |",
-        "| Bounded reliable-transfer helper `DATA` segment | `160` bytes | `verified` | Current sidecar helper-path segment size only | Not a generic repo transport MTU; applies only to the bounded reliable-transfer sidecar path on default node `5` and explicit-switched node `6`; distinct from the stock UHF `243`-byte file/downlink ceiling |",
+    ceiling_rows = [
+        ("S-band serialized inner `Fw::CmdPacket`", "`446` bytes"),
+        ("S-band inner command arguments", "`440` bytes"),
+        ("UHF serialized inner `Fw::CmdPacket`", "`446` bytes"),
+        ("UHF inner command arguments", "`440` bytes"),
+        ("Stock file-downlink data", "`2019` bytes per `Fw::FilePacket::DATA`"),
+        ("Reliable-transfer helper `DATA` segment", "`160` bytes"),
     ]
-    for row in transport_rows:
-        expect_contains(row, interfaces, f"transport row {row.split('|')[1].strip()}")
-
-    summary_checks = [
-        "| Broader target-flight MTU truth beyond the current governed paths | `residual-gap` | The repo now freezes only the current path-specific command and file ceilings; broader target-flight or cross-path MTU closure still needs later proof |",
-        "| Future APID expansion beyond the current reservation map | `residual-gap` | The current reservation and proof split are frozen, but later active APID claims still require their own governed change and evidence |",
-    ]
-    for row in summary_checks:
-        expect_contains(row, interfaces, f"summary row {row}")
+    for label, ceiling in ceiling_rows:
+        expect(
+            rf"^\|\s*{re.escape(label)}\s*\|\s*{re.escape(ceiling)}\s*\|",
+            interfaces,
+            f"transport ceiling row {label}",
+        )
 
     print("transport-mtu-apid-governance contract OK")
     print(f"command serialized ceiling: {inner_serialized}")

@@ -25,7 +25,7 @@
   - `simulators/gps/NmeaParser.*` 與 GPS support tests
   - `OBC/Components/StorageHealthBridge/*`、storage-health tests、hosted probe assertions
   - `OBC/Components/HousekeepingArchive/*` 與 archive integration tests
-  - `docs/test-records/*`、`docs/verification-path-registry.md`、`openspec/specs/verification-path-registry/spec.md`
+  - `evidence/records/*`、`evidence/verification-path-registry.md`、`openspec/specs/verification-path-registry/spec.md`
 - Affected APIs / contracts:
   - bounded GPS parser rejection behavior
   - storage scan failure event semantics

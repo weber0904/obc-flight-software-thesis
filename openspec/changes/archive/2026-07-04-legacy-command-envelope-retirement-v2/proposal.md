@@ -56,7 +56,7 @@ runtime secure-session semantics that secure-auth still depends on.
   - `openspec/specs/comm-subsystem/spec.md`
   - `openspec/specs/verification-path-registry/spec.md`
   - `openspec/specs/verification-evidence/spec.md`
-  - `docs/verification-path-registry.md`
+  - `evidence/verification-path-registry.md`
   - `docs/roadmap/current-baseline.md`
   - `docs/roadmap/next-work.md`
   - relevant operator runbooks

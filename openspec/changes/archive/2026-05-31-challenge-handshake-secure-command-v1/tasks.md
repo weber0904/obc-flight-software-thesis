@@ -25,7 +25,7 @@
 
 - [x] 5.1 Add or extend repository-owned ground helper scripts for `REQ_AUTH -> CHALLENGE -> RESPONSE -> AUTHENTICATED -> secure command probe` on the hosted S-band and UHF paths using the existing TTS injection model.
 - [x] 5.2 Add a hosted secure-auth probe proving S-band success, UHF backup read/status continuity, UHF failover-primary re-auth behavior, timeout clearing, and legacy v1 non-regression.
-- [x] 5.3 Add bounded evidence under `docs/test-records/` and update `docs/verification-path-registry.md` for the new hosted secure-auth validation path.
+- [x] 5.3 Add bounded evidence under `evidence/records/` and update `evidence/verification-path-registry.md` for the new hosted secure-auth validation path.
 
 ## 6. Docs And Validation
 

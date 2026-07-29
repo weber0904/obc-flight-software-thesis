@@ -68,7 +68,7 @@ Alternative considered:
 3. Add `CommController`, `RadioController`, and `UartDriver` plus their unit tests.
 4. Add a host integration test that exercises both TCP mock and PTY-backed transport paths.
 5. Run the normal build, UT build, and `fprime-util check --all`.
-6. Record evidence under `docs/test-records/comm-subsystem-v1/`.
+6. Record evidence under `evidence/records/comm-subsystem-v1/`.
 7. Validate and archive the change.
 
 ## Open Questions

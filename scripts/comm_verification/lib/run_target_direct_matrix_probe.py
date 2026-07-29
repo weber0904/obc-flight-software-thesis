@@ -203,7 +203,7 @@ class TargetDirectControlScenario:
         self.historical_reference.write_text(
             "\n".join(
                 (
-                    "registered_path=docs/test-records/rpi-target-integration-v1/README.md",
+                    "registered_path=evidence/records/rpi-target-integration-v1/README.md",
                     "historical_connectivity_contract=fprime-gds -n -g none --framing-selection fprime --ip-port 50001",
                     "target_wrapper=scripts/run_rpi_stack.sh",
                     "target_wrapper_defaults=GROUND_LINK_MODE=direct-tcp COMM_CSP_NODE=4 CSP_TRANSPORT=zmqhub",
@@ -218,7 +218,7 @@ class TargetDirectControlScenario:
             encoding="utf-8",
         )
         checklist = {
-            "registeredPath": "docs/test-records/rpi-target-integration-v1/README.md",
+            "registeredPath": "evidence/records/rpi-target-integration-v1/README.md",
             "historicalConnectivityGround": {
                 "component": "fprime-gds",
                 "framingSelection": "fprime",

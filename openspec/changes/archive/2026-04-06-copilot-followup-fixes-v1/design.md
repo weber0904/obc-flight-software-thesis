@@ -62,9 +62,9 @@ storage-health 欄位已經擴充 housekeeping archive record layout，因此 fi
 
 這次一起修正：
 
-- `docs/test-records/gps-subsystem-v1/README.md`
-- `docs/test-records/storage-health-v1/README.md`
-- `docs/verification-path-registry.md`
+- `evidence/records/gps-subsystem-v1/README.md`
+- `evidence/records/storage-health-v1/README.md`
+- `evidence/verification-path-registry.md`
 - `openspec/specs/verification-path-registry/spec.md`
 
 原因是這些都是本輪 review 明確指出、且與 validation/evidence navigation 直接相關的 follow-up；把它們留到之後只會讓 review trail 持續帶著錯誤連結。

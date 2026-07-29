@@ -20,7 +20,7 @@
 ## 4. Specs, Registry, And Current Docs
 
 - [x] 4.1 Update current main specs so secure-auth-only is the maintained command baseline and legacy `SESSION_OPEN` is historical compatibility only.
-- [x] 4.2 Update `docs/verification-path-registry.md`, roadmap docs, and relevant operator runbooks so retired wrappers no longer appear as maintained closeout authority.
+- [x] 4.2 Update `evidence/verification-path-registry.md`, roadmap docs, and relevant operator runbooks so retired wrappers no longer appear as maintained closeout authority.
 - [x] 4.3 Keep archived evidence intact while clearly marking legacy v1 and timing families as historical or retired in current docs.
 
 ## 5. Local-Ready Verification And Closeout
@@ -29,4 +29,4 @@
 - [x] 5.2 Run only the re-qualified maintained secure-baseline focused probes needed for this change.
 - [x] 5.3 Update test-record evidence for the qualification audit, runtime retirement, and branch-head verification results.
 - [x] 5.4 Re-run `openspec validate legacy-command-envelope-retirement-v2` and `openspec validate --specs`.
-- [x] 5.5 Sync specs, archive the change, update `docs/baseline-reconciliation-matrix.json`, regenerate `docs/baseline-reconciliation-matrix.md`, run `python3 scripts/check_repo_consistency.py`, and confirm the worktree is clean before declaring `local-ready`.
+- [x] 5.5 Sync specs, archive the change, update `openspec/reconciliation/baseline-reconciliation-matrix.json`, regenerate `openspec/reconciliation/baseline-reconciliation-matrix.md`, run `python3 scripts/check_repo_consistency.py`, and confirm the worktree is clean before declaring `local-ready`.

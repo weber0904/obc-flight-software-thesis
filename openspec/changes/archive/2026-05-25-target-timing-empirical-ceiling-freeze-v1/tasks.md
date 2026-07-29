@@ -29,10 +29,10 @@
 
 ## 3. Documentation And Evidence
 
-- [x] 3.1 Add `docs/test-records/target-timing-empirical-ceiling-freeze-v1/README.md`
+- [x] 3.1 Add `evidence/records/target-timing-empirical-ceiling-freeze-v1/README.md`
   with control preflight verdict, installed service snapshot, per-run roots,
   per-window timing summaries, and aggregated ceilings or blocker class.
-- [x] 3.2 Update `docs/verification-path-registry.md` entry `68` so it reflects
+- [x] 3.2 Update `evidence/verification-path-registry.md` entry `68` so it reflects
   either numeric empirical timing closure or a narrower reproducible blocker.
 - [x] 3.3 Update `docs/interfaces.md` target-flightlike timing section so
   empirical service-managed ceilings move to `verified empirical` or remain as

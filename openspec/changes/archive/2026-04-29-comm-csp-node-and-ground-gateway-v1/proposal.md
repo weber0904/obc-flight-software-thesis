@@ -30,7 +30,7 @@ This change is needed now to turn `COMM` into a real CSP-facing subsystem and to
   - `OBC/Components/` and `OBC/Top/` for the new COMM CSP integration boundary
   - `simulators/comm/` and `simulators/csp/` for the COMM node, protocol, and gateway bridge pieces
   - `scripts/` for governed gateway/probe launchers
-  - `docs/test-records/` and `docs/verification-path-registry.md` for new evidence
+  - `evidence/records/` and `evidence/verification-path-registry.md` for new evidence
 - Affected interfaces:
   - new COMM CSP protocol/service definitions
   - new or extended CSP runtime abstractions for COMM-facing traffic handling

@@ -6,7 +6,7 @@ The verification evidence tree SHALL record the commands, artifacts, trust model
 
 #### Scenario: Boot trust evidence is reviewable
 - **WHEN** `boot-trust-chain-v1` completes
-- **THEN** reviewers SHALL be able to inspect the selected manifest schema, signer/trust-anchor model, version policy, runtime files changed, tests run, probes run, and observed pass/fail outcomes from `docs/test-records/boot-trust-chain-v1/`.
+- **THEN** reviewers SHALL be able to inspect the selected manifest schema, signer/trust-anchor model, version policy, runtime files changed, tests run, probes run, and observed pass/fail outcomes from `evidence/records/boot-trust-chain-v1/`.
 
 #### Scenario: Evidence covers trust rejection behavior
 - **WHEN** boot trust-chain evidence is recorded

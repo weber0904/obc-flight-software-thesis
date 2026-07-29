@@ -44,8 +44,8 @@ This change resets the governance model around a smaller set of enforceable rule
   - `scripts/check_component_test_baseline.py`
   - `scripts/generate_reconciliation_matrix_md.py`
 - Review surfaces:
-  - `docs/baseline-reconciliation-matrix.json`
-  - `docs/baseline-reconciliation-matrix.md`
+  - `openspec/reconciliation/baseline-reconciliation-matrix.json`
+  - `openspec/reconciliation/baseline-reconciliation-matrix.md`
   - `docs/verification-matrix.md`
 - Repo-local and tool-managed skills:
   - `.codex/skills/change-closeout/SKILL.md`

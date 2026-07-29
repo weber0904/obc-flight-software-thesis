@@ -122,7 +122,7 @@
 
 ### 4.5 驗證路徑治理
 
-- 新 change 若要重用既有驗證路徑，先查 `docs/verification-path-registry.md`
+- 新 change 若要重用既有驗證路徑，先查 `evidence/verification-path-registry.md`
 - 不得只因 generic upstream F' 常識，就假設某條路在本 repository 已經是 baseline
 - `OBC -> GDS` TCP adapter path、`fprime-cli -> GDS` command/uplink path、以及透明 UART / framed UART 路徑都屬於不同驗證路徑，除非已有 archive evidence 明確證明，否則不得互相代替
 - 每份 evidence 若同時依賴舊路徑與驗新路徑，必須明確寫出：
@@ -131,8 +131,8 @@
 
 ### 4.6 基線對齊與 consistency checks
 
-- `docs/baseline-reconciliation-matrix.json` 是唯一人工維護的 reconciliation source
-- `docs/baseline-reconciliation-matrix.md` 是由 JSON 生成的 reviewer surface
+- `openspec/reconciliation/baseline-reconciliation-matrix.json` 是唯一人工維護的 reconciliation source
+- `openspec/reconciliation/baseline-reconciliation-matrix.md` 是由 JSON 生成的 reviewer surface
 - 這份矩陣的角色是：
   - 列出 archived change history
   - 說明目前 main specs 已擴張到哪些正式 capability
@@ -158,7 +158,7 @@
 - `AGENTS.md` 的固定 read-first 清單應保持精簡：
   - `README.md`
   - `openspec/specs/delivery-workflow/spec.md`
-  - `docs/verification-path-registry.md`
+  - `evidence/verification-path-registry.md`
 - 本文件保留給 agent 或人類在需要操作範例時再參考，不再列為固定必讀
 
 ## 5. OpenSpec 標準循環

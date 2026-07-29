@@ -36,7 +36,7 @@
   the new owner proves, what remains delegated to `43B`, and what stays
   deferred.
 - [x] 4.2 Add a distinct hosted orchestration-owner entry to
-  `docs/verification-path-registry.md` that is explicitly separate from `43B`.
+  `evidence/verification-path-registry.md` that is explicitly separate from `43B`.
 - [x] 4.3 Add a dedicated hosted orchestration runbook and update current docs
   and script inventory so they consistently distinguish:
   - layer-1 maintained per-band stock stacks

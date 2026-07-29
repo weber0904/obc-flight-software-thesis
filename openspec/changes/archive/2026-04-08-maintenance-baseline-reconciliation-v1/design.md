@@ -1,6 +1,6 @@
 ## Context
 
-The repository now contains the original baseline implementation queue plus a second wave of governed expansions such as mission autonomy, scenario-driven validation, housekeeping archive, GPS, storage health, verification-path governance, and Codex skills. The current formal delivery documents still talk about the initial queue as if it were the repository's whole planned change set, and the current main-spec tree still contains one stale placeholder purpose. Reviewers therefore lack a single checked-in document that says which archived changes completed the original plan, which changes intentionally expanded the formal capability set, and which small governance or follow-up fixes reuse existing evidence rather than creating a new `docs/test-records/<change>/` directory.
+The repository now contains the original baseline implementation queue plus a second wave of governed expansions such as mission autonomy, scenario-driven validation, housekeeping archive, GPS, storage health, verification-path governance, and Codex skills. The current formal delivery documents still talk about the initial queue as if it were the repository's whole planned change set, and the current main-spec tree still contains one stale placeholder purpose. Reviewers therefore lack a single checked-in document that says which archived changes completed the original plan, which changes intentionally expanded the formal capability set, and which small governance or follow-up fixes reuse existing evidence rather than creating a new `evidence/records/<change>/` directory.
 
 ## Goals / Non-Goals
 
@@ -29,12 +29,12 @@ Alternative considered:
 - keep only a JSON file
   - rejected because reviewers should not have to inspect raw data to understand the repository history
 
-### Decision: Treat missing `docs/test-records/<change>/` directories as explicit exceptions, not silent failures
+### Decision: Treat missing `evidence/records/<change>/` directories as explicit exceptions, not silent failures
 
 Some archived changes are governance-only or small follow-up repairs that intentionally did not add a new evidence directory. The reconciliation matrix should therefore require each archived change either to cite one or more evidence paths or to declare an explicit reviewable exception with rationale.
 
 Alternative considered:
-- force every archived change to create a dedicated `docs/test-records/<change>/` directory retroactively
+- force every archived change to create a dedicated `evidence/records/<change>/` directory retroactively
   - rejected because it would create artificial evidence for changes whose real output was formal workflow governance rather than feature verification
 
 ### Decision: Keep the new checker narrow and deterministic

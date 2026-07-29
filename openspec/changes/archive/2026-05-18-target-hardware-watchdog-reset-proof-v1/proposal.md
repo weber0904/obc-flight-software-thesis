@@ -66,4 +66,4 @@ integration and proof boundary.
   regression on the existing target `R2` restart path.
 - Affected docs include active architecture truth, target operator guidance,
   `docs/interfaces.md`, the verification-path registry, and a new
-  `docs/test-records/target-hardware-watchdog-reset-proof-v1/` evidence record.
+  `evidence/records/target-hardware-watchdog-reset-proof-v1/` evidence record.

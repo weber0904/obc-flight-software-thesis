@@ -25,5 +25,5 @@ This change makes official F' HK `.fdp` products the primary stored HK/state his
 
 - Affected components: `HkTrendProductProducer` and topology snapshot sources.
 - Affected support logic: `OnboardStateData` snapshot/reduction structures, hosted probe decode helpers, current dictionary/decode evidence, and OpenSpec/test-record documentation.
-- Affected evidence: `docs/test-records/hk-data-product-alignment-v2/README.md` and `docs/verification-path-registry.md`.
+- Affected evidence: `evidence/records/hk-data-product-alignment-v2/README.md` and `evidence/verification-path-registry.md`.
 - Explicitly out of scope: `health_manifest.json`, HK ring retirement or capacity expansion, persistent event/fault storage, clear-log commands, arbitrary onboard file downlink, CFDP/ARQ/NACK/retry, mode transition guard, command authority/session/auth, payload/FDIR/scheduler data-source expansion, UHF CCSDS, RF, target/Pi `.fdp` parity, and historical `.fdp` backward decode.

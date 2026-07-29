@@ -23,5 +23,5 @@ None.
 ## Impact
 
 - Affected code: `CMakeLists.txt`, repo-local CMake target overrides, and `scripts/bootstrap_rpi_workspace.sh`.
-- Affected docs: `README.md`, `docs/README.md`, `docs/test-records/`, and the relevant narrative source documents.
+- Affected docs: `README.md`, `docs/README.md`, `evidence/records/`, and the relevant narrative source documents.
 - Affected systems: local host git workspace, synced Raspberry Pi workspace, and target-side version events / generated metadata files.

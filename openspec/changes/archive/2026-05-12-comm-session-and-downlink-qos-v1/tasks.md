@@ -36,6 +36,6 @@
 
 ## 7. Update docs and close the change
 
-- [x] 7.1 Add `docs/test-records/comm-session-and-downlink-qos-v1/README.md`.
-- [x] 7.2 Update `docs/verification-path-registry.md`, `docs/roadmap/README.md`, any necessary roadmap detail docs, and `docs/architecture/current-development-architecture.md`.
+- [x] 7.1 Add `evidence/records/comm-session-and-downlink-qos-v1/README.md`.
+- [x] 7.2 Update `evidence/verification-path-registry.md`, `docs/roadmap/README.md`, any necessary roadmap detail docs, and `docs/architecture/current-development-architecture.md`.
 - [x] 7.3 Run fresh local verification, focused regression probes, `openspec validate comm-session-and-downlink-qos-v1`, and `openspec validate --specs`.

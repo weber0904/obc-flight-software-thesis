@@ -2,7 +2,7 @@
 
 - [x] 1.1 Add the follow-up proof-hardening proposal, design, and tasks artifacts for `node5-proof-oracle-hardening-v1`.
 - [x] 1.2 Update the delta specs for `verification-evidence` and `verification-path-registry` so the maintained node-`5` observability and target secure-auth paths explicitly require packet-path-or-source-aware review surfaces rather than observer-only quiet.
-- [x] 1.3 Add a dedicated follow-up evidence record under `docs/test-records/node5-proof-oracle-hardening-v1/README.md` that cites the reused hosted and target path identities plus the new hardening verdicts.
+- [x] 1.3 Add a dedicated follow-up evidence record under `evidence/records/node5-proof-oracle-hardening-v1/README.md` that cites the reused hosted and target path identities plus the new hardening verdicts.
 
 ## 2. Probe And Helper Implementation
 
@@ -31,9 +31,9 @@
   - `./build-fprime-automatic-native-ut/bin/Darwin/OBC_Components_CommController_ut_exe` -> `PASS`
   - `./build-fprime-automatic-native-ut/bin/Darwin/OBC_Components_WatchdogSupervisor_ut_exe` -> `PASS`
   - `./build-fprime-automatic-native-ut/bin/Darwin/hosted_runtime_unit_test` -> `PASS`
-- [x] 3.5 Archive `node5-proof-oracle-hardening-v1`, update `docs/baseline-reconciliation-matrix.json`, regenerate `docs/baseline-reconciliation-matrix.md`, rerun repo consistency/documentation governance checks, and leave the branch local-ready before push.
+- [x] 3.5 Archive `node5-proof-oracle-hardening-v1`, update `openspec/reconciliation/baseline-reconciliation-matrix.json`, regenerate `openspec/reconciliation/baseline-reconciliation-matrix.md`, rerun repo consistency/documentation governance checks, and leave the branch local-ready before push.
   - `PATH="$PWD/fprime-venv/bin:$PATH" openspec archive node5-proof-oracle-hardening-v1 --yes` -> archived as `2026-06-13-node5-proof-oracle-hardening-v1`
-  - `python3 scripts/generate_reconciliation_matrix_md.py` -> `updated docs/baseline-reconciliation-matrix.md`
+  - `python3 scripts/generate_reconciliation_matrix_md.py` -> `updated openspec/reconciliation/baseline-reconciliation-matrix.md`
   - `python3 scripts/check_repo_consistency.py` -> `PASS`
   - `python3 scripts/check_documentation_governance.py` -> `PASS`
 - [x] 3.6 Push the review-ready branch and open a non-draft PR once local-ready is complete.

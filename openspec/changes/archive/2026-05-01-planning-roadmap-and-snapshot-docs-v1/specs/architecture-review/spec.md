@@ -12,7 +12,7 @@ The repository SHALL provide a checked-in `architecture-review` package under `d
 - **THEN** developers and agents SHALL use current code, topology, scripts, archived evidence, main specs, and the verification-path registry for current baseline claims
 
 ### Requirement: Architecture Review Uses Explicit Truth Priority
-The architecture-review package SHALL ground its conclusions in a documented truth-priority order of code, topology, and scripts; archived OpenSpec changes and `docs/test-records/`; current main specs; `docs/verification-path-registry.md`; and narrative, snapshot, reporting, or planning docs, and it SHALL call out any relevant drift when those sources disagree.
+The architecture-review package SHALL ground its conclusions in a documented truth-priority order of code, topology, and scripts; archived OpenSpec changes and `evidence/records/`; current main specs; `evidence/verification-path-registry.md`; and narrative, snapshot, reporting, or planning docs, and it SHALL call out any relevant drift when those sources disagree.
 
 #### Scenario: Lower-priority docs do not override code or archived evidence
 - **WHEN** a narrative, snapshot, reporting, or planning document differs from current code, archived evidence, current main specs, or the verification-path registry

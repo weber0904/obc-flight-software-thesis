@@ -20,6 +20,6 @@
 
 ## 4. Evidence and spec sync
 
-- [x] 4.1 Record Raspberry Pi target evidence under `docs/test-records/`
+- [x] 4.1 Record Raspberry Pi target evidence under `evidence/records/`
 - [x] 4.2 Update the affected narrative source documents and top-level README for the target workflow
 - [x] 4.3 Run OpenSpec validation for the change and archive it after the implementation and evidence are complete

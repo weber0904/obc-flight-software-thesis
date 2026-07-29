@@ -1,68 +1,63 @@
-# CubeSat OBC Flight Software Thesis
+# CubeSat OBC Flight Software
 
-[繁體中文摘要](README.zh-TW.md) ·
-[Architecture](docs/architecture/current-development-architecture.md) ·
-[Verification](docs/verification-matrix.md) ·
+[繁體中文](README.zh-TW.md) ·
+[Architecture](docs/architecture.md) ·
+[Interfaces](docs/interfaces.md) ·
+[Verification](docs/verification.md) ·
+[Operations](docs/README.md#operations) ·
 [OpenSpec](openspec/specs/) ·
-[Evidence](docs/evidence/README.md)
+[Evidence](evidence/README.md)
 
-An F Prime v4.1.0–based CubeSat onboard-computer flight-software prototype.
-The repository is the curated `thesis-submission-v1` public release: it keeps
-the implemented system, formal specifications, reviewable evidence, and
-maintained verification paths while separating historical development material
-from current operator guidance.
+This repository contains an F Prime v4.1.0–based onboard-computer software
+prototype for a CubeSat. It brings mission control, subsystem communication,
+fault recovery, command security, data products, target deployment, and
+operator tooling into one reviewable system.
 
-> Research prototype: this software is not flight-certified. Hardware and lab
-> results are commit-scoped previously demonstrated evidence, not fresh target
-> verification of the public tag. See [SECURITY.md](SECURITY.md) and
-> [release provenance](release/RELEASE_PROVENANCE.md).
+The maintained deployment is defined by
+[`OBC/TopCcsds/topology.fpp`](OBC/TopCcsds/topology.fpp).
 
-## What This Project Demonstrates
+## Highlights
 
-- One maintained F Prime deployment:
-  `OBC/TopCcsds/topology.fpp`
-- Component-oriented OBC services for mode safety, mission autonomy, payload
-  operations, command authority, health monitoring, recovery, boot trust, and
-  official F Prime data products
-- Internal CSP services for EPS, ADCS, COMM, and virtual payload paths
-- CCSDS S-band primary operations plus governed non-quiet UHF primary/failover
-  paths
-- Challenge-response secure command bootstrap and secure-command sequencing
-- Hosted simulation, Raspberry Pi packaging, target/lab operating procedures,
-  Mission Console, and staged Chapter 5 verification routes
-- Formal engineering history through 35 OpenSpec capabilities and archived
-  change artifacts
+- Mission-mode policy, autonomous sequencing, TTC windows, and payload capture
+- EPS, ADCS, COMM, GPS, and payload integration over internal CSP services
+- CCSDS S-band operations and a governed UHF primary/failover path
+- Challenge-response authentication, session sequencing, and command authority
+- Fault detection, subsystem recovery, process restart, and hardware watchdog
+- Official F Prime `.fdp` mission-history products and file downlink
+- Signed boot manifests, Raspberry Pi packaging, and systemd deployment
+- A browser-based Mission Console plus stock F Prime GDS compatibility
+- Normative requirements and design history maintained with OpenSpec
 
-## Architecture At A Glance
+## System Overview
 
 ```text
-Mission Console / stock F Prime GDS / repository helpers
-                         |
-             CCSDS S-band or governed UHF
-                         |
-            Command and file authority gates
-                         |
-                 OBC / TopCcsds
-        +----------------+----------------+
-        |                |                |
-   Mission/mode     FDIR/recovery    Data products
-        |                |                |
-        +---------- internal CSP ----------+
-                   |    |    |    |
-                  EPS  ADCS COMM Payload
+ Mission Console / F Prime GDS / CLI
+                  |
+       S-band CCSDS or UHF link
+                  |
+  authentication · authority · transfer
+                  |
+             OBC / TopCcsds
+        +---------+---------+
+        |         |         |
+   mission &    FDIR &    data products
+    payload     recovery      & files
+        |         |         |
+        +------ internal CSP ------+
+                 |   |   |   |
+                EPS ADCS COMM Payload
 ```
 
-F Prime supplies the component model, topology, command/telemetry/event
-infrastructure, sequencing, file services, and data-product foundations.
-This project supplies the mission-specific topology, authority and recovery
-components, CSP subsystem integration, packaging, operator surfaces, and
-evidence-governed verification. See
-[Project Contributions](docs/architecture/project-contributions.md).
+F Prime provides the component framework, topology language, command and
+telemetry infrastructure, sequencing, file services, and data-product
+facilities. The project adds the mission topology, OBC components, CSP
+subsystem integration, secure command path, deployment tooling, operational
+interfaces, and verification system.
 
-## Quick Start
+## Build
 
-Supported release CI environment: Ubuntu 24.04, Python 3.11, Node 24. macOS is
-also used for hosted development and lab ground operations.
+The CI reference environment is Ubuntu 24.04 with Python 3.11. Hosted
+development is also supported on macOS.
 
 ```bash
 git clone --recurse-submodules \
@@ -78,57 +73,59 @@ fprime-venv/bin/fprime-util generate -f
 fprime-venv/bin/fprime-util build
 ```
 
-Run the default hosted S-band development stack:
+Start the hosted OBC, simulators, radio service, and ground data system:
 
 ```bash
 bash scripts/run_dev_stack.sh
 ```
 
-Run the full repository gate:
+Run the repository verification gate:
 
 ```bash
 bash scripts/run_verification_ci.sh
 ```
 
-The public command-auth example contains known development keys. Never use it
-for a target. Target packaging requires an external private keystore through
-`OBC_PACKAGE_KEYSTORE_PATH`.
+## Verification
 
-## Verification Status
+The verification system combines:
 
-| Boundary | Release status |
+- classic F Prime component tests generated from `TesterBase` and `GTestBase`;
+- direct tests for protocol, storage, policy, and parser helpers;
+- hosted end-to-end probes with isolated ports and runtime directories;
+- Raspberry Pi, UART, SocketCAN, and subsystem-backed integration records;
+- static checks for topology, interfaces, OpenSpec, documentation, packaging,
+  and release integrity.
+
+The release gate builds the deployment and runs all 74 registered tests. The
+[verification overview](docs/verification.md) connects system capabilities to
+their test environments, while the [evidence library](evidence/README.md)
+provides detailed records and machine-readable provenance.
+
+## Repository Map
+
+| Path | Contents |
 |---|---|
-| Static governance, OpenSpec, build and unit tests | Required on the public commit |
-| Selected hosted runtime and Chapter 5 paths | Required on the public commit |
-| Raspberry Pi, SocketCAN, UART and watchdog | Previously demonstrated; preserved with original provenance |
-| RF, flight certification, hardware-backed key storage | Not claimed |
+| `OBC/` | OBC components, `TopCcsds` deployment, configuration, and tests |
+| `simulators/` | EPS, ADCS, COMM, GPS, and payload simulation services |
+| `scripts/` | Build, operation, packaging, probing, and governance tools |
+| `docs/` | Architecture, interfaces, verification, and operator guides |
+| `openspec/specs/` | Normative capability specifications |
+| `openspec/changes/archive/` | Requirements, designs, and decisions by change |
+| `evidence/` | Verification catalog, records, and detailed path registry |
+| `obc-dev-spec/` | Narrative engineering specification |
 
-Start from the [Verification Matrix](docs/verification-matrix.md) and
-[Verification Path Registry](docs/verification-path-registry.md). Do not pick
-a script merely because its name resembles an old evidence record.
+## Security
 
-## Repository Guide
+The checked-in command-auth configuration contains deterministic development
+credentials for local simulation and CI. Raspberry Pi packaging requires a
+private keystore supplied through `OBC_PACKAGE_KEYSTORE_PATH`. See
+[SECURITY.md](SECURITY.md).
 
-- `OBC/`: components, runtime, topology, and component tests
-- `simulators/`: repository-owned EPS, ADCS, COMM, GPS, and payload substrates
-- `scripts/`: maintained operators, probes, packaging helpers, and governance
-- `docs/`: current architecture, operations, verification, thesis map, and
-  test-record summaries
-- `openspec/specs/`: normative capability baseline
-- `openspec/changes/archive/`: formal development decisions and change history
-- `obc-dev-spec/`: human-readable narrative companion to OpenSpec
-
-## Evidence And Reproducibility
-
-Test-record summaries remain in Git. Raw captures, logs, and payload artifacts
-are distributed as the checksummed
-`obc-flight-software-thesis-evidence-thesis-submission-v1.tar.gz` release
-asset. See [Evidence Catalog](docs/evidence/README.md) and
-[Publication Manifest](release/publication-manifest.json).
-
-## License And Citation
+## License
 
 Original project material is licensed under Apache-2.0. F Prime, libcsp, and
-TooJPEG retain their own notices and license terms. See
-[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md), [NOTICE](NOTICE), and
-[CITATION.cff](CITATION.cff).
+TooJPEG retain their respective notices and license terms. See
+[LICENSE](LICENSE), [NOTICE](NOTICE), and
+[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+
+Citation metadata is available in [CITATION.cff](CITATION.cff).

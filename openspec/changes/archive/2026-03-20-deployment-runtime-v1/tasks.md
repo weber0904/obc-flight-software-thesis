@@ -21,7 +21,7 @@
 - [x] 4.1 Build the hosted deployment successfully
 - [x] 4.2 Launch the integrated dev stack and exercise basic operations
 - [x] 4.3 Re-run unit / integration verification gates after the runtime additions
-- [x] 4.4 Record integrated runtime evidence under `docs/test-records/`
+- [x] 4.4 Record integrated runtime evidence under `evidence/records/`
 
 ## 5. Spec and narrative sync
 

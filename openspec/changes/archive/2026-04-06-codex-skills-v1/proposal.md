@@ -20,6 +20,6 @@ Recent changes repeatedly reused two repository-specific workflows: governed cha
 - Affected code and files:
   - `.codex/skills/change-closeout/`
   - `.codex/skills/hosted-probe-workflow/`
-  - `docs/test-records/codex-skills-v1/`
+  - `evidence/records/codex-skills-v1/`
   - `openspec/specs/codex-skills/`
 - No flight runtime behavior or target deployment behavior changes.

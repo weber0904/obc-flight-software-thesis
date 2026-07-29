@@ -113,15 +113,15 @@ def resolve_fixture_fdp() -> pathlib.Path:
     candidates.extend(
         [
             root_dir
-            / "docs/test-records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/source-artifacts/deterministic/data-products/Dp_268673025_1783382245_00075615.fdp",
+            / "evidence/records/payload-target-capture-sanity-v1/artifacts/2026-07-07-target-formal-rerun/probe-root/source-artifacts/deterministic/data-products/Dp_268673025_1783382245_00075615.fdp",
             root_dir
-            / "docs/test-records/chapter5-integrated-route-closure-v1/artifacts/2026-06-28-formal-rerun/route1/target/external-roots/payload-raw-preview-dual-artifact-v1-target.xw9FPi/case/source-artifacts/vga/data-products/Dp_268673025_1782664108_00550576.fdp",
+            / "evidence/records/chapter5-integrated-route-closure-v1/artifacts/2026-06-28-formal-rerun/route1/target/external-roots/payload-raw-preview-dual-artifact-v1-target.xw9FPi/case/source-artifacts/vga/data-products/Dp_268673025_1782664108_00550576.fdp",
         ]
     )
     for candidate in candidates:
         if candidate.is_file():
             return candidate.resolve()
-    for candidate in sorted(root_dir.glob("docs/test-records/**/source-artifacts/**/data-products/Dp_*.fdp")):
+    for candidate in sorted(root_dir.glob("evidence/records/**/source-artifacts/**/data-products/Dp_*.fdp")):
         if candidate.is_file():
             return candidate.resolve()
     raise RuntimeError("Could not locate a committed official .fdp fixture under docs/test-records")

@@ -6,7 +6,7 @@
 ## 2. CI And Traceability Tooling
 
 - [x] 2.1 Rewrite `scripts/check_repo_consistency.py` to validate only spec-purpose quality, capability/matrix integrity, archived-change coverage, evidence-path existence, and generated Markdown consistency.
-- [x] 2.2 Add `scripts/generate_reconciliation_matrix_md.py` and regenerate `docs/baseline-reconciliation-matrix.md` from the JSON source.
+- [x] 2.2 Add `scripts/generate_reconciliation_matrix_md.py` and regenerate `openspec/reconciliation/baseline-reconciliation-matrix.md` from the JSON source.
 - [x] 2.3 Rewrite `scripts/check_component_test_baseline.py` so it enforces code-side coverage only and no longer blocks on `docs/verification-matrix.md`.
 - [x] 2.4 Simplify `.github/workflows/verification-ci.yml` and `scripts/run_verification_ci.sh` to remove `push: main`, remove fragile governance checks, and add the narrow docs-fast-path flow.
 

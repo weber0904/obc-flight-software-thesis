@@ -8,7 +8,7 @@
 
 - [x] 2.1 Update `openspec/specs/codex-skills/spec.md` to formally record the new skill and its role.
 - [x] 2.2 Update `AGENTS.md` so future sessions can discover the skill from the repo entrypoint.
-- [x] 2.3 Add verification evidence under `docs/test-records/classic-component-ut-skill-v1/`.
+- [x] 2.3 Add verification evidence under `evidence/records/classic-component-ut-skill-v1/`.
 
 ## 3. Verification and closeout
 

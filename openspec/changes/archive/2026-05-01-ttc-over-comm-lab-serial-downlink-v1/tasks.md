@@ -12,8 +12,8 @@
 
 ## 3. Evidence And Documentation
 
-- [x] 3.1 Add `docs/test-records/ttc-over-comm-lab-serial-downlink-v1/README.md`.
-- [x] 3.2 Register the bounded physical lab serial TT&C path in `docs/verification-path-registry.md` after the focused probe passes.
+- [x] 3.1 Add `evidence/records/ttc-over-comm-lab-serial-downlink-v1/README.md`.
+- [x] 3.2 Register the bounded physical lab serial TT&C path in `evidence/verification-path-registry.md` after the focused probe passes.
 - [x] 3.3 Update `docs/planning/comm-roadmap.md` to move this item out of Next and leave `comm-ttc-file-downlink-v1` as the next COMM roadmap item.
 
 ## 4. Verification And Closeout

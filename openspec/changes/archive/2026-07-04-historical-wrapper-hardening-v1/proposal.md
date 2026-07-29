@@ -30,7 +30,7 @@ mistake a historical wrapper for a current maintained proof surface.
 ## Impact
 
 - Affected code: selected legacy/timing scripts under `scripts/`
-- Affected docs: `docs/verification-path-registry.md`,
+- Affected docs: `evidence/verification-path-registry.md`,
   `docs/operator/hosted-official-sequencing-system-resources-runbook.md`,
   roadmap/current-baseline references for wrapper status
 - Affected workflow: developers get an immediate script-level warning instead of

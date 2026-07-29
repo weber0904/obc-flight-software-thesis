@@ -117,7 +117,7 @@
 - 實際摘要結果
 - 判定（Pass / Fail / Blocked-HW / Deferred-RPi）
 
-建議保存位置：`docs/test-records/`
+建議保存位置：`evidence/records/`
 
 ## 8. 紀錄模板
 

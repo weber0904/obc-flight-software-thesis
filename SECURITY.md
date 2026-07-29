@@ -1,28 +1,47 @@
 # Security Policy
 
-## Research Prototype Boundary
+## Security Architecture
 
-This repository is an academic CubeSat flight-software prototype. It is not
-flight-certified, does not claim hardware-backed key storage, and has not
-completed RF or production security certification.
+The command path uses a challenge-response handshake, authenticated command
+envelopes, service-scoped sessions, monotonic sequence checks, and
+source-aware authority policy. File admission and operational actions use the
+same authority model.
 
-## Public Development Credentials
+Boot and update packages use signed manifests, file digests, version metadata,
+and rollback-aware installation state. Runtime recovery includes bounded
+process restart and hardware-watchdog integration.
 
-`config/security/command-auth.example.ini` contains public deterministic
-development credentials. They are suitable only for local hosted testing.
+## Credentials
 
-- Run `bash scripts/bootstrap_dev_config.sh` to create the ignored local file.
-- Never deploy or package the example credentials.
-- Target packaging requires `OBC_PACKAGE_KEYSTORE_PATH` and rejects the public
-  example.
-- Rotate any lab or target credentials that have ever matched a published
-  example.
+`config/security/command-auth.example.ini` contains deterministic credentials
+for local simulation and CI.
 
-Do not submit real credentials, private keys, host inventories, or hardware
-serial identifiers in an issue.
+Create the ignored local configuration with:
+
+```bash
+bash scripts/bootstrap_dev_config.sh
+```
+
+Raspberry Pi packaging requires a separate keystore:
+
+```bash
+OBC_PACKAGE_KEYSTORE_PATH=/absolute/path/private.ini \
+  bash scripts/package_rpi_bundle.sh
+```
+
+The packaging checks reject the checked-in example. Store operational keys
+outside the repository, restrict filesystem access, and rotate keys after lab
+sharing or suspected exposure.
 
 ## Reporting A Vulnerability
 
-Report security concerns privately through the repository owner's GitHub
-profile. Include the affected commit, reproduction boundary, and whether the
-issue applies to hosted simulation, target packaging, or an installed target.
+Send security reports privately through the repository owner's GitHub profile.
+Include:
+
+- the affected commit and component;
+- reproducible inputs and observed behavior;
+- the applicable environment: hosted, target, radio link, or package install;
+- any credentials or captures in a secure attachment rather than an issue.
+
+Do not publish real credentials, private keys, host inventories, hardware
+serial identifiers, or personal data in issues or pull requests.

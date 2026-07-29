@@ -1,6 +1,6 @@
 ## Context
 
-Recent verification work exposed a recurring failure mode: a new conversation could follow generic F' expectations and still choose the wrong validation path for this repository. The repository already has strong evidence under `docs/test-records/` and a formal delivery workflow, but there is no concise registry that says which paths are actually proven, what they prove, and which adjacent paths remain out of scope.
+Recent verification work exposed a recurring failure mode: a new conversation could follow generic F' expectations and still choose the wrong validation path for this repository. The repository already has strong evidence under `evidence/records/` and a formal delivery workflow, but there is no concise registry that says which paths are actually proven, what they prove, and which adjacent paths remain out of scope.
 
 The same period also showed a process gap around branch discipline. The narrative workflow expected `feature/*`, `fix/*`, `docs/*`, or `hotfix/*` branches for formal work, yet recent feature slices were landed directly on `main`. The existing delivery documents already define push/CI/release gates; this change needs to make branch usage and evidence-path reuse equally explicit.
 
@@ -21,10 +21,10 @@ The same period also showed a process gap around branch discipline. The narrativ
 
 ### Decision: Add a dedicated verification-path registry document
 
-The repository will add a single documentation page under `docs/` that lists formally proven validation paths, their transport/port layering, and the archived evidence that proves each path. This is more direct than expecting every new conversation to infer the answer from scattered `docs/test-records/*` files.
+The repository will add a single documentation page under `docs/` that lists formally proven validation paths, their transport/port layering, and the archived evidence that proves each path. This is more direct than expecting every new conversation to infer the answer from scattered `evidence/records/*` files.
 
 Alternative considered:
-- Rely only on `docs/test-records/` and `verification-debugging-lessons.md`.
+- Rely only on `evidence/records/` and `verification-debugging-lessons.md`.
   - Rejected because those files preserve history well but do not act as a quick, normative registry of proven paths.
 
 ### Decision: Treat repository evidence as the authority for path reuse

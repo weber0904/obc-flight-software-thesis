@@ -69,7 +69,7 @@ follow-up surfaces where migration is not yet complete.
     active baseline truth
   - `docs/interfaces.md`
   - `docs/architecture/current-development-architecture.md`
-  - `docs/verification-path-registry.md`
+  - `evidence/verification-path-registry.md`
   - relevant operator runbooks
   - relevant `openspec/specs/*`
 - Affected runtime/config surfaces:

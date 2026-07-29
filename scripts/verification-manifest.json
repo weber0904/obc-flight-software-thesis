@@ -30,7 +30,7 @@
     },
     {
       "environment": "target/lab",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/bootstrap_rpi_workspace.sh",
       "reason": "curated for the public environment or release governance",
       "role": "baseline",
@@ -63,7 +63,7 @@
     },
     {
       "environment": "hosted",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/chapter5_routes/hosted/route1_downlink_and_extract.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "support",
@@ -74,7 +74,7 @@
     },
     {
       "environment": "hosted",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/chapter5_routes/hosted/route1_prepare_and_capture.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "support",
@@ -85,7 +85,7 @@
     },
     {
       "environment": "hosted",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/chapter5_routes/hosted/route1_soc_fallback_check.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "support",
@@ -96,7 +96,7 @@
     },
     {
       "environment": "hosted",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/chapter5_routes/hosted/route2_link_recovery_and_hk.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "support",
@@ -107,7 +107,7 @@
     },
     {
       "environment": "hosted",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/chapter5_routes/hosted/route2_mode_ttc_entry.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "support",
@@ -118,7 +118,7 @@
     },
     {
       "environment": "hosted",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/chapter5_routes/hosted/route3_adcs_r3_hosted.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "support",
@@ -129,7 +129,7 @@
     },
     {
       "environment": "hosted",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/chapter5_routes/hosted/route3_eps_r3_safe_hosted.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "support",
@@ -140,7 +140,7 @@
     },
     {
       "environment": "hosted",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/chapter5_routes/hosted/route3_recovery_chain_pre_reboot.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "support",
@@ -151,7 +151,7 @@
     },
     {
       "environment": "hosted",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/chapter5_routes/hosted/run_route1_hosted.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "probe-or-operator",
@@ -162,7 +162,7 @@
     },
     {
       "environment": "hosted",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/chapter5_routes/hosted/run_route2_hosted.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "probe-or-operator",
@@ -173,7 +173,7 @@
     },
     {
       "environment": "hosted",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/chapter5_routes/hosted/run_route3_hosted.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "probe-or-operator",
@@ -195,7 +195,7 @@
     },
     {
       "environment": "target/lab",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/chapter5_routes/target/route1_downlink_and_extract.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "support",
@@ -206,7 +206,7 @@
     },
     {
       "environment": "target/lab",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/chapter5_routes/target/route1_prepare_and_capture.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "support",
@@ -217,7 +217,7 @@
     },
     {
       "environment": "target/lab",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/chapter5_routes/target/route1_soc_fallback_check.py",
       "reason": "shipped from the fixed source baseline",
       "role": "support",
@@ -228,7 +228,7 @@
     },
     {
       "environment": "target/lab",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/chapter5_routes/target/route1_soc_fallback_check.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "support",
@@ -239,7 +239,7 @@
     },
     {
       "environment": "target/lab",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/chapter5_routes/target/route2_link_recovery_and_hk.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "support",
@@ -250,7 +250,7 @@
     },
     {
       "environment": "target/lab",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/chapter5_routes/target/route2_mode_ttc_entry.py",
       "reason": "shipped from the fixed source baseline",
       "role": "support",
@@ -261,7 +261,7 @@
     },
     {
       "environment": "target/lab",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/chapter5_routes/target/route2_mode_ttc_entry.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "support",
@@ -272,7 +272,7 @@
     },
     {
       "environment": "target/lab",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/chapter5_routes/target/route2_target_file_downlink.sh",
       "reason": "curated for the public environment or release governance",
       "role": "support",
@@ -283,7 +283,7 @@
     },
     {
       "environment": "target/lab",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/chapter5_routes/target/route3_recovery_chain_pre_reboot.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "support",
@@ -294,7 +294,7 @@
     },
     {
       "environment": "target/lab",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/chapter5_routes/target/route3_watchdog_reboot_and_postcheck.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "support",
@@ -305,7 +305,7 @@
     },
     {
       "environment": "target/lab",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/chapter5_routes/target/run_route1_target.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "probe-or-operator",
@@ -316,7 +316,7 @@
     },
     {
       "environment": "target/lab",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/chapter5_routes/target/run_route2_target.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "probe-or-operator",
@@ -327,7 +327,7 @@
     },
     {
       "environment": "target/lab",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/chapter5_routes/target/run_route3_target.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "probe-or-operator",
@@ -351,7 +351,7 @@
       "environment": "static",
       "owner": "transitive dependency of a maintained entrypoint",
       "path": "scripts/classify_change_scope.sh",
-      "reason": "shipped from the fixed source baseline",
+      "reason": "curated for the public environment or release governance",
       "role": "governance",
       "shipped": true,
       "sourceObject": "d0f25647a1c5f6020fdd1f1171f347bd75cf3975",
@@ -360,135 +360,135 @@
     },
     {
       "environment": "multi",
-      "owner": "docs/verification-path-registry.md (historical entry or successor)",
+      "owner": "evidence/verification-path-registry.md (historical entry or successor)",
       "path": "scripts/comm_verification/cases/csp-reachability.sh",
       "reason": "development-only, stale snapshot, or retired document family",
       "role": "support",
       "shipped": false,
       "sourceObject": "d6e76fc41cb8e7f19675a43d41b4423bdbd05d73",
       "status": "historical-evidence-only",
-      "successor": "Select the exact current path from docs/verification-path-registry.md"
+      "successor": "Select the exact current path from evidence/verification-path-registry.md"
     },
     {
       "environment": "multi",
-      "owner": "docs/verification-path-registry.md (historical entry or successor)",
+      "owner": "evidence/verification-path-registry.md (historical entry or successor)",
       "path": "scripts/comm_verification/cases/direct-control.sh",
       "reason": "development-only, stale snapshot, or retired document family",
       "role": "support",
       "shipped": false,
       "sourceObject": "99e9110a9f8fd4b9c4e77bdf4c55010d29c6a073",
       "status": "historical-evidence-only",
-      "successor": "Select the exact current path from docs/verification-path-registry.md"
+      "successor": "Select the exact current path from evidence/verification-path-registry.md"
     },
     {
       "environment": "multi",
-      "owner": "docs/verification-path-registry.md (historical entry or successor)",
+      "owner": "evidence/verification-path-registry.md (historical entry or successor)",
       "path": "scripts/comm_verification/cases/failover-command.sh",
       "reason": "development-only, stale snapshot, or retired document family",
       "role": "support",
       "shipped": false,
       "sourceObject": "8b777966123c7065dcd21c730564494b39e7213c",
       "status": "historical-evidence-only",
-      "successor": "Select the exact current path from docs/verification-path-registry.md"
+      "successor": "Select the exact current path from evidence/verification-path-registry.md"
     },
     {
       "environment": "multi",
-      "owner": "docs/verification-path-registry.md (historical entry or successor)",
+      "owner": "evidence/verification-path-registry.md (historical entry or successor)",
       "path": "scripts/comm_verification/cases/sband-command.sh",
       "reason": "development-only, stale snapshot, or retired document family",
       "role": "support",
       "shipped": false,
       "sourceObject": "be8b70730dce418e971af65d08fe3779a29a8859",
       "status": "historical-evidence-only",
-      "successor": "Select the exact current path from docs/verification-path-registry.md"
+      "successor": "Select the exact current path from evidence/verification-path-registry.md"
     },
     {
       "environment": "multi",
-      "owner": "docs/verification-path-registry.md (historical entry or successor)",
+      "owner": "evidence/verification-path-registry.md (historical entry or successor)",
       "path": "scripts/comm_verification/cases/sband-file.sh",
       "reason": "development-only, stale snapshot, or retired document family",
       "role": "support",
       "shipped": false,
       "sourceObject": "df3587eff77aba459ce480196574f46a4429fdbe",
       "status": "historical-evidence-only",
-      "successor": "Select the exact current path from docs/verification-path-registry.md"
+      "successor": "Select the exact current path from evidence/verification-path-registry.md"
     },
     {
       "environment": "multi",
-      "owner": "docs/verification-path-registry.md (historical entry or successor)",
+      "owner": "evidence/verification-path-registry.md (historical entry or successor)",
       "path": "scripts/comm_verification/cases/sband-sequence-subsystem.sh",
       "reason": "development-only, stale snapshot, or retired document family",
       "role": "support",
       "shipped": false,
       "sourceObject": "6b4682b9e54bb851596fca2ef68768c0f3deac92",
       "status": "historical-evidence-only",
-      "successor": "Select the exact current path from docs/verification-path-registry.md"
+      "successor": "Select the exact current path from evidence/verification-path-registry.md"
     },
     {
       "environment": "multi",
-      "owner": "docs/verification-path-registry.md (historical entry or successor)",
+      "owner": "evidence/verification-path-registry.md (historical entry or successor)",
       "path": "scripts/comm_verification/cases/uhf-primary-command.sh",
       "reason": "development-only, stale snapshot, or retired document family",
       "role": "support",
       "shipped": false,
       "sourceObject": "07ae6e0e88addf46c3482a102245c36c75d5f687",
       "status": "historical-evidence-only",
-      "successor": "Select the exact current path from docs/verification-path-registry.md"
+      "successor": "Select the exact current path from evidence/verification-path-registry.md"
     },
     {
       "environment": "multi",
-      "owner": "docs/verification-path-registry.md (historical entry or successor)",
+      "owner": "evidence/verification-path-registry.md (historical entry or successor)",
       "path": "scripts/comm_verification/cases/uhf-primary-file.sh",
       "reason": "development-only, stale snapshot, or retired document family",
       "role": "support",
       "shipped": false,
       "sourceObject": "2549c926d697ccf7970e687cd475b27000c0c6fc",
       "status": "historical-evidence-only",
-      "successor": "Select the exact current path from docs/verification-path-registry.md"
+      "successor": "Select the exact current path from evidence/verification-path-registry.md"
     },
     {
       "environment": "multi",
-      "owner": "docs/verification-path-registry.md (historical entry or successor)",
+      "owner": "evidence/verification-path-registry.md (historical entry or successor)",
       "path": "scripts/comm_verification/cases/uhf-primary-sequence-subsystem.sh",
       "reason": "development-only, stale snapshot, or retired document family",
       "role": "support",
       "shipped": false,
       "sourceObject": "a3a03cbabe6515bde41afc30c46bdf40ca151408",
       "status": "historical-evidence-only",
-      "successor": "Select the exact current path from docs/verification-path-registry.md"
+      "successor": "Select the exact current path from evidence/verification-path-registry.md"
     },
     {
       "environment": "hosted",
-      "owner": "docs/verification-path-registry.md (historical entry or successor)",
+      "owner": "evidence/verification-path-registry.md (historical entry or successor)",
       "path": "scripts/comm_verification/env/hosted.sh",
       "reason": "development-only, stale snapshot, or retired document family",
       "role": "support",
       "shipped": false,
       "sourceObject": "64d18ae2adec64f2c6799cba24b44f8fd9e40549",
       "status": "historical-evidence-only",
-      "successor": "Select the exact current path from docs/verification-path-registry.md"
+      "successor": "Select the exact current path from evidence/verification-path-registry.md"
     },
     {
       "environment": "target/lab",
-      "owner": "docs/verification-path-registry.md (historical entry or successor)",
+      "owner": "evidence/verification-path-registry.md (historical entry or successor)",
       "path": "scripts/comm_verification/env/rpi_can.sh",
       "reason": "development-only, stale snapshot, or retired document family",
       "role": "support",
       "shipped": false,
       "sourceObject": "73e8ed792a7fb1f24669f86e5c70561f578611d8",
       "status": "historical-evidence-only",
-      "successor": "Select the exact current path from docs/verification-path-registry.md"
+      "successor": "Select the exact current path from evidence/verification-path-registry.md"
     },
     {
       "environment": "target/lab",
-      "owner": "docs/verification-path-registry.md (historical entry or successor)",
+      "owner": "evidence/verification-path-registry.md (historical entry or successor)",
       "path": "scripts/comm_verification/env/rpi_tcp.sh",
       "reason": "development-only, stale snapshot, or retired document family",
       "role": "support",
       "shipped": false,
       "sourceObject": "684d8f0f2026e59e15a099c364cdf7c293c26689",
       "status": "historical-evidence-only",
-      "successor": "Select the exact current path from docs/verification-path-registry.md"
+      "successor": "Select the exact current path from evidence/verification-path-registry.md"
     },
     {
       "environment": "multi",
@@ -525,36 +525,36 @@
     },
     {
       "environment": "multi",
-      "owner": "docs/verification-path-registry.md (historical entry or successor)",
+      "owner": "evidence/verification-path-registry.md (historical entry or successor)",
       "path": "scripts/comm_verification/matrix/run_all.sh",
       "reason": "development-only, stale snapshot, or retired document family",
       "role": "probe-or-operator",
       "shipped": false,
       "sourceObject": "86c01143a1ff40d88e1c998d6d84ec935c0e7d92",
       "status": "historical-evidence-only",
-      "successor": "Select the exact current path from docs/verification-path-registry.md"
+      "successor": "Select the exact current path from evidence/verification-path-registry.md"
     },
     {
       "environment": "multi",
-      "owner": "docs/verification-path-registry.md (historical entry or successor)",
+      "owner": "evidence/verification-path-registry.md (historical entry or successor)",
       "path": "scripts/comm_verification/matrix/run_cleanup_smoke.sh",
       "reason": "development-only, stale snapshot, or retired document family",
       "role": "probe-or-operator",
       "shipped": false,
       "sourceObject": "983d1056a9fef35715b7f9993b99c074c8b6e4c4",
       "status": "historical-evidence-only",
-      "successor": "Select the exact current path from docs/verification-path-registry.md"
+      "successor": "Select the exact current path from evidence/verification-path-registry.md"
     },
     {
       "environment": "multi",
-      "owner": "docs/verification-path-registry.md (historical entry or successor)",
+      "owner": "evidence/verification-path-registry.md (historical entry or successor)",
       "path": "scripts/comm_verification/matrix/run_env_matrix.sh",
       "reason": "development-only, stale snapshot, or retired document family",
       "role": "probe-or-operator",
       "shipped": false,
       "sourceObject": "2adf2c8f80b808ae05f28ce64836259f5343b4c7",
       "status": "historical-evidence-only",
-      "successor": "Select the exact current path from docs/verification-path-registry.md"
+      "successor": "Select the exact current path from evidence/verification-path-registry.md"
     },
     {
       "environment": "multi",
@@ -602,7 +602,7 @@
     },
     {
       "environment": "target/lab",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/install_lab_can_services.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "baseline",
@@ -613,7 +613,7 @@
     },
     {
       "environment": "target/lab",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/install_rpi_autostart.sh",
       "reason": "curated for the public environment or release governance",
       "role": "baseline",
@@ -624,7 +624,7 @@
     },
     {
       "environment": "target/lab",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/install_rpi_bundle.sh",
       "reason": "curated for the public environment or release governance",
       "role": "baseline",
@@ -635,7 +635,7 @@
     },
     {
       "environment": "target/lab",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/install_rpi_comm_csp_autostart.sh",
       "reason": "curated for the public environment or release governance",
       "role": "baseline",
@@ -646,7 +646,7 @@
     },
     {
       "environment": "multi",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/install_subsystem_comm_csp_services.sh",
       "reason": "curated for the public environment or release governance",
       "role": "baseline",
@@ -668,7 +668,7 @@
     },
     {
       "environment": "hosted",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/manual_ops/hosted/start_hosted_manual_surface.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "probe-or-operator",
@@ -679,7 +679,7 @@
     },
     {
       "environment": "hosted",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/manual_ops/hosted/status_hosted_manual_surface.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "probe-or-operator",
@@ -690,7 +690,7 @@
     },
     {
       "environment": "hosted",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/manual_ops/hosted/stop_hosted_manual_surface.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "probe-or-operator",
@@ -712,7 +712,7 @@
     },
     {
       "environment": "target/lab",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/manual_ops/target/start_target_manual_baseline.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "probe-or-operator",
@@ -723,7 +723,7 @@
     },
     {
       "environment": "target/lab",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/manual_ops/target/start_target_manual_ground_surface.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "probe-or-operator",
@@ -734,7 +734,7 @@
     },
     {
       "environment": "target/lab",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/manual_ops/target/status_target_manual_baseline.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "probe-or-operator",
@@ -745,7 +745,7 @@
     },
     {
       "environment": "target/lab",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/manual_ops/target/status_target_manual_ground_surface.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "probe-or-operator",
@@ -756,7 +756,7 @@
     },
     {
       "environment": "target/lab",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/manual_ops/target/stop_target_manual_baseline.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "probe-or-operator",
@@ -767,7 +767,7 @@
     },
     {
       "environment": "target/lab",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/manual_ops/target/stop_target_manual_ground_surface.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "probe-or-operator",
@@ -778,7 +778,7 @@
     },
     {
       "environment": "target/lab",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/package_rpi_bundle.sh",
       "reason": "curated for the public environment or release governance",
       "role": "baseline",
@@ -822,7 +822,7 @@
     },
     {
       "environment": "multi",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/run_boot_trust_chain_probe.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "probe-or-operator",
@@ -833,29 +833,29 @@
     },
     {
       "environment": "multi",
-      "owner": "docs/verification-path-registry.md (historical entry or successor)",
+      "owner": "evidence/verification-path-registry.md (historical entry or successor)",
       "path": "scripts/run_ccsds_ground_link_spike_probe.sh",
       "reason": "historical, retired, deprecated, or superseded entrypoint",
       "role": "probe-or-operator",
       "shipped": false,
       "sourceObject": "aad12123bf452a21288a7e1a2b9c084bcec14bce",
       "status": "removed-alias",
-      "successor": "Select the exact current path from docs/verification-path-registry.md"
+      "successor": "Select the exact current path from evidence/verification-path-registry.md"
     },
     {
       "environment": "hosted",
-      "owner": "docs/verification-path-registry.md (historical entry or successor)",
+      "owner": "evidence/verification-path-registry.md (historical entry or successor)",
       "path": "scripts/run_ccsds_sband_hosted_adoption_probe.sh",
       "reason": "historical, retired, deprecated, or superseded entrypoint",
       "role": "probe-or-operator",
       "shipped": false,
       "sourceObject": "ae6edf6ffc5ccb103c2389a54e8062a806babd4e",
       "status": "historical-evidence-only",
-      "successor": "Select the exact current path from docs/verification-path-registry.md"
+      "successor": "Select the exact current path from evidence/verification-path-registry.md"
     },
     {
       "environment": "multi",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/run_comm_csp_file_downlink_probe.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "probe-or-operator",
@@ -866,7 +866,7 @@
     },
     {
       "environment": "target/lab",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/run_comm_csp_socketcan_file_downlink_probe.sh",
       "reason": "curated for the public environment or release governance",
       "role": "probe-or-operator",
@@ -877,7 +877,7 @@
     },
     {
       "environment": "target/lab",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/run_comm_csp_socketcan_ttc_probe.sh",
       "reason": "curated for the public environment or release governance",
       "role": "probe-or-operator",
@@ -888,7 +888,7 @@
     },
     {
       "environment": "multi",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/run_comm_dual_link_sim_foundation_probe.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "probe-or-operator",
@@ -899,7 +899,7 @@
     },
     {
       "environment": "multi",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/run_comm_lab_serial_acquisition_probe.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "probe-or-operator",
@@ -910,7 +910,7 @@
     },
     {
       "environment": "multi",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/run_comm_lab_serial_downlink_probe.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "probe-or-operator",
@@ -921,7 +921,7 @@
     },
     {
       "environment": "multi",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/run_comm_lab_serial_file_downlink_probe.sh",
       "reason": "curated for the public environment or release governance",
       "role": "probe-or-operator",
@@ -932,7 +932,7 @@
     },
     {
       "environment": "multi",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/run_comm_lab_serial_ingress_probe.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "probe-or-operator",
@@ -943,29 +943,29 @@
     },
     {
       "environment": "multi",
-      "owner": "docs/verification-path-registry.md (historical entry or successor)",
+      "owner": "evidence/verification-path-registry.md (historical entry or successor)",
       "path": "scripts/run_comm_session_and_downlink_qos_probe.sh",
       "reason": "historical, retired, deprecated, or superseded entrypoint",
       "role": "probe-or-operator",
       "shipped": false,
       "sourceObject": "a7a56c07c1ccee93ed3d6d232f58f22432602309",
       "status": "historical-evidence-only",
-      "successor": "Select the exact current path from docs/verification-path-registry.md"
+      "successor": "Select the exact current path from evidence/verification-path-registry.md"
     },
     {
       "environment": "multi",
-      "owner": "docs/verification-path-registry.md (historical entry or successor)",
+      "owner": "evidence/verification-path-registry.md (historical entry or successor)",
       "path": "scripts/run_comm_session_and_downlink_qos_probe_core.sh",
       "reason": "historical, retired, deprecated, or superseded entrypoint",
       "role": "probe-or-operator",
       "shipped": false,
       "sourceObject": "9e136d2a851483652e7ebebedd6004595a6fab3b",
       "status": "historical-evidence-only",
-      "successor": "Select the exact current path from docs/verification-path-registry.md"
+      "successor": "Select the exact current path from evidence/verification-path-registry.md"
     },
     {
       "environment": "multi",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/run_comm_ttc_file_downlink_probe.sh",
       "reason": "curated for the public environment or release governance",
       "role": "probe-or-operator",
@@ -976,51 +976,51 @@
     },
     {
       "environment": "multi",
-      "owner": "docs/verification-path-registry.md (historical entry or successor)",
+      "owner": "evidence/verification-path-registry.md (historical entry or successor)",
       "path": "scripts/run_comm_verification_all.sh",
       "reason": "historical, retired, deprecated, or superseded entrypoint",
       "role": "probe-or-operator",
       "shipped": false,
       "sourceObject": "b284db9a183a86c3e3793edb555501c952744772",
       "status": "historical-evidence-only",
-      "successor": "Select the exact current path from docs/verification-path-registry.md"
+      "successor": "Select the exact current path from evidence/verification-path-registry.md"
     },
     {
       "environment": "hosted",
-      "owner": "docs/verification-path-registry.md (historical entry or successor)",
+      "owner": "evidence/verification-path-registry.md (historical entry or successor)",
       "path": "scripts/run_comm_verification_hosted.sh",
       "reason": "historical, retired, deprecated, or superseded entrypoint",
       "role": "probe-or-operator",
       "shipped": false,
       "sourceObject": "5bc96c2551e549d01166aa4ca36b633855869c26",
       "status": "historical-evidence-only",
-      "successor": "Select the exact current path from docs/verification-path-registry.md"
+      "successor": "Select the exact current path from evidence/verification-path-registry.md"
     },
     {
       "environment": "target/lab",
-      "owner": "docs/verification-path-registry.md (historical entry or successor)",
+      "owner": "evidence/verification-path-registry.md (historical entry or successor)",
       "path": "scripts/run_comm_verification_rpi_can.sh",
       "reason": "historical, retired, deprecated, or superseded entrypoint",
       "role": "probe-or-operator",
       "shipped": false,
       "sourceObject": "789cfb29a8af3000ac2b0a4b08b68f7a583e8a21",
       "status": "historical-evidence-only",
-      "successor": "Select the exact current path from docs/verification-path-registry.md"
+      "successor": "Select the exact current path from evidence/verification-path-registry.md"
     },
     {
       "environment": "target/lab",
-      "owner": "docs/verification-path-registry.md (historical entry or successor)",
+      "owner": "evidence/verification-path-registry.md (historical entry or successor)",
       "path": "scripts/run_comm_verification_rpi_tcp.sh",
       "reason": "historical, retired, deprecated, or superseded entrypoint",
       "role": "probe-or-operator",
       "shipped": false,
       "sourceObject": "5ff70c77a1b56df23d2d657d725d3c2aa7a4f519",
       "status": "historical-evidence-only",
-      "successor": "Select the exact current path from docs/verification-path-registry.md"
+      "successor": "Select the exact current path from evidence/verification-path-registry.md"
     },
     {
       "environment": "multi",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/run_dev_stack.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "probe-or-operator",
@@ -1031,7 +1031,7 @@
     },
     {
       "environment": "multi",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/run_eps_csp_integration.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "probe-or-operator",
@@ -1042,7 +1042,7 @@
     },
     {
       "environment": "multi",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/run_gds_stack.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "probe-or-operator",
@@ -1053,18 +1053,18 @@
     },
     {
       "environment": "hosted",
-      "owner": "docs/verification-path-registry.md (historical entry or successor)",
+      "owner": "evidence/verification-path-registry.md (historical entry or successor)",
       "path": "scripts/run_gps_hosted_probe.sh",
       "reason": "historical, retired, deprecated, or superseded entrypoint",
       "role": "probe-or-operator",
       "shipped": false,
       "sourceObject": "4ab3c90ed0785182997a86d7a913c442f1db8a02",
       "status": "removed-alias",
-      "successor": "Select the exact current path from docs/verification-path-registry.md"
+      "successor": "Select the exact current path from evidence/verification-path-registry.md"
     },
     {
       "environment": "multi",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/run_ground_gds_only_stack.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "probe-or-operator",
@@ -1075,7 +1075,7 @@
     },
     {
       "environment": "multi",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/run_hk_data_product_alignment_v2_probe.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "probe-or-operator",
@@ -1086,7 +1086,7 @@
     },
     {
       "environment": "hosted",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/run_hosted_per_band_stock_ground_stacks.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "probe-or-operator",
@@ -1097,7 +1097,7 @@
     },
     {
       "environment": "hosted",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/run_hosted_sband_stock_ground_stack.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "probe-or-operator",
@@ -1108,7 +1108,7 @@
     },
     {
       "environment": "hosted",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/run_hosted_uhf_stock_ground_stack.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "probe-or-operator",
@@ -1119,7 +1119,7 @@
     },
     {
       "environment": "multi",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/run_manual_dual_gds_memory_probe.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "probe-or-operator",
@@ -1130,7 +1130,7 @@
     },
     {
       "environment": "hosted",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/run_mode_model_v2_hosted_probe.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "probe-or-operator",
@@ -1141,7 +1141,7 @@
     },
     {
       "environment": "hosted",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/run_mode_safety_policy_hosted_probe.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "probe-or-operator",
@@ -1152,9 +1152,9 @@
     },
     {
       "environment": "hosted",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/run_node5_comm_csp_downlink_v2_hosted_probe.sh",
-      "reason": "shipped from the fixed source baseline",
+      "reason": "curated for the public environment or release governance",
       "role": "probe-or-operator",
       "shipped": true,
       "sourceObject": "3039933f1dd453c5b69aca0a6018cbbe11e12df9",
@@ -1163,9 +1163,9 @@
     },
     {
       "environment": "hosted",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/run_node5_comm_csp_downlink_v2_transport_hosted_probe.sh",
-      "reason": "shipped from the fixed source baseline",
+      "reason": "curated for the public environment or release governance",
       "role": "probe-or-operator",
       "shipped": true,
       "sourceObject": "8d9dd05cffc52b93307c807fe2ccb4b7d9c2633b",
@@ -1174,7 +1174,7 @@
     },
     {
       "environment": "target/lab",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/run_node5_comm_csp_downlink_v3_hk_target_probe.sh",
       "reason": "curated for the public environment or release governance",
       "role": "probe-or-operator",
@@ -1185,7 +1185,7 @@
     },
     {
       "environment": "target/lab",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/run_node5_comm_csp_downlink_v3_target_adaptive_search.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "probe-or-operator",
@@ -1196,9 +1196,9 @@
     },
     {
       "environment": "hosted",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/run_node5_comm_csp_downlink_v3_transport_hosted_probe.sh",
-      "reason": "shipped from the fixed source baseline",
+      "reason": "curated for the public environment or release governance",
       "role": "probe-or-operator",
       "shipped": true,
       "sourceObject": "04cd8e93f1bad2050a0cf904706656d10c609ab4",
@@ -1207,7 +1207,7 @@
     },
     {
       "environment": "hosted",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/run_onboard_state_data_hosted_probe.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "probe-or-operator",
@@ -1218,40 +1218,40 @@
     },
     {
       "environment": "hosted",
-      "owner": "docs/verification-path-registry.md (historical entry or successor)",
+      "owner": "evidence/verification-path-registry.md (historical entry or successor)",
       "path": "scripts/run_payload_capture_modes_v2_hosted_probe.sh",
       "reason": "historical, retired, deprecated, or superseded entrypoint",
       "role": "probe-or-operator",
       "shipped": false,
       "sourceObject": "900b0020aaece3e1b61ec93b2ff9f68b6449437e",
       "status": "historical-evidence-only",
-      "successor": "Select the exact current path from docs/verification-path-registry.md"
+      "successor": "Select the exact current path from evidence/verification-path-registry.md"
     },
     {
       "environment": "hosted",
-      "owner": "docs/verification-path-registry.md (historical entry or successor)",
+      "owner": "evidence/verification-path-registry.md (historical entry or successor)",
       "path": "scripts/run_payload_ops_contract_v1_hosted_probe.sh",
       "reason": "historical, retired, deprecated, or superseded entrypoint",
       "role": "probe-or-operator",
       "shipped": false,
       "sourceObject": "89359856ec319d0f24214fa9531bc23aa0715792",
       "status": "historical-evidence-only",
-      "successor": "Select the exact current path from docs/verification-path-registry.md"
+      "successor": "Select the exact current path from evidence/verification-path-registry.md"
     },
     {
       "environment": "target/lab",
-      "owner": "docs/verification-path-registry.md (historical entry or successor)",
+      "owner": "evidence/verification-path-registry.md (historical entry or successor)",
       "path": "scripts/run_payload_ops_contract_v1_target_probe.sh",
       "reason": "historical, retired, deprecated, or superseded entrypoint",
       "role": "probe-or-operator",
       "shipped": false,
       "sourceObject": "96eb2d4bb06fd2221e9d837feac8a82b8e3382bb",
       "status": "historical-evidence-only",
-      "successor": "Select the exact current path from docs/verification-path-registry.md"
+      "successor": "Select the exact current path from evidence/verification-path-registry.md"
     },
     {
       "environment": "hosted",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/run_payload_raw_preview_dual_artifact_v1_hosted_probe.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "probe-or-operator",
@@ -1262,7 +1262,7 @@
     },
     {
       "environment": "target/lab",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/run_payload_raw_preview_dual_artifact_v1_target_probe.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "probe-or-operator",
@@ -1273,18 +1273,18 @@
     },
     {
       "environment": "hosted",
-      "owner": "docs/verification-path-registry.md (historical entry or successor)",
+      "owner": "evidence/verification-path-registry.md (historical entry or successor)",
       "path": "scripts/run_payload_sensor_register_controls_v1_hosted_probe.sh",
       "reason": "historical, retired, deprecated, or superseded entrypoint",
       "role": "probe-or-operator",
       "shipped": false,
       "sourceObject": "fb8fbf87cc39dbfbbde9340d0df9fd60d0e5a756",
       "status": "historical-evidence-only",
-      "successor": "Select the exact current path from docs/verification-path-registry.md"
+      "successor": "Select the exact current path from evidence/verification-path-registry.md"
     },
     {
       "environment": "multi",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/run_payload_ttc_mode_entry_ccsds_probe.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "probe-or-operator",
@@ -1295,7 +1295,7 @@
     },
     {
       "environment": "hosted",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/run_per_band_stock_ground_stacks_hosted_probe.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "probe-or-operator",
@@ -1306,7 +1306,7 @@
     },
     {
       "environment": "multi",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/run_persistent_fault_ring_v1_probe.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "probe-or-operator",
@@ -1317,7 +1317,7 @@
     },
     {
       "environment": "hosted",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/run_radio_metrics_v1_hosted_probe.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "probe-or-operator",
@@ -1328,7 +1328,7 @@
     },
     {
       "environment": "target/lab",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/run_radio_metrics_v1_target_probe.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "probe-or-operator",
@@ -1339,7 +1339,7 @@
     },
     {
       "environment": "multi",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/run_remote_csp_gds_stack.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "probe-or-operator",
@@ -1350,7 +1350,7 @@
     },
     {
       "environment": "target/lab",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/run_rpi_autostart_probe.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "probe-or-operator",
@@ -1361,7 +1361,7 @@
     },
     {
       "environment": "target/lab",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/run_rpi_boot_probe.sh",
       "reason": "curated for the public environment or release governance",
       "role": "probe-or-operator",
@@ -1372,7 +1372,7 @@
     },
     {
       "environment": "target/lab",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/run_rpi_can_csp_stack.sh",
       "reason": "curated for the public environment or release governance",
       "role": "probe-or-operator",
@@ -1383,7 +1383,7 @@
     },
     {
       "environment": "target/lab",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/run_rpi_csp_comm_baseline_probe.sh",
       "reason": "curated for the public environment or release governance",
       "role": "probe-or-operator",
@@ -1394,7 +1394,7 @@
     },
     {
       "environment": "target/lab",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/run_rpi_installed_probe.sh",
       "reason": "curated for the public environment or release governance",
       "role": "probe-or-operator",
@@ -1405,7 +1405,7 @@
     },
     {
       "environment": "target/lab",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/run_rpi_installed_stack.sh",
       "reason": "curated for the public environment or release governance",
       "role": "probe-or-operator",
@@ -1416,7 +1416,7 @@
     },
     {
       "environment": "target/lab",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/run_rpi_remote_csp_stack.sh",
       "reason": "curated for the public environment or release governance",
       "role": "probe-or-operator",
@@ -1427,7 +1427,7 @@
     },
     {
       "environment": "target/lab",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/run_rpi_stack.sh",
       "reason": "curated for the public environment or release governance",
       "role": "probe-or-operator",
@@ -1438,7 +1438,7 @@
     },
     {
       "environment": "target/lab",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/run_rpi_target_hardware_watchdog_capability_probe.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "probe-or-operator",
@@ -1449,7 +1449,7 @@
     },
     {
       "environment": "target/lab",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/run_rpi_target_recovery_restart_probe.sh",
       "reason": "curated for the public environment or release governance",
       "role": "probe-or-operator",
@@ -1460,7 +1460,7 @@
     },
     {
       "environment": "multi",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/run_shared_canfd_csp_gds_probe.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "probe-or-operator",
@@ -1471,7 +1471,7 @@
     },
     {
       "environment": "multi",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/run_shared_canfd_eps_adcs_health_probe.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "probe-or-operator",
@@ -1482,18 +1482,18 @@
     },
     {
       "environment": "hosted",
-      "owner": "docs/verification-path-registry.md (historical entry or successor)",
+      "owner": "evidence/verification-path-registry.md (historical entry or successor)",
       "path": "scripts/run_storage_health_hosted_probe.sh",
       "reason": "historical, retired, deprecated, or superseded entrypoint",
       "role": "probe-or-operator",
       "shipped": false,
       "sourceObject": "4934461e31b7ef1a88870ac9255b0faf96e97fda",
       "status": "removed-alias",
-      "successor": "Select the exact current path from docs/verification-path-registry.md"
+      "successor": "Select the exact current path from evidence/verification-path-registry.md"
     },
     {
       "environment": "multi",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/run_subsystem_comm_uart_link_probe.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "probe-or-operator",
@@ -1504,7 +1504,7 @@
     },
     {
       "environment": "multi",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/run_subsystem_csp_service.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "probe-or-operator",
@@ -1515,7 +1515,7 @@
     },
     {
       "environment": "multi",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/run_subsystem_sim_can_stack.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "probe-or-operator",
@@ -1526,7 +1526,7 @@
     },
     {
       "environment": "multi",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/run_subsystem_sim_comm_can_stack.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "probe-or-operator",
@@ -1537,7 +1537,7 @@
     },
     {
       "environment": "multi",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/run_subsystem_sim_remote_can_stack.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "probe-or-operator",
@@ -1548,7 +1548,7 @@
     },
     {
       "environment": "multi",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/run_subsystem_sim_remote_comm_can_stack.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "probe-or-operator",
@@ -1559,18 +1559,18 @@
     },
     {
       "environment": "target/lab",
-      "owner": "docs/verification-path-registry.md (historical entry or successor)",
+      "owner": "evidence/verification-path-registry.md (historical entry or successor)",
       "path": "scripts/run_target_can_node6_nonquiet_diagnosis_probe.sh",
       "reason": "historical, retired, deprecated, or superseded entrypoint",
       "role": "probe-or-operator",
       "shipped": false,
       "sourceObject": "4b35b54c3fac366f67b9a08b3ba09ab141972799",
       "status": "historical-evidence-only",
-      "successor": "Select the exact current path from docs/verification-path-registry.md"
+      "successor": "Select the exact current path from evidence/verification-path-registry.md"
     },
     {
       "environment": "target/lab",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/run_target_comm_csp_ground_stack.sh",
       "reason": "curated for the public environment or release governance",
       "role": "probe-or-operator",
@@ -1581,7 +1581,7 @@
     },
     {
       "environment": "target/lab",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/run_target_comm_csp_lab_operational_probe.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "probe-or-operator",
@@ -1592,7 +1592,7 @@
     },
     {
       "environment": "target/lab",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/run_target_secure_auth_proof.sh",
       "reason": "curated for the public environment or release governance",
       "role": "probe-or-operator",
@@ -1603,40 +1603,40 @@
     },
     {
       "environment": "target/lab",
-      "owner": "docs/verification-path-registry.md (historical entry or successor)",
+      "owner": "evidence/verification-path-registry.md (historical entry or successor)",
       "path": "scripts/run_target_timing_empirical_ceiling_freeze_v1_probe.sh",
       "reason": "historical, retired, deprecated, or superseded entrypoint",
       "role": "probe-or-operator",
       "shipped": false,
       "sourceObject": "7f45aee61681ea4122193a91f9687d62cb80c142",
       "status": "historical-evidence-only",
-      "successor": "Select the exact current path from docs/verification-path-registry.md"
+      "successor": "Select the exact current path from evidence/verification-path-registry.md"
     },
     {
       "environment": "target/lab",
-      "owner": "docs/verification-path-registry.md (historical entry or successor)",
+      "owner": "evidence/verification-path-registry.md (historical entry or successor)",
       "path": "scripts/run_target_timing_wcet_profile_proof_v1_probe.sh",
       "reason": "historical, retired, deprecated, or superseded entrypoint",
       "role": "probe-or-operator",
       "shipped": false,
       "sourceObject": "85853c21240b8d86216709333b768343b99c3e05",
       "status": "historical-evidence-only",
-      "successor": "Select the exact current path from docs/verification-path-registry.md"
+      "successor": "Select the exact current path from evidence/verification-path-registry.md"
     },
     {
       "environment": "hosted",
-      "owner": "docs/verification-path-registry.md (historical entry or successor)",
+      "owner": "evidence/verification-path-registry.md (historical entry or successor)",
       "path": "scripts/run_uhf_ccsds_hosted_adoption_probe.sh",
       "reason": "historical, retired, deprecated, or superseded entrypoint",
       "role": "probe-or-operator",
       "shipped": false,
       "sourceObject": "edaf96f1cd06e9a4dd2ada835ad74a1f856c6e3e",
       "status": "historical-evidence-only",
-      "successor": "Select the exact current path from docs/verification-path-registry.md"
+      "successor": "Select the exact current path from evidence/verification-path-registry.md"
     },
     {
       "environment": "hosted",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/run_uplink_authority_and_key_hardening_hosted_probe.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "probe-or-operator",
@@ -1647,7 +1647,7 @@
     },
     {
       "environment": "multi",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/run_verification_ci.sh",
       "reason": "curated for the public environment or release governance",
       "role": "probe-or-operator",
@@ -1658,7 +1658,7 @@
     },
     {
       "environment": "multi",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/run_watchdog_v1_probe.sh",
       "reason": "shipped from the fixed source baseline",
       "role": "probe-or-operator",
@@ -1691,7 +1691,7 @@
     },
     {
       "environment": "target/lab",
-      "owner": "docs/verification-path-registry.md",
+      "owner": "evidence/verification-path-registry.md",
       "path": "scripts/sync_rpi_workspace.sh",
       "reason": "curated for the public environment or release governance",
       "role": "baseline",

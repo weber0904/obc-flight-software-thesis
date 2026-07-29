@@ -21,6 +21,6 @@ The repository now has a formal rule that every real F' component under `OBC/Com
 - Affected code and files:
   - `.codex/skills/classic-component-ut-pattern/`
   - `AGENTS.md`
-  - `docs/test-records/classic-component-ut-skill-v1/`
+  - `evidence/records/classic-component-ut-skill-v1/`
   - `openspec/specs/codex-skills/`
 - No flight runtime behavior or target deployment behavior changes.

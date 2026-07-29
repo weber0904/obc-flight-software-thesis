@@ -5,7 +5,7 @@
   `formal-comm-verification-matrix-v1`.
 - [x] 1.2 Add a new operator runbook for the comm-verification suite and a
   scaffold evidence record under
-  `docs/test-records/comm-link-revalidation-v1/`.
+  `evidence/records/comm-link-revalidation-v1/`.
 - [x] 1.3 Validate the change artifacts with
   `openspec validate formal-comm-verification-matrix-v1`.
 
@@ -49,8 +49,8 @@
 ## 5. Follow-Up Runtime Matrix
 
 - [x] 5.1 Record hosted, target TCP, and target CAN matrix execution results in
-  `docs/test-records/comm-link-revalidation-v1/README.md`.
-- [x] 5.2 Update `docs/verification-path-registry.md` only for matrix cells
+  `evidence/records/comm-link-revalidation-v1/README.md`.
+- [x] 5.2 Update `evidence/verification-path-registry.md` only for matrix cells
   that finish with passing governed evidence.
 - [x] 5.3 Keep the umbrella matrix dashboard aligned with the follow-on change
   train:

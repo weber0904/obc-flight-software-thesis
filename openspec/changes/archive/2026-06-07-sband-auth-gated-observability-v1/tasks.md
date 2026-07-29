@@ -19,7 +19,7 @@
 
 - [x] 4.1 Add a repository-owned hosted node-`5` observability-governance probe that proves pre-auth quiet, post-auth live visibility, bounded `GET_*` summary readback, and session-close suppression.
 - [x] 4.2 Add a service-managed target node-`5` observability-governance probe with the same governance boundary on the maintained target S-band path.
-- [x] 4.3 Add a new `docs/test-records/` evidence record and update verification-path documentation for the hosted and target node-`5` observability-governance proofs.
+- [x] 4.3 Add a new `evidence/records/` evidence record and update verification-path documentation for the hosted and target node-`5` observability-governance proofs.
 
 ## 5. Validation And Closeout
 

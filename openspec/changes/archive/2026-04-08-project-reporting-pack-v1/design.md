@@ -11,12 +11,12 @@ The reporting package is grounded only in checked-in repository truth:
 - `README.md`
 - `AGENTS.md`
 - `docs/verification-matrix.md`
-- `docs/baseline-reconciliation-matrix.md`
-- `docs/verification-path-registry.md`
+- `openspec/reconciliation/baseline-reconciliation-matrix.md`
+- `evidence/verification-path-registry.md`
 - `openspec/specs/*`
 - `OBC/Top/topology.fpp`
 - `OBC/Top/instances.fpp`
-- relevant `docs/test-records/*`
+- relevant `evidence/records/*`
 
 The package does not infer completed scope from chat history or from hoped-for future hardware.
 

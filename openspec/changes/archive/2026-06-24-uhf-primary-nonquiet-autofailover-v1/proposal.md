@@ -55,8 +55,8 @@ that path.
 - Affected docs:
   - `docs/interfaces.md`
   - `docs/roadmap/current-baseline.md`
-  - `docs/verification-path-registry.md`
-  - `docs/test-records/`
+  - `evidence/verification-path-registry.md`
+  - `evidence/records/`
 - Affected current proof surfaces:
   - target UHF primary live benchmark family
   - target failover proof family

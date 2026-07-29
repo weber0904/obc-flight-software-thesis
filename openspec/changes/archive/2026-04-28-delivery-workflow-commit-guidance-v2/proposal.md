@@ -27,5 +27,5 @@ The previous attempt to clarify rollback commits and first-push commit boundarie
   - `AGENTS.md`
   - `.codex/skills/change-closeout/SKILL.md`
 - Audit trail:
-  - `docs/baseline-reconciliation-matrix.md`
-  - `docs/baseline-reconciliation-matrix.json`
+  - `openspec/reconciliation/baseline-reconciliation-matrix.md`
+  - `openspec/reconciliation/baseline-reconciliation-matrix.json`

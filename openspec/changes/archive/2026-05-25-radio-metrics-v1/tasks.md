@@ -30,7 +30,7 @@
 
 - [x] 4.1 Update the main docs and interface index with the frozen COMM
   observability contract and explicit adjacent non-claims
-- [x] 4.2 Add `docs/test-records/radio-metrics-v1/README.md` with the exact
+- [x] 4.2 Add `evidence/records/radio-metrics-v1/README.md` with the exact
   hosted and target paths exercised and the exact metrics fields frozen
 - [x] 4.3 Run fresh local verification, focused hosted and target probes,
   `openspec validate radio-metrics-v1`, and `openspec validate --specs`

@@ -198,11 +198,11 @@ If the control preflight itself fails, the change records:
 
 The change will always add:
 
-- `docs/test-records/target-timing-empirical-ceiling-freeze-v1/README.md`
+- `evidence/records/target-timing-empirical-ceiling-freeze-v1/README.md`
 
 It will update:
 
-- `docs/verification-path-registry.md` entry `68`
+- `evidence/verification-path-registry.md` entry `68`
 - `docs/interfaces.md`
 
 It will update current-baseline / next-work / architecture docs only if the

@@ -23,8 +23,8 @@
 
 ## 4. Evidence And Docs
 
-- [x] 4.1 Add `docs/test-records/target-secure-auth-proof-v1/README.md`.
-- [x] 4.2 Update `docs/verification-path-registry.md` with the target secure-auth proof entry and adjacent-path boundaries.
+- [x] 4.1 Add `evidence/records/target-secure-auth-proof-v1/README.md`.
+- [x] 4.2 Update `evidence/verification-path-registry.md` with the target secure-auth proof entry and adjacent-path boundaries.
 - [x] 4.3 Update `docs/interfaces.md` secure-auth and uplink-authority target status.
 - [x] 4.4 Update `docs/operator/target-obc-comm-csp-lab-runbook.md` with the proof entrypoint and evidence contract.
 - [x] 4.5 Clarify `docs/operator/formal-comm-verification-matrix-v1-runbook.md` if touched so older matrix quiet-UHF cells remain distinct from registry entry `69`.

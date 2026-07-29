@@ -31,4 +31,4 @@ The repository SHALL provide a repo-local Codex skill named `hosted-probe-workfl
 #### Scenario: Probe formally proves a new path
 
 - **WHEN** the hosted probe becomes formal evidence for a verification path not yet registered in this repository
-- **THEN** the skill SHALL direct the agent to add or update the corresponding `docs/test-records/...` evidence and `docs/verification-path-registry.md` entry
+- **THEN** the skill SHALL direct the agent to add or update the corresponding `evidence/records/...` evidence and `evidence/verification-path-registry.md` entry

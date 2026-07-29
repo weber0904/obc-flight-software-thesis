@@ -15,8 +15,11 @@ SOURCE_COMMIT = "142683f20ba46f59f894f594f2caf71dfeddf16f"
 EXCLUDED_PREFIXES = (
     ".codex/",
     "pending/",
+    "docs/architecture/",
     "docs/architecture-review/",
+    "docs/operator/",
     "docs/reporting/",
+    "docs/roadmap/",
     "scripts/comm_verification/cases/",
     "scripts/comm_verification/env/",
     "scripts/comm_verification/matrix/",
@@ -27,10 +30,12 @@ EXCLUDED_PATHS = {
     "AGENTS.md",
     "final_design.md",
     "docs/architecture/comm-followup-directions.md",
-    "docs/roadmap/mission-console-observability-recommendations.md",
-    "docs/roadmap/mission-console-phase1-handoff.md",
+    "docs/integrity-and-hashing.md",
     "docs/operator/formal-comm-verification-matrix-v1-runbook.md",
     "docs/operator/hosted-official-sequencing-system-resources-runbook.md",
+    "docs/roadmap/mission-console-observability-recommendations.md",
+    "docs/roadmap/mission-console-phase1-handoff.md",
+    "docs/target-version-metadata.md",
 }
 
 HISTORICAL_SCRIPTS = {
@@ -70,21 +75,54 @@ TRANSFORMS = {
     "README.md": "README.md",
     "config/security/command-auth.ini": "config/security/command-auth.example.ini",
     "docs/reporting/fprime-native-vs-project-contribution-architecture-v1/README.md":
-        "docs/architecture/project-contributions.md",
-    "docs/thesis/README.md": "docs/thesis/README.md",
-    "docs/thesis/source-index.md": "docs/thesis/source-index.md",
-    "docs/thesis/07-verification-and-evidence-map.md":
-        "docs/thesis/claim-evidence-map.zh-TW.md",
+        "docs/architecture.md",
+    "docs/architecture/current-development-architecture.md": "docs/architecture.md",
+    "docs/architecture/project-contributions.md": "docs/architecture.md",
+    "docs/architecture/target-flight-design.md": "docs/architecture.md",
+    "docs/baseline-reconciliation-matrix.json":
+        "openspec/reconciliation/baseline-reconciliation-matrix.json",
+    "docs/baseline-reconciliation-matrix.md":
+        "openspec/reconciliation/baseline-reconciliation-matrix.md",
+    "docs/evidence/README.md": "evidence/README.md",
+    "docs/integrity-and-hashing.md": "docs/architecture.md",
+    "docs/target-version-metadata.md": "docs/interfaces.md",
+    "docs/thesis/README.md": "docs/thesis.md",
+    "docs/thesis/source-index.md": "docs/thesis.md",
+    "docs/thesis/07-verification-and-evidence-map.md": "docs/thesis.md",
+    "docs/thesis/claim-evidence-map.zh-TW.md": "docs/thesis.md",
+    "docs/verification-debugging-lessons.md": "docs/verification.md",
+    "docs/verification-matrix.md": "docs/verification.md",
+    "docs/verification-path-registry.md": "evidence/verification-path-registry.md",
+    "docs/operator/hosted-dual-link-orchestration-runbook.md":
+        "docs/operator/hosted.md",
+    "docs/operator/hosted-manual-dual-gds-runbook.md":
+        "docs/operator/hosted.md",
+    "docs/operator/hosted-per-band-stock-ground-stacks-runbook.md":
+        "docs/operator/hosted.md",
+    "docs/operator/mission-console-phase1-runbook.md":
+        "docs/operator/mission-console.md",
+    "docs/operator/simulator-control-reference.zh-TW.md":
+        "docs/operator/simulator-controls.zh-TW.md",
+    "docs/operator/target-manual-dual-gds-runbook.md":
+        "docs/operator/target-lab.md",
+    "docs/operator/target-obc-comm-csp-lab-runbook.md":
+        "docs/operator/target-lab.md",
+    "docs/operator/target-proof-abc-governance.md":
+        "docs/operator/target-lab.md",
+    "docs/operator/thesis-demo-routes.zh-TW.md":
+        "docs/operator/thesis-demo.zh-TW.md",
     "docs/operator/mission-console-phase1-runbook.zh-TW.md":
-        "docs/operator/thesis-demo-routes.zh-TW.md",
+        "docs/operator/thesis-demo.zh-TW.md",
     "docs/operator/mission-console-beacon-viewer-demo.zh-TW.md":
-        "docs/operator/thesis-demo-routes.zh-TW.md",
+        "docs/operator/thesis-demo.zh-TW.md",
     "docs/operator/mission-console-target-route1-demo.zh-TW.md":
-        "docs/operator/thesis-demo-routes.zh-TW.md",
+        "docs/operator/thesis-demo.zh-TW.md",
     "docs/operator/mission-console-target-route2-demo.zh-TW.md":
-        "docs/operator/thesis-demo-routes.zh-TW.md",
+        "docs/operator/thesis-demo.zh-TW.md",
     "docs/operator/mission-console-target-route3-demo.zh-TW.md":
-        "docs/operator/thesis-demo-routes.zh-TW.md",
+        "docs/operator/thesis-demo.zh-TW.md",
+    "docs/roadmap/current-baseline.md": "docs/architecture.md",
+    "docs/roadmap/next-work.md": "docs/architecture.md",
 }
 
 
@@ -101,13 +139,14 @@ def git_blob_id(path: pathlib.Path) -> str:
 def classify(path: str) -> tuple[str, str | None, str]:
     if path == "config/security/command-auth.ini":
         return "transform", TRANSFORMS[path], "replace tracked credentials with a public example"
-    if "/artifacts/" in path and path.startswith("docs/test-records/"):
-        return "externalize", None, "raw evidence belongs in the release asset"
-    if re.fullmatch(r"docs/test-records/[^/]+/README\.md", path):
+    if path.startswith("docs/test-records/"):
+        public_path = "evidence/records/" + path.removeprefix("docs/test-records/")
+        if "/artifacts/" in path:
+            return "externalize", None, "raw evidence belongs in the release asset"
         return (
             "transform",
-            path,
-            "preserve the record while redacting personal environment identifiers",
+            public_path,
+            "publish the record in the dedicated evidence archive",
         )
     if path in TRANSFORMS:
         return "transform", TRANSFORMS[path], "consolidated into the public canonical layer"
@@ -173,14 +212,16 @@ def main() -> None:
     source_backed_public_paths = {
         entry["publicPath"] for entry in entries if entry["publicPath"]
     }
-    observed_public_paths = set(
-        git_output(
+    observed_public_paths = {
+        path
+        for path in git_output(
             public_root,
             "ls-files",
             "-co",
             "--exclude-standard",
         ).splitlines()
-    )
+        if (public_root / path).exists()
+    }
     payload = {
         "schemaVersion": 1,
         "release": "thesis-submission-v1",

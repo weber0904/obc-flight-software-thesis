@@ -1,7 +1,7 @@
 ## ADDED Requirements
 
 ### Requirement: ADCS Implementation Evidence
-The first ADCS implementation slice SHALL record its build, bridge-unit-test, and host transport integration results under `docs/test-records/adcs-subsystem-v1/`.
+The first ADCS implementation slice SHALL record its build, bridge-unit-test, and host transport integration results under `evidence/records/adcs-subsystem-v1/`.
 
 #### Scenario: ADCS evidence is reviewable after implementation
 - **WHEN** the ADCS subsystem change completes

@@ -5,7 +5,7 @@ The repository SHALL provide `docs/planning/` as a non-normative space for plann
 
 #### Scenario: Planning note stays below formal sources
 - **WHEN** a planning note describes future work or a recommended sequence
-- **THEN** that note SHALL state that it is not a formal baseline and SHALL NOT override `openspec/specs/`, archived OpenSpec changes, `docs/test-records/`, or `docs/verification-path-registry.md`
+- **THEN** that note SHALL state that it is not a formal baseline and SHALL NOT override `openspec/specs/`, archived OpenSpec changes, `evidence/records/`, or `evidence/verification-path-registry.md`
 
 ### Requirement: Planning Notes Declare Freshness
 Each planning note SHALL include freshness and reconciliation metadata before making roadmap claims, including `Status`, `Last reconciled against main`, `Authoritative sources checked`, `Done`, `Active`, `Next`, `Deferred`, and an explicit warning that the note is not a formal baseline.

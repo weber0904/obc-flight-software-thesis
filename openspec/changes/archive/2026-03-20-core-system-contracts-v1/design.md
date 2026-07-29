@@ -49,7 +49,7 @@ Alternative considered:
 
 ### Decision: Use unit tests as the first implementation evidence
 
-Each new core component will ship with a focused unit-test harness, and this change will record the results under `docs/test-records/`.
+Each new core component will ship with a focused unit-test harness, and this change will record the results under `evidence/records/`.
 
 Alternative considered:
 
@@ -68,7 +68,7 @@ Alternative considered:
 3. Implement `ModeManager`, `HealthMonitor`, and `CspBridge` under `OBC/Components/`.
 4. Add unit tests for the minimum required behaviors.
 5. Run the normal build and unit-test build.
-6. Capture evidence under `docs/test-records/core-system-contracts-v1/`.
+6. Capture evidence under `evidence/records/core-system-contracts-v1/`.
 7. Validate the change and archive it when complete.
 
 ## Open Questions

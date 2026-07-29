@@ -80,7 +80,7 @@ Alternative considered:
 3. Add focused F' unit tests covering the hosted lifecycle and metadata recovery paths.
 4. Update the narrative boot/update source document with the first implementation details.
 5. Run the normal build, UT build, and `fprime-util check --all`.
-6. Record evidence under `docs/test-records/boot-update-v1/`.
+6. Record evidence under `evidence/records/boot-update-v1/`.
 7. Validate and archive the change.
 
 ## Open Questions

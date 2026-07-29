@@ -23,5 +23,5 @@ None.
 ## Impact
 
 - Affected code: `simulators/comm/`, `scripts/`, and possibly `OBC/Main.cpp` or related runtime helpers if transport naming/selection needs to be generalized from PTY-only wording to real serial devices.
-- Affected docs: `README.md`, `obc-dev-spec/05_comm_subsystem.md`, `obc-dev-spec/07_verification_evidence.md`, and `docs/test-records/`.
+- Affected docs: `README.md`, `obc-dev-spec/05_comm_subsystem.md`, `obc-dev-spec/07_verification_evidence.md`, and `evidence/records/`.
 - Affected systems: Raspberry Pi target serial device path selection, host-side serial peer launch, and real hardware comm validation evidence.

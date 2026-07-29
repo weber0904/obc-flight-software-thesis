@@ -17,7 +17,7 @@ ROOT = pathlib.Path(__file__).resolve().parents[1]
 CHECKER = ROOT / "scripts/check_route1_evidence_bundle.py"
 CAMPAIGN = (
     ROOT
-    / "docs/test-records/chapter5-integrated-route-closure-v1/artifacts"
+    / "evidence/records/chapter5-integrated-route-closure-v1/artifacts"
     / "2026-07-20-route1-target-abc-rerun"
 )
 TARGET_WRAPPERS = (
@@ -73,17 +73,12 @@ PIPELINE_RECEIVED_FDP = (
 CAMPAIGN_README = "README.md"
 GOVERNANCE_STATUS_CORRUPTIONS = (
     (
-        "docs/test-records/route1-sequence-verification-v1/README.md",
+        "evidence/records/route1-sequence-verification-v1/README.md",
         "2026-07-12 proof remains a historical governed functional proof, not current target authority",
         "2026-07-12 proof remains the authoritative target A/B/C closure",
     ),
     (
-        "docs/architecture/current-development-architecture.md",
-        "2026-07-20 observation is not target A/B/C authority",
-        "2026-07-20 observation is authoritative target A/B/C closure",
-    ),
-    (
-        "docs/verification-path-registry.md",
+        "evidence/verification-path-registry.md",
         "Route 1 target requalification remains pending",
         "Route 1 target requalification is complete",
     ),

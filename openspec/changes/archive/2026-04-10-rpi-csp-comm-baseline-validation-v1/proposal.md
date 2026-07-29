@@ -25,5 +25,5 @@ The libcsp-first internal subsystem baseline has been validated on the hosted de
 ## Impact
 
 - Affected scripts: new Raspberry Pi baseline probe wrapper.
-- Affected docs/evidence: README, scripts README, verification matrix, registry, reconciliation matrix, and `docs/test-records/rpi-csp-comm-baseline-validation-v1/`.
+- Affected docs/evidence: README, scripts README, verification matrix, registry, reconciliation matrix, and `evidence/records/rpi-csp-comm-baseline-validation-v1/`.
 - Affected runtime behavior: none expected; the script drives existing target binaries and REPL commands.

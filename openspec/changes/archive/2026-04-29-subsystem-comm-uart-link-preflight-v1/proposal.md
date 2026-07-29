@@ -25,5 +25,5 @@ The COMM lab serial ingress work depends on a physical UART link that has moved 
 ## Impact
 
 - Affected code: simulator COMM helper executable, simulator CMake registration, repository probe scripts.
-- Affected docs: `README.md`, `docs/verification-matrix.md`, `docs/verification-path-registry.md`, and `docs/test-records/subsystem-comm-uart-link-preflight-v1/`.
+- Affected docs: `README.md`, `docs/verification-matrix.md`, `evidence/verification-path-registry.md`, and `evidence/records/subsystem-comm-uart-link-preflight-v1/`.
 - Affected systems: macOS host serial endpoint and `subsystem.local` serial endpoint only.

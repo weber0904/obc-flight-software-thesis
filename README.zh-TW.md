@@ -1,32 +1,49 @@
-# CubeSat OBC 飛行軟體論文公開版
+# CubeSat OBC 飛行軟體
 
-本 repo 是 `thesis-submission-v1` 的公開策展版本，核心基於 F Prime
-v4.1.0，保留目前可建置的 OBC 實作、完整 OpenSpec、測試紀錄摘要及現行
-驗證入口；過時腳本、論文內文草稿、交接筆記與重複報告已從公開操作面移除。
+[English](README.md) ·
+[系統架構](docs/architecture.md) ·
+[介面契約](docs/interfaces.md) ·
+[驗證總覽](docs/verification.md) ·
+[論文技術索引](docs/thesis.md) ·
+[展示流程](docs/operator/thesis-demo.zh-TW.md)
 
-主要內容：
+本專案是一套基於 F Prime v4.1.0 的 CubeSat 星載電腦軟體原型，整合任務
+模式、自主序列、酬載操作、子系統通訊、故障復原、安全指令、資料產品、
+Raspberry Pi 部署與地面操作介面。
 
-- `OBC/TopCcsds/topology.fpp` 是唯一 maintained deployment。
-- 以 internal CSP 串接 EPS、ADCS、COMM 與 payload。
-- 具備 CCSDS S-band、受治理的 UHF primary/failover、secure command、
-  FDIR/recovery、boot trust、official F Prime data products 和 Mission
-  Console。
-- OpenSpec 保留正式需求、設計決策與變更歷史。
-- 大型 raw evidence 放在附 SHA-256 的 GitHub Release asset；Git 內保留
-  claim、verdict、環境、限制及索引。
+核心成果包括：
 
-本版沒有在最終公開 commit 重新執行 Raspberry Pi／實驗室硬體測試。
-相關結果只標示為「先前已展示」，並保留當時 commit、日期、環境及差異，
-不宣稱是 `thesis-submission-v1` 的 fresh target proof。
+- 以 `OBC/TopCcsds/topology.fpp` 定義單一 OBC deployment；
+- 透過 internal CSP 整合 EPS、ADCS、COMM、GPS 與 payload；
+- 支援 CCSDS S-band 及 UHF primary/failover 通訊路徑；
+- 以 challenge-response、session sequence 與 authority gate 保護指令；
+- 提供 FDIR、子系統 recovery、process restart 及 hardware watchdog；
+- 使用 F Prime `.fdp` 建立任務歷史資料產品與檔案下傳；
+- 提供 Mission Console、F Prime GDS、模擬器及 Chapter 5 展示路線；
+- 以 OpenSpec 保存需求、設計、決策與可追溯的開發歷史。
 
-閱讀順序：
+## 快速建置
 
-1. [英文主 README](README.md)
-2. [現行架構](docs/architecture/current-development-architecture.md)
-3. [本專案貢獻](docs/architecture/project-contributions.md)
-4. [驗證矩陣](docs/verification-matrix.md)
-5. [論文 claim／evidence 對照](docs/thesis/claim-evidence-map.zh-TW.md)
-6. [Route 1/2/3 展示流程](docs/operator/thesis-demo-routes.zh-TW.md)
+```bash
+python3 -m venv fprime-venv
+fprime-venv/bin/pip install -r requirements.txt
+bash scripts/bootstrap_dev_config.sh
+fprime-venv/bin/fprime-util generate -f
+fprime-venv/bin/fprime-util build
+```
 
-本專案是研究原型，不是 flight-certified 軟體。公開 example keys 只能供
-hosted demo／CI 使用，不可部署到 target。
+啟動 hosted 環境：
+
+```bash
+bash scripts/run_dev_stack.sh
+```
+
+執行完整驗證：
+
+```bash
+bash scripts/run_verification_ci.sh
+```
+
+公開的 command-auth 設定只用於本機模擬與 CI；target package 必須透過
+`OBC_PACKAGE_KEYSTORE_PATH` 提供私有 keystore。授權與第三方來源請見
+[LICENSE](LICENSE) 及 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。

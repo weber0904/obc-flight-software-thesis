@@ -5,7 +5,7 @@
 The verification evidence tree SHALL record the salvaged node-`5` RG3
 contention classification, bounded product fix, and clean-branch verification
 record under
-`docs/test-records/target-node5-rg3-csp-runtime-contention-fix-v1/`.
+`evidence/records/target-node5-rg3-csp-runtime-contention-fix-v1/`.
 
 #### Scenario: Evidence identifies both diagnosis provenance and clean rerun
 

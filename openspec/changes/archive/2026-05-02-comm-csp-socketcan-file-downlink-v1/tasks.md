@@ -21,7 +21,7 @@
 
 - [x] 3.1 Run syntax checks, Stage 0 CAN health, the existing physical SocketCAN TT&C control probe, and the new `ttc-prereq` diagnostic mode.
 - [x] 3.2 Run the full local gate, hosted COMM file/downlink regression, and the formal physical SocketCAN file/downlink probe only after diagnostic TT&C passes.
-- [x] 3.3 Add `docs/test-records/comm-csp-socketcan-file-downlink-v1/README.md` after the formal probe passes.
+- [x] 3.3 Add `evidence/records/comm-csp-socketcan-file-downlink-v1/README.md` after the formal probe passes.
 - [x] 3.4 Register the new verification path and update roadmap/reconciliation surfaces after archive.
 - [x] 3.5 Run OpenSpec validations, repo consistency check, and `git diff --check`.
 - [x] 3.6 Archive the OpenSpec change and prepare a local-ready branch without pushing.

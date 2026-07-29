@@ -120,4 +120,4 @@ operator-facing 提升，而不用再邊做畫面邊回頭猜 flight-side 語意
 - `openspec/specs/mission-console-observability-bootstrap/spec.md`
 - `docs/roadmap/mission-console-phase1-handoff.md`
 - `docs/roadmap/mission-console-observability-recommendations.md`
-- `docs/test-records/mission-console-phase1/README.md`
+- `evidence/records/mission-console-phase1/README.md`

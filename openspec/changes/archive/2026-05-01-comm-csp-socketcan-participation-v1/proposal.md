@@ -33,5 +33,5 @@ None.
 ## Impact
 
 - Adds repository-owned scripts for CAN bring-up and COMM SocketCAN TT&C validation.
-- Adds one evidence record under `docs/test-records/comm-csp-socketcan-participation-v1/`.
+- Adds one evidence record under `evidence/records/comm-csp-socketcan-participation-v1/`.
 - Does not change COMM CSP service ports, wire layouts, F' command definitions, RF behavior, file/downlink behavior, or no-preamble serial behavior.

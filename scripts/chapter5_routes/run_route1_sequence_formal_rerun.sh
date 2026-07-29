@@ -15,7 +15,7 @@ fi
 export OBC_COMM_CSP_SERVICE_NAME="${CANONICAL_OBC_COMM_CSP_SERVICE_NAME}"
 
 EVIDENCE_DATE="${EVIDENCE_DATE:-$(date +%F)}"
-EVIDENCE_ROOT="${EVIDENCE_ROOT:-${ROOT_DIR}/docs/test-records/chapter5-integrated-route-closure-v1/artifacts/${EVIDENCE_DATE}-route1-sequence-formal-rerun}"
+EVIDENCE_ROOT="${EVIDENCE_ROOT:-${ROOT_DIR}/evidence/records/chapter5-integrated-route-closure-v1/artifacts/${EVIDENCE_DATE}-route1-sequence-formal-rerun}"
 RUNTIME_ROOT="${RUNTIME_ROOT:-/private/tmp/route1-sequence-formal-rerun-${EVIDENCE_DATE}}"
 # FileDownlink stores source paths in a bounded F' file-entry buffer. Keep the
 # hosted runtime independently short even when the evidence campaign name is

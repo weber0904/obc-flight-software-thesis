@@ -29,4 +29,4 @@
 
 - Affected code includes `RecoveryExecutor`, `BootManager` runtime recovery metadata handoff, hosted runtime exit handling, related FPP type/status surfaces, and unit tests.
 - Affected probes include the recovery-executor, multi-subsystem FDIR, watchdog/persistent-ring paths as needed, plus a new target R2 restart probe.
-- Affected documents include active architecture, roadmap, interface contract notes, verification path registry, and a new `docs/test-records/target-recovery-closure-v1/` evidence record.
+- Affected documents include active architecture, roadmap, interface contract notes, verification path registry, and a new `evidence/records/target-recovery-closure-v1/` evidence record.

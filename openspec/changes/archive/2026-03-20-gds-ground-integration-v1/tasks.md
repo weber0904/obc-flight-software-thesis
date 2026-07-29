@@ -16,7 +16,7 @@
 - [x] 3.1 Rebuild the hosted deployment after the topology upgrade
 - [x] 3.2 Launch `fprime-gds` in no-app headless mode against the hosted dictionary
 - [x] 3.3 Launch the hosted stack against GDS and confirm the TCP connection
-- [x] 3.4 Record the verification evidence under `docs/test-records/`
+- [x] 3.4 Record the verification evidence under `evidence/records/`
 
 ## 4. Spec and narrative sync
 

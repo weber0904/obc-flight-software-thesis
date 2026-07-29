@@ -12,7 +12,7 @@
 ## 3. Verification And Documentation
 
 - [x] 3.1 Re-run the shared local verification gate to confirm the adapter extraction does not regress the current comm baseline
-- [x] 3.2 Capture reviewable evidence for the default adapter selection and regression outcome under `docs/test-records/radio-protocol-adapter-v1/`
+- [x] 3.2 Capture reviewable evidence for the default adapter selection and regression outcome under `evidence/records/radio-protocol-adapter-v1/`
 - [x] 3.3 Update repo documentation and narrative comm docs to explain the adapter layer and its future KISS / vendor extension point
 
 ## 4. Finalize

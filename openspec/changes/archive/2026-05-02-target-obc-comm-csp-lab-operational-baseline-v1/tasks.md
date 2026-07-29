@@ -47,6 +47,6 @@
 
 - [x] 7.1 Run the shared local verification gate.
 - [x] 7.2 Run package/install, CAN provisioning, subsystem service, ground launcher, reboot/autostart, and full E2E hardware validation.
-- [x] 7.3 Add `docs/test-records/target-obc-comm-csp-lab-operational-baseline-v1/README.md` with exact commands, service states, CAN state, command/event/channel observations, file hashes, commit SHA, package release id, and exclusions.
+- [x] 7.3 Add `evidence/records/target-obc-comm-csp-lab-operational-baseline-v1/README.md` with exact commands, service states, CAN state, command/event/channel observations, file hashes, commit SHA, package release id, and exclusions.
 - [x] 7.4 Update the verification path registry, reconciliation matrix, README/operator references, and planning docs as needed.
 - [x] 7.5 Validate OpenSpec change and main specs, archive the change, regenerate reconciliation markdown, and commit final evidence/archive.

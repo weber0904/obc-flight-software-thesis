@@ -26,7 +26,7 @@
 - [x] 4.2 Cover a watchdog stale case that records restart intent, requests `SAFE`, and escalates to reboot when suppression persists.
 - [x] 4.3 Cover an EPS timeout case that enters the same executor path, performs EPS reset, requests `SAFE`, and escalates on repeated failure.
 - [x] 4.4 Cover reboot-relaunch truth for `reset_cause`, `boot_count`, `consecutive_reset_count`, boot-safe fallback, and `GET_RECOVERY_STATUS`.
-- [x] 4.5 Record evidence under `docs/test-records/recovery-executors-v1/README.md` and update the verification-path registry entry set for the new hosted path.
+- [x] 4.5 Record evidence under `evidence/records/recovery-executors-v1/README.md` and update the verification-path registry entry set for the new hosted path.
 
 ## 5. Verification And Closeout
 

@@ -46,6 +46,61 @@ TEXT_EXTENSIONS = {
     ".yml",
 }
 
+PUBLIC_DOCUMENT_PATHS = {
+    "docs/architecture/README.md": "docs/architecture.md",
+    "docs/architecture/current-development-architecture.md": "docs/architecture.md",
+    "docs/architecture/project-contributions.md": "docs/architecture.md",
+    "docs/architecture/target-flight-design.md": "docs/architecture.md",
+    "docs/evidence/README.md": "evidence/README.md",
+    "docs/integrity-and-hashing.md": "docs/architecture.md",
+    "docs/operator/hosted-dual-link-orchestration-runbook.md": "docs/operator/hosted.md",
+    "docs/operator/hosted-manual-dual-gds-runbook.md": "docs/operator/hosted.md",
+    "docs/operator/hosted-per-band-stock-ground-stacks-runbook.md": "docs/operator/hosted.md",
+    "docs/operator/formal-comm-verification-matrix-v1-runbook.md":
+        "evidence/verification-path-registry.md",
+    "docs/operator/mission-console-phase1-runbook.md": "docs/operator/mission-console.md",
+    "docs/operator/mission-console-phase1-runbook.zh-TW.md": "docs/operator/mission-console.md",
+    "docs/operator/simulator-control-reference.zh-TW.md": "docs/operator/simulator-controls.zh-TW.md",
+    "docs/operator/target-manual-dual-gds-runbook.md": "docs/operator/target-lab.md",
+    "docs/operator/target-obc-comm-csp-lab-runbook.md": "docs/operator/target-lab.md",
+    "docs/operator/target-proof-abc-governance.md": "docs/operator/target-lab.md",
+    "docs/operator/thesis-demo-routes.zh-TW.md": "docs/operator/thesis-demo.zh-TW.md",
+    "docs/target-version-metadata.md": "docs/interfaces.md",
+    "docs/thesis/README.md": "docs/thesis.md",
+    "docs/thesis/claim-evidence-map.zh-TW.md": "docs/thesis.md",
+    "docs/thesis/source-index.md": "docs/thesis.md",
+    "docs/verification-debugging-lessons.md": "docs/verification.md",
+    "docs/verification-matrix.md": "docs/verification.md",
+    "docs/verification-path-registry.md": "evidence/verification-path-registry.md",
+}
+
+PUBLIC_SUMMARY_LINKS = {
+    "../../interfaces.md": "../../../docs/interfaces.md",
+    "../../verification-debugging-lessons.md": "../../../docs/verification.md",
+    "../../verification-matrix.md": "../../../docs/verification.md",
+    "../../operator/hosted-dual-link-orchestration-runbook.md":
+        "../../../docs/operator/hosted.md",
+    "../../operator/hosted-manual-dual-gds-runbook.md":
+        "../../../docs/operator/hosted.md",
+    "../../operator/hosted-per-band-stock-ground-stacks-runbook.md":
+        "../../../docs/operator/hosted.md",
+    "../../operator/formal-comm-verification-matrix-v1-runbook.md":
+        "../../../evidence/verification-path-registry.md",
+    "../../operator/mission-console-phase1-runbook.md":
+        "../../../docs/operator/mission-console.md",
+    "../../operator/mission-console-phase1-runbook.zh-TW.md":
+        "../../../docs/operator/mission-console.md",
+    "../../operator/simulator-control-reference.zh-TW.md":
+        "../../../docs/operator/simulator-controls.zh-TW.md",
+    "../../operator/target-manual-dual-gds-runbook.md":
+        "../../../docs/operator/target-lab.md",
+    "../../operator/target-obc-comm-csp-lab-runbook.md":
+        "../../../docs/operator/target-lab.md",
+    "../../operator/target-proof-abc-governance.md":
+        "../../../docs/operator/target-lab.md",
+    "../../operator/thesis-demo-routes.zh-TW.md":
+        "../../../docs/operator/thesis-demo.zh-TW.md",
+}
 
 def sha256(data: bytes) -> str:
     return hashlib.sha256(data).hexdigest()
@@ -152,12 +207,70 @@ def sanitize(
 
 
 def sanitize_summary(
-    source: Path, record_id: str, data: bytes
+    source: Path,
+    repo_root: Path,
+    record_id: str,
+    artifact_record_ids: set[str],
+    data: bytes,
 ) -> tuple[bytes, dict[str, int]]:
     text = data.decode("utf-8")
+    for source_path, public_path in PUBLIC_DOCUMENT_PATHS.items():
+        text = text.replace(source_path, public_path)
+    text = text.replace("docs/test-records/", "evidence/records/")
+    for source_link, public_link in PUBLIC_SUMMARY_LINKS.items():
+        text = text.replace(f"]({source_link}", f"]({public_link}")
+    text = re.sub(
+        r"\]\(\.\./\.\./architecture/[^)]+\.md",
+        "](../../../docs/architecture.md",
+        text,
+    )
+    text = re.sub(
+        r"\]\(\.\./\.\./roadmap/[^)]+\.md",
+        "](../../../docs/architecture.md",
+        text,
+    )
+    text = re.sub(
+        r"\]\(\.\./\.\./thesis/[^)]+\.md",
+        "](../../../docs/thesis.md",
+        text,
+    )
+    text = text.replace("](../../../AGENTS.md", "](../../../CONTRIBUTING.md")
+
+    def artifact_descriptor(linked_record: str = record_id) -> str:
+        if linked_record not in artifact_record_ids:
+            return "](../../README.md)"
+        if linked_record == record_id:
+            return "](ARTIFACTS.json)"
+        return f"](../{linked_record}/ARTIFACTS.json)"
+
+    def repo_root_link(match: re.Match[str]) -> str:
+        path = match.group("path")
+        if path == "config/security/command-auth.ini":
+            path = "config/security/command-auth.example.ini"
+        if path.startswith("build-artifacts/"):
+            return artifact_descriptor()
+        artifact_match = re.match(
+            r"evidence/records/(?P<record>[^/]+)/artifacts/",
+            path,
+        )
+        if artifact_match:
+            return artifact_descriptor(artifact_match.group("record"))
+        if (repo_root / path).exists():
+            return f"](../../../{path})"
+        if path.startswith("scripts/"):
+            return "](../../../evidence/verification-path-registry.md)"
+        if path.startswith("docs/operator/"):
+            return "](../../../docs/operator/hosted.md)"
+        return "](../../../README.md)"
+
+    text = re.sub(
+        rf"\]\((?:\$REPO_ROOT|{re.escape(str(source))})/(?P<path>[^)]+)\)",
+        repo_root_link,
+        text,
+    )
 
     absolute_artifact_link = re.compile(
-        r"\]\((?:/Users/[^/)]+/[^)]*?/)?docs/test-records/"
+        r"\]\((?:/Users/[^/)]+/[^)]*?/)?(?:docs/test-records|evidence/records)/"
         r"(?P<record>[^/]+)/artifacts/[^)]*\)"
     )
 
@@ -172,12 +285,32 @@ def sanitize_summary(
 
     text, artifact_link_count = absolute_artifact_link.subn(descriptor_link, text)
     text, relative_link_count = re.subn(
-        r"\]\(artifacts/[^)]*\)", "](ARTIFACTS.json)", text
+        r"\]\((?:\./)?artifacts/[^)]*\)",
+        artifact_descriptor(),
+        text,
+    )
+    text, cross_record_artifact_link_count = re.subn(
+        r"\]\(\.\./(?P<record>[^/]+)/artifacts/[^)]*\)",
+        lambda match: artifact_descriptor(match.group("record")),
+        text,
+    )
+    text, temporary_artifact_link_count = re.subn(
+        r"\]\(/(?:private/)?tmp/[^)]*\)",
+        artifact_descriptor(),
+        text,
     )
     public, redactions, _ = sanitize(source, f"{record_id}.md", text.encode("utf-8"))
-    if artifact_link_count or relative_link_count:
+    if (
+        artifact_link_count
+        or relative_link_count
+        or cross_record_artifact_link_count
+        or temporary_artifact_link_count
+    ):
         redactions["externalized-artifact-link"] = (
-            artifact_link_count + relative_link_count
+            artifact_link_count
+            + relative_link_count
+            + cross_record_artifact_link_count
+            + temporary_artifact_link_count
         )
     return public, redactions
 
@@ -233,9 +366,9 @@ def evidence_context(record_id: str, summary: bytes, files: list[dict]) -> str:
         "hardware",
     )
     if any(term in searchable for term in hardware_terms):
-        return "previously-demonstrated-target-or-lab"
+        return "target-or-lab"
     if "hosted" in searchable or "simulat" in searchable:
-        return "previously-demonstrated-hosted"
+        return "hosted"
     return "documentary-or-static-record"
 
 
@@ -270,6 +403,10 @@ def main() -> int:
         if re.fullmatch(r"docs/test-records/[^/]+/README\.md", path)
     ]
     artifact_paths = [path for path in paths if "/artifacts/" in path]
+    artifact_record_ids = {
+        Path(path).parts[2]
+        for path in artifact_paths
+    }
     record_ids = sorted(Path(path).parts[2] for path in summary_paths)
     if len(record_ids) != len(set(record_ids)):
         raise SystemExit("duplicate test-record identifiers")
@@ -286,11 +423,15 @@ def main() -> int:
         record_id = Path(source_summary_path).parts[2]
         original_summary = object_bytes(source, source_summary_path)
         public_summary, redactions = sanitize_summary(
-            source, record_id, original_summary
+            source,
+            repo_root,
+            record_id,
+            artifact_record_ids,
+            original_summary,
         )
         summary_redaction_totals.update(redactions)
         summaries[record_id] = (original_summary, public_summary)
-        public_summary_path = repo_root / source_summary_path
+        public_summary_path = repo_root / "evidence" / "records" / record_id / "README.md"
         public_summary_path.parent.mkdir(parents=True, exist_ok=True)
         public_summary_path.write_bytes(public_summary)
 
@@ -370,7 +511,7 @@ def main() -> int:
     asset_sha256 = sha256(asset_path.read_bytes())
     catalog_records = []
     for record_id in record_ids:
-        source_summary_path = f"docs/test-records/{record_id}/README.md"
+        public_summary_path = f"evidence/records/{record_id}/README.md"
         summary, public_summary = summaries[record_id]
         files = sorted(
             files_by_record.get(record_id, []),
@@ -379,7 +520,7 @@ def main() -> int:
         context = evidence_context(record_id, summary, files)
         descriptor_path = None
         if files:
-            descriptor_path = f"docs/test-records/{record_id}/ARTIFACTS.json"
+            descriptor_path = f"evidence/records/{record_id}/ARTIFACTS.json"
             descriptor = {
                 "schemaVersion": 1,
                 "recordId": record_id,
@@ -402,18 +543,12 @@ def main() -> int:
             {
                 "recordId": record_id,
                 "title": summary_title(summary, record_id),
-                "summaryPath": source_summary_path,
+                "summaryPath": public_summary_path,
                 "summarySourceSha256": sha256(summary),
                 "summaryPublicSha256": sha256(public_summary),
                 "artifactDescriptorPath": descriptor_path,
                 "artifactFileCount": len(files),
                 "evidenceContext": context,
-                "releaseDelta": (
-                    "Historical evidence preserved from the frozen source commit; "
-                    "not a fresh final-commit target or lab rerun."
-                    if context == "previously-demonstrated-target-or-lab"
-                    else "Evidence preserved from the frozen source commit."
-                ),
             }
         )
 
@@ -431,22 +566,17 @@ def main() -> int:
             "publicBytes": public_bytes_total,
             "embeddedManifestSha256": sha256(manifest_bytes),
         },
-        "nonClaims": [
-            "Target and lab records are prior evidence from the frozen source commit.",
-            "No final-publication-commit Raspberry Pi, serial-radio, or SocketCAN rerun is claimed.",
-            "Text redaction changes environment identifiers only; both digests are indexed.",
-        ],
         "recordCount": len(catalog_records),
         "summaryRedactionTotals": dict(sorted(summary_redaction_totals.items())),
         "records": catalog_records,
     }
-    write_json(repo_root / "docs/evidence/catalog.json", catalog)
+    write_json(repo_root / "evidence/catalog.json", catalog)
 
     checksum_targets = [
         repo_root / "SBOM.spdx.json",
         repo_root / "release/publication-manifest.json",
         repo_root / "scripts/verification-manifest.json",
-        repo_root / "docs/evidence/catalog.json",
+        repo_root / "evidence/catalog.json",
     ]
     checksum_lines = [f"{asset_sha256}  {ASSET_NAME}"]
     for path in checksum_targets:

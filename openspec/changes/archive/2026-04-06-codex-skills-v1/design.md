@@ -15,7 +15,7 @@ The repository already has formal workflow and verification governance in:
 
 - `obc-dev-spec/08_delivery_workflow.md`
 - `openspec/specs/delivery-workflow/spec.md`
-- `docs/verification-path-registry.md`
+- `evidence/verification-path-registry.md`
 - `docs/verification-debugging-lessons.md`
 
 The new skills should point agents at those sources instead of duplicating them in large reference packs.

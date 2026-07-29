@@ -35,5 +35,5 @@ This change closes that next formal baseline gap with a single governed PR. It c
 
 - Affected runtime/code areas: new `OBC/Components/RecoveryExecutor`, `WatchdogSupervisor`, `EpsFdirController`, `BootManager`, `BootMetadataStore`, `EpsBridge` recovery hook use, runtime service hooks, topology wiring, authority catalog/policy, and onboard snapshot providers.
 - Affected public/runtime surfaces: `GET_RECOVERY_STATUS`, `GET_RESET_CAUSE`, `GET_BOOT_COUNT`, new recovery events/telemetry, updated boot metadata schema, and truthful reboot-count sourcing for HK/onboard state.
-- Affected verification/docs: new hosted recovery probe, new `docs/test-records/recovery-executors-v1/README.md`, updated verification-path registry, roadmap, architecture truth, and OpenSpec delta specs/archive flow.
+- Affected verification/docs: new hosted recovery probe, new `evidence/records/recovery-executors-v1/README.md`, updated verification-path registry, roadmap, architecture truth, and OpenSpec delta specs/archive flow.
 - Out of scope: broad all-subsystem FDIR, TTC/pass-window or payload behavior, persistent event log, hardware watchdog proof, target hardware reboot proof, full secure boot redesign, and generic operator `FORCE_*` surfaces.

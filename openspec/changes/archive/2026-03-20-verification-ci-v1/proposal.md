@@ -6,7 +6,7 @@ The project now has multiple implemented capability slices and a growing set of 
 
 - Add a repository-local verification gate script under `scripts/` that runs the normal build, UT build, full test gate, and `openspec validate --specs`.
 - Add a GitHub Actions workflow under `.github/workflows/` that provisions dependencies, checks out the submodule, and runs the shared verification script.
-- Add a reusable evidence template under `docs/test-records/templates/` and record the initial verification-CI slice evidence.
+- Add a reusable evidence template under `evidence/records/templates/` and record the initial verification-CI slice evidence.
 - Update the narrative workflow and verification-evidence source documents to reference the shared script and template.
 
 ## Capabilities
@@ -23,5 +23,5 @@ None.
 ## Impact
 
 - Affected code: `.github/workflows/`, `scripts/`
-- Affected docs: `docs/test-records/`, `obc-dev-spec/07_verification_evidence.md`, `obc-dev-spec/08_delivery_workflow.md`
+- Affected docs: `evidence/records/`, `obc-dev-spec/07_verification_evidence.md`, `obc-dev-spec/08_delivery_workflow.md`
 - Dependencies: GitHub Actions Ubuntu runner packages, Python virtual environment setup, Node-based `openspec` CLI in CI
