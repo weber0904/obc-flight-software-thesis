@@ -54,12 +54,12 @@ current baseline.
 
 The repository SHALL provide a documentation checker that enforces the
 canonical current-document set, required navigation, valid relative links, and
-capability-first reader prose.
+capability-first reader prose, and concise script documentation.
 
 #### Scenario: Documentation structure drifts
 - **WHEN** a reader document is missing, an overlapping document is added, a
-  canonical link is broken, or release-process commentary enters the current
-  layer
+  canonical link is broken, release-process commentary enters the current
+  layer, or script documentation describes removed and internal cleanup state
 - **THEN** the checker SHALL fail and identify the affected file
 
 ### Requirement: Manual Operator Surface Has Current Runbooks And Indexed Routing
@@ -94,4 +94,3 @@ applicable, a canonical successor in the publication manifest.
 - **WHEN** preserved historical OpenSpec or evidence mentions an excluded
   document
 - **THEN** the publication manifest SHALL explain its disposition
-

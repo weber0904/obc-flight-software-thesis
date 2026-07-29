@@ -38,39 +38,6 @@ EXCLUDED_PATHS = {
     "docs/target-version-metadata.md",
 }
 
-HISTORICAL_SCRIPTS = {
-    "scripts/run_ccsds_ground_link_spike_probe.sh",
-    "scripts/run_ccsds_sband_hosted_adoption_probe.sh",
-    "scripts/run_comm_csp_socketcan_reliable_transfer_probe.sh",
-    "scripts/run_comm_csp_socketcan_uhf_reliable_transfer_probe.sh",
-    "scripts/run_comm_session_and_downlink_qos_probe.sh",
-    "scripts/run_comm_session_and_downlink_qos_probe_core.sh",
-    "scripts/run_comm_uhf_reliable_transfer_hosted_probe.sh",
-    "scripts/run_comm_verification_all.sh",
-    "scripts/run_comm_verification_hosted.sh",
-    "scripts/run_comm_verification_rpi_can.sh",
-    "scripts/run_comm_verification_rpi_tcp.sh",
-    "scripts/run_gps_hosted_probe.sh",
-    "scripts/run_multi_subsystem_fdir_v1_probe.sh",
-    "scripts/run_official_sequencing_system_resources_v1_probe.sh",
-    "scripts/run_payload_capture_modes_v2_hosted_probe.sh",
-    "scripts/run_payload_ops_contract_v1_hosted_probe.sh",
-    "scripts/run_payload_ops_contract_v1_target_probe.sh",
-    "scripts/run_payload_sensor_register_controls_v1_hosted_probe.sh",
-    "scripts/run_payload_target_backend_hardening_v1_target_probe.sh",
-    "scripts/run_storage_health_hosted_probe.sh",
-    "scripts/run_target_can_node6_nonquiet_diagnosis_probe.sh",
-    "scripts/run_target_can_uhf_beacon_suppression_probe.sh",
-    "scripts/run_target_dual_link_proof.sh",
-    "scripts/run_target_timing_empirical_ceiling_freeze_v1_probe.sh",
-    "scripts/target_timing_empirical_ceiling_freeze_v1_probe.py",
-    "scripts/run_target_timing_wcet_profile_proof_v1_probe.sh",
-    "scripts/target_timing_wcet_profile_proof_v1_probe.py",
-    "scripts/run_uhf_beacon_suppression_hosted_probe.sh",
-    "scripts/run_uhf_ccsds_hosted_adoption_probe.sh",
-    "scripts/run_uhf_primary_packet_quiet_hosted_probe.sh",
-}
-
 TRANSFORMS = {
     "README.md": "README.md",
     "config/security/command-auth.ini": "config/security/command-auth.example.ini",
@@ -126,6 +93,24 @@ TRANSFORMS = {
 }
 
 
+def load_script_allowlist(public_root: pathlib.Path) -> tuple[set[str], tuple[str, ...]]:
+    allowlist_path = public_root / "scripts/public-allowlist.txt"
+    entries = {
+        line.strip()
+        for line in allowlist_path.read_text(encoding="utf-8").splitlines()
+        if line.strip() and not line.lstrip().startswith("#")
+    }
+    exact = {entry for entry in entries if not entry.endswith("/**")}
+    prefixes = tuple(entry.removesuffix("**") for entry in entries if entry.endswith("/**"))
+    return exact, prefixes
+
+
+def script_is_allowed(path: str, exact: set[str], prefixes: tuple[str, ...]) -> bool:
+    if path.endswith("/.gitkeep") or path == "scripts/manual_ops/examples/sample.bin":
+        return False
+    return path in exact or any(path.startswith(prefix) for prefix in prefixes)
+
+
 def git_output(repo: pathlib.Path, *args: str) -> str:
     return subprocess.check_output(["git", "-C", str(repo), *args], text=True)
 
@@ -136,7 +121,11 @@ def git_blob_id(path: pathlib.Path) -> str:
     return hashlib.sha1(header + data).hexdigest()
 
 
-def classify(path: str) -> tuple[str, str | None, str]:
+def classify(
+    path: str,
+    script_allowlist: set[str],
+    script_prefixes: tuple[str, ...],
+) -> tuple[str, str | None, str]:
     if path == "config/security/command-auth.ini":
         return "transform", TRANSFORMS[path], "replace tracked credentials with a public example"
     if path.startswith("docs/test-records/"):
@@ -152,8 +141,10 @@ def classify(path: str) -> tuple[str, str | None, str]:
         return "transform", TRANSFORMS[path], "consolidated into the public canonical layer"
     if path.startswith("docs/thesis/"):
         return "exclude", None, "thesis body-writing and duplicate reference material"
-    if path in HISTORICAL_SCRIPTS:
-        return "exclude", None, "historical, retired, deprecated, or superseded entrypoint"
+    if path.startswith("scripts/") and not script_is_allowed(
+        path, script_allowlist, script_prefixes
+    ):
+        return "exclude", None, "outside the public workflow allowlist"
     if path in EXCLUDED_PATHS or any(path.startswith(prefix) for prefix in EXCLUDED_PREFIXES):
         return "exclude", None, "development-only, stale snapshot, or retired document family"
     return "include", path, "shipped from the fixed source baseline"
@@ -165,6 +156,7 @@ def main() -> None:
     parser.add_argument("--output", type=pathlib.Path, required=True)
     args = parser.parse_args()
     public_root = args.output.resolve().parents[1]
+    script_allowlist, script_prefixes = load_script_allowlist(public_root)
 
     resolved = git_output(args.source, "rev-parse", SOURCE_COMMIT).strip()
     if resolved != SOURCE_COMMIT:
@@ -179,7 +171,9 @@ def main() -> None:
             continue
         metadata, path = record.split("\t", 1)
         mode, object_type, object_id = metadata.split(" ", 2)
-        disposition, public_path, reason = classify(path)
+        disposition, public_path, reason = classify(
+            path, script_allowlist, script_prefixes
+        )
         public_file = public_root / public_path if public_path else None
         if (
             disposition == "include"

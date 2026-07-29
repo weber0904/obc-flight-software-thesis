@@ -118,10 +118,12 @@ operator flow.
 Representative hosted probes:
 
 ```bash
+bash scripts/run_csp_runtime_smoke.sh
+bash scripts/run_eps_csp_integration.sh
+bash scripts/run_adcs_csp_integration.sh
 bash scripts/run_per_band_stock_ground_stacks_hosted_probe.sh
-bash scripts/run_dual_link_orchestration_hosted_probe.sh
-bash scripts/run_challenge_handshake_secure_command_probe.sh
-bash scripts/run_multi_subsystem_fdir_v1_probe.sh
+bash scripts/run_challenge_handshake_secure_command_hosted_probe.sh
+bash scripts/run_mission_console_phase1_hosted_probe.sh
 bash scripts/chapter5_routes/hosted/run_route1_hosted.sh
 bash scripts/chapter5_routes/hosted/run_route2_hosted.sh
 bash scripts/chapter5_routes/hosted/run_route3_hosted.sh

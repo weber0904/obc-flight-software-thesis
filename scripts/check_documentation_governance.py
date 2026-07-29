@@ -28,6 +28,7 @@ CURRENT_DOCS = [
     Path("evidence/README.md"),
     Path("evidence/records/public-thesis-submission-v1/README.md"),
     Path("release/RELEASE_PROVENANCE.md"),
+    Path("scripts/README.md"),
 ]
 
 ROOT_REQUIRED_LINKS = {

@@ -14,6 +14,7 @@ from collections import Counter
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 PUBLICATION_MANIFEST = ROOT / "release/publication-manifest.json"
 VERIFICATION_MANIFEST = ROOT / "scripts/verification-manifest.json"
+SCRIPT_ALLOWLIST = ROOT / "scripts/public-allowlist.txt"
 EVIDENCE_CATALOG = ROOT / "evidence/catalog.json"
 SHA256SUMS = ROOT / "release/SHA256SUMS"
 
@@ -43,9 +44,8 @@ REQUIRED = {
     "release/RELEASE_PROVENANCE.md",
     "release/SHA256SUMS",
     "release/publication-manifest.json",
-    "scripts/build_public_evidence.py",
     "scripts/check_public_release.py",
-    "scripts/sanitize_public_history.py",
+    "scripts/public-allowlist.txt",
     "scripts/verification-manifest.json",
 }
 
@@ -173,7 +173,62 @@ def check_verification(
             fail(errors, f"shipped executable is missing: {path}")
         if not shipped and path in public_paths:
             fail(errors, f"historical executable leaked into public tree: {path}")
+
+    actual_executables = {
+        path
+        for path in public_paths
+        if path.startswith("scripts/")
+        and (ROOT / path).is_file()
+        and (ROOT / path).stat().st_mode & 0o111
+    }
+    if set(executable_paths) != actual_executables:
+        missing = sorted(actual_executables - set(executable_paths))
+        stale = sorted(set(executable_paths) - actual_executables)
+        fail(
+            errors,
+            f"verification manifest does not match tracked executables: "
+            f"missing={missing[:10]}, stale={stale[:10]}",
+        )
     return verification
+
+
+def check_script_surface(errors: list[str], public_paths: set[str]) -> None:
+    try:
+        entries = {
+            line.strip()
+            for line in SCRIPT_ALLOWLIST.read_text(encoding="utf-8").splitlines()
+            if line.strip() and not line.lstrip().startswith("#")
+        }
+    except FileNotFoundError:
+        fail(errors, "scripts/public-allowlist.txt is missing")
+        return
+
+    exact = {entry for entry in entries if not entry.endswith("/**")}
+    prefixes = tuple(entry.removesuffix("**") for entry in entries if entry.endswith("/**"))
+    script_paths = {path for path in public_paths if path.startswith("scripts/")}
+    missing = sorted(path for path in exact if path not in script_paths)
+    unlisted = sorted(
+        path
+        for path in script_paths
+        if path not in exact and not any(path.startswith(prefix) for prefix in prefixes)
+    )
+    if missing:
+        fail(errors, f"script allowlist paths are missing: {missing[:10]}")
+    if unlisted:
+        fail(errors, f"unlisted scripts are tracked: {unlisted[:10]}")
+
+    placeholders = sorted(path for path in script_paths if path.endswith("/.gitkeep"))
+    if placeholders:
+        fail(errors, f"redundant script placeholders are tracked: {placeholders}")
+
+    tracked_artifacts = sorted(
+        path
+        for path in script_paths
+        if pathlib.PurePosixPath(path).name == ".DS_Store"
+        or "__pycache__" in pathlib.PurePosixPath(path).parts
+    )
+    if tracked_artifacts:
+        fail(errors, f"local script artifacts are tracked: {tracked_artifacts[:10]}")
 
 
 def check_evidence(
@@ -361,6 +416,7 @@ def main() -> None:
 
     publication, entries = check_publication(errors, public_paths)
     verification = check_verification(errors, public_paths)
+    check_script_surface(errors, public_paths)
     catalog = check_evidence(errors, entries, public_paths)
     check_checksums(errors, catalog)
     check_credentials_and_licenses(errors, public_paths)

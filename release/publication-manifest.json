@@ -1,9 +1,9 @@
 {
   "counts": {
-    "exclude": 104,
+    "exclude": 207,
     "externalize": 1045,
-    "include": 1918,
-    "transform": 449
+    "include": 1844,
+    "transform": 420
   },
   "files": [
     {
@@ -28060,13 +28060,13 @@
       "reason": "shipped from the fixed source baseline"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100644",
       "object": "8b137891791fe96927ad78e64b0aad7bded08bdc",
       "objectType": "blob",
       "path": "scripts/chapter5_routes/hosted/.gitkeep",
-      "publicPath": "scripts/chapter5_routes/hosted/.gitkeep",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "include",
@@ -28177,13 +28177,13 @@
       "reason": "shipped from the fixed source baseline"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100644",
       "object": "8b137891791fe96927ad78e64b0aad7bded08bdc",
       "objectType": "blob",
       "path": "scripts/chapter5_routes/lib/.gitkeep",
-      "publicPath": "scripts/chapter5_routes/lib/.gitkeep",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "transform",
@@ -28213,13 +28213,13 @@
       "reason": "curated for the public environment or release governance"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100644",
       "object": "8b137891791fe96927ad78e64b0aad7bded08bdc",
       "objectType": "blob",
       "path": "scripts/chapter5_routes/target/.gitkeep",
-      "publicPath": "scripts/chapter5_routes/target/.gitkeep",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "include",
@@ -28453,7 +28453,7 @@
       "objectType": "blob",
       "path": "scripts/comm_verification/cases/csp-reachability.sh",
       "publicPath": null,
-      "reason": "development-only, stale snapshot, or retired document family"
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "exclude",
@@ -28462,7 +28462,7 @@
       "objectType": "blob",
       "path": "scripts/comm_verification/cases/direct-control.sh",
       "publicPath": null,
-      "reason": "development-only, stale snapshot, or retired document family"
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "exclude",
@@ -28471,7 +28471,7 @@
       "objectType": "blob",
       "path": "scripts/comm_verification/cases/failover-command.sh",
       "publicPath": null,
-      "reason": "development-only, stale snapshot, or retired document family"
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "exclude",
@@ -28480,7 +28480,7 @@
       "objectType": "blob",
       "path": "scripts/comm_verification/cases/sband-command.sh",
       "publicPath": null,
-      "reason": "development-only, stale snapshot, or retired document family"
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "exclude",
@@ -28489,7 +28489,7 @@
       "objectType": "blob",
       "path": "scripts/comm_verification/cases/sband-file.sh",
       "publicPath": null,
-      "reason": "development-only, stale snapshot, or retired document family"
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "exclude",
@@ -28498,7 +28498,7 @@
       "objectType": "blob",
       "path": "scripts/comm_verification/cases/sband-sequence-subsystem.sh",
       "publicPath": null,
-      "reason": "development-only, stale snapshot, or retired document family"
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "exclude",
@@ -28507,7 +28507,7 @@
       "objectType": "blob",
       "path": "scripts/comm_verification/cases/uhf-primary-command.sh",
       "publicPath": null,
-      "reason": "development-only, stale snapshot, or retired document family"
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "exclude",
@@ -28516,7 +28516,7 @@
       "objectType": "blob",
       "path": "scripts/comm_verification/cases/uhf-primary-file.sh",
       "publicPath": null,
-      "reason": "development-only, stale snapshot, or retired document family"
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "exclude",
@@ -28525,7 +28525,7 @@
       "objectType": "blob",
       "path": "scripts/comm_verification/cases/uhf-primary-sequence-subsystem.sh",
       "publicPath": null,
-      "reason": "development-only, stale snapshot, or retired document family"
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "exclude",
@@ -28534,7 +28534,7 @@
       "objectType": "blob",
       "path": "scripts/comm_verification/env/hosted.sh",
       "publicPath": null,
-      "reason": "development-only, stale snapshot, or retired document family"
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "exclude",
@@ -28543,7 +28543,7 @@
       "objectType": "blob",
       "path": "scripts/comm_verification/env/rpi_can.sh",
       "publicPath": null,
-      "reason": "development-only, stale snapshot, or retired document family"
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "exclude",
@@ -28552,25 +28552,25 @@
       "objectType": "blob",
       "path": "scripts/comm_verification/env/rpi_tcp.sh",
       "publicPath": null,
-      "reason": "development-only, stale snapshot, or retired document family"
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100644",
       "object": "4bc6febc42dd3eff0925b28ac2e222e12ecfdc03",
       "objectType": "blob",
       "path": "scripts/comm_verification/lib/common.sh",
-      "publicPath": "scripts/comm_verification/lib/common.sh",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100644",
       "object": "519c983871d3755ea2e732df31cfe7b3cac323af",
       "objectType": "blob",
       "path": "scripts/comm_verification/lib/compare_sequence_packet_audit.py",
-      "publicPath": "scripts/comm_verification/lib/compare_sequence_packet_audit.py",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "include",
@@ -28618,13 +28618,13 @@
       "reason": "shipped from the fixed source baseline"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100644",
       "object": "3d9e80c101f3193d03ad99261f4d85d79989a9de",
       "objectType": "blob",
       "path": "scripts/comm_verification/lib/managed_subsystem_unavailable_window.py",
-      "publicPath": "scripts/comm_verification/lib/managed_subsystem_unavailable_window.py",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "include",
@@ -28636,13 +28636,13 @@
       "reason": "shipped from the fixed source baseline"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100755",
       "object": "e933c3f50f0f9314673912560a1d8cd4504c89cc",
       "objectType": "blob",
       "path": "scripts/comm_verification/lib/render_summary.py",
-      "publicPath": "scripts/comm_verification/lib/render_summary.py",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "transform",
@@ -28654,40 +28654,40 @@
       "reason": "curated for the public environment or release governance"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100644",
       "object": "e7bffbb8246700b3ae2d5bca4e721b9857b83f99",
       "objectType": "blob",
       "path": "scripts/comm_verification/lib/run_hosted_sequence_subsystem_probe.py",
-      "publicPath": "scripts/comm_verification/lib/run_hosted_sequence_subsystem_probe.py",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100644",
       "object": "6f87e92143913a6189b7ea4ff845e2a3ea30ebe1",
       "objectType": "blob",
       "path": "scripts/comm_verification/lib/run_hosted_uhf_reliable_transfer_probe.py",
-      "publicPath": "scripts/comm_verification/lib/run_hosted_uhf_reliable_transfer_probe.py",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100644",
       "object": "c66417f64927d9c8445908b37e5d0e4fba4a849b",
       "objectType": "blob",
       "path": "scripts/comm_verification/lib/run_node5_comm_csp_downlink_v3_hk_target_probe.py",
-      "publicPath": "scripts/comm_verification/lib/run_node5_comm_csp_downlink_v3_hk_target_probe.py",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100644",
       "object": "ed3bbc4990df23f005458421c0db49fba6a012c4",
       "objectType": "blob",
       "path": "scripts/comm_verification/lib/run_node5_comm_csp_downlink_v3_target_adaptive_search.py",
-      "publicPath": "scripts/comm_verification/lib/run_node5_comm_csp_downlink_v3_target_adaptive_search.py",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "include",
@@ -28699,13 +28699,13 @@
       "reason": "shipped from the fixed source baseline"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100644",
       "object": "c752d7e02c2559f75a5e0598212e4880848c0a43",
       "objectType": "blob",
       "path": "scripts/comm_verification/lib/run_payload_target_capture_sanity_v1_target_probe.py",
-      "publicPath": "scripts/comm_verification/lib/run_payload_target_capture_sanity_v1_target_probe.py",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "include",
@@ -28726,13 +28726,13 @@
       "reason": "shipped from the fixed source baseline"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100644",
       "object": "2f9e2896e1a6f167cbf4fead4e1a09bded735440",
       "objectType": "blob",
       "path": "scripts/comm_verification/lib/run_rpi_target_recovery_restart_probe.py",
-      "publicPath": "scripts/comm_verification/lib/run_rpi_target_recovery_restart_probe.py",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "include",
@@ -28753,13 +28753,13 @@
       "reason": "curated for the public environment or release governance"
     },
     {
-      "disposition": "transform",
+      "disposition": "exclude",
       "mode": "100644",
       "object": "e634ef306e48858c11956ef1009f20b5ca7bbebb",
       "objectType": "blob",
       "path": "scripts/comm_verification/lib/run_target_direct_matrix_probe.py",
-      "publicPath": "scripts/comm_verification/lib/run_target_direct_matrix_probe.py",
-      "reason": "curated for the public environment or release governance"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "include",
@@ -28771,13 +28771,13 @@
       "reason": "shipped from the fixed source baseline"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100644",
       "object": "edafe7b1a25f9053a9a234d66dae8be079891203",
       "objectType": "blob",
       "path": "scripts/comm_verification/lib/run_target_sband_observability_governance_probe.py",
-      "publicPath": "scripts/comm_verification/lib/run_target_sband_observability_governance_probe.py",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "include",
@@ -28789,49 +28789,49 @@
       "reason": "shipped from the fixed source baseline"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100644",
       "object": "056cc80faac1e7e7983a7764a39ae6f0c4acf924",
       "objectType": "blob",
       "path": "scripts/comm_verification/lib/run_target_tcp_matrix_probe.py",
-      "publicPath": "scripts/comm_verification/lib/run_target_tcp_matrix_probe.py",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100755",
       "object": "b4495b3494e2d5d754891fbee5883094f0425db5",
       "objectType": "blob",
       "path": "scripts/comm_verification/lib/run_target_tcp_obc_stack.sh",
-      "publicPath": "scripts/comm_verification/lib/run_target_tcp_obc_stack.sh",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100755",
       "object": "413222a785c9a5786eca879fd195487c048cfd1f",
       "objectType": "blob",
       "path": "scripts/comm_verification/lib/run_target_tcp_subsystem_stack.sh",
-      "publicPath": "scripts/comm_verification/lib/run_target_tcp_subsystem_stack.sh",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100644",
       "object": "2734fcf341381073de285de3e1aa9d6820779e05",
       "objectType": "blob",
       "path": "scripts/comm_verification/lib/run_target_uhf_primary_nonquiet_runtime_probe.py",
-      "publicPath": "scripts/comm_verification/lib/run_target_uhf_primary_nonquiet_runtime_probe.py",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100644",
       "object": "63d3940d3acbb2c76b6077686fd2b406d7350ffb",
       "objectType": "blob",
       "path": "scripts/comm_verification/lib/run_target_uhf_primary_secure_live_benchmark.py",
-      "publicPath": "scripts/comm_verification/lib/run_target_uhf_primary_secure_live_benchmark.py",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "include",
@@ -28843,13 +28843,13 @@
       "reason": "shipped from the fixed source baseline"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100644",
       "object": "4d6322bef568dfc672b79a5f7e04d15bbbf5ca2a",
       "objectType": "blob",
       "path": "scripts/comm_verification/lib/tcp_ssh_pty_bridge.py",
-      "publicPath": "scripts/comm_verification/lib/tcp_ssh_pty_bridge.py",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "exclude",
@@ -28858,7 +28858,7 @@
       "objectType": "blob",
       "path": "scripts/comm_verification/matrix/run_all.sh",
       "publicPath": null,
-      "reason": "development-only, stale snapshot, or retired document family"
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "exclude",
@@ -28867,7 +28867,7 @@
       "objectType": "blob",
       "path": "scripts/comm_verification/matrix/run_cleanup_smoke.sh",
       "publicPath": null,
-      "reason": "development-only, stale snapshot, or retired document family"
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "exclude",
@@ -28876,7 +28876,7 @@
       "objectType": "blob",
       "path": "scripts/comm_verification/matrix/run_env_matrix.sh",
       "publicPath": null,
-      "reason": "development-only, stale snapshot, or retired document family"
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "include",
@@ -29041,13 +29041,13 @@
       "reason": "shipped from the fixed source baseline"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100644",
       "object": "23b5cf1ab1aba7294146781c2779e64e2a6c05e0",
       "objectType": "blob",
       "path": "scripts/manual_ops/examples/sample.bin",
-      "publicPath": "scripts/manual_ops/examples/sample.bin",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "include",
@@ -29446,13 +29446,13 @@
       "reason": "shipped from the fixed source baseline"
     },
     {
-      "disposition": "include",
+      "disposition": "transform",
       "mode": "100755",
       "object": "559590277f829eebbd6b8ce317780be7db1ce6ee",
       "objectType": "blob",
       "path": "scripts/probe_port_hygiene.sh",
       "publicPath": "scripts/probe_port_hygiene.sh",
-      "reason": "shipped from the fixed source baseline"
+      "reason": "curated for the public environment or release governance"
     },
     {
       "disposition": "include",
@@ -29464,13 +29464,13 @@
       "reason": "shipped from the fixed source baseline"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100644",
       "object": "40ff761761fec34ecedf52520dc053dbd8a3bfa1",
       "objectType": "blob",
       "path": "scripts/report_verification_inventory.py",
-      "publicPath": "scripts/report_verification_inventory.py",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "include",
@@ -29515,7 +29515,7 @@
       "objectType": "blob",
       "path": "scripts/run_ccsds_ground_link_spike_probe.sh",
       "publicPath": null,
-      "reason": "historical, retired, deprecated, or superseded entrypoint"
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "exclude",
@@ -29524,7 +29524,7 @@
       "objectType": "blob",
       "path": "scripts/run_ccsds_sband_hosted_adoption_probe.sh",
       "publicPath": null,
-      "reason": "historical, retired, deprecated, or superseded entrypoint"
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "include",
@@ -29536,22 +29536,22 @@
       "reason": "shipped from the fixed source baseline"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100755",
       "object": "53fb09c6f97a2d257d2eb24609970854f9599051",
       "objectType": "blob",
       "path": "scripts/run_comm_csp_file_downlink_probe.sh",
-      "publicPath": "scripts/run_comm_csp_file_downlink_probe.sh",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "transform",
+      "disposition": "exclude",
       "mode": "100755",
       "object": "e5da2887eb2904454038c4bb121395bbf24f69c9",
       "objectType": "blob",
       "path": "scripts/run_comm_csp_socketcan_file_downlink_probe.sh",
-      "publicPath": "scripts/run_comm_csp_socketcan_file_downlink_probe.sh",
-      "reason": "curated for the public environment or release governance"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "exclude",
@@ -29560,16 +29560,16 @@
       "objectType": "blob",
       "path": "scripts/run_comm_csp_socketcan_reliable_transfer_probe.sh",
       "publicPath": null,
-      "reason": "historical, retired, deprecated, or superseded entrypoint"
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "transform",
+      "disposition": "exclude",
       "mode": "100755",
       "object": "68c8210080ba61479b7098a0ef511cc2cfb79c07",
       "objectType": "blob",
       "path": "scripts/run_comm_csp_socketcan_ttc_probe.sh",
-      "publicPath": "scripts/run_comm_csp_socketcan_ttc_probe.sh",
-      "reason": "curated for the public environment or release governance"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "exclude",
@@ -29578,61 +29578,61 @@
       "objectType": "blob",
       "path": "scripts/run_comm_csp_socketcan_uhf_reliable_transfer_probe.sh",
       "publicPath": null,
-      "reason": "historical, retired, deprecated, or superseded entrypoint"
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100755",
       "object": "9f4fc170c237630238be083a4a159569b235a2d5",
       "objectType": "blob",
       "path": "scripts/run_comm_dual_link_sim_foundation_probe.sh",
-      "publicPath": "scripts/run_comm_dual_link_sim_foundation_probe.sh",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100755",
       "object": "05fd1fb94897fabbbd654e5452316907b9df8dbc",
       "objectType": "blob",
       "path": "scripts/run_comm_lab_serial_acquisition_probe.sh",
-      "publicPath": "scripts/run_comm_lab_serial_acquisition_probe.sh",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100755",
       "object": "d4291ea6540d3a4d2039a777802fff5c714f40e6",
       "objectType": "blob",
       "path": "scripts/run_comm_lab_serial_downlink_probe.sh",
-      "publicPath": "scripts/run_comm_lab_serial_downlink_probe.sh",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "transform",
+      "disposition": "exclude",
       "mode": "100755",
       "object": "96cce77ea4ddb8fad0cc98f137e26b1436a57bf6",
       "objectType": "blob",
       "path": "scripts/run_comm_lab_serial_file_downlink_probe.sh",
-      "publicPath": "scripts/run_comm_lab_serial_file_downlink_probe.sh",
-      "reason": "curated for the public environment or release governance"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100755",
       "object": "684941adfb8dc86e919a58cfc4ce4325cd2374a4",
       "objectType": "blob",
       "path": "scripts/run_comm_lab_serial_ingress_probe.sh",
-      "publicPath": "scripts/run_comm_lab_serial_ingress_probe.sh",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100644",
       "object": "3112ef070991466c48da095b6317e161b450a86c",
       "objectType": "blob",
       "path": "scripts/run_comm_reliable_transfer_hosted_probe.sh",
-      "publicPath": "scripts/run_comm_reliable_transfer_hosted_probe.sh",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "exclude",
@@ -29641,7 +29641,7 @@
       "objectType": "blob",
       "path": "scripts/run_comm_session_and_downlink_qos_probe.sh",
       "publicPath": null,
-      "reason": "historical, retired, deprecated, or superseded entrypoint"
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "exclude",
@@ -29650,16 +29650,16 @@
       "objectType": "blob",
       "path": "scripts/run_comm_session_and_downlink_qos_probe_core.sh",
       "publicPath": null,
-      "reason": "historical, retired, deprecated, or superseded entrypoint"
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "transform",
+      "disposition": "exclude",
       "mode": "100755",
       "object": "e9bd5a3471e3668760e39231b827a056cecf0455",
       "objectType": "blob",
       "path": "scripts/run_comm_ttc_file_downlink_probe.sh",
-      "publicPath": "scripts/run_comm_ttc_file_downlink_probe.sh",
-      "reason": "curated for the public environment or release governance"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "exclude",
@@ -29668,7 +29668,7 @@
       "objectType": "blob",
       "path": "scripts/run_comm_uhf_reliable_transfer_hosted_probe.sh",
       "publicPath": null,
-      "reason": "historical, retired, deprecated, or superseded entrypoint"
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "exclude",
@@ -29677,7 +29677,7 @@
       "objectType": "blob",
       "path": "scripts/run_comm_verification_all.sh",
       "publicPath": null,
-      "reason": "historical, retired, deprecated, or superseded entrypoint"
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "exclude",
@@ -29686,7 +29686,7 @@
       "objectType": "blob",
       "path": "scripts/run_comm_verification_hosted.sh",
       "publicPath": null,
-      "reason": "historical, retired, deprecated, or superseded entrypoint"
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "exclude",
@@ -29695,7 +29695,7 @@
       "objectType": "blob",
       "path": "scripts/run_comm_verification_rpi_can.sh",
       "publicPath": null,
-      "reason": "historical, retired, deprecated, or superseded entrypoint"
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "exclude",
@@ -29704,7 +29704,7 @@
       "objectType": "blob",
       "path": "scripts/run_comm_verification_rpi_tcp.sh",
       "publicPath": null,
-      "reason": "historical, retired, deprecated, or superseded entrypoint"
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "include",
@@ -29725,22 +29725,22 @@
       "reason": "shipped from the fixed source baseline"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100644",
       "object": "38319fdaf79eb5cb17a1a29eb2c53cdc26882e2c",
       "objectType": "blob",
       "path": "scripts/run_dual_link_orchestration_hosted_probe.sh",
-      "publicPath": "scripts/run_dual_link_orchestration_hosted_probe.sh",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100644",
       "object": "ae126c5ebeee7ab75b2c528137e8d248c8cdf5bf",
       "objectType": "blob",
       "path": "scripts/run_dual_pi_split_host_comm_probe.sh",
-      "publicPath": "scripts/run_dual_pi_split_host_comm_probe.sh",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "include",
@@ -29752,13 +29752,13 @@
       "reason": "shipped from the fixed source baseline"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100644",
       "object": "92cf4355b78615dcaeaac8e8cefdae11e3f59f3a",
       "objectType": "blob",
       "path": "scripts/run_eps_timeout_fdir_hosted_probe.sh",
-      "publicPath": "scripts/run_eps_timeout_fdir_hosted_probe.sh",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "include",
@@ -29776,16 +29776,16 @@
       "objectType": "blob",
       "path": "scripts/run_gps_hosted_probe.sh",
       "publicPath": null,
-      "reason": "historical, retired, deprecated, or superseded entrypoint"
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100644",
       "object": "20a8cb7c6ed7f45b6a7853e86cff71aacf2ceb3c",
       "objectType": "blob",
       "path": "scripts/run_ground_csp_gds_stack.sh",
-      "publicPath": "scripts/run_ground_csp_gds_stack.sh",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "include",
@@ -29797,22 +29797,22 @@
       "reason": "shipped from the fixed source baseline"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100755",
       "object": "d835874cbf7d5b1494bdfe45b163925cee01efbc",
       "objectType": "blob",
       "path": "scripts/run_hk_data_product_alignment_v2_probe.sh",
-      "publicPath": "scripts/run_hk_data_product_alignment_v2_probe.sh",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100644",
       "object": "ec79fd6b79626649110b3dee89e473078619b7bd",
       "objectType": "blob",
       "path": "scripts/run_host_serial_peer.sh",
-      "publicPath": "scripts/run_host_serial_peer.sh",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "include",
@@ -29851,13 +29851,13 @@
       "reason": "shipped from the fixed source baseline"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100755",
       "object": "2d77c48d2e32bfe94b2d6d26b6a6ae9b2f734523",
       "objectType": "blob",
       "path": "scripts/run_manual_dual_gds_memory_probe.sh",
-      "publicPath": "scripts/run_manual_dual_gds_memory_probe.sh",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "include",
@@ -29869,49 +29869,49 @@
       "reason": "shipped from the fixed source baseline"
     },
     {
-      "disposition": "transform",
+      "disposition": "exclude",
       "mode": "100644",
       "object": "cafb6ccb7d49de8d7a6588ec2053e388720d7f0f",
       "objectType": "blob",
       "path": "scripts/run_mission_console_phase1_target_probe.sh",
-      "publicPath": "scripts/run_mission_console_phase1_target_probe.sh",
-      "reason": "curated for the public environment or release governance"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100755",
       "object": "250e06106ca5ccab0a70a79e6c67743ea1880850",
       "objectType": "blob",
       "path": "scripts/run_mode_model_v2_hosted_probe.sh",
-      "publicPath": "scripts/run_mode_model_v2_hosted_probe.sh",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100755",
       "object": "1c976462127eeef5f270f49b83047347730546fa",
       "objectType": "blob",
       "path": "scripts/run_mode_safety_policy_hosted_probe.sh",
-      "publicPath": "scripts/run_mode_safety_policy_hosted_probe.sh",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100644",
       "object": "5d56582c8969f19ba0c1e08c9bf86ed5c9054c7b",
       "objectType": "blob",
       "path": "scripts/run_mode_soc_admission_and_exit_ccsds_probe.sh",
-      "publicPath": "scripts/run_mode_soc_admission_and_exit_ccsds_probe.sh",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100644",
       "object": "54828eec4043f2708cb77dcb16e1e5803d2b46aa",
       "objectType": "blob",
       "path": "scripts/run_mode_soc_admission_and_exit_hosted_probe.sh",
-      "publicPath": "scripts/run_mode_soc_admission_and_exit_hosted_probe.sh",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "exclude",
@@ -29920,52 +29920,52 @@
       "objectType": "blob",
       "path": "scripts/run_multi_subsystem_fdir_v1_probe.sh",
       "publicPath": null,
-      "reason": "historical, retired, deprecated, or superseded entrypoint"
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "transform",
+      "disposition": "exclude",
       "mode": "100755",
       "object": "3039933f1dd453c5b69aca0a6018cbbe11e12df9",
       "objectType": "blob",
       "path": "scripts/run_node5_comm_csp_downlink_v2_hosted_probe.sh",
-      "publicPath": "scripts/run_node5_comm_csp_downlink_v2_hosted_probe.sh",
-      "reason": "curated for the public environment or release governance"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "transform",
+      "disposition": "exclude",
       "mode": "100755",
       "object": "8d9dd05cffc52b93307c807fe2ccb4b7d9c2633b",
       "objectType": "blob",
       "path": "scripts/run_node5_comm_csp_downlink_v2_transport_hosted_probe.sh",
-      "publicPath": "scripts/run_node5_comm_csp_downlink_v2_transport_hosted_probe.sh",
-      "reason": "curated for the public environment or release governance"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "transform",
+      "disposition": "exclude",
       "mode": "100755",
       "object": "ea15529deb73f72e339db72c09014276a771ee02",
       "objectType": "blob",
       "path": "scripts/run_node5_comm_csp_downlink_v3_hk_target_probe.sh",
-      "publicPath": "scripts/run_node5_comm_csp_downlink_v3_hk_target_probe.sh",
-      "reason": "curated for the public environment or release governance"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100755",
       "object": "11e81ad7574952078e5b945b3b4e0f658c317e85",
       "objectType": "blob",
       "path": "scripts/run_node5_comm_csp_downlink_v3_target_adaptive_search.sh",
-      "publicPath": "scripts/run_node5_comm_csp_downlink_v3_target_adaptive_search.sh",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "transform",
+      "disposition": "exclude",
       "mode": "100755",
       "object": "04cd8e93f1bad2050a0cf904706656d10c609ab4",
       "objectType": "blob",
       "path": "scripts/run_node5_comm_csp_downlink_v3_transport_hosted_probe.sh",
-      "publicPath": "scripts/run_node5_comm_csp_downlink_v3_transport_hosted_probe.sh",
-      "reason": "curated for the public environment or release governance"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "exclude",
@@ -29974,7 +29974,7 @@
       "objectType": "blob",
       "path": "scripts/run_official_sequencing_system_resources_v1_probe.sh",
       "publicPath": null,
-      "reason": "historical, retired, deprecated, or superseded entrypoint"
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "include",
@@ -29992,25 +29992,25 @@
       "objectType": "blob",
       "path": "scripts/run_payload_capture_modes_v2_hosted_probe.sh",
       "publicPath": null,
-      "reason": "historical, retired, deprecated, or superseded entrypoint"
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100644",
       "object": "d9708042297c60e9b5c8491a3443941defdd0d87",
       "objectType": "blob",
       "path": "scripts/run_payload_e2e_downlink_closure_v1_hosted_probe.sh",
-      "publicPath": "scripts/run_payload_e2e_downlink_closure_v1_hosted_probe.sh",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "transform",
+      "disposition": "exclude",
       "mode": "100644",
       "object": "d2eb8e74c8c60911c1bd0249ebe7d859f25c6bdb",
       "objectType": "blob",
       "path": "scripts/run_payload_e2e_downlink_closure_v1_target_probe.sh",
-      "publicPath": "scripts/run_payload_e2e_downlink_closure_v1_target_probe.sh",
-      "reason": "curated for the public environment or release governance"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "exclude",
@@ -30019,7 +30019,7 @@
       "objectType": "blob",
       "path": "scripts/run_payload_ops_contract_v1_hosted_probe.sh",
       "publicPath": null,
-      "reason": "historical, retired, deprecated, or superseded entrypoint"
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "exclude",
@@ -30028,34 +30028,34 @@
       "objectType": "blob",
       "path": "scripts/run_payload_ops_contract_v1_target_probe.sh",
       "publicPath": null,
-      "reason": "historical, retired, deprecated, or superseded entrypoint"
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100644",
       "object": "bb309698b143aff6cc0227d335ead5555d7fbccb",
       "objectType": "blob",
       "path": "scripts/run_payload_persistent_session_hosted_probe.sh",
-      "publicPath": "scripts/run_payload_persistent_session_hosted_probe.sh",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "include",
+      "disposition": "transform",
       "mode": "100755",
       "object": "fc5f433cad7ab9ebe0540d4c40cb8df64391089b",
       "objectType": "blob",
       "path": "scripts/run_payload_raw_preview_dual_artifact_v1_hosted_probe.sh",
       "publicPath": "scripts/run_payload_raw_preview_dual_artifact_v1_hosted_probe.sh",
-      "reason": "shipped from the fixed source baseline"
+      "reason": "curated for the public environment or release governance"
     },
     {
-      "disposition": "include",
+      "disposition": "transform",
       "mode": "100755",
       "object": "bafff13520c9740aa9ff4f97e7984c2bde8cd93f",
       "objectType": "blob",
       "path": "scripts/run_payload_raw_preview_dual_artifact_v1_target_probe.sh",
       "publicPath": "scripts/run_payload_raw_preview_dual_artifact_v1_target_probe.sh",
-      "reason": "shipped from the fixed source baseline"
+      "reason": "curated for the public environment or release governance"
     },
     {
       "disposition": "exclude",
@@ -30064,16 +30064,16 @@
       "objectType": "blob",
       "path": "scripts/run_payload_sensor_register_controls_v1_hosted_probe.sh",
       "publicPath": null,
-      "reason": "historical, retired, deprecated, or superseded entrypoint"
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100644",
       "object": "41ce6d7b0d7afc1109993f34c2ff2f8821029df2",
       "objectType": "blob",
       "path": "scripts/run_payload_target_backend_hardening_v1_hosted_probe.sh",
-      "publicPath": "scripts/run_payload_target_backend_hardening_v1_hosted_probe.sh",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "exclude",
@@ -30082,34 +30082,34 @@
       "objectType": "blob",
       "path": "scripts/run_payload_target_backend_hardening_v1_target_probe.sh",
       "publicPath": null,
-      "reason": "historical, retired, deprecated, or superseded entrypoint"
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "transform",
+      "disposition": "exclude",
       "mode": "100644",
       "object": "8dfd6686da38224a4274f9d9915140220d88e358",
       "objectType": "blob",
       "path": "scripts/run_payload_target_capture_sanity_v1_target_probe.sh",
-      "publicPath": "scripts/run_payload_target_capture_sanity_v1_target_probe.sh",
-      "reason": "curated for the public environment or release governance"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100755",
       "object": "c0820e73b285794d94c223741c560b5ff9f62e69",
       "objectType": "blob",
       "path": "scripts/run_payload_ttc_mode_entry_ccsds_probe.sh",
-      "publicPath": "scripts/run_payload_ttc_mode_entry_ccsds_probe.sh",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100644",
       "object": "775e302103a4a33a9cd0eee308df2defcbea5871",
       "objectType": "blob",
       "path": "scripts/run_payload_virtual_csp_node_v1_hosted_probe.sh",
-      "publicPath": "scripts/run_payload_virtual_csp_node_v1_hosted_probe.sh",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "include",
@@ -30121,31 +30121,31 @@
       "reason": "shipped from the fixed source baseline"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100755",
       "object": "57449d85488adb8bb43f6f2d98bb520f4a424b7a",
       "objectType": "blob",
       "path": "scripts/run_persistent_fault_ring_v1_probe.sh",
-      "publicPath": "scripts/run_persistent_fault_ring_v1_probe.sh",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100755",
       "object": "87121c42bc0579da843d488d74e3730e723ee190",
       "objectType": "blob",
       "path": "scripts/run_radio_metrics_v1_hosted_probe.sh",
-      "publicPath": "scripts/run_radio_metrics_v1_hosted_probe.sh",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100755",
       "object": "01b20b053123b2a9e158e8c314459f605998c368",
       "objectType": "blob",
       "path": "scripts/run_radio_metrics_v1_target_probe.sh",
-      "publicPath": "scripts/run_radio_metrics_v1_target_probe.sh",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "include",
@@ -30157,139 +30157,139 @@
       "reason": "shipped from the fixed source baseline"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100755",
       "object": "5517f85710eb9eacec0df66161ce0cc3f735de7e",
       "objectType": "blob",
       "path": "scripts/run_remote_csp_gds_stack.sh",
-      "publicPath": "scripts/run_remote_csp_gds_stack.sh",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100755",
       "object": "c30793c7e95365f5071cefe81f9ba5d19e67a0a2",
       "objectType": "blob",
       "path": "scripts/run_rpi_autostart_probe.sh",
-      "publicPath": "scripts/run_rpi_autostart_probe.sh",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "transform",
+      "disposition": "exclude",
       "mode": "100755",
       "object": "05127f0b305e26eb075a3f97b9e40ec8557dda94",
       "objectType": "blob",
       "path": "scripts/run_rpi_boot_probe.sh",
-      "publicPath": "scripts/run_rpi_boot_probe.sh",
-      "reason": "curated for the public environment or release governance"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "transform",
+      "disposition": "exclude",
       "mode": "100755",
       "object": "07e0b8ef94094082a966c90620c616f21cc5a4d0",
       "objectType": "blob",
       "path": "scripts/run_rpi_can_csp_stack.sh",
-      "publicPath": "scripts/run_rpi_can_csp_stack.sh",
-      "reason": "curated for the public environment or release governance"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "transform",
+      "disposition": "exclude",
       "mode": "100755",
       "object": "d1705ee42676b992dffb3a309cb434adc3cfb2fa",
       "objectType": "blob",
       "path": "scripts/run_rpi_csp_comm_baseline_probe.sh",
-      "publicPath": "scripts/run_rpi_csp_comm_baseline_probe.sh",
-      "reason": "curated for the public environment or release governance"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "transform",
+      "disposition": "exclude",
       "mode": "100644",
       "object": "72ab17de590187fe223332fff3271138e308b064",
       "objectType": "blob",
       "path": "scripts/run_rpi_endurosat_framed_probe.sh",
-      "publicPath": "scripts/run_rpi_endurosat_framed_probe.sh",
-      "reason": "curated for the public environment or release governance"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "transform",
+      "disposition": "exclude",
       "mode": "100644",
       "object": "85528397d633e26f8d22e039d823e24daed49863",
       "objectType": "blob",
       "path": "scripts/run_rpi_endurosat_framed_robustness_probe.sh",
-      "publicPath": "scripts/run_rpi_endurosat_framed_robustness_probe.sh",
-      "reason": "curated for the public environment or release governance"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "transform",
+      "disposition": "exclude",
       "mode": "100644",
       "object": "455e131a6b1681f79bb0cfc20986274f5884ea87",
       "objectType": "blob",
       "path": "scripts/run_rpi_endurosat_transparent_probe.sh",
-      "publicPath": "scripts/run_rpi_endurosat_transparent_probe.sh",
-      "reason": "curated for the public environment or release governance"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "transform",
+      "disposition": "exclude",
       "mode": "100644",
       "object": "77b053755f8f7f4ac753687f9d0562ddf1569031",
       "objectType": "blob",
       "path": "scripts/run_rpi_gps_live_probe.sh",
-      "publicPath": "scripts/run_rpi_gps_live_probe.sh",
-      "reason": "curated for the public environment or release governance"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "transform",
+      "disposition": "exclude",
       "mode": "100755",
       "object": "6aa37e1be1449ddd85e191284bdc128610bcd36a",
       "objectType": "blob",
       "path": "scripts/run_rpi_installed_probe.sh",
-      "publicPath": "scripts/run_rpi_installed_probe.sh",
-      "reason": "curated for the public environment or release governance"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "transform",
+      "disposition": "exclude",
       "mode": "100755",
       "object": "36320c1e20b86b8b26527ac81987b620bc988960",
       "objectType": "blob",
       "path": "scripts/run_rpi_installed_stack.sh",
-      "publicPath": "scripts/run_rpi_installed_stack.sh",
-      "reason": "curated for the public environment or release governance"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "transform",
+      "disposition": "exclude",
       "mode": "100755",
       "object": "d0b8219fd62d646270b58e4672a31049c1fc5d6d",
       "objectType": "blob",
       "path": "scripts/run_rpi_remote_csp_stack.sh",
-      "publicPath": "scripts/run_rpi_remote_csp_stack.sh",
-      "reason": "curated for the public environment or release governance"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "transform",
+      "disposition": "exclude",
       "mode": "100755",
       "object": "f34d4591f10e958bfd8562a2ef1b3f66c9cca6bc",
       "objectType": "blob",
       "path": "scripts/run_rpi_stack.sh",
-      "publicPath": "scripts/run_rpi_stack.sh",
-      "reason": "curated for the public environment or release governance"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100644",
       "object": "cd71b65dcd7d6032c2c4a13e10bf088b453bfff8",
       "objectType": "blob",
       "path": "scripts/run_rpi_target_comm_profile_probe.sh",
-      "publicPath": "scripts/run_rpi_target_comm_profile_probe.sh",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100755",
       "object": "b7536e87af3faa7849f967b46543abb8d096f00e",
       "objectType": "blob",
       "path": "scripts/run_rpi_target_hardware_watchdog_capability_probe.sh",
-      "publicPath": "scripts/run_rpi_target_hardware_watchdog_capability_probe.sh",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "transform",
@@ -30301,67 +30301,67 @@
       "reason": "curated for the public environment or release governance"
     },
     {
-      "disposition": "transform",
+      "disposition": "exclude",
       "mode": "100755",
       "object": "5cda4c83dab15518300a4e62a455520544d05996",
       "objectType": "blob",
       "path": "scripts/run_rpi_target_recovery_restart_probe.sh",
-      "publicPath": "scripts/run_rpi_target_recovery_restart_probe.sh",
-      "reason": "curated for the public environment or release governance"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "transform",
+      "disposition": "exclude",
       "mode": "100644",
       "object": "e1b50f17ae39d0c2461db4921b80ef01d703236e",
       "objectType": "blob",
       "path": "scripts/run_rpi_uart_probe.sh",
-      "publicPath": "scripts/run_rpi_uart_probe.sh",
-      "reason": "curated for the public environment or release governance"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "transform",
+      "disposition": "exclude",
       "mode": "100644",
       "object": "0a50daa291b1048017ee89c45c0b20daaa193a48",
       "objectType": "blob",
       "path": "scripts/run_rpi_uart_stack.sh",
-      "publicPath": "scripts/run_rpi_uart_stack.sh",
-      "reason": "curated for the public environment or release governance"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100644",
       "object": "07374cb468310e38e795ad415d87b6f1d5d9185f",
       "objectType": "blob",
       "path": "scripts/run_sband_ccsds_primary_probe.sh",
-      "publicPath": "scripts/run_sband_ccsds_primary_probe.sh",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100644",
       "object": "230652a4a66e8a8f0cd55bdb4c7d3a9c15f66bed",
       "objectType": "blob",
       "path": "scripts/run_sband_observability_governance_hosted_probe.sh",
-      "publicPath": "scripts/run_sband_observability_governance_hosted_probe.sh",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100755",
       "object": "e75f951cef639cd08b529f88efe06031e2c078fe",
       "objectType": "blob",
       "path": "scripts/run_shared_canfd_csp_gds_probe.sh",
-      "publicPath": "scripts/run_shared_canfd_csp_gds_probe.sh",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100755",
       "object": "bc1fa0fd6cf488c17b076d883d32fb2352f93886",
       "objectType": "blob",
       "path": "scripts/run_shared_canfd_eps_adcs_health_probe.sh",
-      "publicPath": "scripts/run_shared_canfd_eps_adcs_health_probe.sh",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "exclude",
@@ -30370,16 +30370,16 @@
       "objectType": "blob",
       "path": "scripts/run_storage_health_hosted_probe.sh",
       "publicPath": null,
-      "reason": "historical, retired, deprecated, or superseded entrypoint"
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100755",
       "object": "0752bf00062a567f0f64be1cda4bd324d91b9fef",
       "objectType": "blob",
       "path": "scripts/run_subsystem_comm_uart_link_probe.sh",
-      "publicPath": "scripts/run_subsystem_comm_uart_link_probe.sh",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "include",
@@ -30391,58 +30391,58 @@
       "reason": "shipped from the fixed source baseline"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100755",
       "object": "eb70fb10bb15c08d6acc131ecd5bf2e9ab2149c9",
       "objectType": "blob",
       "path": "scripts/run_subsystem_sim_can_stack.sh",
-      "publicPath": "scripts/run_subsystem_sim_can_stack.sh",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100755",
       "object": "77ab553053cf34c5e82a5f6efbe633f863aafa37",
       "objectType": "blob",
       "path": "scripts/run_subsystem_sim_comm_can_stack.sh",
-      "publicPath": "scripts/run_subsystem_sim_comm_can_stack.sh",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100755",
       "object": "c3673848e97d5adcf2157b28cdcb31c610a6cfc7",
       "objectType": "blob",
       "path": "scripts/run_subsystem_sim_remote_can_stack.sh",
-      "publicPath": "scripts/run_subsystem_sim_remote_can_stack.sh",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100755",
       "object": "8f69b9e306c904d7e0e102c8820de66bfa2a1a54",
       "objectType": "blob",
       "path": "scripts/run_subsystem_sim_remote_comm_can_stack.sh",
-      "publicPath": "scripts/run_subsystem_sim_remote_comm_can_stack.sh",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100644",
       "object": "3739208b53397bf17292adda33a8dd3933f2ae50",
       "objectType": "blob",
       "path": "scripts/run_subsystem_sim_remote_stack.sh",
-      "publicPath": "scripts/run_subsystem_sim_remote_stack.sh",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100644",
       "object": "ee23d90e5cb5a0726a25edbea4d9eef147853f2e",
       "objectType": "blob",
       "path": "scripts/run_subsystem_sim_stack.sh",
-      "publicPath": "scripts/run_subsystem_sim_stack.sh",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "transform",
@@ -30460,7 +30460,7 @@
       "objectType": "blob",
       "path": "scripts/run_target_can_node6_nonquiet_diagnosis_probe.sh",
       "publicPath": null,
-      "reason": "historical, retired, deprecated, or superseded entrypoint"
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "exclude",
@@ -30469,34 +30469,34 @@
       "objectType": "blob",
       "path": "scripts/run_target_can_uhf_beacon_suppression_probe.sh",
       "publicPath": null,
-      "reason": "historical, retired, deprecated, or superseded entrypoint"
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "transform",
+      "disposition": "exclude",
       "mode": "100755",
       "object": "09fd70ed9af72c524f385b250057e0d625af6660",
       "objectType": "blob",
       "path": "scripts/run_target_comm_csp_ground_stack.sh",
-      "publicPath": "scripts/run_target_comm_csp_ground_stack.sh",
-      "reason": "curated for the public environment or release governance"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100755",
       "object": "3ac7ed0b1822c4f389f20799a5d3505c46cf8a08",
       "objectType": "blob",
       "path": "scripts/run_target_comm_csp_lab_operational_probe.sh",
-      "publicPath": "scripts/run_target_comm_csp_lab_operational_probe.sh",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100644",
       "object": "9c8a758ea704b857197c6c8ee3b6809d63a22682",
       "objectType": "blob",
       "path": "scripts/run_target_comm_primary_unavailable_window.sh",
-      "publicPath": "scripts/run_target_comm_primary_unavailable_window.sh",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "exclude",
@@ -30505,25 +30505,25 @@
       "objectType": "blob",
       "path": "scripts/run_target_dual_link_proof.sh",
       "publicPath": null,
-      "reason": "historical, retired, deprecated, or superseded entrypoint"
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "transform",
+      "disposition": "exclude",
       "mode": "100644",
       "object": "1c4c01f8b80b3eefed04ddbb641a1b52812fda23",
       "objectType": "blob",
       "path": "scripts/run_target_sband_observability_governance_probe.sh",
-      "publicPath": "scripts/run_target_sband_observability_governance_probe.sh",
-      "reason": "curated for the public environment or release governance"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "transform",
+      "disposition": "exclude",
       "mode": "100644",
       "object": "d2f7cc46df400fd4ae63362d6f62c9ecba195402",
       "objectType": "blob",
       "path": "scripts/run_target_secure_auth_command_path_probe.sh",
-      "publicPath": "scripts/run_target_secure_auth_command_path_probe.sh",
-      "reason": "curated for the public environment or release governance"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "transform",
@@ -30541,7 +30541,7 @@
       "objectType": "blob",
       "path": "scripts/run_target_timing_empirical_ceiling_freeze_v1_probe.sh",
       "publicPath": null,
-      "reason": "historical, retired, deprecated, or superseded entrypoint"
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "exclude",
@@ -30550,43 +30550,43 @@
       "objectType": "blob",
       "path": "scripts/run_target_timing_wcet_profile_proof_v1_probe.sh",
       "publicPath": null,
-      "reason": "historical, retired, deprecated, or superseded entrypoint"
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "transform",
+      "disposition": "exclude",
       "mode": "100644",
       "object": "b062d3da12710b856a7847e5fd48e46458eaa971",
       "objectType": "blob",
       "path": "scripts/run_target_uhf_primary_nonquiet_runtime_probe.sh",
-      "publicPath": "scripts/run_target_uhf_primary_nonquiet_runtime_probe.sh",
-      "reason": "curated for the public environment or release governance"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "transform",
+      "disposition": "exclude",
       "mode": "100644",
       "object": "a921b491f7421f3914ec9ab1b97ac82cc44ae2ee",
       "objectType": "blob",
       "path": "scripts/run_target_uhf_primary_secure_live_benchmark.sh",
-      "publicPath": "scripts/run_target_uhf_primary_secure_live_benchmark.sh",
-      "reason": "curated for the public environment or release governance"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100644",
       "object": "724d64c1e06eeb9b2633e1cf67b92139c0428560",
       "objectType": "blob",
       "path": "scripts/run_ttc_pass_window_mode_v1_probe.sh",
-      "publicPath": "scripts/run_ttc_pass_window_mode_v1_probe.sh",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100644",
       "object": "fc556c1bd1660a55ffec2cf6ea9d39a040b1d117",
       "objectType": "blob",
       "path": "scripts/run_uart_stack.sh",
-      "publicPath": "scripts/run_uart_stack.sh",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "exclude",
@@ -30595,7 +30595,7 @@
       "objectType": "blob",
       "path": "scripts/run_uhf_beacon_suppression_hosted_probe.sh",
       "publicPath": null,
-      "reason": "historical, retired, deprecated, or superseded entrypoint"
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "exclude",
@@ -30604,7 +30604,7 @@
       "objectType": "blob",
       "path": "scripts/run_uhf_ccsds_hosted_adoption_probe.sh",
       "publicPath": null,
-      "reason": "historical, retired, deprecated, or superseded entrypoint"
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "include",
@@ -30622,16 +30622,16 @@
       "objectType": "blob",
       "path": "scripts/run_uhf_primary_packet_quiet_hosted_probe.sh",
       "publicPath": null,
-      "reason": "historical, retired, deprecated, or superseded entrypoint"
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100755",
       "object": "8f2508e1a323398a843466cfa02b6a091bb2169f",
       "objectType": "blob",
       "path": "scripts/run_uplink_authority_and_key_hardening_hosted_probe.sh",
-      "publicPath": "scripts/run_uplink_authority_and_key_hardening_hosted_probe.sh",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "transform",
@@ -30643,22 +30643,22 @@
       "reason": "curated for the public environment or release governance"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100755",
       "object": "c4052072a63e5f23be49c4e28b6de15db0a21058",
       "objectType": "blob",
       "path": "scripts/run_watchdog_v1_probe.sh",
-      "publicPath": "scripts/run_watchdog_v1_probe.sh",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "transform",
+      "disposition": "exclude",
       "mode": "100644",
       "object": "bc63189351e3dc7fa551c22d0f25827dd8e132ca",
       "objectType": "blob",
       "path": "scripts/sband_observability_governance_hosted_probe.py",
-      "publicPath": "scripts/sband_observability_governance_hosted_probe.py",
-      "reason": "curated for the public environment or release governance"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "include",
@@ -30712,7 +30712,7 @@
       "objectType": "blob",
       "path": "scripts/target_timing_empirical_ceiling_freeze_v1_probe.py",
       "publicPath": null,
-      "reason": "historical, retired, deprecated, or superseded entrypoint"
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "exclude",
@@ -30721,7 +30721,7 @@
       "objectType": "blob",
       "path": "scripts/target_timing_wcet_profile_proof_v1_probe.py",
       "publicPath": null,
-      "reason": "historical, retired, deprecated, or superseded entrypoint"
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "include",
@@ -30751,13 +30751,13 @@
       "reason": "shipped from the fixed source baseline"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100644",
       "object": "c69a2352f3f7a8a2dfb12c086010be2dc63e77fa",
       "objectType": "blob",
       "path": "scripts/test_managed_subsystem_unavailable_window.py",
-      "publicPath": "scripts/test_managed_subsystem_unavailable_window.py",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "include",
@@ -30850,13 +30850,13 @@
       "reason": "shipped from the fixed source baseline"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100644",
       "object": "3a87be7e19430cea846fb56fa35b9ae3b51dff98",
       "objectType": "blob",
       "path": "scripts/uplink_authority_and_key_hardening_hosted_probe.py",
-      "publicPath": "scripts/uplink_authority_and_key_hardening_hosted_probe.py",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "include",
@@ -31672,6 +31672,12 @@
     "evidence/records/payload-raw-preview-dual-artifact-v1/ARTIFACTS.json",
     "evidence/records/payload-target-capture-sanity-v1/ARTIFACTS.json",
     "evidence/records/public-thesis-submission-v1/README.md",
+    "openspec/changes/archive/2026-07-29-minimize-public-script-surface-v1/.openspec.yaml",
+    "openspec/changes/archive/2026-07-29-minimize-public-script-surface-v1/design.md",
+    "openspec/changes/archive/2026-07-29-minimize-public-script-surface-v1/proposal.md",
+    "openspec/changes/archive/2026-07-29-minimize-public-script-surface-v1/specs/documentation-governance/spec.md",
+    "openspec/changes/archive/2026-07-29-minimize-public-script-surface-v1/specs/public-release-profile/spec.md",
+    "openspec/changes/archive/2026-07-29-minimize-public-script-surface-v1/tasks.md",
     "openspec/changes/archive/2026-07-29-polish-public-documentation-v1/.openspec.yaml",
     "openspec/changes/archive/2026-07-29-polish-public-documentation-v1/design.md",
     "openspec/changes/archive/2026-07-29-polish-public-documentation-v1/proposal.md",
@@ -31701,11 +31707,10 @@
     "release/SHA256SUMS",
     "release/publication-manifest.json",
     "scripts/bootstrap_dev_config.sh",
-    "scripts/build_public_evidence.py",
     "scripts/check_public_release.py",
     "scripts/generate_publication_manifest.py",
     "scripts/generate_verification_manifest.py",
-    "scripts/sanitize_public_history.py",
+    "scripts/public-allowlist.txt",
     "scripts/verification-manifest.json"
   ],
   "release": "thesis-submission-v1",

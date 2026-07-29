@@ -32,7 +32,7 @@ fi
 
 known_probe_command() {
   local command_line="${1:-}"
-  [[ "${command_line}" =~ fprime-gds([[:space:]]|$)|fprime_gds\.executables\.comm|fprime_gds\.executables\.tcpserver|CustomDataHandlers|ground_ttc_gateway|fprime-cli\ events|fprime-cli\ channels|run_rpi_target_hardware_watchdog_reset_probe|run_rpi_target_recovery_restart_probe ]]
+  [[ "${command_line}" =~ fprime-gds([[:space:]]|$)|fprime_gds\.executables\.comm|fprime_gds\.executables\.tcpserver|CustomDataHandlers|ground_ttc_gateway|fprime-cli\ events|fprime-cli\ channels|run_rpi_target_hardware_watchdog_reset_probe ]]
 }
 
 ps_command_for_pid() {

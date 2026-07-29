@@ -128,11 +128,8 @@ manifest path to establish sessions and send commands.
 ## Representative Probes
 
 ```bash
-bash scripts/run_target_secure_auth_command_path_probe.sh
 bash scripts/run_target_secure_auth_proof.sh
-bash scripts/run_target_uhf_primary_nonquiet_runtime_probe.sh
 bash scripts/run_target_autonomous_uhf_failover_probe.sh
-PROBE_MODE=command-path bash scripts/run_rpi_target_recovery_restart_probe.sh
 bash scripts/run_rpi_target_hardware_watchdog_reset_probe.sh
 bash scripts/run_payload_raw_preview_dual_artifact_v1_target_probe.sh
 ```

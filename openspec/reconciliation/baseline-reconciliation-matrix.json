@@ -2791,6 +2791,21 @@
         "evidence/records/public-thesis-submission-v1/README.md"
       ],
       "exception": "Portfolio documentation architecture: provides a capability-first repository entrypoint, ten canonical documents, consolidated hosted and target operations, a dedicated evidence library with 158 result summaries and 1,045 catalogued artifacts, OpenSpec-owned reconciliation data, and automated checks for navigation, terminology, publication mapping, licenses, and evidence integrity."
+    },
+    {
+      "archivedChange": "2026-07-29-minimize-public-script-surface-v1",
+      "classification": "governance-maintenance",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "documentation-governance",
+        "public-release-profile"
+      ],
+      "evidencePaths": [
+        "scripts/README.md",
+        "scripts/public-allowlist.txt",
+        "scripts/verification-manifest.json"
+      ],
+      "exception": "Public automation surface: retains build and verification governance, primary hosted operation, Raspberry Pi deployment and shared laboratory baselines, representative integration probes, Chapter 5 routes, and Mission Console with their direct support code. The allowlist and release checker enforce this boundary, and the complete F Prime gate validates the retained implementation."
     }
   ]
 }
