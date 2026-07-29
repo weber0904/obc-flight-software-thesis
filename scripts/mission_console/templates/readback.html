@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="toolbar">
+  <label>Context <select id="context-select"></select></label>
+  <label>Band <select id="band-select"></select></label>
+  <div class="toolbar-note">
+    Saved subsystem readback viewer. Run `GET_*` and status commands from <strong>Ops</strong>, or use the per-card refresh button here to re-run the saved readback in place.
+  </div>
+</section>
+<section class="panel">
+  <div class="panel-head">
+    <div>
+      <h2>Readback Viewer</h2>
+      <p class="muted">Tabs show the most recent saved result per subsystem or readback family.</p>
+    </div>
+  </div>
+  <div id="readback-tabs" class="chip-list readback-tab-row"></div>
+  <div id="readback-result">
+    <p class="empty-state">Run a curated `GET_*` or status command from Ops, or use a card refresh button once saved entries exist.</p>
+  </div>
+</section>
+{% endblock %}

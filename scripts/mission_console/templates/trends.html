@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="toolbar">
+  <label>Context <select id="context-select"></select></label>
+  <label>Band <select id="band-select"></select></label>
+  <div class="toolbar-note">
+    Multi-panel continuous operator telemetry workspace for curated <strong>EPS</strong>, <strong>ADCS</strong>, and <strong>Health</strong> channels.
+  </div>
+</section>
+<section class="panel trend-workspace">
+  <div class="panel-head">
+    <div>
+      <h2>Live Trends</h2>
+      <p class="muted">Use separate panels when you want different axis scales, or overlay multiple related series on the same chart.</p>
+    </div>
+    <div class="button-row">
+      <button id="trend-add-panel" type="button">+ Add Panel</button>
+    </div>
+  </div>
+  <details class="advanced-block trend-summary-help">
+    <summary>Workspace Help</summary>
+    <div id="trend-help-summary" class="result-stack">
+      <p class="muted">Loading trend workspace guidance.</p>
+    </div>
+  </details>
+  <div id="trend-panels" class="trend-panel-stack">
+    <p class="empty-state">Loading trend panels.</p>
+  </div>
+</section>
+{% endblock %}

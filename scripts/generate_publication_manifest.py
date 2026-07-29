@@ -1,0 +1,206 @@
+#!/usr/bin/env python3
+"""Generate the exhaustive source-to-public publication manifest."""
+
+from __future__ import annotations
+
+import argparse
+import hashlib
+import json
+import pathlib
+import re
+import subprocess
+
+SOURCE_COMMIT = "142683f20ba46f59f894f594f2caf71dfeddf16f"
+
+EXCLUDED_PREFIXES = (
+    ".codex/",
+    "pending/",
+    "docs/architecture-review/",
+    "docs/reporting/",
+    "scripts/comm_verification/cases/",
+    "scripts/comm_verification/env/",
+    "scripts/comm_verification/matrix/",
+)
+
+EXCLUDED_PATHS = {
+    ".github/README.md",
+    "AGENTS.md",
+    "final_design.md",
+    "docs/architecture/comm-followup-directions.md",
+    "docs/roadmap/mission-console-observability-recommendations.md",
+    "docs/roadmap/mission-console-phase1-handoff.md",
+    "docs/operator/formal-comm-verification-matrix-v1-runbook.md",
+    "docs/operator/hosted-official-sequencing-system-resources-runbook.md",
+}
+
+HISTORICAL_SCRIPTS = {
+    "scripts/run_ccsds_ground_link_spike_probe.sh",
+    "scripts/run_ccsds_sband_hosted_adoption_probe.sh",
+    "scripts/run_comm_csp_socketcan_reliable_transfer_probe.sh",
+    "scripts/run_comm_csp_socketcan_uhf_reliable_transfer_probe.sh",
+    "scripts/run_comm_session_and_downlink_qos_probe.sh",
+    "scripts/run_comm_session_and_downlink_qos_probe_core.sh",
+    "scripts/run_comm_uhf_reliable_transfer_hosted_probe.sh",
+    "scripts/run_comm_verification_all.sh",
+    "scripts/run_comm_verification_hosted.sh",
+    "scripts/run_comm_verification_rpi_can.sh",
+    "scripts/run_comm_verification_rpi_tcp.sh",
+    "scripts/run_gps_hosted_probe.sh",
+    "scripts/run_multi_subsystem_fdir_v1_probe.sh",
+    "scripts/run_official_sequencing_system_resources_v1_probe.sh",
+    "scripts/run_payload_capture_modes_v2_hosted_probe.sh",
+    "scripts/run_payload_ops_contract_v1_hosted_probe.sh",
+    "scripts/run_payload_ops_contract_v1_target_probe.sh",
+    "scripts/run_payload_sensor_register_controls_v1_hosted_probe.sh",
+    "scripts/run_payload_target_backend_hardening_v1_target_probe.sh",
+    "scripts/run_storage_health_hosted_probe.sh",
+    "scripts/run_target_can_node6_nonquiet_diagnosis_probe.sh",
+    "scripts/run_target_can_uhf_beacon_suppression_probe.sh",
+    "scripts/run_target_dual_link_proof.sh",
+    "scripts/run_target_timing_empirical_ceiling_freeze_v1_probe.sh",
+    "scripts/target_timing_empirical_ceiling_freeze_v1_probe.py",
+    "scripts/run_target_timing_wcet_profile_proof_v1_probe.sh",
+    "scripts/target_timing_wcet_profile_proof_v1_probe.py",
+    "scripts/run_uhf_beacon_suppression_hosted_probe.sh",
+    "scripts/run_uhf_ccsds_hosted_adoption_probe.sh",
+    "scripts/run_uhf_primary_packet_quiet_hosted_probe.sh",
+}
+
+TRANSFORMS = {
+    "README.md": "README.md",
+    "config/security/command-auth.ini": "config/security/command-auth.example.ini",
+    "docs/reporting/fprime-native-vs-project-contribution-architecture-v1/README.md":
+        "docs/architecture/project-contributions.md",
+    "docs/thesis/README.md": "docs/thesis/README.md",
+    "docs/thesis/source-index.md": "docs/thesis/source-index.md",
+    "docs/thesis/07-verification-and-evidence-map.md":
+        "docs/thesis/claim-evidence-map.zh-TW.md",
+    "docs/operator/mission-console-phase1-runbook.zh-TW.md":
+        "docs/operator/thesis-demo-routes.zh-TW.md",
+    "docs/operator/mission-console-beacon-viewer-demo.zh-TW.md":
+        "docs/operator/thesis-demo-routes.zh-TW.md",
+    "docs/operator/mission-console-target-route1-demo.zh-TW.md":
+        "docs/operator/thesis-demo-routes.zh-TW.md",
+    "docs/operator/mission-console-target-route2-demo.zh-TW.md":
+        "docs/operator/thesis-demo-routes.zh-TW.md",
+    "docs/operator/mission-console-target-route3-demo.zh-TW.md":
+        "docs/operator/thesis-demo-routes.zh-TW.md",
+}
+
+
+def git_output(repo: pathlib.Path, *args: str) -> str:
+    return subprocess.check_output(["git", "-C", str(repo), *args], text=True)
+
+
+def git_blob_id(path: pathlib.Path) -> str:
+    data = path.read_bytes()
+    header = f"blob {len(data)}\0".encode("ascii")
+    return hashlib.sha1(header + data).hexdigest()
+
+
+def classify(path: str) -> tuple[str, str | None, str]:
+    if path == "config/security/command-auth.ini":
+        return "transform", TRANSFORMS[path], "replace tracked credentials with a public example"
+    if "/artifacts/" in path and path.startswith("docs/test-records/"):
+        return "externalize", None, "raw evidence belongs in the release asset"
+    if re.fullmatch(r"docs/test-records/[^/]+/README\.md", path):
+        return (
+            "transform",
+            path,
+            "preserve the record while redacting personal environment identifiers",
+        )
+    if path in TRANSFORMS:
+        return "transform", TRANSFORMS[path], "consolidated into the public canonical layer"
+    if path.startswith("docs/thesis/"):
+        return "exclude", None, "thesis body-writing and duplicate reference material"
+    if path in HISTORICAL_SCRIPTS:
+        return "exclude", None, "historical, retired, deprecated, or superseded entrypoint"
+    if path in EXCLUDED_PATHS or any(path.startswith(prefix) for prefix in EXCLUDED_PREFIXES):
+        return "exclude", None, "development-only, stale snapshot, or retired document family"
+    return "include", path, "shipped from the fixed source baseline"
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--source", type=pathlib.Path, required=True)
+    parser.add_argument("--output", type=pathlib.Path, required=True)
+    args = parser.parse_args()
+    public_root = args.output.resolve().parents[1]
+
+    resolved = git_output(args.source, "rev-parse", SOURCE_COMMIT).strip()
+    if resolved != SOURCE_COMMIT:
+        raise SystemExit(f"source commit mismatch: expected {SOURCE_COMMIT}, got {resolved}")
+
+    entries = []
+    raw = subprocess.check_output(
+        ["git", "-C", str(args.source), "ls-tree", "-rz", SOURCE_COMMIT]
+    ).decode("utf-8")
+    for record in raw.split("\0"):
+        if not record:
+            continue
+        metadata, path = record.split("\t", 1)
+        mode, object_type, object_id = metadata.split(" ", 2)
+        disposition, public_path, reason = classify(path)
+        public_file = public_root / public_path if public_path else None
+        if (
+            disposition == "include"
+            and object_type == "blob"
+            and public_file is not None
+            and public_file.is_file()
+            and git_blob_id(public_file) != object_id
+        ):
+            disposition = "transform"
+            reason = "curated for the public environment or release governance"
+        entries.append(
+            {
+                "path": path,
+                "mode": mode,
+                "objectType": object_type,
+                "object": object_id,
+                "disposition": disposition,
+                "publicPath": public_path,
+                "reason": reason,
+            }
+        )
+
+    counts: dict[str, int] = {}
+    for entry in entries:
+        counts[entry["disposition"]] = counts.get(entry["disposition"], 0) + 1
+
+    source_committed_at = git_output(
+        args.source, "show", "-s", "--format=%cI", SOURCE_COMMIT
+    ).strip()
+    source_backed_public_paths = {
+        entry["publicPath"] for entry in entries if entry["publicPath"]
+    }
+    observed_public_paths = set(
+        git_output(
+            public_root,
+            "ls-files",
+            "-co",
+            "--exclude-standard",
+        ).splitlines()
+    )
+    payload = {
+        "schemaVersion": 1,
+        "release": "thesis-submission-v1",
+        "generatedFromSourceCommittedAt": source_committed_at,
+        "source": {
+            "repository": "obc-flight-software",
+            "commit": SOURCE_COMMIT,
+            "trackedPaths": len(entries),
+        },
+        "submodules": {
+            "lib/fprime": "54f02168c676d5b61990d7a48ea9c61b9a8d0b5f",
+            "lib/libcsp": "241b756a7fb5af1ba0967183b4a2b5843f77ebdb",
+        },
+        "counts": counts,
+        "publicOnlyPaths": sorted(observed_public_paths - source_backed_public_paths),
+        "files": entries,
+    }
+    args.output.parent.mkdir(parents=True, exist_ok=True)
+    args.output.write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+
+
+if __name__ == "__main__":
+    main()

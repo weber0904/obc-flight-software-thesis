@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="toolbar">
+  <label>Context <select id="context-select"></select></label>
+  <label>Band <select id="band-select"></select></label>
+  <div class="toolbar-note">
+    Build governed official <strong>.seq</strong> source, compile with <strong>fprime-seqgen</strong>, then upload and validate through the existing sequence authority path.
+  </div>
+</section>
+<section class="layout-main sequence-layout">
+  <section class="panel">
+    <div class="panel-head">
+      <div>
+        <h2>Sequence Builder</h2>
+        <p class="muted">Structured relative-time steps are the primary editor. Raw `.seq` text remains available as an advanced fallback.</p>
+      </div>
+      <div class="badge-row">
+        <button type="button" id="sequence-add-step">Add Step</button>
+        <button type="button" id="sequence-save-draft">Save Draft</button>
+      </div>
+    </div>
+    <label>Draft Title <input id="sequence-title" placeholder="Example: payload-capture-demo"></label>
+    <div id="sequence-steps" class="sequence-step-list"></div>
+    <details class="advanced-block">
+      <summary>Editable raw `.seq` fallback</summary>
+      <label class="field-label">
+        <span class="field-title">Official Source Preview</span>
+        <textarea id="sequence-source" class="code-textarea" rows="12"></textarea>
+      </label>
+    </details>
+    <div class="button-row">
+      <button type="button" id="sequence-compile">Compile</button>
+      <button type="button" id="sequence-upload" data-band-required="true">Upload Compiled `.bin`</button>
+      <button type="button" id="sequence-validate" data-band-required="true">SEQ_VALIDATE</button>
+      <button type="button" id="sequence-run" data-band-required="true">SEQ_RUN</button>
+    </div>
+  </section>
+  <aside class="stack-column">
+    <section class="panel">
+      <h2>Saved Drafts</h2>
+      <div id="sequence-drafts-list">
+        <p class="empty-state">No saved drafts yet.</p>
+      </div>
+    </section>
+    <section class="panel">
+      <h2>Compile Result</h2>
+      <div id="sequence-compile-result">
+        <p class="empty-state">Compile a sequence to show source validity, diagnostics, and artifact paths.</p>
+      </div>
+    </section>
+    <section class="panel">
+      <h2>Governed Action Result</h2>
+      <div id="sequence-action-result">
+        <p class="empty-state">Upload, validate, or run a compiled artifact to show governed admission or execution results.</p>
+      </div>
+    </section>
+  </aside>
+</section>
+{% endblock %}

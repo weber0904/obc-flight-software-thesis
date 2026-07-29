@@ -1,0 +1,98 @@
+name: verification-ci
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+    tags:
+      - "thesis-submission-*"
+  workflow_dispatch:
+
+jobs:
+  baseline-gate:
+    runs-on: ubuntu-24.04
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Classify verification scope
+        id: scope
+        shell: bash
+        run: |
+          if [[ "${{ github.event_name }}" != "pull_request" ]]; then
+            echo "mode=full" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          base_sha="${{ github.event.pull_request.base.sha }}"
+          head_sha="${{ github.event.pull_request.head.sha }}"
+          mapfile -t files < <(git diff --name-only "$base_sha" "$head_sha")
+
+          {
+            echo "changed_files<<EOF"
+            printf '%s\n' "${files[@]}"
+            echo "EOF"
+          } >> "$GITHUB_OUTPUT"
+
+          if [[ ${#files[@]} -eq 0 ]]; then
+            echo "mode=full" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          mode="$(printf '%s\n' "${files[@]}" | bash scripts/classify_change_scope.sh)"
+          echo "mode=$mode" >> "$GITHUB_OUTPUT"
+
+      - name: Initialize lightweight checker submodule
+        if: steps.scope.outputs.mode == 'lightweight'
+        run: git submodule update --init lib/fprime
+
+      - name: Initialize submodules
+        if: steps.scope.outputs.mode == 'full'
+        run: git submodule update --init --recursive
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+
+      - name: Install system dependencies
+        if: steps.scope.outputs.mode == 'full'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libsocketcan-dev libzmq3-dev ninja-build
+
+      - name: Install OpenSpec CLI
+        run: npm install -g @fission-ai/openspec
+
+      - name: Create project virtual environment
+        if: steps.scope.outputs.mode == 'full'
+        run: |
+          python -m venv fprime-venv
+          ./fprime-venv/bin/pip install --upgrade pip setuptools wheel
+          ./fprime-venv/bin/pip install -r requirements.txt
+
+      - name: Bootstrap public development configuration
+        if: steps.scope.outputs.mode == 'full'
+        run: bash scripts/bootstrap_dev_config.sh
+
+      - name: Run verification gate
+        env:
+          VERIFICATION_CI_MODE: ${{ steps.scope.outputs.mode }}
+          VERIFICATION_CI_CHANGED_FILES: ${{ steps.scope.outputs.changed_files }}
+        run: ./scripts/run_verification_ci.sh "$GITHUB_WORKSPACE/ci-artifacts"
+
+      - name: Upload verification artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: verification-ci-artifacts
+          path: ci-artifacts/

@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="panel">
+  <h2>Surface Registry</h2>
+  <div id="surfaces-contexts" class="cards">
+    <p class="empty-state">Loading surface contexts and band state.</p>
+  </div>
+</section>
+<section class="panel">
+  <div class="panel-head">
+    <div>
+      <h2>Action History</h2>
+      <p class="muted">Default view shows only the current Mission Console session.</p>
+    </div>
+    <div class="button-row">
+      <label class="checkbox-inline">
+        <input type="checkbox" id="history-show-all">
+        Show all
+      </label>
+      <button id="history-clear-current" type="button">Clear current session</button>
+      <button id="history-clear-all" type="button" class="secondary-button">Clear all</button>
+    </div>
+  </div>
+  <div id="history-table" class="history-scroll">
+    <p class="empty-state">Structured action history will appear here after operator activity.</p>
+  </div>
+</section>
+{% endblock %}

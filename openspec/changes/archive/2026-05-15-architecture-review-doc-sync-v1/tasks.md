@@ -1,0 +1,6 @@
+- [x] Audit active docs/specs for stale HK fallback and RSSI/SNR wording.
+- [x] Reconcile active OpenSpec specs with HK fallback retirement and radio-metrics deferral.
+- [x] Reconcile architecture, roadmap, operator, verification-registry, and script README wording.
+- [x] Preserve archived evidence/test records as historical source material.
+- [x] Run OpenSpec/spec and repository consistency checks.
+- [x] Prepare the change for archive and reconciliation matrix update.

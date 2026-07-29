@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mission Console</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='mission-console.css', v=asset_version) }}">
+  </head>
+  <body
+    data-page="{{ page_name }}"
+    data-initial-context="{{ initial_context_id }}"
+    data-initial-band="{{ initial_band }}"
+    data-console-session-id="{{ console_session_id }}"
+  >
+    <header class="shell-header">
+      <div>
+        <h1>Mission Console</h1>
+        <p>Mission Gateway + Operator Workspace</p>
+      </div>
+      <nav>
+        <a href="/" {% if page_name == "dashboard" %}class="active"{% endif %}>Dashboard</a>
+        <a href="/ops" {% if page_name == "ops" %}class="active"{% endif %}>Ops</a>
+        <a href="/beacon" {% if page_name == "beacon" %}class="active"{% endif %}>Beacon</a>
+        <a href="/trends" {% if page_name == "trends" %}class="active"{% endif %}>Trends</a>
+        <a href="/readback" {% if page_name == "readback" %}class="active"{% endif %}>Readback</a>
+        <a href="/sequences" {% if page_name == "sequences" %}class="active"{% endif %}>Sequences</a>
+        <a href="/surfaces" {% if page_name == "surfaces" %}class="active"{% endif %}>Surfaces</a>
+        <a href="/packet-lab" {% if page_name == "packet-lab" %}class="active"{% endif %}>Packet Lab</a>
+      </nav>
+    </header>
+    <main class="shell-main">
+      {% block content %}{% endblock %}
+    </main>
+    <script>
+      window.MISSION_CONSOLE_BOOT = {{ {
+        "readbackCommands": readback_commands,
+        "readbackGroups": readback_groups,
+        "packetLabCases": packet_lab_cases,
+        "sequenceActionFields": sequence_action_fields,
+        "visibleCommandGroups": visible_command_groups,
+        "hiddenCommandGroups": hidden_command_groups,
+        "trendGroups": trend_groups,
+        "readbackViewerTabs": readback_viewer_tabs,
+        "consoleSessionId": console_session_id,
+      } | tojson }};
+    </script>
+    <script src="{{ url_for('static', filename='mission-console.js', v=asset_version) }}"></script>
+  </body>
+</html>

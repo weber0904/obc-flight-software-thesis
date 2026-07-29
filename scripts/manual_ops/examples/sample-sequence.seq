@@ -1,0 +1,3 @@
+; Minimal valid sequence for manual_ops sequence wrapper testing.
+R00:00:00 OBCApp.epsBridge.EPS_GET_STATUS
+R00:00:01 OBCApp.adcsBridge.ADCS_GET_ATTITUDE

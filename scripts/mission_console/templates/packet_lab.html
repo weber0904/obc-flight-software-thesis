@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="toolbar">
+  <label>Context <select id="context-select"></select></label>
+  <label>Band <select id="band-select"></select></label>
+  <div class="toolbar-note">
+    Lab-only negative packet diagnostics. Raw hex stays secondary.
+  </div>
+</section>
+<section class="grid-two">
+  <section class="panel">
+    <h2>Negative Packet Cases</h2>
+    <div id="packet-case-cards" class="case-list"></div>
+  </section>
+  <form class="panel stack-form" id="packet-lab-form">
+    <h2>Inject Selected Case</h2>
+    <label>Case <select name="case" id="packet-case-select"></select></label>
+    <div id="packet-case-detail"></div>
+    <button type="submit" data-band-required="true">Inject Case</button>
+  </form>
+</section>
+<section class="panel">
+  <h2>Observed Result</h2>
+  <div id="packet-lab-result">
+    <p class="empty-state">Inject a negative packet case to compare the injected fault model with the observed flight rejection.</p>
+  </div>
+</section>
+<section class="panel">
+  <div class="panel-head">
+    <div>
+      <h2>Packet Lab History</h2>
+      <p class="muted">Default view shows only the current Mission Console session.</p>
+    </div>
+    <div class="button-row">
+      <label class="checkbox-inline">
+        <input type="checkbox" id="packet-history-show-all">
+        Show all
+      </label>
+      <button id="packet-history-clear-current" type="button">Clear current session</button>
+      <button id="packet-history-clear-all" type="button" class="secondary-button">Clear all</button>
+    </div>
+  </div>
+  <div id="packet-lab-history" class="history-scroll">
+    <p class="empty-state">Packet-lab history will accumulate here after the first injection.</p>
+  </div>
+</section>
+{% endblock %}
