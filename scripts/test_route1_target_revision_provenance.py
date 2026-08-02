@@ -1495,7 +1495,6 @@ def main() -> int:
         encoding="utf-8"
     )
     assert "--exclude='./output'" in sync_text
-    assert "--exclude='./.codex_thesis_work'" in sync_text
     assert 'RPI_SYNC_EXTRA_EXCLUDE_PATH="${RPI_SYNC_EXTRA_EXCLUDE_PATH:-}"' in sync_text
     assert 'RPI_SYNC_TRACKED_ONLY="${RPI_SYNC_TRACKED_ONLY:-0}"' in sync_text
     assert 'RPI_SYNC_REPLACE_REMOTE="${RPI_SYNC_REPLACE_REMOTE:-0}"' in sync_text

@@ -5,17 +5,6 @@
   },
   "executables": [
     {
-      "environment": "hosted",
-      "owner": "scripts/README.md",
-      "path": "scripts/run_hosted_stock_ground_stack.sh",
-      "reason": "allowlisted public workflow",
-      "role": "operator-or-verification",
-      "shipped": true,
-      "sourceObject": "94f2bf4e916a455fe2c12ef8861c66f0f8c60899",
-      "status": "maintained",
-      "successor": null
-    },
-    {
       "environment": "multi",
       "owner": "dependency of an allowlisted public workflow",
       "path": "scripts/_common.sh",
@@ -568,6 +557,17 @@
     {
       "environment": "hosted",
       "owner": "scripts/README.md",
+      "path": "scripts/run_hosted_stock_ground_stack.sh",
+      "reason": "allowlisted public workflow",
+      "role": "operator-or-verification",
+      "shipped": true,
+      "sourceObject": "94f2bf4e916a455fe2c12ef8861c66f0f8c60899",
+      "status": "maintained",
+      "successor": null
+    },
+    {
+      "environment": "hosted",
+      "owner": "scripts/README.md",
       "path": "scripts/run_onboard_state_data_hosted_probe.sh",
       "reason": "allowlisted public workflow",
       "role": "operator-or-verification",
@@ -660,7 +660,7 @@
       "reason": "allowlisted public workflow",
       "role": "baseline",
       "shipped": true,
-      "sourceObject": "c5e443912671ef1eb3f4b59eda5af6cc0d331b54",
+      "sourceObject": "0dba94dab1dfda7a86710e63caad6b668c25598a",
       "status": "maintained",
       "successor": null
     },

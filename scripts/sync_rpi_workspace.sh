@@ -42,7 +42,6 @@ fi
 TAR_CMD+=(
   --exclude='./.git'
   --exclude='./.DS_Store'
-  --exclude='./.codex_thesis_work'
   --exclude='./output'
   --exclude='./build-fprime-automatic-native'
   --exclude='./build-fprime-automatic-native-ut'

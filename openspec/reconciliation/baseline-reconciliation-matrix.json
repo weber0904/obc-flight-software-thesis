@@ -2821,6 +2821,21 @@
         "scripts/verification-manifest.json"
       ],
       "exception": "Public script audit: classifies every retained script by purpose, workflow ownership, and invocation status; preserves the dependency closure for supported hosted operation, governed target/laboratory operation, integrated Chapter 5 evidence routes, repository verification, and Mission Console; consolidates duplicate hosted stock-ground launchers; and verifies the resulting surface through the full F Prime gate and representative hosted routes."
+    },
+    {
+      "archivedChange": "2026-08-02-public-release-provenance-hygiene-v1",
+      "classification": "governance-maintenance",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "public-release-profile",
+        "route1-sequence-verification"
+      ],
+      "evidencePaths": [
+        "scripts/test_route1_target_revision_provenance.py",
+        "scripts/chapter5_routes/hosted/run_route1_hosted.sh",
+        "release/RELEASE_PROVENANCE.md"
+      ],
+      "exception": "Public-release provenance hygiene: removes a retired local-workspace exception from Route 1 identity and target-sync automation, and requires the declared F Prime and libcsp revisions to resolve through the configured public submodule remotes. Focused provenance checks, a fresh hosted Route 1 run, and a clean recursive clone passed."
     }
   ]
 }

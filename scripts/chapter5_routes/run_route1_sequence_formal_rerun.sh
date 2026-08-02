@@ -125,7 +125,6 @@ if [[ "${RESUME}" == "1" ]]; then
     --identity "${CAMPAIGN_IDENTITY_PATH}" \
     --campaign-manifest "${EVIDENCE_ROOT}/campaign-manifest.json" \
     --allow-untracked-root "${ROOT_DIR}/output" \
-    --allow-untracked-root "${ROOT_DIR}/.codex_thesis_work" \
     --allow-untracked-root "${EVIDENCE_ROOT}"
   ATTEMPT_RECORDS="$("${ROOT_DIR}/fprime-venv/bin/python3" - "${EVIDENCE_ROOT}/campaign-manifest.json" <<'PY'
 import json
@@ -142,7 +141,6 @@ else
     --repo-root "${ROOT_DIR}" \
     --identity "${CAMPAIGN_IDENTITY_PATH}" \
     --allow-untracked-root "${ROOT_DIR}/output" \
-    --allow-untracked-root "${ROOT_DIR}/.codex_thesis_work" \
     --allow-untracked-root "${EVIDENCE_ROOT}"
 fi
 
@@ -316,7 +314,6 @@ prepare_target_attempt() {
       --repo-root "${ROOT_DIR}" \
       --identity "${CAMPAIGN_IDENTITY_PATH}" \
       --allow-untracked-root "${ROOT_DIR}/output" \
-      --allow-untracked-root "${ROOT_DIR}/.codex_thesis_work" \
       --allow-untracked-root "${EVIDENCE_ROOT}"; then
     return 1
   fi
@@ -336,7 +333,6 @@ prepare_target_attempt() {
       --trusted-installed-manifest "${INSTALLED_MANIFEST_RECEIPT_PATH}" \
       --trusted-service-unit "${SERVICE_UNIT_RECEIPT_PATH}" \
       --allow-untracked-root "${ROOT_DIR}/output" \
-      --allow-untracked-root "${ROOT_DIR}/.codex_thesis_work" \
       --allow-untracked-root "${EVIDENCE_ROOT}" \
       --output "${target_provenance_attempt_path_value}"; then
     if [[ -f "${target_provenance_attempt_path_value}" ]]; then
@@ -363,7 +359,6 @@ prepare_hosted_attempt() {
       --repo-root "${ROOT_DIR}" \
       --identity "${CAMPAIGN_IDENTITY_PATH}" \
       --allow-untracked-root "${ROOT_DIR}/output" \
-      --allow-untracked-root "${ROOT_DIR}/.codex_thesis_work" \
       --allow-untracked-root "${EVIDENCE_ROOT}"; then
     return 1
   fi
@@ -503,7 +498,6 @@ if [[ "${SKIP_DEPLOY}" != "1" && "${RESUME}" != "1" ]]; then
     "${PYTHON_BIN}" "${PROVENANCE_CHECKER}" check-local \
       --repo-root "${ROOT_DIR}" \
       --allow-untracked-root "${ROOT_DIR}/output" \
-      --allow-untracked-root "${ROOT_DIR}/.codex_thesis_work" \
       --allow-untracked-root "${EVIDENCE_ROOT}"
   run_logged target-workspace-bootstrap \
     env RPI_SYNC_EXTRA_EXCLUDE_PATH="${EVIDENCE_SYNC_EXCLUDE_PATH}" \
@@ -516,7 +510,6 @@ if [[ "${SKIP_DEPLOY}" != "1" && "${RESUME}" != "1" ]]; then
       --ssh-target "${OBC_SSH_TARGET}" \
       --remote-workspace "${RPI_REMOTE_DIR}" \
       --allow-untracked-root "${ROOT_DIR}/output" \
-      --allow-untracked-root "${ROOT_DIR}/.codex_thesis_work" \
       --allow-untracked-root "${EVIDENCE_ROOT}"
   run_logged package-rpi-bundle bash "${ROOT_DIR}/scripts/package_rpi_bundle.sh"
   bundle_path="$(sed -n 's/^  tarball: //p' "${EVIDENCE_ROOT}/deployment/logs/package-rpi-bundle.log" | tail -n 1)"
@@ -561,7 +554,6 @@ run_logged campaign-identity-post-hosted \
     --repo-root "${ROOT_DIR}" \
     --identity "${CAMPAIGN_IDENTITY_PATH}" \
     --allow-untracked-root "${ROOT_DIR}/output" \
-    --allow-untracked-root "${ROOT_DIR}/.codex_thesis_work" \
     --allow-untracked-root "${EVIDENCE_ROOT}"
 
 target_resume_state="PENDING"
