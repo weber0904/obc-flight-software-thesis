@@ -1579,7 +1579,7 @@ evidence, `target-timing-wcet-profile-proof-v1`,
   - the archived closure also proved the then-governed EPS `R3 + SAFE -> relatch R6`, ADCS first-fault clear/reopen progression, and COMM failover/clear/relatch behavior recorded in its governing evidence
 - Does **not** prove:
   - that `bash scripts/run_multi_subsystem_fdir_v1_probe.sh` remains a maintained rerunnable current proof surface on the post-ADCS-R3 baseline
-  - current hosted rerunnable Route 3 closure; use the scoped `run_recovery_executors_v1_probe.sh` wrappers and `scripts/chapter5_routes/hosted/route3_recovery_chain_pre_reboot.sh` for the maintained current hosted path
+  - current hosted rerunnable Route 3 closure; use `scripts/chapter5_routes/hosted/run_route3_hosted.sh`, which runs both scoped recovery-executor scenarios
   - generic all-subsystem FDIR or future GPS/payload/TTC/storage recovery lines
   - target-side ADCS recovery closure beyond the hosted `R3` reset and hosted relatch reboot-equivalent proof
   - RF behavior, hardware reboot proof, or target-hardware reset proof

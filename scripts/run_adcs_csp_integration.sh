@@ -33,13 +33,8 @@ ADCS_CSP_NODE_ID="${ADCS_CSP_NODE_ID:-3}"
 
 cleanup() {
   local status=$?
-  if [[ -n "${PROXY_PID:-}" ]]; then
-    kill "${PROXY_PID}" >/dev/null 2>&1 || true
-  fi
-  if [[ -n "${ADCS_PID:-}" ]]; then
-    kill "${ADCS_PID}" >/dev/null 2>&1 || true
-  fi
-  wait || true
+  trap - EXIT INT TERM
+  obc_cleanup_job_processes 5
   exit "${status}"
 }
 trap cleanup EXIT INT TERM

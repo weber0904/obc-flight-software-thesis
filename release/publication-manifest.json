@@ -1,9 +1,9 @@
 {
   "counts": {
-    "exclude": 207,
+    "exclude": 226,
     "externalize": 1045,
-    "include": 1844,
-    "transform": 420
+    "include": 1824,
+    "transform": 421
   },
   "files": [
     {
@@ -28015,13 +28015,13 @@
       "reason": "shipped from the fixed source baseline"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100644",
       "object": "5b895fc51ca7195aaf18272951ea78eeba58f00a",
       "objectType": "blob",
       "path": "scripts/chapter5_routes/README.md",
-      "publicPath": "scripts/chapter5_routes/README.md",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "include",
@@ -28069,13 +28069,13 @@
       "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100755",
       "object": "3e805e6b837c8a44a98c48dd9960af5232a772a8",
       "objectType": "blob",
       "path": "scripts/chapter5_routes/hosted/route1_downlink_and_extract.sh",
-      "publicPath": "scripts/chapter5_routes/hosted/route1_downlink_and_extract.sh",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "include",
@@ -28114,31 +28114,31 @@
       "reason": "shipped from the fixed source baseline"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100755",
       "object": "d50ffc463c777160f0b41355c64959b765d4d535",
       "objectType": "blob",
       "path": "scripts/chapter5_routes/hosted/route3_adcs_r3_hosted.sh",
-      "publicPath": "scripts/chapter5_routes/hosted/route3_adcs_r3_hosted.sh",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100755",
       "object": "798ffce8c40e2eb1196b438dcfd4af64adc59fd9",
       "objectType": "blob",
       "path": "scripts/chapter5_routes/hosted/route3_eps_r3_safe_hosted.sh",
-      "publicPath": "scripts/chapter5_routes/hosted/route3_eps_r3_safe_hosted.sh",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100755",
       "object": "5808bc4779c7b91bf867e6612a64927de93f81f7",
       "objectType": "blob",
       "path": "scripts/chapter5_routes/hosted/route3_recovery_chain_pre_reboot.sh",
-      "publicPath": "scripts/chapter5_routes/hosted/route3_recovery_chain_pre_reboot.sh",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "include",
@@ -28159,13 +28159,13 @@
       "reason": "shipped from the fixed source baseline"
     },
     {
-      "disposition": "include",
+      "disposition": "transform",
       "mode": "100755",
       "object": "dd26ad73b4990e485c19fdb50afea266f6c9c9b0",
       "objectType": "blob",
       "path": "scripts/chapter5_routes/hosted/run_route3_hosted.sh",
       "publicPath": "scripts/chapter5_routes/hosted/run_route3_hosted.sh",
-      "reason": "shipped from the fixed source baseline"
+      "reason": "curated for the public environment or release governance"
     },
     {
       "disposition": "include",
@@ -28222,13 +28222,13 @@
       "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100755",
       "object": "8a84729fcdf9e1c658ecf8931aa0782f3e2c7dea",
       "objectType": "blob",
       "path": "scripts/chapter5_routes/target/route1_downlink_and_extract.sh",
-      "publicPath": "scripts/chapter5_routes/target/route1_downlink_and_extract.sh",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "include",
@@ -28267,13 +28267,13 @@
       "reason": "shipped from the fixed source baseline"
     },
     {
-      "disposition": "transform",
+      "disposition": "exclude",
       "mode": "100644",
       "object": "580f70c8c471f158f20c411debe387a8b2ad3997",
       "objectType": "blob",
       "path": "scripts/chapter5_routes/target/route2_manual_playbook.md",
-      "publicPath": "scripts/chapter5_routes/target/route2_manual_playbook.md",
-      "reason": "curated for the public environment or release governance"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "include",
@@ -28303,13 +28303,13 @@
       "reason": "curated for the public environment or release governance"
     },
     {
-      "disposition": "transform",
+      "disposition": "exclude",
       "mode": "100755",
       "object": "3739079552bb39f3ec4635fabcbe5877a75f3de7",
       "objectType": "blob",
       "path": "scripts/chapter5_routes/target/route2_target_file_downlink.sh",
-      "publicPath": "scripts/chapter5_routes/target/route2_target_file_downlink.sh",
-      "reason": "curated for the public environment or release governance"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "include",
@@ -28330,13 +28330,13 @@
       "reason": "shipped from the fixed source baseline"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100755",
       "object": "17a3685ef841f62f742b7f9d5c747a24c19dca88",
       "objectType": "blob",
       "path": "scripts/chapter5_routes/target/route3_recovery_chain_pre_reboot.sh",
-      "publicPath": "scripts/chapter5_routes/target/route3_recovery_chain_pre_reboot.sh",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "include",
@@ -28960,13 +28960,13 @@
       "reason": "shipped from the fixed source baseline"
     },
     {
-      "disposition": "transform",
+      "disposition": "exclude",
       "mode": "100755",
       "object": "7add8607c1bf105d9d6b7647f7ad917c7c002647",
       "objectType": "blob",
       "path": "scripts/install_rpi_autostart.sh",
-      "publicPath": "scripts/install_rpi_autostart.sh",
-      "reason": "curated for the public environment or release governance"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "transform",
@@ -29005,22 +29005,22 @@
       "reason": "shipped from the fixed source baseline"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100644",
       "object": "94f9fc423a730ae27a50feeba5014c05e71567e6",
       "objectType": "blob",
       "path": "scripts/manual_ops/README.md",
-      "publicPath": "scripts/manual_ops/README.md",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100644",
       "object": "a9d2da0ed581d4106716de4383128e5220a32918",
       "objectType": "blob",
       "path": "scripts/manual_ops/examples/route1-demo.seq",
-      "publicPath": "scripts/manual_ops/examples/route1-demo.seq",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "include",
@@ -29032,13 +29032,13 @@
       "reason": "shipped from the fixed source baseline"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100644",
       "object": "907f8917ec0a88f1cb528924b4e75d410cd18ca0",
       "objectType": "blob",
       "path": "scripts/manual_ops/examples/sample-sequence.seq",
-      "publicPath": "scripts/manual_ops/examples/sample-sequence.seq",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "exclude",
@@ -29131,13 +29131,13 @@
       "reason": "curated for the public environment or release governance"
     },
     {
-      "disposition": "transform",
+      "disposition": "exclude",
       "mode": "100644",
       "object": "56a63c8a2fbd577fb2969f853812984f94e08217",
       "objectType": "blob",
       "path": "scripts/manual_ops/target/route2_ttc_gps_replay.py",
-      "publicPath": "scripts/manual_ops/target/route2_ttc_gps_replay.py",
-      "reason": "curated for the public environment or release governance"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "include",
@@ -29473,13 +29473,13 @@
       "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100755",
       "object": "a22a038c40d0d58027a06839571a5af4ff38af1f",
       "objectType": "blob",
       "path": "scripts/rpi_autostart_status.sh",
-      "publicPath": "scripts/rpi_autostart_status.sh",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "include",
@@ -29491,13 +29491,13 @@
       "reason": "shipped from the fixed source baseline"
     },
     {
-      "disposition": "include",
+      "disposition": "transform",
       "mode": "100644",
       "object": "f127c7cf9ef57a18df0336ff3bacebfef352bdab",
       "objectType": "blob",
       "path": "scripts/run_adcs_csp_integration.sh",
       "publicPath": "scripts/run_adcs_csp_integration.sh",
-      "reason": "shipped from the fixed source baseline"
+      "reason": "curated for the public environment or release governance"
     },
     {
       "disposition": "include",
@@ -29707,13 +29707,13 @@
       "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "include",
+      "disposition": "transform",
       "mode": "100644",
       "object": "7a2cba3dfeed986002adb761ad22cea710199575",
       "objectType": "blob",
       "path": "scripts/run_csp_runtime_smoke.sh",
       "publicPath": "scripts/run_csp_runtime_smoke.sh",
-      "reason": "shipped from the fixed source baseline"
+      "reason": "curated for the public environment or release governance"
     },
     {
       "disposition": "include",
@@ -29743,13 +29743,13 @@
       "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "include",
+      "disposition": "transform",
       "mode": "100755",
       "object": "7055b7652c42b3054cb85990cddc330016a93253",
       "objectType": "blob",
       "path": "scripts/run_eps_csp_integration.sh",
       "publicPath": "scripts/run_eps_csp_integration.sh",
-      "reason": "shipped from the fixed source baseline"
+      "reason": "curated for the public environment or release governance"
     },
     {
       "disposition": "exclude",
@@ -29761,13 +29761,13 @@
       "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100755",
       "object": "4812783a77b1ac6a6c09aa7b3c3347831ec5580c",
       "objectType": "blob",
       "path": "scripts/run_gds_stack.sh",
-      "publicPath": "scripts/run_gds_stack.sh",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "exclude",
@@ -29824,31 +29824,31 @@
       "reason": "shipped from the fixed source baseline"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100755",
       "object": "4c6450660db83021cf05b175bc881f5957198440",
       "objectType": "blob",
       "path": "scripts/run_hosted_per_band_stock_ground_stacks.sh",
-      "publicPath": "scripts/run_hosted_per_band_stock_ground_stacks.sh",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100755",
       "object": "4da446effa87598618e829b45a348515ade34614",
       "objectType": "blob",
       "path": "scripts/run_hosted_sband_stock_ground_stack.sh",
-      "publicPath": "scripts/run_hosted_sband_stock_ground_stack.sh",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "include",
+      "disposition": "exclude",
       "mode": "100755",
       "object": "273ab80780767ef026e10b334452aada640fde93",
       "objectType": "blob",
       "path": "scripts/run_hosted_uhf_stock_ground_stack.sh",
-      "publicPath": "scripts/run_hosted_uhf_stock_ground_stack.sh",
-      "reason": "shipped from the fixed source baseline"
+      "publicPath": null,
+      "reason": "outside the public workflow allowlist"
     },
     {
       "disposition": "exclude",
@@ -30112,13 +30112,13 @@
       "reason": "outside the public workflow allowlist"
     },
     {
-      "disposition": "include",
+      "disposition": "transform",
       "mode": "100755",
       "object": "97150ce136e6d35acea35eee8eb8769e5fd0163a",
       "objectType": "blob",
       "path": "scripts/run_per_band_stock_ground_stacks_hosted_probe.sh",
       "publicPath": "scripts/run_per_band_stock_ground_stacks_hosted_probe.sh",
-      "reason": "shipped from the fixed source baseline"
+      "reason": "curated for the public environment or release governance"
     },
     {
       "disposition": "exclude",
@@ -31702,15 +31702,24 @@
     "openspec/changes/archive/2026-07-29-public-thesis-submission-v1/specs/verification-evidence/spec.md",
     "openspec/changes/archive/2026-07-29-public-thesis-submission-v1/specs/verification-path-registry/spec.md",
     "openspec/changes/archive/2026-07-29-public-thesis-submission-v1/tasks.md",
+    "openspec/changes/archive/2026-08-02-audit-public-script-surface-v2/.openspec.yaml",
+    "openspec/changes/archive/2026-08-02-audit-public-script-surface-v2/design.md",
+    "openspec/changes/archive/2026-08-02-audit-public-script-surface-v2/proposal.md",
+    "openspec/changes/archive/2026-08-02-audit-public-script-surface-v2/script-audit.md",
+    "openspec/changes/archive/2026-08-02-audit-public-script-surface-v2/specs/documentation-governance/spec.md",
+    "openspec/changes/archive/2026-08-02-audit-public-script-surface-v2/specs/public-release-profile/spec.md",
+    "openspec/changes/archive/2026-08-02-audit-public-script-surface-v2/tasks.md",
     "openspec/specs/public-release-profile/spec.md",
     "release/RELEASE_PROVENANCE.md",
     "release/SHA256SUMS",
     "release/publication-manifest.json",
+    "scripts/CATALOG.md",
     "scripts/bootstrap_dev_config.sh",
     "scripts/check_public_release.py",
     "scripts/generate_publication_manifest.py",
     "scripts/generate_verification_manifest.py",
     "scripts/public-allowlist.txt",
+    "scripts/run_hosted_stock_ground_stack.sh",
     "scripts/verification-manifest.json"
   ],
   "release": "thesis-submission-v1",

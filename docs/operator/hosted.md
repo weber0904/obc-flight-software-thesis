@@ -35,9 +35,9 @@ Stop it with `Ctrl-C`; the launcher owns cleanup of the processes it starts.
 Run one or both stock F Prime ground surfaces against a shared hosted OBC:
 
 ```bash
-bash scripts/run_hosted_sband_stock_ground_stack.sh
-bash scripts/run_hosted_uhf_stock_ground_stack.sh
-bash scripts/run_hosted_per_band_stock_ground_stacks.sh
+bash scripts/run_hosted_stock_ground_stack.sh sband
+bash scripts/run_hosted_stock_ground_stack.sh uhf
+bash scripts/run_hosted_stock_ground_stack.sh combined
 ```
 
 For an orchestrated dual-link runtime:

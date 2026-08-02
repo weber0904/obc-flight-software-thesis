@@ -107,7 +107,7 @@ provides detailed records and machine-readable provenance.
 |---|---|
 | `OBC/` | OBC components, `TopCcsds` deployment, configuration, and tests |
 | `simulators/` | EPS, ADCS, COMM, GPS, and payload simulation services |
-| `scripts/` | Build, operation, packaging, probing, and governance tools |
+| [`scripts/`](scripts/README.md) | Maintained build, operation, packaging, verification, and governance tools; see the [file catalog](scripts/CATALOG.md) |
 | `docs/` | Architecture, interfaces, verification, and operator guides |
 | `openspec/specs/` | Normative capability specifications |
 | `openspec/changes/archive/` | Requirements, designs, and decisions by change |

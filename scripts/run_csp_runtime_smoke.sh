@@ -29,13 +29,8 @@ LOCAL_NODE_ID="${LOCAL_NODE_ID:-1}"
 
 cleanup() {
   local status=$?
-  if [[ -n "${PROXY_PID:-}" ]]; then
-    kill "${PROXY_PID}" >/dev/null 2>&1 || true
-  fi
-  if [[ -n "${PEER_PID:-}" ]]; then
-    kill "${PEER_PID}" >/dev/null 2>&1 || true
-  fi
-  wait || true
+  trap - EXIT INT TERM
+  obc_cleanup_job_processes 5
   exit "${status}"
 }
 trap cleanup EXIT INT TERM

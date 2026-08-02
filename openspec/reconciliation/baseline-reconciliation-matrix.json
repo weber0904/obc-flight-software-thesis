@@ -2806,6 +2806,21 @@
         "scripts/verification-manifest.json"
       ],
       "exception": "Public automation surface: retains build and verification governance, primary hosted operation, Raspberry Pi deployment and shared laboratory baselines, representative integration probes, Chapter 5 routes, and Mission Console with their direct support code. The allowlist and release checker enforce this boundary, and the complete F Prime gate validates the retained implementation."
+    },
+    {
+      "archivedChange": "2026-08-02-audit-public-script-surface-v2",
+      "classification": "governance-maintenance",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "documentation-governance",
+        "public-release-profile"
+      ],
+      "evidencePaths": [
+        "scripts/CATALOG.md",
+        "scripts/public-allowlist.txt",
+        "scripts/verification-manifest.json"
+      ],
+      "exception": "Public script audit: classifies every retained script by purpose, workflow ownership, and invocation status; preserves the dependency closure for supported hosted operation, governed target/laboratory operation, integrated Chapter 5 evidence routes, repository verification, and Mission Console; consolidates duplicate hosted stock-ground launchers; and verifies the resulting surface through the full F Prime gate and representative hosted routes."
     }
   ]
 }

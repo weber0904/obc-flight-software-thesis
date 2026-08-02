@@ -108,7 +108,6 @@ assert_alt_simulators_alive() {
 
 run_launcher_probe() {
   local mode="$1"
-  local script_name="$2"
   local run_root="${PROBE_TMP_DIR}/${mode}"
   local stack_root="${run_root}/stack"
   local runtime_root="${run_root}/runtime"
@@ -124,7 +123,7 @@ run_launcher_probe() {
     PER_BAND_RUNTIME_ROOT="${runtime_root}" \
     PER_BAND_AUTO_PORTS=1 \
     STACK_HOLD_SECS=3 \
-    bash "${ROOT_DIR}/scripts/${script_name}" >"${launcher_log}" 2>&1; then
+    bash "${ROOT_DIR}/scripts/run_hosted_stock_ground_stack.sh" "${mode}" >"${launcher_log}" 2>&1; then
     cat "${launcher_log}" >&2
     echo "per-band-stock-ground-stacks-hosted-probe: STOPPED" >&2
     echo "mode=${mode}" >&2
@@ -267,9 +266,9 @@ PY
 start_alt_simulators
 
 {
-  run_launcher_probe "sband" "run_hosted_sband_stock_ground_stack.sh"
-  run_launcher_probe "uhf" "run_hosted_uhf_stock_ground_stack.sh"
-  run_launcher_probe "combined" "run_hosted_per_band_stock_ground_stacks.sh"
+  run_launcher_probe "sband"
+  run_launcher_probe "uhf"
+  run_launcher_probe "combined"
   echo "per-band-stock-ground-stacks-hosted-probe: PASS"
   echo "bounded-noninterference=unrelated active EPS/ADCS simulator stack survived all launcher reruns"
   echo "formal-verdict=per-band-stock-ground-stacks-hosted-baseline"

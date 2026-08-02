@@ -9,6 +9,9 @@ from urllib.parse import unquote
 
 ROOT = Path(__file__).resolve().parent.parent
 MARKDOWN_LINK_RE = re.compile(r"\]\(([^)]+)\)")
+OPERATOR_COMMAND_RE = re.compile(
+    r"(?:bash|python3?|fprime-venv/bin/python)\s+(scripts/[A-Za-z0-9_./-]+)"
+)
 
 CURRENT_DOCS = [
     Path("README.md"),
@@ -145,6 +148,35 @@ def check_docs_surface(errors: list[str]) -> None:
         )
 
 
+def check_operator_commands(errors: list[str]) -> None:
+    catalog = ROOT / "scripts" / "CATALOG.md"
+    try:
+        entrypoint_text = catalog.read_text(encoding="utf-8").split(
+            "## Complete File Inventory", 1
+        )[0]
+    except FileNotFoundError:
+        errors.append("scripts/CATALOG.md is missing")
+        return
+    catalog_entrypoints = set(re.findall(r"scripts/[A-Za-z0-9_./-]+", entrypoint_text))
+    guides = (
+        Path("docs/operator/hosted.md"),
+        Path("docs/operator/target-lab.md"),
+        Path("docs/operator/mission-console.md"),
+        Path("docs/operator/simulator-controls.zh-TW.md"),
+        Path("docs/operator/thesis-demo.zh-TW.md"),
+    )
+    for rel_path in guides:
+        text = read_text(rel_path)
+        for command_path in OPERATOR_COMMAND_RE.findall(text):
+            if not (ROOT / command_path).is_file():
+                errors.append(f"{rel_path}: operator command is missing '{command_path}'")
+            elif command_path not in catalog_entrypoints:
+                errors.append(
+                    f"{rel_path}: operator command is not a catalog entrypoint "
+                    f"'{command_path}'"
+                )
+
+
 def run_checks(root: Path = ROOT) -> list[str]:
     del root
     errors: list[str] = []
@@ -153,6 +185,7 @@ def run_checks(root: Path = ROOT) -> list[str]:
         check_required_links(errors)
         check_portfolio_language(errors)
         check_links(errors)
+        check_operator_commands(errors)
     except RuntimeError as exc:
         errors.append(str(exc))
     return errors

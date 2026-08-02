@@ -15,6 +15,7 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 PUBLICATION_MANIFEST = ROOT / "release/publication-manifest.json"
 VERIFICATION_MANIFEST = ROOT / "scripts/verification-manifest.json"
 SCRIPT_ALLOWLIST = ROOT / "scripts/public-allowlist.txt"
+SCRIPT_CATALOG = ROOT / "scripts/CATALOG.md"
 EVIDENCE_CATALOG = ROOT / "evidence/catalog.json"
 SHA256SUMS = ROOT / "release/SHA256SUMS"
 
@@ -45,6 +46,7 @@ REQUIRED = {
     "release/SHA256SUMS",
     "release/publication-manifest.json",
     "scripts/check_public_release.py",
+    "scripts/CATALOG.md",
     "scripts/public-allowlist.txt",
     "scripts/verification-manifest.json",
 }
@@ -205,6 +207,8 @@ def check_script_surface(errors: list[str], public_paths: set[str]) -> None:
 
     exact = {entry for entry in entries if not entry.endswith("/**")}
     prefixes = tuple(entry.removesuffix("**") for entry in entries if entry.endswith("/**"))
+    if prefixes:
+        fail(errors, "script allowlist must use exact file paths, not directory prefixes")
     script_paths = {path for path in public_paths if path.startswith("scripts/")}
     missing = sorted(path for path in exact if path not in script_paths)
     unlisted = sorted(
@@ -216,6 +220,22 @@ def check_script_surface(errors: list[str], public_paths: set[str]) -> None:
         fail(errors, f"script allowlist paths are missing: {missing[:10]}")
     if unlisted:
         fail(errors, f"unlisted scripts are tracked: {unlisted[:10]}")
+
+    try:
+        catalog_text = SCRIPT_CATALOG.read_text(encoding="utf-8")
+    except FileNotFoundError:
+        fail(errors, "scripts/CATALOG.md is missing")
+    else:
+        catalog_paths = set(
+            re.findall(r"^\| `(scripts/[^`]+)` \|", catalog_text, flags=re.MULTILINE)
+        )
+        if catalog_paths != script_paths:
+            uncataloged = sorted(script_paths - catalog_paths)
+            stale = sorted(catalog_paths - script_paths)
+            if uncataloged:
+                fail(errors, f"uncataloged script files: {uncataloged[:10]}")
+            if stale:
+                fail(errors, f"stale script catalog entries: {stale[:10]}")
 
     placeholders = sorted(path for path in script_paths if path.endswith("/.gitkeep"))
     if placeholders:

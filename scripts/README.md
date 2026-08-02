@@ -1,7 +1,8 @@
 # Scripts
 
 The script surface is organized around five reproducible workflows. The
-machine-readable file set is defined by
+complete file-by-file purpose and ownership inventory is
+[`CATALOG.md`](CATALOG.md); the machine-readable file set is
 [`public-allowlist.txt`](public-allowlist.txt).
 
 ## Build And Verification
@@ -18,9 +19,9 @@ F Prime checks, validates repository contracts, and validates OpenSpec.
 
 ```bash
 bash scripts/run_dev_stack.sh
-bash scripts/run_hosted_sband_stock_ground_stack.sh
-bash scripts/run_hosted_uhf_stock_ground_stack.sh
-bash scripts/run_hosted_per_band_stock_ground_stacks.sh
+bash scripts/run_hosted_stock_ground_stack.sh sband
+bash scripts/run_hosted_stock_ground_stack.sh uhf
+bash scripts/run_hosted_stock_ground_stack.sh combined
 ```
 
 Representative hosted verification:
@@ -60,10 +61,10 @@ bash scripts/run_payload_raw_preview_dual_artifact_v1_target_probe.sh
 bash scripts/chapter5_routes/hosted/run_route1_hosted.sh
 bash scripts/chapter5_routes/hosted/run_route2_hosted.sh
 bash scripts/chapter5_routes/hosted/run_route3_hosted.sh
+bash scripts/chapter5_routes/target/run_route1_target.sh
+bash scripts/chapter5_routes/target/run_route2_target.sh
+bash scripts/chapter5_routes/target/run_route3_target.sh
 ```
-
-Target counterparts and the formal Route 1 rerun are under
-[`chapter5_routes/`](chapter5_routes/).
 
 ## Mission Console
 

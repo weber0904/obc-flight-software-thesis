@@ -1,9 +1,20 @@
 {
   "counts": {
-    "maintained": 58,
-    "support/internal": 15
+    "maintained": 47,
+    "support/internal": 14
   },
   "executables": [
+    {
+      "environment": "hosted",
+      "owner": "scripts/README.md",
+      "path": "scripts/run_hosted_stock_ground_stack.sh",
+      "reason": "allowlisted public workflow",
+      "role": "operator-or-verification",
+      "shipped": true,
+      "sourceObject": "94f2bf4e916a455fe2c12ef8861c66f0f8c60899",
+      "status": "maintained",
+      "successor": null
+    },
     {
       "environment": "multi",
       "owner": "dependency of an allowlisted public workflow",
@@ -46,17 +57,6 @@
       "shipped": true,
       "sourceObject": "a0e597d98379c8ef348a2bb46bc7f91785cebd96",
       "status": "support/internal",
-      "successor": null
-    },
-    {
-      "environment": "hosted",
-      "owner": "scripts/README.md",
-      "path": "scripts/chapter5_routes/hosted/route1_downlink_and_extract.sh",
-      "reason": "allowlisted public workflow",
-      "role": "operator-or-verification",
-      "shipped": true,
-      "sourceObject": "3e805e6b837c8a44a98c48dd9960af5232a772a8",
-      "status": "maintained",
       "successor": null
     },
     {
@@ -106,39 +106,6 @@
     {
       "environment": "hosted",
       "owner": "scripts/README.md",
-      "path": "scripts/chapter5_routes/hosted/route3_adcs_r3_hosted.sh",
-      "reason": "allowlisted public workflow",
-      "role": "operator-or-verification",
-      "shipped": true,
-      "sourceObject": "d50ffc463c777160f0b41355c64959b765d4d535",
-      "status": "maintained",
-      "successor": null
-    },
-    {
-      "environment": "hosted",
-      "owner": "scripts/README.md",
-      "path": "scripts/chapter5_routes/hosted/route3_eps_r3_safe_hosted.sh",
-      "reason": "allowlisted public workflow",
-      "role": "operator-or-verification",
-      "shipped": true,
-      "sourceObject": "798ffce8c40e2eb1196b438dcfd4af64adc59fd9",
-      "status": "maintained",
-      "successor": null
-    },
-    {
-      "environment": "hosted",
-      "owner": "scripts/README.md",
-      "path": "scripts/chapter5_routes/hosted/route3_recovery_chain_pre_reboot.sh",
-      "reason": "allowlisted public workflow",
-      "role": "operator-or-verification",
-      "shipped": true,
-      "sourceObject": "5808bc4779c7b91bf867e6612a64927de93f81f7",
-      "status": "maintained",
-      "successor": null
-    },
-    {
-      "environment": "hosted",
-      "owner": "scripts/README.md",
       "path": "scripts/chapter5_routes/hosted/run_route1_hosted.sh",
       "reason": "allowlisted public workflow",
       "role": "operator-or-verification",
@@ -165,7 +132,7 @@
       "reason": "allowlisted public workflow",
       "role": "operator-or-verification",
       "shipped": true,
-      "sourceObject": "dd26ad73b4990e485c19fdb50afea266f6c9c9b0",
+      "sourceObject": "b522c803773bbc71a99be68116930d0089f4ea2f",
       "status": "maintained",
       "successor": null
     },
@@ -178,17 +145,6 @@
       "shipped": true,
       "sourceObject": "1a906066d7cd025e3c14d52e573961123a03f675",
       "status": "support/internal",
-      "successor": null
-    },
-    {
-      "environment": "target/lab",
-      "owner": "scripts/README.md",
-      "path": "scripts/chapter5_routes/target/route1_downlink_and_extract.sh",
-      "reason": "allowlisted public workflow",
-      "role": "operator-or-verification",
-      "shipped": true,
-      "sourceObject": "8a84729fcdf9e1c658ecf8931aa0782f3e2c7dea",
-      "status": "maintained",
       "successor": null
     },
     {
@@ -260,28 +216,6 @@
     {
       "environment": "target/lab",
       "owner": "scripts/README.md",
-      "path": "scripts/chapter5_routes/target/route2_target_file_downlink.sh",
-      "reason": "allowlisted public workflow",
-      "role": "operator-or-verification",
-      "shipped": true,
-      "sourceObject": "4ee0653148f87db4b6fc2ba5f7d9d45026ff3eee",
-      "status": "maintained",
-      "successor": null
-    },
-    {
-      "environment": "target/lab",
-      "owner": "scripts/README.md",
-      "path": "scripts/chapter5_routes/target/route3_recovery_chain_pre_reboot.sh",
-      "reason": "allowlisted public workflow",
-      "role": "operator-or-verification",
-      "shipped": true,
-      "sourceObject": "17a3685ef841f62f742b7f9d5c747a24c19dca88",
-      "status": "maintained",
-      "successor": null
-    },
-    {
-      "environment": "target/lab",
-      "owner": "scripts/README.md",
       "path": "scripts/chapter5_routes/target/route3_watchdog_reboot_and_postcheck.sh",
       "reason": "allowlisted public workflow",
       "role": "operator-or-verification",
@@ -330,7 +264,7 @@
       "reason": "allowlisted public workflow",
       "role": "governance",
       "shipped": true,
-      "sourceObject": "27f31e6761da0f781fbe437d08f64daee0950f13",
+      "sourceObject": "50a7560e37d9ddb5777ebc83e01db3af983521f5",
       "status": "maintained",
       "successor": null
     },
@@ -397,17 +331,6 @@
       "role": "baseline",
       "shipped": true,
       "sourceObject": "1d9e146f42afb9805ce7ba621f5d7b369ffd83fc",
-      "status": "maintained",
-      "successor": null
-    },
-    {
-      "environment": "target/lab",
-      "owner": "scripts/README.md",
-      "path": "scripts/install_rpi_autostart.sh",
-      "reason": "allowlisted public workflow",
-      "role": "baseline",
-      "shipped": true,
-      "sourceObject": "676a5b1bdfd96a74b72294fd90d5f0c9dde0fef0",
       "status": "maintained",
       "successor": null
     },
@@ -590,17 +513,6 @@
     {
       "environment": "target/lab",
       "owner": "dependency of an allowlisted public workflow",
-      "path": "scripts/rpi_autostart_status.sh",
-      "reason": "allowlisted public workflow",
-      "role": "support",
-      "shipped": true,
-      "sourceObject": "a22a038c40d0d58027a06839571a5af4ff38af1f",
-      "status": "support/internal",
-      "successor": null
-    },
-    {
-      "environment": "target/lab",
-      "owner": "dependency of an allowlisted public workflow",
       "path": "scripts/rpi_comm_csp_status.sh",
       "reason": "allowlisted public workflow",
       "role": "support",
@@ -638,18 +550,7 @@
       "reason": "allowlisted public workflow",
       "role": "operator-or-verification",
       "shipped": true,
-      "sourceObject": "7055b7652c42b3054cb85990cddc330016a93253",
-      "status": "maintained",
-      "successor": null
-    },
-    {
-      "environment": "multi",
-      "owner": "scripts/README.md",
-      "path": "scripts/run_gds_stack.sh",
-      "reason": "allowlisted public workflow",
-      "role": "operator-or-verification",
-      "shipped": true,
-      "sourceObject": "4812783a77b1ac6a6c09aa7b3c3347831ec5580c",
+      "sourceObject": "b193354731dbfead990e7c51a872fbc65b2f997a",
       "status": "maintained",
       "successor": null
     },
@@ -661,39 +562,6 @@
       "role": "operator-or-verification",
       "shipped": true,
       "sourceObject": "2da7b66ca8c4b770569a963cf5a7c40c1dd4a330",
-      "status": "maintained",
-      "successor": null
-    },
-    {
-      "environment": "hosted",
-      "owner": "scripts/README.md",
-      "path": "scripts/run_hosted_per_band_stock_ground_stacks.sh",
-      "reason": "allowlisted public workflow",
-      "role": "operator-or-verification",
-      "shipped": true,
-      "sourceObject": "4c6450660db83021cf05b175bc881f5957198440",
-      "status": "maintained",
-      "successor": null
-    },
-    {
-      "environment": "hosted",
-      "owner": "scripts/README.md",
-      "path": "scripts/run_hosted_sband_stock_ground_stack.sh",
-      "reason": "allowlisted public workflow",
-      "role": "operator-or-verification",
-      "shipped": true,
-      "sourceObject": "4da446effa87598618e829b45a348515ade34614",
-      "status": "maintained",
-      "successor": null
-    },
-    {
-      "environment": "hosted",
-      "owner": "scripts/README.md",
-      "path": "scripts/run_hosted_uhf_stock_ground_stack.sh",
-      "reason": "allowlisted public workflow",
-      "role": "operator-or-verification",
-      "shipped": true,
-      "sourceObject": "273ab80780767ef026e10b334452aada640fde93",
       "status": "maintained",
       "successor": null
     },
@@ -737,7 +605,7 @@
       "reason": "allowlisted public workflow",
       "role": "operator-or-verification",
       "shipped": true,
-      "sourceObject": "97150ce136e6d35acea35eee8eb8769e5fd0163a",
+      "sourceObject": "7c448710cfeef95c4f759dc5d96cd457a29bd3b3",
       "status": "maintained",
       "successor": null
     },
@@ -810,5 +678,5 @@
   ],
   "release": "thesis-submission-v1",
   "schemaVersion": 2,
-  "sourceExecutableCount": 73
+  "sourceExecutableCount": 61
 }

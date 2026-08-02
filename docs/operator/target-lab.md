@@ -139,6 +139,29 @@ Consult the
 before running a probe; its entry records the required topology, service
 profile, authority path, and expected outputs.
 
+## Integrated Evidence Routes
+
+The Chapter 5 target runners compose the same baseline owners with the
+route-specific functional stages:
+
+```bash
+bash scripts/chapter5_routes/target/run_route1_target.sh
+bash scripts/chapter5_routes/target/run_route2_target.sh
+bash scripts/chapter5_routes/target/run_route3_target.sh
+```
+
+Route 1 also provides a campaign runner that binds the hosted and target
+results to the synchronized source, remote build, installed bundle, service
+unit, and executable hashes:
+
+```bash
+EVIDENCE_DATE=YYYY-MM-DD \
+  bash scripts/chapter5_routes/run_route1_sequence_formal_rerun.sh
+```
+
+Use the corresponding verification-registry entry to select environment
+variables, target roles, and evidence destination before starting a campaign.
+
 ## Status And Diagnostics
 
 ```bash
