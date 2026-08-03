@@ -339,11 +339,10 @@ Route 1 wrappers now fail rather than hide a future postflight A/B failure.
   month-name, and Chinese spellings of 2026-07-12 and 2026-07-20 map to the
   same bounded checker subjects; unrelated current evidence remains
   outside this dated-observation check.
-- Untracked files may be present only below roots that the same formal runner
-  explicitly excludes from target workspace synchronization: local-only
-  `output/`, `.codex_thesis_work/`, and the in-progress campaign evidence
-  root. Any other untracked path blocks both workspace marking and target
-  authority so an unreviewed build input cannot be attributed to `HEAD`.
+- Formal Route 1 provenance distinguishes generated evidence from source
+  inputs and rejects undeclared untracked build inputs before workspace
+  marking or target authority, so an unreviewed input cannot be attributed to
+  `HEAD`.
 - The formal Route 1 target sync additionally enables Git-index-only archive
   construction, including initialized submodule files, and extracts into a
   staged replacement workspace while retaining the prior workspace as a
