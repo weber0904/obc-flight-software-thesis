@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="toolbar">
+  <label>Context <select id="context-select"></select></label>
+  <label>Band <select id="band-select"></select></label>
+  <div class="toolbar-note">
+    Search mission-facing commands first. Use <strong>Show all commands</strong> for the full engineering catalog.
+  </div>
+</section>
+<section class="layout-main">
+  <section class="panel command-workspace">
+    <div class="panel-head">
+      <div>
+        <h2>Secure Command Workspace</h2>
+        <p>Dictionary-backed command discovery with curated mission-first grouping.</p>
+      </div>
+      <label class="checkbox-inline">
+        <input type="checkbox" id="show-all-commands">
+        Show all dictionary commands
+      </label>
+    </div>
+    <div class="command-controls">
+      <label class="search-field">
+        Search
+        <input id="command-search" type="search" placeholder="Filter by command, description, or parameter" autocomplete="off">
+      </label>
+      <div id="command-group-chips" class="chip-list"></div>
+    </div>
+    <section class="panel workspace-job-panel">
+      <h2>Job Result</h2>
+      <p class="muted">Dispatch status stays here in compact form. Saved `GET_*` and status readbacks keep their full subsystem view in <strong>Readback</strong>.</p>
+      <div id="job-result">
+        <p class="empty-state">Submit auth, command, upload, or sequence work to show the latest structured result here.</p>
+      </div>
+    </section>
+    <div class="command-grid">
+      <section class="command-results-pane">
+        <div class="list-head">
+          <h3>Command Catalog</h3>
+          <span id="command-count" class="muted"></span>
+        </div>
+        <div id="command-results" class="command-results"></div>
+      </section>
+      <section class="command-detail-pane">
+        <div id="selected-command-header" class="detail-header">
+          <h3>Select a command</h3>
+          <p>Choose a mission command to render its argument form.</p>
+        </div>
+        <form id="command-form" class="stack-form">
+          <input type="hidden" name="commandName" id="selected-command-name">
+          <div id="selected-command-summary"></div>
+          <div id="selected-command-fields" class="field-grid"></div>
+          <label class="checkbox-inline">
+            <input type="checkbox" name="ensureAuth" checked>
+            Ensure auth before dispatch
+          </label>
+          <button type="submit" data-band-required="true">Send Secure Command</button>
+        </form>
+        <details class="advanced-block">
+          <summary>Advanced raw command fallback</summary>
+          <form id="raw-command-form" class="stack-form raw-form">
+            <label>Command Name <input name="commandName" value="OBCApp.modeManager.MODE_GET"></label>
+            <label>Args (space separated) <input name="commandArgs" placeholder="Example: IDLE or 7 demo-tag"></label>
+            <label class="checkbox-inline"><input type="checkbox" name="ensureAuth" checked> Ensure auth</label>
+            <button type="submit" data-band-required="true">Send Raw Command</button>
+          </form>
+        </details>
+      </section>
+    </div>
+  </section>
+  <aside class="stack-column">
+    <form class="panel stack-form" id="auth-form">
+      <h2>Auth</h2>
+      <p class="muted">Use the idempotent ensure-auth path before mission operations.</p>
+      <button type="submit" data-band-required="true">Establish / Ensure Auth</button>
+      <div id="auth-status"></div>
+    </form>
+    <form class="panel stack-form" id="file-form">
+      <h2>Governed Upload</h2>
+      <label>Local Path <input name="localPath" placeholder="Relative or absolute file path"></label>
+      <label>Destination Leaf <input name="destinationLeaf" placeholder="Destination filename only"></label>
+      <button type="submit" data-band-required="true">Upload File</button>
+    </form>
+    <form class="panel stack-form" id="sequence-form">
+      <h2>Sequence Action</h2>
+      <label>Action
+        <select name="action">
+          <option value="validate">validate</option>
+          <option value="run">run</option>
+          <option value="prepare-manual">prepare-manual</option>
+          <option value="start">start</option>
+          <option value="step">step</option>
+          <option value="cancel">cancel</option>
+        </select>
+      </label>
+      <label data-sequence-field="sequencePath">Sequence Path <input name="sequencePath" placeholder=".sequence-staging/example.bin"></label>
+      <label data-sequence-field="sequenceContextId">Sequence Context ID <input name="sequenceContextId" placeholder="Numeric context id"></label>
+      <label data-sequence-field="runMode">Run Mode <input name="runMode" value="NO_WAIT" placeholder="NO_WAIT or WAIT"></label>
+      <button type="submit" data-band-required="true">Run Sequence Action</button>
+    </form>
+  </aside>
+</section>
+{% endblock %}

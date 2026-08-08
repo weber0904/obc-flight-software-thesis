@@ -1,0 +1,15 @@
+[Unit]
+Description=Lab CAN bring-up for __CAN_ROLE__ (__CAN_DEVICE__)
+# Lab/development provisioning helper; not the final flight OS CAN configuration model.
+Documentation=man:ip-link(8)
+After=network-pre.target
+Before=network-online.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/bin/bash -lc 'set -euo pipefail; ip link show dev "__CAN_DEVICE__" >/dev/null; ip link set "__CAN_DEVICE__" down >/dev/null 2>&1 || true; ip link set "__CAN_DEVICE__" up type can bitrate "__CAN_BITRATE__" dbitrate "__CAN_DBITRATE__" restart-ms "__CAN_RESTART_MS__" fd on'
+ExecStop=/bin/bash -lc 'set -euo pipefail; ip link set "__CAN_DEVICE__" down >/dev/null 2>&1 || true'
+
+[Install]
+WantedBy=multi-user.target

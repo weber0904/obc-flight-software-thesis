@@ -1,0 +1,6 @@
+[submodule "lib/fprime"]
+	path = lib/fprime
+	url = https://github.com/weber0904/fprime.git
+[submodule "lib/libcsp"]
+	path = lib/libcsp
+	url = https://github.com/weber0904/csp-es.git

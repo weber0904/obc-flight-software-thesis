@@ -1,0 +1,27 @@
+[Unit]
+Description=Subsystem COMM CSP Lab Service
+PartOf=__STACK_TARGET_NAME__
+After=network-online.target __COMM_CAN_SERVICE_NAME__
+Wants=__COMM_CAN_SERVICE_NAME__
+
+[Service]
+Type=simple
+User=__TARGET_USER__
+WorkingDirectory=__REMOTE_DIR__
+Environment=CSP_TRANSPORT=socketcan
+Environment=SUBSYSTEM_SIM_COMM_CAN_DEVICE=__COMM_CAN_DEVICE__
+Environment=SUBSYSTEM_SIM_COMM_DEVICE=__COMM_SERIAL_DEVICE__
+Environment=COMM_BAUDRATE=__COMM_BAUDRATE__
+Environment=CSP_CAN_PROMISC=__CSP_CAN_PROMISC__
+Environment=COMM_CSP_NODE=__COMM_CSP_NODE__
+ExecStart=__REMOTE_DIR__/scripts/run_subsystem_csp_service.sh comm
+Restart=on-failure
+RestartSec=3
+KillMode=control-group
+TimeoutStopSec=15
+StandardInput=null
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=__STACK_TARGET_NAME__

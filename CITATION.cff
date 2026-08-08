@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software or its evidence, please cite this repository."
+title: "CubeSat OBC Flight Software Thesis"
+type: software
+authors:
+  - family-names: "Chen"
+    given-names: "You-Jun"
+version: "thesis-submission-v1"
+date-released: "2026-07-29"
+repository-code: "https://github.com/weber0904/obc-flight-software-thesis"
+license: "Apache-2.0"
+keywords:
+  - CubeSat
+  - flight software
+  - F Prime
+  - libcsp
+  - CCSDS

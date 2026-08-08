@@ -1,0 +1,5 @@
+# Repository-owned offline replay contract for first-version scenario validation
+time_sec,sunlight,battery_soc_pct,ground_pass_open,link_available,omega_x_rad_s,omega_y_rad_s,omega_z_rad_s
+0,1,72,0,0,0.21,-0.11,0.05
+30,0,18,1,1,0.21,-0.11,0.05
+60,1,24,0,0,0.21,-0.11,0.05

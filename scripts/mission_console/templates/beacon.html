@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="toolbar">
+  <label>Context <select id="context-select"></select></label>
+  <label>Band <select id="band-select"></select></label>
+  <div class="toolbar-note">
+    Beacon viewer shows the manual-surface UHF side-channel. It is distinct from event/channel/readback surfaces and keeps hosted versus target provenance explicit.
+  </div>
+</section>
+<section class="panel">
+  <div class="panel-head">
+    <div>
+      <h2>Latest Beacon</h2>
+      <p class="muted">Latest decoded BeaconV1 plus capture and provenance status.</p>
+    </div>
+  </div>
+  <div id="beacon-latest">
+    <p class="empty-state">Loading beacon snapshot.</p>
+  </div>
+</section>
+<section class="panel">
+  <div class="panel-head">
+    <div>
+      <h2>Recent Beacon History</h2>
+      <p class="muted">Bounded history from the Mission Console beacon snapshot store.</p>
+    </div>
+  </div>
+  <div id="beacon-history">
+    <p class="empty-state">Loading beacon history.</p>
+  </div>
+</section>
+{% endblock %}

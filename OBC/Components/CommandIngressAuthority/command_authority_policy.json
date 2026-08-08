@@ -1,0 +1,615 @@
+{
+  "commands": {
+    "CdhCore.cmdDisp.CMD_CLEAR_TRACKING": {
+      "class": "CONFIG_UPDATE",
+      "resource": "COMMAND_DISPATCH",
+      "uhf_backup_allowed": false
+    },
+    "CdhCore.cmdDisp.CMD_NO_OP": {
+      "class": "DEV_INTERNAL",
+      "resource": "COMMAND_DISPATCH",
+      "uhf_backup_allowed": false
+    },
+    "CdhCore.cmdDisp.CMD_NO_OP_STRING": {
+      "class": "DEV_INTERNAL",
+      "resource": "COMMAND_DISPATCH",
+      "uhf_backup_allowed": false
+    },
+    "CdhCore.cmdDisp.CMD_TEST_CMD_1": {
+      "class": "DEV_INTERNAL",
+      "resource": "COMMAND_DISPATCH",
+      "uhf_backup_allowed": false
+    },
+    "CdhCore.events.DUMP_FILTER_STATE": {
+      "class": "CONFIG_UPDATE",
+      "resource": "EVENT_FILTER",
+      "uhf_backup_allowed": false
+    },
+    "CdhCore.events.SET_EVENT_FILTER": {
+      "class": "CONFIG_UPDATE",
+      "resource": "EVENT_FILTER",
+      "uhf_backup_allowed": false
+    },
+    "CdhCore.events.SET_ID_FILTER": {
+      "class": "CONFIG_UPDATE",
+      "resource": "EVENT_FILTER",
+      "uhf_backup_allowed": false
+    },
+    "CdhCore.health.HLTH_CHNG_PING": {
+      "class": "CONFIG_UPDATE",
+      "resource": "HEALTH",
+      "uhf_backup_allowed": false
+    },
+    "CdhCore.health.HLTH_ENABLE": {
+      "class": "CONFIG_UPDATE",
+      "resource": "HEALTH",
+      "uhf_backup_allowed": false
+    },
+    "CdhCore.health.HLTH_PING_ENABLE": {
+      "class": "CONFIG_UPDATE",
+      "resource": "HEALTH",
+      "uhf_backup_allowed": false
+    },
+    "CdhCore.version.ENABLE": {
+      "class": "READ_STATUS",
+      "resource": "COMMAND_DISPATCH",
+      "uhf_backup_allowed": false
+    },
+    "CdhCore.version.VERSION": {
+      "class": "READ_STATUS",
+      "resource": "COMMAND_DISPATCH",
+      "uhf_backup_allowed": false
+    },
+    "FileHandling.fileDownlink.Cancel": {
+      "class": "FILE_TRANSFER",
+      "resource": "FILE_TRANSFER_SESSION",
+      "uhf_backup_allowed": false
+    },
+    "FileHandling.fileDownlink.SendFile": {
+      "class": "FILE_TRANSFER",
+      "resource": "FILE_TRANSFER_SESSION",
+      "uhf_backup_allowed": false
+    },
+    "FileHandling.fileDownlink.SendPartial": {
+      "class": "FILE_TRANSFER",
+      "resource": "FILE_TRANSFER_SESSION",
+      "uhf_backup_allowed": false
+    },
+    "FileHandling.fileManager.AppendFile": {
+      "class": "FILE_TRANSFER",
+      "resource": "FILE_TRANSFER_SESSION",
+      "uhf_backup_allowed": false
+    },
+    "FileHandling.fileManager.CreateDirectory": {
+      "class": "FILE_TRANSFER",
+      "resource": "FILE_TRANSFER_SESSION",
+      "uhf_backup_allowed": false
+    },
+    "FileHandling.fileManager.FileSize": {
+      "class": "FILE_TRANSFER",
+      "resource": "FILE_TRANSFER_SESSION",
+      "uhf_backup_allowed": false
+    },
+    "FileHandling.fileManager.ListDirectory": {
+      "class": "FILE_TRANSFER",
+      "resource": "FILE_TRANSFER_SESSION",
+      "uhf_backup_allowed": false
+    },
+    "FileHandling.fileManager.MoveFile": {
+      "class": "FILE_TRANSFER",
+      "resource": "FILE_TRANSFER_SESSION",
+      "uhf_backup_allowed": false
+    },
+    "FileHandling.fileManager.RemoveDirectory": {
+      "class": "FILE_TRANSFER",
+      "resource": "FILE_TRANSFER_SESSION",
+      "uhf_backup_allowed": false
+    },
+    "FileHandling.fileManager.RemoveFile": {
+      "class": "FILE_TRANSFER",
+      "resource": "FILE_TRANSFER_SESSION",
+      "uhf_backup_allowed": false
+    },
+    "FileHandling.fileManager.ShellCommand": {
+      "class": "FILE_TRANSFER",
+      "resource": "FILE_TRANSFER_SESSION",
+      "uhf_backup_allowed": false
+    },
+    "FileHandling.prmDb.PRM_COMMIT_STAGED": {
+      "class": "CONFIG_UPDATE",
+      "resource": "CONFIG_STORE",
+      "uhf_backup_allowed": false
+    },
+    "FileHandling.prmDb.PRM_LOAD_FILE": {
+      "class": "CONFIG_UPDATE",
+      "resource": "CONFIG_STORE",
+      "uhf_backup_allowed": false
+    },
+    "FileHandling.prmDb.PRM_SAVE_FILE": {
+      "class": "CONFIG_UPDATE",
+      "resource": "CONFIG_STORE",
+      "uhf_backup_allowed": false
+    },
+    "OBCApp.adcsBridge.ADCS_CALIBRATE": {
+      "class": "ADCS_CONTROL",
+      "resource": "ADCS",
+      "uhf_backup_allowed": false
+    },
+    "OBCApp.adcsBridge.ADCS_GET_ATTITUDE": {
+      "class": "READ_STATUS",
+      "resource": "ADCS",
+      "uhf_backup_allowed": true
+    },
+    "OBCApp.adcsBridge.ADCS_SET_MODE": {
+      "class": "ADCS_CONTROL",
+      "resource": "ADCS",
+      "uhf_backup_allowed": false
+    },
+    "OBCApp.adcsBridge.ADCS_SET_TARGET": {
+      "class": "ADCS_CONTROL",
+      "resource": "ADCS",
+      "uhf_backup_allowed": false
+    },
+    "OBCApp.bootManager.BOOT_ACTIVATE_STAGED_IMAGE": {
+      "class": "CONFIG_UPDATE",
+      "resource": "BOOT",
+      "uhf_backup_allowed": false
+    },
+    "OBCApp.bootManager.BOOT_CONFIRM": {
+      "class": "CONFIG_UPDATE",
+      "resource": "BOOT",
+      "uhf_backup_allowed": false
+    },
+    "OBCApp.bootManager.BOOT_PREPARE_UPDATE": {
+      "class": "CONFIG_UPDATE",
+      "resource": "BOOT",
+      "uhf_backup_allowed": false
+    },
+    "OBCApp.bootManager.BOOT_ROLLBACK": {
+      "class": "CONFIG_UPDATE",
+      "resource": "BOOT",
+      "uhf_backup_allowed": false
+    },
+    "OBCApp.bootManager.BOOT_STATUS": {
+      "class": "READ_STATUS",
+      "resource": "BOOT",
+      "uhf_backup_allowed": true
+    },
+    "OBCApp.bootManager.GET_BOOT_COUNT": {
+      "class": "READ_STATUS",
+      "resource": "BOOT",
+      "uhf_backup_allowed": true
+    },
+    "OBCApp.bootManager.GET_RESET_CAUSE": {
+      "class": "READ_STATUS",
+      "resource": "BOOT",
+      "uhf_backup_allowed": true
+    },
+    "OBCApp.bootManager.BOOT_VERIFY_STAGED_IMAGE": {
+      "class": "CONFIG_UPDATE",
+      "resource": "BOOT",
+      "uhf_backup_allowed": false
+    },
+    "OBCApp.payloadOpsController.PAYLOAD_ABORT": {
+      "class": "PAYLOAD_CONTROL",
+      "resource": "PAYLOAD",
+      "uhf_backup_allowed": false
+    },
+    "OBCApp.payloadOpsController.PAYLOAD_GET_STATUS": {
+      "class": "READ_STATUS",
+      "resource": "PAYLOAD",
+      "uhf_backup_allowed": true
+    },
+    "OBCApp.payloadOpsController.PAYLOAD_GET_CAPABILITIES": {
+      "class": "READ_STATUS",
+      "resource": "PAYLOAD",
+      "uhf_backup_allowed": true
+    },
+    "OBCApp.payloadOpsController.PAYLOAD_GET_LAST_CAPTURE_METADATA": {
+      "class": "READ_STATUS",
+      "resource": "PAYLOAD",
+      "uhf_backup_allowed": true
+    },
+    "OBCApp.payloadOpsController.PAYLOAD_SENSOR_REG_READ": {
+      "class": "READ_STATUS",
+      "resource": "PAYLOAD",
+      "uhf_backup_allowed": true
+    },
+    "OBCApp.payloadOpsController.PAYLOAD_PREPARE": {
+      "class": "PAYLOAD_CONTROL",
+      "resource": "PAYLOAD",
+      "uhf_backup_allowed": false
+    },
+    "OBCApp.payloadOpsController.PAYLOAD_PREPARE_RAW_SENSOR": {
+      "class": "PAYLOAD_CONTROL",
+      "resource": "PAYLOAD",
+      "uhf_backup_allowed": false
+    },
+    "OBCApp.payloadOpsController.PAYLOAD_SET_AUTO_DEFAULTS": {
+      "class": "PAYLOAD_CONTROL",
+      "resource": "PAYLOAD",
+      "uhf_backup_allowed": false
+    },
+    "OBCApp.payloadOpsController.PAYLOAD_SET_DETERMINISTIC_DEFAULTS": {
+      "class": "PAYLOAD_CONTROL",
+      "resource": "PAYLOAD",
+      "uhf_backup_allowed": false
+    },
+    "OBCApp.payloadOpsController.PAYLOAD_SET_CAMERA_DEFAULTS": {
+      "class": "PAYLOAD_CONTROL",
+      "resource": "PAYLOAD",
+      "uhf_backup_allowed": false
+    },
+    "OBCApp.payloadOpsController.PAYLOAD_CAPTURE_AUTO": {
+      "class": "PAYLOAD_CONTROL",
+      "resource": "PAYLOAD",
+      "uhf_backup_allowed": false
+    },
+    "OBCApp.payloadOpsController.PAYLOAD_CAPTURE_DETERMINISTIC": {
+      "class": "PAYLOAD_CONTROL",
+      "resource": "PAYLOAD",
+      "uhf_backup_allowed": false
+    },
+    "OBCApp.payloadOpsController.PAYLOAD_SENSOR_REG_WRITE": {
+      "class": "PAYLOAD_CONTROL",
+      "resource": "PAYLOAD",
+      "uhf_backup_allowed": false
+    },
+    "OBCApp.payloadOpsController.PAYLOAD_CAPTURE_RAW": {
+      "class": "PAYLOAD_CONTROL",
+      "resource": "PAYLOAD",
+      "uhf_backup_allowed": false
+    },
+    "OBCApp.payloadOpsController.PAYLOAD_PUBLISH_CAPTURE": {
+      "class": "PAYLOAD_CONTROL",
+      "resource": "PAYLOAD",
+      "uhf_backup_allowed": false
+    },
+    "OBCApp.payloadOpsController.PAYLOAD_SHUTDOWN": {
+      "class": "PAYLOAD_CONTROL",
+      "resource": "PAYLOAD",
+      "uhf_backup_allowed": false
+    },
+    "OBCApp.commController.COMM_SET_ACTIVE": {
+      "class": "COMM_CONTROL",
+      "resource": "COMM_LINK",
+      "uhf_backup_allowed": false
+    },
+    "OBCApp.commController.COMM_START_PASS": {
+      "class": "COMM_CONTROL",
+      "resource": "COMM_LINK",
+      "uhf_backup_allowed": false
+    },
+    "OBCApp.commController.COMM_STOP_PASS": {
+      "class": "COMM_CONTROL",
+      "resource": "COMM_LINK",
+      "uhf_backup_allowed": false
+    },
+    "OBCApp.commController.COMM_GET_STATUS": {
+      "class": "READ_STATUS",
+      "resource": "COMM_LINK",
+      "uhf_backup_allowed": true
+    },
+    "OBCApp.cspBridge.CSP_INIT": {
+      "class": "CSP_TRAFFIC",
+      "resource": "CSP",
+      "uhf_backup_allowed": false
+    },
+    "OBCApp.cspBridge.CSP_PING": {
+      "class": "CSP_TRAFFIC",
+      "resource": "CSP",
+      "uhf_backup_allowed": false
+    },
+    "OBCApp.cspBridge.CSP_SEND_RAW": {
+      "class": "CSP_TRAFFIC",
+      "resource": "CSP",
+      "uhf_backup_allowed": false
+    },
+    "OBCApp.dpCatalog.BUILD_CATALOG": {
+      "class": "DATA_PRODUCT",
+      "resource": "DATA_PRODUCTS",
+      "uhf_backup_allowed": false
+    },
+    "OBCApp.dpCatalog.CLEAR_CATALOG": {
+      "class": "DATA_PRODUCT",
+      "resource": "DATA_PRODUCTS",
+      "uhf_backup_allowed": false
+    },
+    "OBCApp.dpCatalog.START_XMIT_CATALOG": {
+      "class": "DATA_PRODUCT",
+      "resource": "DATA_PRODUCTS",
+      "uhf_backup_allowed": false
+    },
+    "OBCApp.dpCatalog.STOP_XMIT_CATALOG": {
+      "class": "DATA_PRODUCT",
+      "resource": "DATA_PRODUCTS",
+      "uhf_backup_allowed": false
+    },
+    "OBCApp.dpManager.CLEAR_EVENT_THROTTLE": {
+      "class": "CONFIG_UPDATE",
+      "resource": "DATA_PRODUCTS",
+      "uhf_backup_allowed": false
+    },
+    "OBCApp.dpWriter.CLEAR_EVENT_THROTTLE": {
+      "class": "CONFIG_UPDATE",
+      "resource": "DATA_PRODUCTS",
+      "uhf_backup_allowed": false
+    },
+    "OBCApp.epsBridge.EPS_GET_STATUS": {
+      "class": "READ_STATUS",
+      "resource": "EPS",
+      "uhf_backup_allowed": true
+    },
+    "OBCApp.epsBridge.EPS_RESET": {
+      "class": "RESET",
+      "resource": "EPS",
+      "uhf_backup_allowed": false
+    },
+    "OBCApp.epsBridge.EPS_SET_HEATER": {
+      "class": "POWER_CONTROL",
+      "resource": "EPS",
+      "uhf_backup_allowed": false
+    },
+    "OBCApp.epsBridge.EPS_SET_PDU": {
+      "class": "POWER_CONTROL",
+      "resource": "EPS",
+      "uhf_backup_allowed": false
+    },
+    "OBCApp.gpsBridge.GPS_GET_STATE": {
+      "class": "READ_STATUS",
+      "resource": "GPS",
+      "uhf_backup_allowed": true
+    },
+    "OBCApp.gpsBridge.GPS_SET_SOURCE_MODE": {
+      "class": "CONFIG_UPDATE",
+      "resource": "GPS",
+      "uhf_backup_allowed": false
+    },
+    "OBCApp.hkTrendProductProducer.HK_TREND_FLUSH": {
+      "class": "DATA_PRODUCT",
+      "resource": "DATA_PRODUCTS",
+      "uhf_backup_allowed": false
+    },
+    "OBCApp.hkTrendProductProducer.HK_TREND_GET_STATUS": {
+      "class": "READ_STATUS",
+      "resource": "DATA_PRODUCTS",
+      "uhf_backup_allowed": true
+    },
+    "OBCApp.hkTrendProductProducer.HK_TREND_TARGET_FILE_BYTES_PRM_SAVE": {
+      "class": "CONFIG_UPDATE",
+      "resource": "DATA_PRODUCTS",
+      "uhf_backup_allowed": false
+    },
+    "OBCApp.hkTrendProductProducer.HK_TREND_TARGET_FILE_BYTES_PRM_SET": {
+      "class": "CONFIG_UPDATE",
+      "resource": "DATA_PRODUCTS",
+      "uhf_backup_allowed": false
+    },
+    "OBCApp.persistentFaultManager.GET_PERSISTENT_FAULT_HISTORY": {
+      "class": "READ_STATUS",
+      "resource": "HEALTH",
+      "uhf_backup_allowed": true
+    },
+    "OBCApp.recoveryExecutor.GET_RECOVERY_STATUS": {
+      "class": "READ_STATUS",
+      "resource": "HEALTH",
+      "uhf_backup_allowed": true
+    },
+    "OBCApp.watchdogSupervisor.GET_WATCHDOG_STATUS": {
+      "class": "READ_STATUS",
+      "resource": "HEALTH",
+      "uhf_backup_allowed": true
+    },
+    "OBCApp.watchdogSupervisor.HEALTH_ENABLE": {
+      "class": "CONFIG_UPDATE",
+      "resource": "HEALTH",
+      "uhf_backup_allowed": false
+    },
+    "OBCApp.watchdogSupervisor.HEALTH_SET_THRESHOLD": {
+      "class": "CONFIG_UPDATE",
+      "resource": "HEALTH",
+      "uhf_backup_allowed": false
+    },
+    "OBCApp.watchdogSupervisor.SET_WATCHDOG_CONFIG": {
+      "class": "CONFIG_UPDATE",
+      "resource": "HEALTH",
+      "uhf_backup_allowed": false
+    },
+    "OBCApp.watchdogSupervisor.SET_WATCHDOG_PROBE_SUPPRESSION": {
+      "class": "CONFIG_UPDATE",
+      "resource": "HEALTH",
+      "uhf_backup_allowed": false
+    },
+    "OBCApp.linuxWatchdogSink.GET_HW_WATCHDOG_STATUS": {
+      "class": "READ_STATUS",
+      "resource": "HEALTH",
+      "uhf_backup_allowed": true
+    },
+    "OBCApp.modeManager.MODE_GET": {
+      "class": "READ_STATUS",
+      "resource": "MODE_STATE",
+      "uhf_backup_allowed": true
+    },
+    "OBCApp.modeManager.MODE_SET": {
+      "class": "MODE_CHANGE",
+      "resource": "MODE_STATE",
+      "uhf_backup_allowed": false
+    },
+    "OBCApp.ttcPassManager.TTC_CLEAR_PASS_WINDOW": {
+      "class": "CONFIG_UPDATE",
+      "resource": "MODE_STATE",
+      "uhf_backup_allowed": false
+    },
+    "OBCApp.ttcPassManager.TTC_GET_STATUS": {
+      "class": "READ_STATUS",
+      "resource": "MODE_STATE",
+      "uhf_backup_allowed": true
+    },
+    "OBCApp.ttcPassManager.TTC_SET_PASS_WINDOW": {
+      "class": "CONFIG_UPDATE",
+      "resource": "MODE_STATE",
+      "uhf_backup_allowed": false
+    },
+    "OBCApp.ttcPassManager.TTC_SET_POLICY": {
+      "class": "CONFIG_UPDATE",
+      "resource": "MODE_STATE",
+      "uhf_backup_allowed": false
+    },
+    "OBCApp.radioController.RADIO_ENABLE": {
+      "class": "COMM_CONTROL",
+      "resource": "RADIO",
+      "uhf_backup_allowed": false
+    },
+    "OBCApp.radioController.RADIO_GET_STATUS": {
+      "class": "READ_STATUS",
+      "resource": "RADIO",
+      "uhf_backup_allowed": true
+    },
+    "OBCApp.radioController.RADIO_SET_FREQ": {
+      "class": "COMM_CONTROL",
+      "resource": "RADIO",
+      "uhf_backup_allowed": false
+    },
+    "OBCApp.radioController.RADIO_SET_POWER": {
+      "class": "COMM_CONTROL",
+      "resource": "RADIO",
+      "uhf_backup_allowed": false
+    },
+    "OBCApp.storageHealthBridge.STORAGE_GET_STATUS": {
+      "class": "READ_STATUS",
+      "resource": "STORAGE",
+      "uhf_backup_allowed": true
+    },
+    "OBCApp.cmdSeqA.CS_AUTO": {
+      "class": "FILE_TRANSFER",
+      "resource": "FILE_TRANSFER_SESSION",
+      "uhf_backup_allowed": false
+    },
+    "OBCApp.cmdSeqA.CS_CANCEL": {
+      "class": "FILE_TRANSFER",
+      "resource": "FILE_TRANSFER_SESSION",
+      "uhf_backup_allowed": false
+    },
+    "OBCApp.cmdSeqA.CS_JOIN_WAIT": {
+      "class": "FILE_TRANSFER",
+      "resource": "FILE_TRANSFER_SESSION",
+      "uhf_backup_allowed": false
+    },
+    "OBCApp.cmdSeqA.CS_MANUAL": {
+      "class": "FILE_TRANSFER",
+      "resource": "FILE_TRANSFER_SESSION",
+      "uhf_backup_allowed": false
+    },
+    "OBCApp.cmdSeqA.CS_RUN": {
+      "class": "FILE_TRANSFER",
+      "resource": "FILE_TRANSFER_SESSION",
+      "uhf_backup_allowed": false
+    },
+    "OBCApp.cmdSeqA.CS_START": {
+      "class": "FILE_TRANSFER",
+      "resource": "FILE_TRANSFER_SESSION",
+      "uhf_backup_allowed": false
+    },
+    "OBCApp.cmdSeqA.CS_STEP": {
+      "class": "FILE_TRANSFER",
+      "resource": "FILE_TRANSFER_SESSION",
+      "uhf_backup_allowed": false
+    },
+    "OBCApp.cmdSeqA.CS_VALIDATE": {
+      "class": "FILE_TRANSFER",
+      "resource": "FILE_TRANSFER_SESSION",
+      "uhf_backup_allowed": false
+    },
+    "OBCApp.cmdSeqB.CS_AUTO": {
+      "class": "FILE_TRANSFER",
+      "resource": "FILE_TRANSFER_SESSION",
+      "uhf_backup_allowed": false
+    },
+    "OBCApp.cmdSeqB.CS_CANCEL": {
+      "class": "FILE_TRANSFER",
+      "resource": "FILE_TRANSFER_SESSION",
+      "uhf_backup_allowed": false
+    },
+    "OBCApp.cmdSeqB.CS_JOIN_WAIT": {
+      "class": "FILE_TRANSFER",
+      "resource": "FILE_TRANSFER_SESSION",
+      "uhf_backup_allowed": false
+    },
+    "OBCApp.cmdSeqB.CS_MANUAL": {
+      "class": "FILE_TRANSFER",
+      "resource": "FILE_TRANSFER_SESSION",
+      "uhf_backup_allowed": false
+    },
+    "OBCApp.cmdSeqB.CS_RUN": {
+      "class": "FILE_TRANSFER",
+      "resource": "FILE_TRANSFER_SESSION",
+      "uhf_backup_allowed": false
+    },
+    "OBCApp.cmdSeqB.CS_START": {
+      "class": "FILE_TRANSFER",
+      "resource": "FILE_TRANSFER_SESSION",
+      "uhf_backup_allowed": false
+    },
+    "OBCApp.cmdSeqB.CS_STEP": {
+      "class": "FILE_TRANSFER",
+      "resource": "FILE_TRANSFER_SESSION",
+      "uhf_backup_allowed": false
+    },
+    "OBCApp.cmdSeqB.CS_VALIDATE": {
+      "class": "FILE_TRANSFER",
+      "resource": "FILE_TRANSFER_SESSION",
+      "uhf_backup_allowed": false
+    },
+    "OBCApp.seqDispatcher.LOG_STATUS": {
+      "class": "READ_STATUS",
+      "resource": "FILE_TRANSFER_SESSION",
+      "uhf_backup_allowed": true
+    },
+    "OBCApp.seqDispatcher.RUN": {
+      "class": "FILE_TRANSFER",
+      "resource": "FILE_TRANSFER_SESSION",
+      "uhf_backup_allowed": false
+    },
+    "OBCApp.sequenceAdmissionController.SEQ_CANCEL": {
+      "class": "FILE_TRANSFER",
+      "resource": "FILE_TRANSFER_SESSION",
+      "uhf_backup_allowed": true
+    },
+    "OBCApp.sequenceAdmissionController.SEQ_LOG_STATUS": {
+      "class": "READ_STATUS",
+      "resource": "FILE_TRANSFER_SESSION",
+      "uhf_backup_allowed": true
+    },
+    "OBCApp.sequenceAdmissionController.SEQ_PREPARE_MANUAL": {
+      "class": "FILE_TRANSFER",
+      "resource": "FILE_TRANSFER_SESSION",
+      "uhf_backup_allowed": true
+    },
+    "OBCApp.sequenceAdmissionController.SEQ_RUN": {
+      "class": "FILE_TRANSFER",
+      "resource": "FILE_TRANSFER_SESSION",
+      "uhf_backup_allowed": true
+    },
+    "OBCApp.sequenceAdmissionController.SEQ_START": {
+      "class": "FILE_TRANSFER",
+      "resource": "FILE_TRANSFER_SESSION",
+      "uhf_backup_allowed": true
+    },
+    "OBCApp.sequenceAdmissionController.SEQ_STEP": {
+      "class": "FILE_TRANSFER",
+      "resource": "FILE_TRANSFER_SESSION",
+      "uhf_backup_allowed": true
+    },
+    "OBCApp.sequenceAdmissionController.SEQ_VALIDATE": {
+      "class": "FILE_TRANSFER",
+      "resource": "FILE_TRANSFER_SESSION",
+      "uhf_backup_allowed": true
+    },
+    "OBCApp.systemResources.ENABLE": {
+      "class": "CONFIG_UPDATE",
+      "resource": "HEALTH",
+      "uhf_backup_allowed": false
+    }
+  },
+  "schema": "command-authority-policy-v1"
+}

@@ -1,0 +1,2841 @@
+{
+  "initialBaselineQueue": [
+    "bootstrap-fprime-platform",
+    "core-system-contracts-v1",
+    "eps-subsystem-v1",
+    "adcs-subsystem-v1",
+    "comm-subsystem-v1",
+    "boot-update-v1",
+    "verification-ci-v1",
+    "deployment-runtime-v1",
+    "gds-ground-integration-v1"
+  ],
+  "currentCapabilities": [
+    "architecture-review",
+    "adcs-subsystem",
+    "boot-update",
+    "codex-skills",
+    "comm-subsystem",
+    "core-system-contracts",
+    "csp-runtime-owner",
+    "delivery-workflow",
+    "documentation-governance",
+    "eps-subsystem",
+    "ground-ttc-gateway",
+    "gps-subsystem",
+    "hk-data-products",
+    "housekeeping-archive",
+    "interface-contract-index",
+    "live-beacon-broadcast",
+    "mission-console",
+    "mission-autonomy",
+    "onboard-data-products-and-live-beacon",
+    "payload-data-products",
+    "payload-operations",
+    "planning-docs",
+    "platform-baseline",
+    "persistent-fault-ring",
+    "project-reporting",
+    "public-release-profile",
+    "resource-storage",
+    "scenario-driven-validation",
+    "storage-health",
+    "target-beacon-sidecar-baseline",
+    "target-comm-node56-migration",
+    "verification-evidence",
+    "verification-path-registry",
+    "mission-console-observability-bootstrap",
+    "route1-sequence-verification"
+  ],
+  "entries": [
+    {
+      "archivedChange": "2026-03-20-formalize-obc-baseline",
+      "classification": "bootstrap-governance",
+      "origin": "bootstrap",
+      "capabilities": [
+        "platform-baseline",
+        "core-system-contracts",
+        "resource-storage",
+        "eps-subsystem",
+        "adcs-subsystem",
+        "comm-subsystem",
+        "boot-update",
+        "verification-evidence",
+        "delivery-workflow"
+      ],
+      "evidencePaths": [],
+      "exception": "Bootstrap governance slice that formalized the first main-spec baseline and archive layout instead of proving a runtime path."
+    },
+    {
+      "archivedChange": "2026-03-20-bootstrap-fprime-platform",
+      "classification": "initial-baseline-queue",
+      "origin": "initial-baseline-queue",
+      "capabilities": [
+        "platform-baseline",
+        "resource-storage",
+        "verification-evidence"
+      ],
+      "evidencePaths": [
+        "evidence/records/bootstrap-fprime-platform/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-03-20-core-system-contracts-v1",
+      "classification": "initial-baseline-queue",
+      "origin": "initial-baseline-queue",
+      "capabilities": [
+        "core-system-contracts"
+      ],
+      "evidencePaths": [
+        "evidence/records/core-system-contracts-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-03-20-eps-subsystem-v1",
+      "classification": "initial-baseline-queue",
+      "origin": "initial-baseline-queue",
+      "capabilities": [
+        "eps-subsystem",
+        "verification-evidence"
+      ],
+      "evidencePaths": [
+        "evidence/records/eps-subsystem-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-03-20-adcs-subsystem-v1",
+      "classification": "initial-baseline-queue",
+      "origin": "initial-baseline-queue",
+      "capabilities": [
+        "adcs-subsystem",
+        "verification-evidence"
+      ],
+      "evidencePaths": [
+        "evidence/records/adcs-subsystem-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-03-20-comm-subsystem-v1",
+      "classification": "initial-baseline-queue",
+      "origin": "initial-baseline-queue",
+      "capabilities": [
+        "comm-subsystem",
+        "verification-evidence"
+      ],
+      "evidencePaths": [
+        "evidence/records/comm-subsystem-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-03-20-boot-update-v1",
+      "classification": "initial-baseline-queue",
+      "origin": "initial-baseline-queue",
+      "capabilities": [
+        "boot-update",
+        "resource-storage",
+        "verification-evidence"
+      ],
+      "evidencePaths": [
+        "evidence/records/boot-update-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-03-20-verification-ci-v1",
+      "classification": "initial-baseline-queue",
+      "origin": "initial-baseline-queue",
+      "capabilities": [
+        "verification-evidence",
+        "delivery-workflow"
+      ],
+      "evidencePaths": [
+        "evidence/records/verification-ci-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-03-20-deployment-runtime-v1",
+      "classification": "initial-baseline-queue",
+      "origin": "initial-baseline-queue",
+      "capabilities": [
+        "platform-baseline",
+        "verification-evidence"
+      ],
+      "evidencePaths": [
+        "evidence/records/deployment-runtime-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-03-20-gds-ground-integration-v1",
+      "classification": "initial-baseline-queue",
+      "origin": "initial-baseline-queue",
+      "capabilities": [
+        "comm-subsystem",
+        "verification-evidence"
+      ],
+      "evidencePaths": [
+        "evidence/records/gds-ground-integration-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-05-20-payload-ops-contract-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "core-system-contracts",
+        "payload-operations",
+        "platform-baseline",
+        "resource-storage",
+        "verification-evidence"
+      ],
+      "evidencePaths": [
+        "evidence/records/payload-ops-contract-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-05-21-payload-capture-modes-v2",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "payload-operations",
+        "resource-storage",
+        "verification-evidence"
+      ],
+      "evidencePaths": [
+        "evidence/records/payload-capture-modes-v2/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-05-21-payload-sensor-register-controls-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "core-system-contracts",
+        "payload-operations",
+        "verification-evidence"
+      ],
+      "evidencePaths": [
+        "evidence/records/payload-sensor-register-controls-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-05-21-payload-virtual-csp-node-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "core-system-contracts",
+        "platform-baseline",
+        "verification-evidence"
+      ],
+      "evidencePaths": [
+        "evidence/records/payload-virtual-csp-node-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-05-21-payload-target-backend-hardening-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "payload-operations",
+        "platform-baseline",
+        "verification-evidence"
+      ],
+      "evidencePaths": [
+        "evidence/records/payload-target-backend-hardening-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-03-29-rpi-target-integration-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "platform-baseline",
+        "comm-subsystem",
+        "verification-evidence"
+      ],
+      "evidencePaths": [
+        "evidence/records/rpi-target-integration-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-03-29-target-version-metadata-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "platform-baseline",
+        "verification-evidence"
+      ],
+      "evidencePaths": [
+        "evidence/records/target-version-metadata-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-03-29-rpi-packaging-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "platform-baseline",
+        "resource-storage",
+        "boot-update",
+        "verification-evidence"
+      ],
+      "evidencePaths": [
+        "evidence/records/rpi-packaging-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-03-29-boot-metadata-clean-write-fix",
+      "classification": "follow-up-fix",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "boot-update",
+        "resource-storage",
+        "verification-evidence"
+      ],
+      "evidencePaths": [
+        "evidence/records/boot-update-v1/README.md",
+        "evidence/records/target-version-metadata-v1/README.md"
+      ],
+      "exception": "Small follow-up fix that reused the governed boot/update and metadata validation paths rather than creating a new standalone evidence directory."
+    },
+    {
+      "archivedChange": "2026-03-30-rpi-autostart-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "platform-baseline",
+        "boot-update",
+        "verification-evidence"
+      ],
+      "evidencePaths": [
+        "evidence/records/rpi-autostart-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-03-31-uart-hw-integration-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "comm-subsystem",
+        "verification-evidence"
+      ],
+      "evidencePaths": [
+        "evidence/records/uart-hw-integration-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-03-31-radio-protocol-adapter-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "comm-subsystem",
+        "verification-evidence"
+      ],
+      "evidencePaths": [
+        "evidence/records/radio-protocol-adapter-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-03-31-endurosat-transparent-uart-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "comm-subsystem",
+        "verification-evidence"
+      ],
+      "evidencePaths": [
+        "evidence/records/endurosat-transparent-uart-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-03-31-transparent-link-framing-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "comm-subsystem",
+        "verification-evidence"
+      ],
+      "evidencePaths": [
+        "evidence/records/transparent-link-framing-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-04-01-transparent-link-robustness-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "comm-subsystem",
+        "verification-evidence"
+      ],
+      "evidencePaths": [
+        "evidence/records/transparent-link-robustness-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-04-03-delivery-completion-gates-v1",
+      "classification": "governance-maintenance",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "delivery-workflow"
+      ],
+      "evidencePaths": [],
+      "exception": "Governance-only workflow hardening slice whose review surface is the archived change and the updated formal delivery documents rather than a feature-level test-record directory."
+    },
+    {
+      "archivedChange": "2026-04-03-verification-path-guardrails-v1",
+      "classification": "governance-maintenance",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "delivery-workflow",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [],
+      "exception": "Governance and documentation guardrail slice that codified path-selection rules and debugging lessons without adding a dedicated feature-evidence directory."
+    },
+    {
+      "archivedChange": "2026-04-03-scenario-driven-sim-architecture-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "scenario-driven-validation",
+        "eps-subsystem",
+        "adcs-subsystem",
+        "verification-evidence"
+      ],
+      "evidencePaths": [
+        "evidence/records/scenario-driven-sim-architecture-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-04-03-low-battery-autonomy-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "mission-autonomy",
+        "scenario-driven-validation",
+        "verification-evidence"
+      ],
+      "evidencePaths": [
+        "evidence/records/low-battery-autonomy-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-04-03-deploy-detumbling-autonomy-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "mission-autonomy",
+        "scenario-driven-validation",
+        "verification-evidence"
+      ],
+      "evidencePaths": [
+        "evidence/records/deploy-detumbling-autonomy-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-04-04-housekeeping-archive-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "housekeeping-archive",
+        "resource-storage",
+        "verification-evidence"
+      ],
+      "evidencePaths": [
+        "evidence/records/housekeeping-archive-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-04-06-gps-subsystem-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "gps-subsystem",
+        "housekeeping-archive",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/gps-subsystem-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-04-06-storage-health-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "storage-health",
+        "resource-storage",
+        "housekeeping-archive",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/storage-health-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-04-06-copilot-followup-fixes-v1",
+      "classification": "follow-up-fix",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "gps-subsystem",
+        "storage-health",
+        "housekeeping-archive",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/copilot-followup-fixes-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-04-06-codex-skills-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "codex-skills",
+        "delivery-workflow"
+      ],
+      "evidencePaths": [
+        "evidence/records/codex-skills-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-04-08-classic-component-ut-skill-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "codex-skills"
+      ],
+      "evidencePaths": [
+        "evidence/records/classic-component-ut-skill-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-04-09-internal-csp-foundation-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "platform-baseline",
+        "core-system-contracts",
+        "verification-evidence"
+      ],
+      "evidencePaths": [
+        "evidence/records/internal-csp-foundation-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-04-10-eps-csp-vertical-slice-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "eps-subsystem",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/eps-csp-vertical-slice-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-04-10-adcs-csp-vertical-slice-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "adcs-subsystem",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/adcs-csp-vertical-slice-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-04-10-legacy-zmq-retirement-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "platform-baseline",
+        "eps-subsystem",
+        "adcs-subsystem",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/legacy-zmq-retirement-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-04-08-maintenance-baseline-reconciliation-v1",
+      "classification": "governance-maintenance",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "delivery-workflow",
+        "resource-storage"
+      ],
+      "evidencePaths": [
+        "evidence/records/maintenance-baseline-reconciliation-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-04-08-agent-onboarding-governance-v1",
+      "classification": "governance-maintenance",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "delivery-workflow"
+      ],
+      "evidencePaths": [
+        "evidence/records/agent-onboarding-governance-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-04-08-verification-matrix-v1",
+      "classification": "governance-maintenance",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "verification-evidence"
+      ],
+      "evidencePaths": [
+        "evidence/records/verification-matrix-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-04-08-ut-backfill-v1",
+      "classification": "governance-maintenance",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "verification-evidence"
+      ],
+      "evidencePaths": [
+        "evidence/records/ut-backfill-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-04-08-component-test-governance-v1",
+      "classification": "governance-maintenance",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "delivery-workflow",
+        "verification-evidence"
+      ],
+      "evidencePaths": [
+        "evidence/records/component-test-governance-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-04-08-component-ut-backfill-v1",
+      "classification": "governance-maintenance",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "verification-evidence",
+        "gps-subsystem",
+        "storage-health",
+        "housekeeping-archive"
+      ],
+      "evidencePaths": [
+        "evidence/records/component-ut-backfill-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-04-08-verification-matrix-repair-v1",
+      "classification": "governance-maintenance",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "verification-evidence"
+      ],
+      "evidencePaths": [
+        "evidence/records/verification-matrix-repair-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-04-08-project-reporting-pack-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "project-reporting",
+        "verification-evidence"
+      ],
+      "evidencePaths": [
+        "evidence/records/project-reporting-pack-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-04-23-current-baseline-assessment-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "architecture-review"
+      ],
+      "evidencePaths": [
+        "evidence/records/current-baseline-assessment-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-04-10-libcsp-base-mainline-release-v1",
+      "classification": "release-readiness",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "platform-baseline",
+        "verification-evidence"
+      ],
+      "evidencePaths": [
+        "evidence/records/libcsp-base-mainline-release-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-04-10-rpi-csp-comm-baseline-validation-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "platform-baseline",
+        "comm-subsystem",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/rpi-csp-comm-baseline-validation-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-04-10-serial-resource-allocation-governance-v1",
+      "classification": "governance-maintenance",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "comm-subsystem",
+        "gps-subsystem",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/serial-resource-allocation-governance-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-04-11-csp-link-backend-abstraction-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "platform-baseline",
+        "core-system-contracts",
+        "verification-evidence"
+      ],
+      "evidencePaths": [
+        "evidence/records/csp-link-backend-abstraction-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-04-11-rpi-remote-grounded-csp-validation-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "platform-baseline",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/rpi-remote-grounded-csp-validation-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-04-23-dual-pi-hostname-and-target-role-alignment-v1",
+      "classification": "governance-maintenance",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "platform-baseline"
+      ],
+      "evidencePaths": [
+        "evidence/records/dual-pi-hostname-and-target-role-alignment-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-04-23-dual-pi-subsystem-sim-host-validation-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "platform-baseline",
+        "comm-subsystem",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/dual-pi-subsystem-sim-host-validation-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-04-27-gps-live-uart-source-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "gps-subsystem",
+        "comm-subsystem",
+        "platform-baseline",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/gps-live-uart-source-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-04-28-shared-canfd-csp-bus-foundation-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "platform-baseline",
+        "core-system-contracts",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/shared-canfd-csp-bus-foundation-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-04-29-comm-csp-node-and-ground-gateway-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "comm-subsystem",
+        "core-system-contracts",
+        "ground-ttc-gateway",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/comm-csp-node-and-ground-gateway-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-04-29-comm-simulator-foundation-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "comm-subsystem",
+        "verification-evidence"
+      ],
+      "evidencePaths": [
+        "evidence/records/comm-simulator-foundation-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-04-29-subsystem-comm-uart-link-preflight-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "comm-subsystem",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/subsystem-comm-uart-link-preflight-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-04-29-comm-lab-serial-acquisition-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "comm-subsystem",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/comm-lab-serial-acquisition-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-04-30-ttc-over-comm-lab-serial-ingress-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "comm-subsystem",
+        "ground-ttc-gateway",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/ttc-over-comm-lab-serial-ingress-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-05-01-ttc-over-comm-lab-serial-downlink-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "comm-subsystem",
+        "ground-ttc-gateway",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/ttc-over-comm-lab-serial-downlink-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-04-27-gps-live-uart-hardening-v1",
+      "classification": "follow-up-fix",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "gps-subsystem"
+      ],
+      "evidencePaths": [
+        "evidence/records/gps-live-uart-hardening-v1/README.md"
+      ],
+      "exception": "Post-merge hardening slice for the governed live UART GPS path. It tightened blank-line handling, baudrate fallback, and probe hygiene without adding a new runtime path."
+    },
+    {
+      "archivedChange": "2026-04-27-system-communication-architecture-realignment-v1",
+      "classification": "governance-maintenance",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "ground-ttc-gateway",
+        "platform-baseline",
+        "comm-subsystem",
+        "core-system-contracts",
+        "gps-subsystem",
+        "verification-evidence",
+        "verification-path-registry",
+        "architecture-review"
+      ],
+      "evidencePaths": [],
+      "exception": "Architecture governance slice that formalized communication domains, host and bus allocation, and follow-on sequencing through updated main specs and architecture-review docs instead of a dedicated runtime evidence directory."
+    },
+    {
+      "archivedChange": "2026-04-28-delivery-workflow-commit-guidance-followup-v1",
+      "classification": "governance-maintenance",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "delivery-workflow"
+      ],
+      "evidencePaths": [],
+      "exception": "Workflow governance follow-up retained for audit history only. Its proposed rollback-commit wording was later superseded and reverted before acceptance, so it does not represent the accepted final delivery-workflow rule."
+    },
+    {
+      "archivedChange": "2026-04-28-delivery-workflow-commit-guidance-v2",
+      "classification": "governance-maintenance",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "delivery-workflow"
+      ],
+      "evidencePaths": [],
+      "exception": "Clean post-revert workflow-governance repair that reintroduced the accepted rollback-commit rule across the formal spec, narrative workflow guide, AGENTS entrypoint, and closeout skill instead of a dedicated feature evidence directory."
+    },
+    {
+      "archivedChange": "2026-04-28-governance-reset-v1",
+      "classification": "governance-maintenance",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "delivery-workflow",
+        "verification-evidence",
+        "codex-skills"
+      ],
+      "evidencePaths": [],
+      "exception": "Governance reset slice that narrowed the formal workflow contract, simplified the required CI gate, converted the reconciliation Markdown into a generated review surface, and removed generic OpenSpec wrapper skills without introducing a new runtime evidence directory."
+    },
+    {
+      "archivedChange": "2026-04-29-runtime-unrestricted-execution-governance-v1",
+      "classification": "governance-maintenance",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "delivery-workflow"
+      ],
+      "evidencePaths": [],
+      "exception": "Workflow-governance follow-up that formalized when agent-driven repository commands should default to unrestricted execution, then mirrored the same rule in the narrative delivery guide and AGENTS entrypoint instead of introducing a dedicated runtime evidence directory."
+    },
+    {
+      "archivedChange": "2026-05-01-planning-roadmap-and-snapshot-docs-v1",
+      "classification": "governance-maintenance",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "planning-docs",
+        "architecture-review",
+        "project-reporting",
+        "verification-evidence"
+      ],
+      "evidencePaths": [
+        "evidence/records/planning-roadmap-and-snapshot-docs-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-05-01-comm-doc-reconciliation-and-ci-wait-governance-v1",
+      "classification": "governance-maintenance",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "delivery-workflow",
+        "comm-subsystem",
+        "ground-ttc-gateway",
+        "planning-docs",
+        "architecture-review",
+        "project-reporting",
+        "verification-evidence"
+      ],
+      "evidencePaths": [
+        "evidence/records/comm-doc-reconciliation-and-ci-wait-governance-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-05-01-ci-docs-governance-fast-path-v1",
+      "classification": "governance-maintenance",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "delivery-workflow",
+        "verification-evidence"
+      ],
+      "evidencePaths": [
+        "evidence/records/ci-docs-governance-fast-path-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-05-01-comm-ttc-file-downlink-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "comm-subsystem",
+        "ground-ttc-gateway",
+        "housekeeping-archive",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/comm-ttc-file-downlink-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-05-01-comm-csp-socketcan-participation-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "comm-subsystem",
+        "ground-ttc-gateway",
+        "platform-baseline",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/comm-csp-socketcan-participation-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-05-02-comm-csp-socketcan-file-downlink-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "comm-subsystem",
+        "ground-ttc-gateway",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/comm-csp-socketcan-file-downlink-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-05-02-target-obc-comm-csp-lab-operational-baseline-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "platform-baseline",
+        "comm-subsystem",
+        "ground-ttc-gateway",
+        "gps-subsystem",
+        "housekeeping-archive",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/target-obc-comm-csp-lab-operational-baseline-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-05-05-onboard-data-products-and-live-beacon-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "onboard-data-products-and-live-beacon",
+        "live-beacon-broadcast",
+        "hk-data-products",
+        "comm-subsystem",
+        "resource-storage",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/onboard-data-products-and-live-beacon-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-05-06-onboard-state-data-fdp-parity-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "onboard-data-products-and-live-beacon",
+        "hk-data-products",
+        "housekeeping-archive",
+        "resource-storage",
+        "storage-health",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/onboard-state-data-fdp-parity-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-05-06-mode-model-v2",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "core-system-contracts",
+        "mission-autonomy",
+        "scenario-driven-validation",
+        "onboard-data-products-and-live-beacon",
+        "hk-data-products",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/mode-model-v2-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-05-06-mode-safety-policy-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "mission-autonomy",
+        "eps-subsystem",
+        "scenario-driven-validation",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/mode-safety-policy-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-05-07-comm-dual-link-sim-foundation",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "comm-subsystem",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/comm-dual-link-sim-foundation-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-05-07-sband-tcp-ground-link-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "comm-subsystem",
+        "ground-ttc-gateway",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/sband-tcp-ground-link-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-05-07-uhf-uart-backup-link-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "comm-subsystem",
+        "ground-ttc-gateway",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/uhf-uart-backup-link-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-05-07-ccsds-ground-link-spike",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "comm-subsystem",
+        "ground-ttc-gateway",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/ccsds-ground-link-spike-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-05-07-hosted-obc-runtime-maintainability-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "platform-baseline",
+        "verification-evidence"
+      ],
+      "evidencePaths": [
+        "evidence/records/hosted-obc-runtime-maintainability-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-05-07-ccsds-sband-hosted-adoption-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "comm-subsystem",
+        "ground-ttc-gateway",
+        "platform-baseline",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/ccsds-sband-hosted-adoption-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-05-08-hk-data-product-alignment-v2",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "hk-data-products",
+        "onboard-data-products-and-live-beacon",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/hk-data-product-alignment-v2/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-05-08-hosted-probe-startup-order",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "codex-skills"
+      ],
+      "evidencePaths": [],
+      "exception": "Governance-only skill update validated by OpenSpec and a local skill-startup-order text check; it does not add a runtime validation path or standalone test record."
+    },
+    {
+      "archivedChange": "2026-05-08-payload-ttc-mode-entry-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "core-system-contracts",
+        "mission-autonomy",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/payload-ttc-mode-entry-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-05-09-mode-soc-admission-and-exit-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "core-system-contracts",
+        "mission-autonomy",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/mode-soc-admission-and-exit-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-05-09-link-authority-vocabulary-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "core-system-contracts",
+        "verification-evidence"
+      ],
+      "evidencePaths": [
+        "evidence/records/command-ingress-authority-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-05-09-command-ingress-authority-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "core-system-contracts",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/command-ingress-authority-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-05-09-command-ingress-source-index-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "core-system-contracts",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/command-ingress-source-index-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-05-09-command-session-sequence-foundation-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "core-system-contracts",
+        "verification-evidence"
+      ],
+      "evidencePaths": [
+        "evidence/records/command-ingress-source-index-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-05-09-command-envelope-metadata-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "core-system-contracts",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/command-envelope-metadata-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-05-09-command-session-sequence-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "core-system-contracts",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/command-session-sequence-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-05-11-fdir-subsystem-timeout-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "eps-subsystem",
+        "mission-autonomy",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/fdir-subsystem-timeout-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-05-11-command-session-lifecycle-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "core-system-contracts",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/command-session-lifecycle-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-05-11-command-auth-envelope-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "core-system-contracts",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/command-auth-envelope-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-05-11-boot-trust-chain-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "boot-update",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/boot-trust-chain-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-05-11-post-merge-roadmap-sync-policy",
+      "classification": "governance-maintenance",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "delivery-workflow"
+      ],
+      "evidencePaths": [],
+      "exception": "Workflow-governance clarification that distinguished branch-verifiable documentation from the narrow post-merge `docs/roadmap/*` reconciliation path across the formal spec, onboarding entrypoint, current architecture guide, and roadmap README instead of introducing a dedicated feature-evidence directory."
+    },
+    {
+      "archivedChange": "2026-05-12-comm-session-and-downlink-qos-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "comm-subsystem",
+        "ground-ttc-gateway",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/comm-session-and-downlink-qos-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-05-12-watchdog-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "core-system-contracts",
+        "mission-autonomy",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/watchdog-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-05-12-recovery-executors-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "boot-update",
+        "core-system-contracts",
+        "mission-autonomy",
+        "resource-storage",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/recovery-executors-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-05-13-multi-subsystem-fdir-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "adcs-subsystem",
+        "boot-update",
+        "comm-subsystem",
+        "core-system-contracts",
+        "eps-subsystem",
+        "mission-autonomy",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/multi-subsystem-fdir-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-05-13-ttc-pass-window-mode-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "core-system-contracts",
+        "mission-autonomy",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/ttc-pass-window-mode-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-05-14-official-sequencing-system-resources-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "comm-subsystem",
+        "core-system-contracts",
+        "platform-baseline",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/official-sequencing-system-resources-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-05-14-ground-link-boundary-split-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "comm-subsystem",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/ground-link-boundary-split-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-05-15-canonical-state-hk-fallback-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "comm-subsystem",
+        "ground-ttc-gateway",
+        "hk-data-products",
+        "housekeeping-archive",
+        "onboard-data-products-and-live-beacon",
+        "storage-health",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/comm-session-and-downlink-qos-v1/README.md",
+        "evidence/records/hk-data-product-alignment-v2/README.md",
+        "evidence/records/onboard-state-data-fdp-parity-v1/README.md",
+        "evidence/records/storage-health-v1/README.md"
+      ],
+      "exception": "Repair-style post-merge archive closeout for a change whose product/spec/evidence updates had already landed on main before OpenSpec archive was executed; the archive reuses the governed hosted COMM, official .fdp parity, HK data-product alignment, and storage-health evidence surfaces instead of introducing a new standalone test-record directory."
+    },
+    {
+      "archivedChange": "2026-05-15-persistent-fault-ring-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "boot-update",
+        "mission-autonomy",
+        "persistent-fault-ring",
+        "resource-storage",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/persistent-fault-ring-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-05-15-interfaces-contract-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "interface-contract-index"
+      ],
+      "evidencePaths": [],
+      "exception": "Documentation/governance closeout that formalized the checked-in current interface index and companion stale-doc cleanup without introducing a new runtime verification path."
+    },
+    {
+      "archivedChange": "2026-05-15-architecture-review-doc-sync-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "comm-subsystem",
+        "core-system-contracts",
+        "platform-baseline",
+        "resource-storage",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [],
+      "exception": "Documentation/spec reconciliation only: synchronized active docs and formal specs after architecture-review follow-ups, marked HK fallback file/downlink as historical, and deferred RSSI/SNR link-health metrics to future radio-metrics work without introducing a new runtime verification path."
+    },
+    {
+      "archivedChange": "2026-05-15-active-topccsds-target-alignment-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "platform-baseline",
+        "verification-evidence"
+      ],
+      "evidencePaths": [
+        "evidence/records/active-topccsds-target-alignment-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-05-15-persistent-command-freshness-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "core-system-contracts",
+        "interface-contract-index",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/persistent-command-freshness-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-05-15-active-probe-cleanup-hardening-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "verification-evidence"
+      ],
+      "evidencePaths": [
+        "evidence/records/active-probe-cleanup-hardening-v1/README.md"
+      ],
+      "exception": "Verification-path hardening only: improved bounded rerun safety and owned-helper cleanup for the active hosted, shell-launcher, and Raspberry Pi probe paths without introducing any flight-runtime behavior change or claiming closure of unrelated CCSDS functional probe instability."
+    },
+    {
+      "archivedChange": "2026-05-16-uhf-ccsds-adoption-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "comm-subsystem",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/uhf-ccsds-hosted-adoption-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-05-16-probe-cleanup-touch-on-use-policy",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "delivery-workflow"
+      ],
+      "evidencePaths": [],
+      "exception": "Governance-only workflow update: formalized touch-on-use migration and bounded blocker handling for repository-owned hosted probe cleanup reuse without adding a new runtime verification path."
+    },
+    {
+      "archivedChange": "2026-05-16-ground-link-observation-ownership-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "comm-subsystem"
+      ],
+      "evidencePaths": [
+        "evidence/records/ground-link-observation-ownership-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-05-16-target-recovery-closure-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "boot-update",
+        "mission-autonomy",
+        "platform-baseline",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/target-recovery-closure-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-05-16-legacy-top-retirement-docs-reorg-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "comm-subsystem",
+        "core-system-contracts",
+        "planning-docs",
+        "platform-baseline",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/legacy-top-retirement-docs-reorg-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-05-18-target-hardware-watchdog-reset-proof-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "mission-autonomy",
+        "platform-baseline",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/target-hardware-watchdog-reset-proof-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-05-19-document-realignment-governance-v1",
+      "classification": "governance-maintenance",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "delivery-workflow",
+        "documentation-governance",
+        "planning-docs",
+        "architecture-review",
+        "project-reporting",
+        "interface-contract-index",
+        "verification-evidence"
+      ],
+      "evidencePaths": [
+        "evidence/records/document-realignment-governance-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-05-19-target-comm-node56-migration-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "comm-subsystem",
+        "target-comm-node56-migration",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/target-comm-node56-migration-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-05-23-comm-verification-matrix-foundation-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "verification-evidence"
+      ],
+      "evidencePaths": [
+        "evidence/records/comm-link-revalidation-v1/README.md"
+      ],
+      "exception": "Matrix-runner and cleanup hardening slice: stabilized case metadata, rerun-safety reporting, and cleanup-smoke reviewability for the formal communication verification suite without claiming a new flight-runtime capability on its own."
+    },
+    {
+      "archivedChange": "2026-05-23-comm-verification-sequence-subsystem-harness-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/comm-verification-sequence-subsystem-harness-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-05-23-target-can-node6-matrix-closure-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "comm-subsystem",
+        "target-comm-node56-migration",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/target-can-node6-matrix-closure-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-05-23-target-tcp-southbound-parity-foundation-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "comm-subsystem",
+        "target-comm-node56-migration",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/target-tcp-southbound-parity-foundation-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-05-23-target-tcp-matrix-closure-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "comm-subsystem",
+        "target-comm-node56-migration",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/target-tcp-matrix-closure-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-05-23-target-direct-control-matrix-cases-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "comm-subsystem",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/target-direct-control-matrix-cases-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-05-23-formal-comm-verification-matrix-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "comm-subsystem",
+        "target-comm-node56-migration",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/comm-link-revalidation-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-05-24-target-timing-wcet-profile-proof-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "interface-contract-index",
+        "platform-baseline",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/target-timing-wcet-profile-proof-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-05-25-target-node5-telemetry-backpressure-and-restart-stability-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "comm-subsystem",
+        "platform-baseline",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/target-node5-telemetry-backpressure-and-restart-stability-v1/README.md"
+      ],
+      "exception": "Bounded prerequisite blocker-closure slice: revalidated node-5 telemetry-backpressure and restart-stability symptoms on a fresh rebuilt/install baseline, tightened primary-band availability probing, and kept product-blocker evidence separate from the final timing-ceiling claim."
+    },
+    {
+      "archivedChange": "2026-05-25-target-timing-empirical-ceiling-freeze-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "interface-contract-index",
+        "platform-baseline",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/target-timing-empirical-ceiling-freeze-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-05-25-radio-metrics-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "comm-subsystem",
+        "interface-contract-index",
+        "verification-evidence"
+      ],
+      "evidencePaths": [
+        "evidence/records/radio-metrics-v1/README.md"
+      ],
+      "exception": "Bounded observability freeze slice: established the current raw-versus-derived COMM metrics contract, refreshed hosted per-band status proof, and kept the service-managed target node-5 evidence explicitly limited to bounded command/readback and service-journal support rather than a hosted-style target status dump."
+    },
+    {
+      "archivedChange": "2026-05-25-comm-operational-policy-clarification-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "comm-subsystem",
+        "ground-ttc-gateway",
+        "interface-contract-index",
+        "live-beacon-broadcast",
+        "onboard-data-products-and-live-beacon",
+        "target-comm-node56-migration",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/command-session-lifecycle-v1/README.md",
+        "evidence/records/comm-link-revalidation-v1/README.md",
+        "evidence/records/comm-session-and-downlink-qos-v1/README.md",
+        "evidence/records/onboard-data-products-and-live-beacon-v1/README.md",
+        "evidence/records/radio-metrics-v1/README.md",
+        "evidence/records/target-comm-node56-migration-v1/README.md"
+      ],
+      "exception": "Spec/design clarification slice only: froze the current COMM operational-policy boundaries, current non-claims, and current-doc/spec wording around session entry, beacon ownership, relay/gateway limits, retry ownership, and observability roles by reusing existing governed evidence rather than introducing a new runtime verification path."
+    },
+    {
+      "archivedChange": "2026-05-26-reliable-transfer-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "comm-subsystem",
+        "hk-data-products",
+        "interface-contract-index",
+        "verification-evidence"
+      ],
+      "evidencePaths": [
+        "evidence/records/reliable-transfer-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-05-26-uhf-beacon-suppression-runtime-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "comm-subsystem",
+        "interface-contract-index",
+        "live-beacon-broadcast",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/uhf-beacon-suppression-runtime-v1/README.md"
+      ],
+      "exception": null
+    },
+    {
+      "archivedChange": "2026-05-27-target-nonquiet-background-tm-stability-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "comm-subsystem",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/target-nonquiet-background-tm-stability-v1/README.md"
+      ],
+      "exception": "Bounded diagnosis slice only: froze the current target node-6 non-quiet residual as an oracle-boundary problem, recorded the noisy ground-side observability surfaces explicitly, and kept reusable general non-quiet node-6 proof, runtime-fix claims, and dual-link target claims outside the archived result."
+    },
+    {
+      "archivedChange": "2026-05-28-formal-link-egress-separation-and-debug-gds-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "comm-subsystem",
+        "ground-ttc-gateway",
+        "interface-contract-index",
+        "live-beacon-broadcast"
+      ],
+      "evidencePaths": [
+        "evidence/records/comm-link-revalidation-v1/README.md",
+        "evidence/records/uhf-beacon-suppression-runtime-v1/README.md",
+        "evidence/records/target-nonquiet-background-tm-stability-v1/README.md",
+        "evidence/records/sband-tcp-ground-link-v1/README.md"
+      ],
+      "exception": "Baseline-clarification and runtime-hardening slice: removed confirmed formal-UHF uplink noise sources, froze the current dual-GDS near-term operator model instead of claiming one stock GDS handles both bands simultaneously, preserved official file/downlink as a formal capability during UHF session quiet, and reused existing governed S-band, beacon-suppression, formal-matrix, and node-6 non-quiet evidence rather than introducing a new standalone test-record archive."
+    },
+    {
+      "archivedChange": "2026-05-28-uhf-primary-packet-quiet-decoupling-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "comm-subsystem",
+        "interface-contract-index",
+        "live-beacon-broadcast",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/uhf-primary-packet-quiet-decoupling-v1/README.md"
+      ],
+      "exception": "Semantics-decoupling slice: made formal UHF packet quiet primary-band-driven, kept beacon suppress accepted-session-driven, preserved official file/data-product downlink as a formal capability during UHF primary packet quiet, and reused adjacent hosted beacon-suppress plus archived UHF CCSDS adoption evidence rather than widening the claim into new RF, reliable-transfer, or broader non-quiet closure."
+    },
+    {
+      "archivedChange": "2026-05-28-per-band-stock-ground-stacks-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "ground-ttc-gateway",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/per-band-stock-ground-stacks-v1/README.md"
+      ],
+      "exception": "Maintained hosted-operator-baseline slice: turned the frozen near-term dual-stock-stack model into repo-owned per-band launchers plus a composition-only combined wrapper, made runtime/file-store/log ownership reviewable, and kept orchestration, one-GDS aggregation, one-gateway multiplexing, target-bearing simultaneous closure, and the still-blocked fresh QoS wrapper rerun outside the archived claim."
+    },
+    {
+      "archivedChange": "2026-05-28-hosted-simulator-stale-reap-safety-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "ground-ttc-gateway",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/hosted-simulator-stale-reap-safety-v1/README.md"
+      ],
+      "exception": "Hosted cleanup-safety follow-up: hardened the maintained per-band stock-stack launcher so shared EPS/ADCS simulator stale reap is orphan-only, added bounded proof that launcher reruns do not terminate unrelated active simulator-backed runs or dirty the checkout with repo-root alias residue, and left orchestration, one-GDS aggregation, one-gateway multiplexing, and target-bearing simultaneous claims unchanged."
+    },
+    {
+      "archivedChange": "2026-05-29-transport-mtu-apid-governance-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "comm-subsystem",
+        "interface-contract-index",
+        "verification-evidence"
+      ],
+      "evidencePaths": [
+        "evidence/records/transport-mtu-apid-governance-v1/README.md"
+      ],
+      "exception": "Transport-governance clarification slice: froze the current path-specific command and official file/downlink ceilings plus the current `ComCfg.Apid` reservation/proof split from checked-in source formulas, reused existing hosted and target/lab path evidence only for scope, and kept broader target-flight MTU truth, future APID expansion, reliable-transfer redesign, and dual-link target proof outside the archived claim."
+    },
+    {
+      "archivedChange": "2026-05-29-target-dual-link-claim-oracle-clarification-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "comm-subsystem",
+        "ground-ttc-gateway",
+        "interface-contract-index",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/comm-dual-link-orchestration-v1/README.md",
+        "evidence/records/per-band-stock-ground-stacks-v1/README.md",
+        "evidence/records/target-comm-node56-migration-v1/README.md",
+        "evidence/records/target-direct-control-matrix-cases-v1/README.md",
+        "evidence/records/target-tcp-matrix-closure-v1/README.md",
+        "evidence/records/target-nonquiet-background-tm-stability-v1/README.md",
+        "evidence/records/transport-mtu-apid-governance-v1/README.md",
+        "evidence/records/uhf-beacon-suppression-runtime-v1/README.md",
+        "evidence/records/uhf-primary-packet-quiet-decoupling-v1/README.md"
+      ],
+      "exception": "Target-bearing claim/oracle clarification slice only: froze the future primary-led, switch-closed target dual-link proof family, the target-first mixed-oracle precedence, the exact PASS boundary, and the explicit non-claims by reusing existing hosted, target, transport-governance, quiet-path, and non-quiet-oracle evidence for boundary citation only, while proving no new verification path and deferring the later implementation-bearing target proof."
+    },
+    {
+      "archivedChange": "2026-05-29-target-dual-link-proof-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "comm-subsystem",
+        "ground-ttc-gateway",
+        "interface-contract-index",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/target-dual-link-proof-v1/README.md"
+      ],
+      "exception": "Implementation-bearing target-proof slice: closed the repository's first exact primary-led, switch-closed target-bearing dual-link family on the physical target CAN plus UHF UART path, preserved target-journal-first authority with a separate phase-aware operator-observability verdict, landed the official branch as `target-claim=PASS` plus `operator-observability=PASS`, left quiet rescue unused on the successful branch, and kept simultaneous dual-authority closure, one-GDS aggregation, one-gateway multiplexing, RF claims, reliable-transfer redesign, and generic non-quiet operator closure outside the archived claim."
+    },
+    {
+      "archivedChange": "2026-05-29-uhf-reliable-transfer-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "comm-subsystem",
+        "ground-ttc-gateway",
+        "hk-data-products",
+        "interface-contract-index",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/uhf-reliable-transfer-v1/README.md"
+      ],
+      "exception": "Bounded UHF reliable-transfer slice: extended the current official HK `.fdp` whole-file reliable helper from default S-band node `5` to explicit-switched `uhf-primary-after-failover` node `6`, kept `CommController` admission plus `DpCatalog` file-selection ownership and raw-relay-only gateway semantics unchanged, proved hosted success/resend/retry-exhausted plus target quiet node-`6` happy-path cleanup truth, and kept `uhf-backup`, automatic failover-to-UHF transfer, nominal non-quiet UHF promotion, RF, restart-persistent resume, broad CFDP, one-GDS aggregation, one-gateway multiplexing, and generic simultaneous closure outside the archived claim."
+    },
+    {
+      "archivedChange": "2026-05-30-comm-dual-link-orchestration-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "ground-ttc-gateway",
+        "planning-docs",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/comm-dual-link-orchestration-v1/README.md",
+        "evidence/records/per-band-stock-ground-stacks-v1/README.md"
+      ],
+      "exception": "Hosted orchestration-owner slice: archived the already-synced hosted-only thin lifecycle owner above the maintained per-band stock-stack baseline, reused the dedicated orchestration evidence plus the delegated verification-path-registry entry `43B` baseline evidence, and preserved explicit non-claims for command authority ownership, gateway relay ownership, stock-GDS aggregation, reliable-transfer ownership, target-bearing simultaneous proof, and RF closure."
+    },
+    {
+      "archivedChange": "2026-05-30-comm-no-rf-closeout-v1",
+      "classification": "governance-maintenance",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "planning-docs"
+      ],
+      "evidencePaths": [],
+      "exception": "COMM closeout governance slice: removed COMM from the active practical no-RF queue, reclassified the remaining COMM topics into optional broadening, structural non-claims, UX-only follow-up, or out-of-scope notes across the current roadmap and current-truth docs, clarified that non-quiet `uhf-backup` bounded behavior is already baseline truth, and archived the stale completed `comm-dual-link-orchestration-v1` workspace without changing runtime behavior or proving a new validation path."
+    },
+    {
+      "archivedChange": "2026-05-31-challenge-handshake-secure-command-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "comm-subsystem",
+        "core-system-contracts",
+        "interface-contract-index",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/challenge-handshake-secure-command-v1/README.md"
+      ],
+      "exception": "Hosted secure-command expansion slice: added a reviewable handshake APID `0x00FE`, a parallel post-auth secure command v2 path on APID `0x0000`, and explicit auth-success-to-opened-session synthesis while preserving the legacy envelope v1 `SESSION_OPEN` path for compatibility; proved hosted S-band secure auth, default pre-switch physical node-`6` `uhf-backup` secure auth plus bounded read/status continuity, required UHF re-auth on failover-primary promotion, and inactivity-timeout clearing, while keeping encryption, target/RF claims, reliable-transfer broadening, file/unknown-packet authority closure, hardware-backed key storage, and legacy-path removal outside the archived claim."
+    },
+    {
+      "archivedChange": "2026-05-31-uplink-authority-and-key-hardening-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "comm-subsystem",
+        "core-system-contracts",
+        "interface-contract-index",
+        "verification-evidence"
+      ],
+      "evidencePaths": [
+        "evidence/records/uplink-authority-and-key-hardening-v1/README.md"
+      ],
+      "exception": "Hosted post-handshake hardening slice: moved comm-managed secure-auth and retained comm-managed legacy v1 defaults onto one tracked keystore contract, froze APID `0x00FE` as the only admitted comm-managed unknown-uplink family with reject-without-mutation behavior, and bound `.sequence-staging/<leaf>` upload to active secure auth plus current runtime file-role allow while keeping the proof hosted-only and preserving generic file-uplink governance, target proof, encryption, persistent secure key storage, and legacy-path retirement outside the archived claim."
+    },
+    {
+      "archivedChange": "2026-05-31-target-secure-auth-proof-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "comm-subsystem",
+        "interface-contract-index",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/target-secure-auth-proof-v1/README.md"
+      ],
+      "exception": "Target secure-auth proof slice: moved the hosted secure auth, secure command v2, and bounded uplink-authority behavior onto the governed target S-band node-5 and physical UHF node-6 paths; proved installed-release bundled-keystore provenance with forbidden runtime env/CLI injection gates, S-band APID 0x00FE challenge auth, secure command sequencing, staged-upload admission under .sequence-staging/<leaf>, bounded UHF backup auth/read-deny/upload-deny behavior, role-switch invalidation, and UHF failover-primary re-auth, while keeping UHF primary staged-upload success, encryption, RF, hardware-backed key storage, generic file authority, one-GDS aggregation, one-gateway multiplexing, and legacy v1 retirement outside the archived claim."
+    },
+    {
+      "archivedChange": "2026-06-03-payload-e2e-downlink-closure-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "comm-subsystem",
+        "payload-data-products",
+        "payload-operations",
+        "resource-storage",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/payload-e2e-downlink-closure-v1/README.md"
+      ],
+      "exception": "Initial payload official-delivery slice: promoted payload captures into a canonical payload `.fdp` family on the stock `DpCatalog -> CommController -> FileDownlink` path, kept local `.jpg + .json` files diagnostic-only, closed hosted node-`5` byte-match/decode/JPEG-parity proof, and established the shared evidence record later extended by the immediate async-ack plus governed target-proof follow-up slice."
+    },
+    {
+      "archivedChange": "2026-06-03-payload-async-capture-ack-and-target-proof-v1",
+      "classification": "follow-up-fix",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "comm-subsystem",
+        "payload-data-products",
+        "payload-operations",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/payload-e2e-downlink-closure-v1/README.md"
+      ],
+      "exception": "Payload closeout follow-up slice: changed `PAYLOAD_CAPTURE_*` to async dispatch acknowledgement with `PSTATE_PUBLISHING` completion truth, kept final success gated on canonical payload `.fdp` family publication, and closed the bounded governed target node-`5` payload-family proof while reusing the same payload evidence record for the combined hosted plus target official-delivery baseline."
+    },
+    {
+      "archivedChange": "2026-06-04-payload-raw-preview-dual-artifact-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "comm-subsystem",
+        "payload-data-products",
+        "payload-operations",
+        "resource-storage",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/payload-raw-preview-dual-artifact-v1/README.md"
+      ],
+      "exception": "Payload dual-artifact official-delivery slice: replaced the old local-JPEG-only capture story with deterministic local `PIC%02X.bin` raw plus `PIC%02X.jpg` preview artifacts, made preview canonical `.fdp` publication automatic while keeping raw official promotion explicit, raised the stock file/downlink packet budget to the current governed `FW_FILE_BUFFER_MAX_SIZE = 2048` / `4096`-byte frame configuration, and closed hosted plus bounded governed target node-`5` payload-family proof for preview and `vga` raw without widening the official reliable-transfer family or claiming broad target payload throughput closure."
+    },
+    {
+      "archivedChange": "2026-07-06-payload-single-ready-auto-actual-metadata-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "interface-contract-index",
+        "payload-operations",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/payload-target-capture-sanity-v1/README.md"
+      ],
+      "exception": "Payload single-ready and actual-metadata slice: collapsed normal still capture onto one shared camera-ready state, retained `RAW_SENSOR` as the only special prepare gate, added actual target `AUTO` exposure/gain/AWB readback, and established bounded target support for shared-session `jpegQuality/hflip/vflip` plus deterministic exposure/gain under the dedicated capture-sanity evidence, without widening Route 1 delivery claims."
+    },
+    {
+      "archivedChange": "2026-06-05-legacy-command-envelope-retirement-v1",
+      "classification": "follow-up-fix",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "comm-subsystem",
+        "core-system-contracts",
+        "interface-contract-index",
+        "live-beacon-broadcast",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/legacy-command-envelope-retirement-v1/README.md"
+      ],
+      "exception": "Legacy command-envelope retirement follow-up slice: removed tracked `source_id` / `key_slot` tuple semantics from the current secure-auth keystore/runtime provisioning contract, retired current maintained legacy command-envelope/session-lifecycle probe wrappers, requalified and reran the canonical hosted and target secure-auth proof surfaces on the secure baseline, and demoted legacy-dependent hosted official-sequencing plus matrix sequence-subsystem wrapper authority into supplemental historical evidence instead of forcing a nontrivial migration in the same slice."
+    },
+    {
+      "archivedChange": "2026-07-04-legacy-command-envelope-retirement-v2",
+      "classification": "governance-maintenance",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "comm-subsystem",
+        "core-system-contracts",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/legacy-command-envelope-retirement-v2/README.md"
+      ],
+      "exception": "Legacy external retirement closeout slice: removed public `OBCApp.commandIngressAuthority.SESSION_OPEN` from the current runtime and authority surfaces, made legacy command-envelope v1 traffic fail closed before runtime mutation, requalified the maintained hosted and target secure-auth proof gates against current registry/runbook authority, and retired legacy/timing wrapper authority without disturbing the current secure-auth synthesized runtime session evidence."
+    },
+    {
+      "archivedChange": "2026-06-05-sband-live-observability-tier-selection-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "adcs-subsystem",
+        "comm-subsystem",
+        "eps-subsystem",
+        "gps-subsystem",
+        "interface-contract-index",
+        "onboard-data-products-and-live-beacon",
+        "resource-storage",
+        "storage-health",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/sband-live-observability-tier-selection-v1/README.md"
+      ],
+      "exception": "First node-5 live-content-selection slice: kept auth-gated S-band access governance unchanged while splitting scheduled EPS/GPS/ADCS/RADIO/STORAGE output into curated keep-live summary, fresh GET-driven bounded detailed readback, onboard cached truth, and explicit non-baseline live; retired STORAGE_SCAN_NOW in favor of fresh STORAGE_GET_STATUS, tightened target GPS proof to treat bounded GPS_GET_STATE as the maintained live-UART closure when ambient samples are absent, and preserved generic packet filtering, TlmPacketizer, broad non-quiet UHF redesign, and residual non-baseline-live cleanup as follow-up work."
+    },
+    {
+      "archivedChange": "2026-06-07-sband-auth-gated-observability-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "comm-subsystem",
+        "interface-contract-index",
+        "onboard-data-products-and-live-beacon",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/sband-auth-gated-observability-v1/README.md"
+      ],
+      "exception": "Node-5 auth-gated observability slice: changed the maintained S-band primary live packet baseline from effectively always-on to quiet-until-authenticated, preserved always-on critical beacon/auth plumbing plus bounded authenticated GET summary readback as separate tiers, proved explicit close on primary-band switch away from S-band, and kept UHF operator redesign, generic telemetry-schema filtering, reliable transfer, RF, and one-GDS/one-gateway multiplexing outside the archived claim."
+    },
+    {
+      "archivedChange": "2026-06-07-manual-dual-gds-secure-ops-surface-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "comm-subsystem",
+        "documentation-governance",
+        "ground-ttc-gateway",
+        "interface-contract-index"
+      ],
+      "evidencePaths": [],
+      "exception": "Manual dual-GDS secure-ops surface slice: added a dedicated `scripts/manual_ops/` operator family with hosted and target lifecycle separation, standardized manifest/session invalidation truth for repo-owned secure auth plus secure-v2 command and governed sequence/file actions, preserved stock `fprime-gds` plus `ground_ttc_gateway` as the operator boundary without UI command interception, and kept RF, one-GDS aggregation, one-gateway multiplexing, payload-ops expansion, and new verification-path claims outside the archived change."
+    },
+    {
+      "archivedChange": "2026-06-07-live-observability-event-noise-reduction-v1",
+      "classification": "follow-up-fix",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "comm-subsystem",
+        "interface-contract-index",
+        "onboard-data-products-and-live-beacon",
+        "storage-health",
+        "verification-evidence"
+      ],
+      "evidencePaths": [
+        "evidence/records/live-observability-event-noise-reduction-v1/README.md"
+      ],
+      "exception": "Live observability noise-reduction follow-up slice: tightened the current auth-open node-5 live event surface by making `STATE_MONITOR_UPDATED` mask-transition-only, removing healthy `CSP_PING_RESULT` success from packetized ground events, keeping `HK_TREND_PRODUCT_WRITTEN` plus `RateGroupCycleSlip` visible, filtering `OBCApp.dpWriter.FileWritten` from the packetized ground event surface while preserving local journal visibility, and fixing the hosted manual dual-GDS runtime layout so the shared `logs/` root is created before `StorageHealthBridge` scans it."
+    },
+    {
+      "archivedChange": "2026-06-07-hk-trend-chunked-fdp-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "hk-data-products",
+        "interface-contract-index",
+        "onboard-data-products-and-live-beacon",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/hk-trend-chunked-fdp-v1/README.md"
+      ],
+      "exception": "Chunked official HK data-product slice: replaced one-sample-per-file V5 emission with V6 sample-array chunking, added `HkTrendChunkMeta` plus operator flush/status and persistent target-size control, preserved the stock `DpManager -> DpWriter -> DpCatalog -> FileDownlink` path after flush, revalidated hosted onboard-state parity and hosted CCSDS S-band catalog/downlink decode on the fresh branch build, preserved bounded hosted node-5 reliable-transfer compatibility within the existing `<= 10240` byte ceiling, and kept field masking, cross-reboot resume, append-in-place writer semantics, target/lab reliable-transfer reruns, and helper-family widening outside the archived claim."
+    },
+    {
+      "archivedChange": "2026-06-11-target-node5-rg3-csp-runtime-contention-fix-v1",
+      "classification": "follow-up-fix",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "platform-baseline",
+        "verification-evidence"
+      ],
+      "evidencePaths": [
+        "evidence/records/target-node5-rg3-csp-runtime-contention-fix-v1/README.md"
+      ],
+      "exception": "Node-5 RG3 salvage fix slice: kept the scope bounded to cached internal CSP runtime metrics reads and `CommController` runtime-state cache publication so service-managed S-band auth no longer forces the reproduced RG3 slip pattern on the salvaged clean branch, recorded the branch-owned rerun evidence under the dedicated test-record, and left the broader RG1 shared-runtime blocking architecture as separate follow-on work."
+    },
+    {
+      "archivedChange": "2026-06-12-csp-runtime-owner-component-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "adcs-subsystem",
+        "comm-subsystem",
+        "csp-runtime-owner",
+        "eps-subsystem",
+        "platform-baseline",
+        "verification-evidence"
+      ],
+      "evidencePaths": [
+        "evidence/records/csp-runtime-owner-component-v1/README.md"
+      ],
+      "exception": "Deployed CSP runtime-owner slice: introduced the topology-owned `CspRuntimeOwner` as the single deployed runtime lifecycle and request-serialization owner, routed deployed COMM/EPS/ADCS CSP clients through that owner boundary, added owner-backed runtime observability, and recorded fresh local plus target node-5 evidence while keeping external public mission contracts stable."
+    },
+    {
+      "archivedChange": "2026-06-13-node5-observability-residual-cleanup-v1",
+      "classification": "follow-up-fix",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "comm-subsystem",
+        "core-system-contracts",
+        "interface-contract-index",
+        "onboard-data-products-and-live-beacon",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/node5-observability-residual-cleanup-v1/README.md"
+      ],
+      "exception": "Residual observability cleanup slice: made node-5 post-auth live governance explicit by promoting `SYS_*` and operator-facing `CommController` transitions as keep-live truth, retaining transport, queue-overflow, owner-timeout, and S-band egress subsets as reviewable proof surfaces, demoting `SystemResources.*`, queue-depth, UART, and remaining COMM internals to diagnostics-only, and requalifying the maintained hosted plus target representative detailed `GET_*` proof together with the governed target secure-auth path without widening into secure-auth redesign, a second command plane, generic telemetry-schema rewrite, or broad UHF baseline expansion."
+    },
+    {
+      "archivedChange": "2026-06-13-node5-proof-oracle-hardening-v1",
+      "classification": "follow-up-fix",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/node5-proof-oracle-hardening-v1/README.md"
+      ],
+      "exception": "Node-5 proof-oracle hardening slice: kept the maintained hosted and target node-5 observability path identities plus the maintained target secure-auth path unchanged while tightening packet-path evidence for bounded detailed readback and switch-close, adding source-aware handshake confirmation with bounded late-challenge recovery on UHF primary re-auth, and recording the fresh local, hosted, target observability, and target secure-auth reruns without widening product scope."
+    },
+    {
+      "archivedChange": "2026-06-19-manual-dual-gds-resource-warning-fix-v1",
+      "classification": "follow-up-fix",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "core-system-contracts",
+        "verification-evidence"
+      ],
+      "evidencePaths": [
+        "evidence/records/manual-dual-gds-resource-warning-fix-v1/README.md"
+      ],
+      "exception": "Manual dual-GDS resource-warning fix slice: corrected hosted `SYS_MEM_RSS_MB` from historical peak RSS to current resident-memory truth, changed watchdog CPU/RSS warning events to threshold-crossing behavior with correct re-enable semantics, reran the fresh local baseline gate plus bounded hosted and target manual dual-GDS secure-command checks, and kept threshold policy tuning plus transient target auth investigation outside the archived scope."
+    },
+    {
+      "archivedChange": "2026-06-20-mission-console-phase1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "comm-subsystem",
+        "interface-contract-index",
+        "mission-console"
+      ],
+      "evidencePaths": [
+        "evidence/records/mission-console-phase1/README.md"
+      ],
+      "exception": "Mission Console Phase 1 slice: added the repo-owned Flask Mission Gateway plus server-rendered operator UI above the maintained manual dual-GDS authority path, promoted gateway-owned listener and snapshot management for dashboard and structured readback, added the bounded packet-lab negative demo surface, and closed fresh hosted plus bounded target parity evidence without introducing a second command plane, replacing stock GDS, or expanding into pass planning or one-GDS aggregation."
+    },
+    {
+      "archivedChange": "2026-06-30-mission-console-ux-uplift-v1",
+      "classification": "follow-up-fix",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "mission-console"
+      ],
+      "evidencePaths": [
+        "evidence/records/mission-console-phase1/README.md"
+      ],
+      "exception": "Mission Console UX uplift slice: kept the Phase 1 operator authority and verification-path boundaries unchanged while adding dictionary-backed command discovery, searchable schema-driven `/ops` forms, and structured operator-first rendering across dashboard, readback, packet-lab, and surfaces, plus refreshed runbook/test-record evidence for the maintained hosted and bounded target Mission Console path."
+    },
+    {
+      "archivedChange": "2026-07-04-mission-console-observability-bootstrap-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "mission-console",
+        "mission-console-observability-bootstrap"
+      ],
+      "evidencePaths": [
+        "evidence/records/mission-console-phase1/README.md"
+      ],
+      "exception": "Mission Console observability bootstrap slice: converged the operator-facing downlink contract into explicit `1 / 2 / 3 / 4` observability classes, added shared-channel forced-resend closure for MODE/GPS/TTC/STORAGE/EPS/ADCS/COMM/BOOT posture queries, formalized strict single-event and multi-event readback closing for recovery/watchdog/payload/persistent-fault/boot history families, refreshed snapshot provenance truth, and revalidated fresh local, hosted, and target branch-head evidence without widening authority or introducing ambient polling."
+    },
+    {
+      "archivedChange": "2026-07-05-mission-console-live-trends-dashboard-cleanup-v1",
+      "classification": "follow-up-fix",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "mission-console",
+        "mission-console-observability-bootstrap"
+      ],
+      "evidencePaths": [
+        "evidence/records/mission-console-phase1/README.md"
+      ],
+      "exception": "Mission Console live-trends/dashboard cleanup slice: kept flight-side observability owners unchanged while adding bounded live-trend history panels, context-wide dashboard aggregation with selected-band secure session truth, saved readback viewer separation plus per-card quick refresh, session-scoped history cleanup, governed sequence authoring workspace, packet-lab fault/readback wording cleanup, and hosted branch-head UI evidence for the maintained operator surface."
+    },
+    {
+      "archivedChange": "2026-06-30-adcs-recovery-r3-reset",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "adcs-subsystem",
+        "mission-autonomy",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/recovery-executors-v1/README.md",
+        "evidence/records/target-route3-pre-reboot-recovery-v1/README.md"
+      ],
+      "exception": "ADCS recovery R3 reset slice: extended the existing ADCS CSP/runtime path with an owned reset service, changed shared ADCS scheduled-poll recovery to start at `R3_RESET_SUBSYSTEM_INTERFACE`, and reused the governed hosted shared-recovery and target Route 3 recovery evidence surfaces instead of creating a new standalone test-record directory."
+    },
+    {
+      "archivedChange": "2026-06-24-chapter5-integrated-route-closure-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "adcs-subsystem",
+        "eps-subsystem",
+        "mission-autonomy",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/chapter5-integrated-route-closure-v1/README.md"
+      ],
+      "exception": "Chapter 5 integrated-route closure slice: added EPS simulator runtime SoC control with external socket-driven lazy ramp, added TTC-entry best-effort ADCS POINTING hook without blocking TTC entry, introduced the governed `scripts/chapter5_routes/` staged route tree, and recorded retained Route 1 staged closure plus fresh Route 2/3 target closure without reviving obsolete legacy probe families."
+    },
+    {
+      "archivedChange": "2026-06-24-uhf-primary-nonquiet-autofailover-v1",
+      "classification": "follow-up-fix",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "comm-subsystem",
+        "mission-autonomy",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/uhf-primary-nonquiet-runtime-v1/README.md",
+        "evidence/records/target-autonomous-uhf-failover-v1/README.md"
+      ],
+      "exception": "UHF non-quiet/autonomous-failover follow-up slice: retired maintained UHF-primary packet-quiet truth, promoted detector-triggered autonomous failover instead of manual `COMM_SET_ACTIVE(UHF)` as the current path, added resend-until-ground-readback secure-command observability policy, and requalified the maintained non-quiet UHF primary runtime plus autonomous failover evidence that Chapter 5 Route 2/3 target closure now depends on."
+    },
+    {
+      "archivedChange": "2026-07-04-historical-wrapper-hardening-v1",
+      "classification": "governance-maintenance",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/historical-wrapper-hardening-v1/README.md"
+      ],
+      "exception": "Historical-wrapper hardening slice: kept legacy command-envelope and retired timing evidence archived, but hardened the retained wrapper entrypoints so supplemental historical probes now require explicit opt-in and retired timing wrappers fail closed immediately instead of looking like current maintained gates; synchronized current-baseline, registry, and operator-runbook wording to match that script-level behavior."
+    },
+    {
+      "archivedChange": "2026-07-06-payload-target-black-image-fix-v1",
+      "classification": "follow-up-fix",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "payload-operations",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/payload-target-capture-sanity-v1/README.md"
+      ],
+      "exception": "Payload target black-image follow-up slice: corrected the maintained target `libcamera` still-capture sequencing with bounded warm-up before final frame persistence, added the repo-owned raw-frame luma-validity oracle, and separated target source-image-validity proof from Route 1 transport/downlink closure by reusing the dedicated target capture-sanity evidence rather than rerunning the whole payload delivery family."
+    },
+    {
+      "archivedChange": "2026-07-06-payload-persistent-session-still-retirement-v1",
+      "classification": "follow-up-fix",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "interface-contract-index",
+        "payload-operations",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/payload-persistent-session-still-retirement-v1/README.md"
+      ],
+      "exception": "Payload persistent-session and STILL-retirement follow-up slice: moved maintained non-RAW payload capture onto one persistent warm session shared by `AUTO` and `DETERMINISTIC`, enforced explicit reject instead of implicit reprepare for session-level mismatches, retired `PAYLOAD_CAPTURE_STILL` from the current public payload surface, and closed the resulting hosted plus governed target workflow proof in a dedicated record without widening Route 1 delivery claims."
+    },
+    {
+      "archivedChange": "2026-07-07-payload-public-surface-convergence-v1",
+      "classification": "follow-up-fix",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "interface-contract-index",
+        "payload-operations",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/payload-persistent-session-still-retirement-v1/README.md",
+        "evidence/records/payload-target-capture-sanity-v1/README.md",
+        "evidence/records/payload-raw-preview-dual-artifact-v1/README.md"
+      ],
+      "exception": "Payload public-surface convergence follow-up slice: retired maintained `PAYLOAD_SET_DEFAULTS` and `PAYLOAD_PREPARE_SESSION(AUTO|DETERMINISTIC)` truth, introduced explicit shared non-RAW camera defaults plus `PAYLOAD_PREPARE_RAW_SENSOR`, split ready-state and capture-policy truth across runtime metadata and parsers while keeping legacy manifest compatibility, reran the maintained hosted and target focused payload proofs, and re-corroborated Route 1 target preview/raw publication plus downlink closure on the converged public surface."
+    },
+    {
+      "archivedChange": "2026-07-06-simulator-eps-adcs-dynamics-v1",
+      "classification": "follow-up-fix",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "adcs-subsystem",
+        "eps-subsystem"
+      ],
+      "evidencePaths": [],
+      "exception": "Simulator dynamics follow-up slice: upgraded the hosted EPS and ADCS simulators from mostly fixed values to seeded, time-continuous runtime behavior with bounded external simulator controls, synchronized the simulator-facing specs/docs, and validated the change through simulator-focused tests and formal spec validation without introducing a new public OBC command surface or a new standalone archived test-record family."
+    },
+    {
+      "archivedChange": "2026-07-12-node5-comm-csp-downlink-v2",
+      "classification": "transport-uplift",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "comm-subsystem",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/node5-comm-csp-downlink-v2/README.md"
+      ],
+      "exception": "Node-5 COMM CSP downlink V2 transitional slice: introduced bounded stage/commit/drain acceptance below stock FileDownlink and retained its implementation and regression evidence, but V3 supersedes it as the maintained node-5 runtime selection, so V2 is not a separate final runtime gate or official path identity."
+    },
+    {
+      "archivedChange": "2026-07-12-node5-comm-csp-downlink-v3",
+      "classification": "transport-uplift",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "comm-subsystem",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/node5-comm-csp-downlink-v3/README.md",
+        "evidence/records/payload-raw-preview-dual-artifact-v1/README.md"
+      ],
+      "exception": "Node-5 COMM CSP downlink V3 closeout slice: replaced per-chunk stop-and-wait with one-way bulk data plus bounded control polling below GroundLinkDriver, aligned F' file-buffer and libcsp packet sizing, added scoped SocketCAN CAN FD framing for node-5/node-6 COMM port 40 under A-layer ownership, and requalified focused hosted plus official hosted/target payload .fdp paths without claiming BRS, measured CAN data-phase rate, RF, OTA, or end-to-end reliable delivery."
+    },
+    {
+      "archivedChange": "2026-07-12-route1-sequence-verification-v1",
+      "classification": "scenario-verification",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "route1-sequence-verification",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/route1-sequence-verification-v1/README.md"
+      ],
+      "exception": "Route 1 sequence-verification slice: registers a bounded hosted and governed target proof for the checked-in official sequence compile, governed staging, admission validation/run, SoC/mode admission, and fresh AUTO/DETERMINISTIC payload completion. It keeps target A/B/C ownership and mandatory UHF readiness explicit, rejects hidden postflight baseline failures, and does not claim scheduler, generic throughput, RF, OTA, or general sequence-control closure."
+    },
+    {
+      "archivedChange": "2026-07-12-mission-console-beacon-viewer-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "mission-console",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/mission-console-beacon-viewer-v1/README.md"
+      ],
+      "exception": "Mission Console Beacon Viewer slice: adds explicit hosted and target manual-surface UHF beacon capability discovery, a bounded dashboard summary, and detailed `/beacon` latest/history/provenance views. It preserves cache separation and distinguishes hosted PTY capture from target remote-sidecar mirroring without claiming stock-GDS beacon visibility, RF/OTA receipt, or readback semantics; it also hardens manual-surface owner session detachment without changing target A/B/C ownership."
+    },
+    {
+      "archivedChange": "2026-07-12-target-beacon-sidecar-baseline-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "mission-console",
+        "target-beacon-sidecar-baseline",
+        "target-comm-node56-migration",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/mission-console-beacon-viewer-v1/README.md"
+      ],
+      "exception": "Target Beacon sidecar baseline slice: promotes remote PTY capture and required UHF/OBC environment into A-layer ownership, publishes sidecar metadata for manual-surface consumers, and proves A -> B -> C -> A -> B target Beacon viewing without letting C restart, override, or stop shared services. It remains a mirrored ground artifact and does not claim stock-GDS Beacon visibility or RF/OTA receipt."
+    },
+    {
+      "archivedChange": "2026-07-28-route1-sequence-evidence-freeze-v1",
+      "classification": "governance-maintenance",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "route1-sequence-verification",
+        "verification-evidence"
+      ],
+      "evidencePaths": [
+        "evidence/records/route1-sequence-verification-v1/README.md",
+        "evidence/records/chapter5-integrated-route-closure-v1/ARTIFACTS.json"
+      ],
+      "exception": "Route 1 thesis-evidence freeze: removes the superseded 2026-07-19 campaign, retains the thesis-backed 2026-07-20 functional observations without treating them as A/B/C authority, classifies the provenance-incomplete 2026-07-12 proof as historical functional evidence rather than current target authority, and leaves target requalification pending. It canonicalizes only six SHA-256-identical decoded JSON derivatives, hash-locks every required retained artifact plus the campaign README, exact sequence source and compiled execution binary, the GDS-runtime and independently stored StandardPipeline DETERMINISTIC received FDP observations, all three distinct raw ground receive captures, and the StandardPipeline channel/event observations; rejects authority-promoting campaign README edits even when non-authoritative substrings remain; requires every governing document to preserve explicit non-authoritative 2026-07-12/2026-07-20 classifications plus pending target requalification, rejects ambiguous or double-negated authority language, evaluates semicolon/colon, coordinated conjunction, and while/although contrast clauses independently, including remains-authoritative predicates, and normalizes common numeric, English month-name, and Chinese spellings of those governed dates, so contradictory positive authority statements fail even when approved assertions remain; restores the SoC-fallback C scenario's testcase-owned EPS simulator state to the Route 1 80% baseline without taking over shared service lifecycle; keeps manual-auth profile mutation in A while clearing caller timeout controls before A; retains fresh A -> B readiness; requires every executed hosted attempt, including automatic retry and pending resume, to revalidate campaign identity and complete a fresh native build of OBC and every hosted-wrapper executable independently of target deployment controls; routes every target C attempt, including automatic retry, through campaign identity validation, an A-owned OBC reload, and regenerated target provenance; binds every target attempt to a distinct attempt-specific provenance path and SHA-256 plus its importer-manifest SHA-256, revalidating all retained attempt provenance, exact file sets, sizes, and hashes before resume or a later retry can preserve authority; preserves and revalidates an existing authoritative target PASS provenance instead of rebinding it to a same-head rebuild/current install; makes externally managed C profile handling verification-only; confines importer attempt labels; initializes and aligns recursive submodules before first campaign identity on fresh deployment runs while preserving skip/resume behavior; restricts formal target sync to Git-indexed files and compares the serialized bytes/modes with committed superproject/submodule trees so index flags or file-mode configuration cannot hide uncommitted inputs; binds the no-.git workspace marker to a deterministic manifest/digest of every serialized Git-indexed path plus marker-time hashes for all eight remote-build inputs copied into the target bundle, then recomputes the live workspace/build inputs and matches every installed-manifest package entry before C; binds the campaign to one branch/head/version, requires a resume identity file to match the retained campaign manifest before loading attempts, and revalidates that identity after hosted execution and before every target attempt's restart/provenance; rejects alternate OBC service names so the formal runner, A, C, installer, and provenance use one canonical process identity; and gates future target execution/PASS authority on matching workspace, build, installed-release, a locally trusted package/install manifest and rendered systemd-unit receipt, exact A-owned drop-ins, the live service process tree including manifest-bound OBC and radio executables, every live manifest-listed installed file, and sync-input provenance. By explicit developer decision this maintenance did not run a local full gate or a new hosted/target campaign; the PR hosted baseline-gate remains required."
+    },
+    {
+      "archivedChange": "2026-07-28-fix-mission-console-display-replay-hardening-v1",
+      "classification": "follow-up-fix",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "mission-console"
+      ],
+      "evidencePaths": [
+        "evidence/records/mission-console-display-replay-hardening-v1/README.md"
+      ],
+      "exception": "Mission Console hosted operator-surface follow-up: normalizes displayed finite decimal measurements to at most two fractional digits while preserving integer and identity-bearing text, and extends the existing Packet Lab replay case to recover a fully validated secure-command-v2 packet from stock-GDS native capture bytes without displacing synthetic descriptor parsing. It adds no endpoint, F' command, wire-format change, target/RF claim, or second command authority."
+    },
+    {
+      "archivedChange": "2026-07-29-public-thesis-submission-v1",
+      "classification": "later-governed-expansion",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "architecture-review",
+        "codex-skills",
+        "delivery-workflow",
+        "documentation-governance",
+        "interface-contract-index",
+        "planning-docs",
+        "project-reporting",
+        "public-release-profile",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "evidence/records/public-thesis-submission-v1/README.md",
+        "release/RELEASE_PROVENANCE.md",
+        "evidence/catalog.json"
+      ],
+      "exception": "Thesis publication provenance slice: fixes the development-source and dependency commits, preserves all OpenSpec capabilities and archived decisions, provides canonical technical entrypoints, packages raw evidence in a deterministic checksummed asset, supplies development-only credential examples, applies dependency attribution and modification notices, and validates the repository through a clean recursive clone, the full F Prime build/test gate, and selected hosted end-to-end paths. Raspberry Pi and laboratory records retain their execution commit, date, environment, commands, and artifact digests."
+    },
+    {
+      "archivedChange": "2026-07-29-polish-public-documentation-v1",
+      "classification": "governance-maintenance",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "delivery-workflow",
+        "documentation-governance",
+        "planning-docs",
+        "public-release-profile",
+        "verification-evidence",
+        "verification-path-registry"
+      ],
+      "evidencePaths": [
+        "README.md",
+        "docs/README.md",
+        "evidence/README.md",
+        "evidence/records/public-thesis-submission-v1/README.md"
+      ],
+      "exception": "Portfolio documentation architecture: provides a capability-first repository entrypoint, ten canonical documents, consolidated hosted and target operations, a dedicated evidence library with 158 result summaries and 1,045 catalogued artifacts, OpenSpec-owned reconciliation data, and automated checks for navigation, terminology, publication mapping, licenses, and evidence integrity."
+    },
+    {
+      "archivedChange": "2026-07-29-minimize-public-script-surface-v1",
+      "classification": "governance-maintenance",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "documentation-governance",
+        "public-release-profile"
+      ],
+      "evidencePaths": [
+        "scripts/README.md",
+        "scripts/public-allowlist.txt",
+        "scripts/verification-manifest.json"
+      ],
+      "exception": "Public automation surface: retains build and verification governance, primary hosted operation, Raspberry Pi deployment and shared laboratory baselines, representative integration probes, Chapter 5 routes, and Mission Console with their direct support code. The allowlist and release checker enforce this boundary, and the complete F Prime gate validates the retained implementation."
+    },
+    {
+      "archivedChange": "2026-08-02-audit-public-script-surface-v2",
+      "classification": "governance-maintenance",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "documentation-governance",
+        "public-release-profile"
+      ],
+      "evidencePaths": [
+        "scripts/CATALOG.md",
+        "scripts/public-allowlist.txt",
+        "scripts/verification-manifest.json"
+      ],
+      "exception": "Public script audit: classifies every retained script by purpose, workflow ownership, and invocation status; preserves the dependency closure for supported hosted operation, governed target/laboratory operation, integrated Chapter 5 evidence routes, repository verification, and Mission Console; consolidates duplicate hosted stock-ground launchers; and verifies the resulting surface through the full F Prime gate and representative hosted routes."
+    },
+    {
+      "archivedChange": "2026-08-02-public-release-provenance-hygiene-v1",
+      "classification": "governance-maintenance",
+      "origin": "later-governed-expansion",
+      "capabilities": [
+        "public-release-profile",
+        "route1-sequence-verification"
+      ],
+      "evidencePaths": [
+        "scripts/test_route1_target_revision_provenance.py",
+        "scripts/chapter5_routes/hosted/run_route1_hosted.sh",
+        "release/RELEASE_PROVENANCE.md"
+      ],
+      "exception": "Public-release provenance hygiene: removes a retired local-workspace exception from Route 1 identity and target-sync automation, and requires the declared F Prime and libcsp revisions to resolve through the configured public submodule remotes. Focused provenance checks, a fresh hosted Route 1 run, and a clean recursive clone passed."
+    }
+  ]
+}

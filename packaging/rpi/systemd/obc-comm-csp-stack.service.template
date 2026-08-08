@@ -1,0 +1,53 @@
+[Unit]
+Description=OBC COMM CSP Lab Stack
+After=network-online.target __OBC_CAN_SERVICE_NAME__
+Wants=network-online.target __OBC_CAN_SERVICE_NAME__
+
+[Service]
+Type=simple
+User=__TARGET_USER__
+PermissionsStartOnly=true
+SupplementaryGroups=watchdog
+WorkingDirectory=__INSTALL_ROOT__/current
+Environment=COMM_MODE=tcp
+Environment=COMM_HOST=127.0.0.1
+Environment=COMM_PORT=7000
+Environment=RADIO_PROTOCOL=mock-text
+Environment=GROUND_LINK_MODE=comm-csp
+Environment=TARGET_COMM_PROFILE=__TARGET_COMM_PROFILE__
+Environment=COMM_CSP_NODE=__COMM_CSP_NODE__
+Environment=CSP_TRANSPORT=socketcan
+Environment=CSP_CAN_DEVICE=can0
+Environment=CSP_CAN_PROMISC=0
+Environment=GDS_HOST=127.0.0.1
+Environment=GDS_PORT=0
+Environment=OBC_GPS_SOURCE_MODE=live-uart
+Environment=OBC_GPS_SERIAL_DEVICE=/dev/serial0
+Environment=OBC_GPS_BAUDRATE=9600
+Environment=RUNTIME_ROOT=__RUNTIME_ROOT__
+Environment=PERSISTENT_ROOT=__RUNTIME_ROOT__/persistent-data
+Environment=STAGING_ROOT=__RUNTIME_ROOT__/staging
+Environment=LOG_ROOT=__RUNTIME_ROOT__/logs
+Environment=HARDWARE_WATCHDOG=__HARDWARE_WATCHDOG_MODE__
+Environment=HARDWARE_WATCHDOG_DEVICE=__HARDWARE_WATCHDOG_DEVICE__
+Environment=HARDWARE_WATCHDOG_TIMEOUT_SEC=__HARDWARE_WATCHDOG_TIMEOUT_SEC__
+Environment=COMM_SUBSYSTEM_PING_TIMEOUT_MS=__COMM_SUBSYSTEM_PING_TIMEOUT_MS__
+Environment=COMM_PRIMARY_UNAVAILABLE_FAILURE_THRESHOLD=__COMM_PRIMARY_UNAVAILABLE_FAILURE_THRESHOLD__
+Environment=DIAGNOSTIC_QUIET_PACKET_EGRESS=0
+Environment=ENABLE_COMM_SUBSYSTEM_HEALTH_DETECTOR=1
+Environment=INITIAL_COMM_BAND=__INITIAL_COMM_BAND__
+Environment=ENABLE_PRIMARY_GROUND_LINK_DRIVER=__ENABLE_PRIMARY_GROUND_LINK_DRIVER__
+Environment=COMMAND_AUTHORITY_PROFILE=__COMMAND_AUTHORITY_PROFILE__
+Environment=OBC_HEADLESS=1
+ExecStartPre=/bin/bash -lc 'set -euo pipefail; systemctl restart "__OBC_CAN_SERVICE_NAME__"; systemctl is-active "__OBC_CAN_SERVICE_NAME__" >/dev/null'
+ExecStart=__INSTALL_ROOT__/current/launch/run_obc_comm_csp_stack.sh
+Restart=on-failure
+RestartSec=3
+KillMode=control-group
+TimeoutStopSec=15
+StandardInput=null
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

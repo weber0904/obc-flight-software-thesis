@@ -1,0 +1,77 @@
+{
+  "asset": {
+    "archivePrefix": "obc-flight-software-thesis-evidence-thesis-submission-v1/records/payload-raw-preview-dual-artifact-v1/artifacts/",
+    "downloadUrl": "https://github.com/weber0904/obc-flight-software-thesis/releases/download/thesis-submission-v1/obc-flight-software-thesis-evidence-thesis-submission-v1.tar.gz",
+    "name": "obc-flight-software-thesis-evidence-thesis-submission-v1.tar.gz",
+    "sha256": "128a4f86dbfc09c2adf1e26afb1ea84dcba5d35d8f6f30897c189514fdf0add3"
+  },
+  "fileCount": 5,
+  "files": [
+    {
+      "mediaType": "text",
+      "publicBytes": 33447,
+      "publicSha256": "09a77f784f069236203ba352f9d8bc19e063c7d66a749efe4ebd0b4b6c867050",
+      "redactions": {
+        "target-user-path": 1
+      },
+      "relativePath": "2026-07-07-public-surface-regression/target-regression/campaign-summary.json",
+      "sourceBytes": 33450,
+      "sourcePath": "docs/test-records/payload-raw-preview-dual-artifact-v1/artifacts/2026-07-07-public-surface-regression/target-regression/campaign-summary.json",
+      "sourceSha256": "79136e65dc14f4f7b0edb62dc473043b87b1b4916dc5b6df67313ae84509c893"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 26985,
+      "publicSha256": "854632e9c06cbf36e78640a945db5923f62836d3de875c9268491f13dc7e0caa",
+      "redactions": {
+        "lab-serial-identifier": 2,
+        "target-user-path": 1
+      },
+      "relativePath": "2026-07-07-public-surface-regression/target-regression/checkpoints.jsonl",
+      "sourceBytes": 26966,
+      "sourcePath": "docs/test-records/payload-raw-preview-dual-artifact-v1/artifacts/2026-07-07-public-surface-regression/target-regression/checkpoints.jsonl",
+      "sourceSha256": "4bce7b4e57e3eafab4d44abd7b3b8ccf17438093e6e594f7ff47ae20add56a46"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 947,
+      "publicSha256": "3ba5390f7a6ae90ceef943714a26943d1ae4b76c9a55a1baf04a2b4a774fa0a4",
+      "redactions": {},
+      "relativePath": "2026-07-07-public-surface-regression/target-regression/manifest.json",
+      "sourceBytes": 947,
+      "sourcePath": "docs/test-records/payload-raw-preview-dual-artifact-v1/artifacts/2026-07-07-public-surface-regression/target-regression/manifest.json",
+      "sourceSha256": "3ba5390f7a6ae90ceef943714a26943d1ae4b76c9a55a1baf04a2b4a774fa0a4"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 86037,
+      "publicSha256": "b641bf9432273777afe167dc051bb02498982f0bb04eb8244a1e516db4cd0737",
+      "redactions": {
+        "target-user-path": 1
+      },
+      "relativePath": "2026-07-07-public-surface-regression/target-regression/payload-raw-preview-dual-artifact-target-summary.json",
+      "sourceBytes": 86040,
+      "sourcePath": "docs/test-records/payload-raw-preview-dual-artifact-v1/artifacts/2026-07-07-public-surface-regression/target-regression/payload-raw-preview-dual-artifact-target-summary.json",
+      "sourceSha256": "60cd85f57511613357c741f3551d791b45b15586de9c2218701f3495ce24f412"
+    },
+    {
+      "mediaType": "text",
+      "publicBytes": 4757,
+      "publicSha256": "ddf572bdef5b567a59d309d837d2cd6909088327f5610555ec64c0097aea9e47",
+      "redactions": {
+        "source-repository-path": 3,
+        "target-user-path": 1
+      },
+      "relativePath": "2026-07-07-public-surface-regression/target-regression/summary.log",
+      "sourceBytes": 4823,
+      "sourcePath": "docs/test-records/payload-raw-preview-dual-artifact-v1/artifacts/2026-07-07-public-surface-regression/target-regression/summary.log",
+      "sourceSha256": "8b228a17b0b2e44127ff8f8eac052a6969087c03bbdc5c77e25e67eabbd3944a"
+    }
+  ],
+  "publicBytes": 152173,
+  "recordId": "payload-raw-preview-dual-artifact-v1",
+  "releaseTag": "thesis-submission-v1",
+  "schemaVersion": 1,
+  "sourceBytes": 152226,
+  "sourceCommit": "142683f20ba46f59f894f594f2caf71dfeddf16f"
+}

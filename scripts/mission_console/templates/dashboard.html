@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="toolbar">
+  <label>Context <select id="context-select"></select></label>
+  <label>Band <select id="band-select"></select></label>
+  <div class="toolbar-note">
+    Satellite status, EPS, ADCS, comm, and health use the newest value seen anywhere in this context. Each field keeps its own `Via &lt;band&gt;` source note, while Secure Session stays tied to the selected band.
+  </div>
+  <div class="button-row">
+    <button id="cache-clear-current" type="button" class="secondary-button">Clear context cache</button>
+  </div>
+</section>
+<section id="dashboard-cards" class="cards dashboard-grid"></section>
+<section class="panel">
+  <div class="panel-head">
+    <div>
+      <h2>Recent Events</h2>
+      <p class="muted">Current view only clears the gateway ring for the selected context and band.</p>
+    </div>
+    <div class="button-row">
+      <button id="events-clear-current" type="button" class="secondary-button">Clear current view</button>
+    </div>
+  </div>
+  <div id="recent-events" class="history-scroll recent-events-scroll">
+    <p class="empty-state">Loading recent operator transitions and event evidence.</p>
+  </div>
+</section>
+{% endblock %}
