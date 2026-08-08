@@ -32,12 +32,6 @@ jobs:
           head_sha="${{ github.event.pull_request.head.sha }}"
           mapfile -t files < <(git diff --name-only "$base_sha" "$head_sha")
 
-          {
-            echo "changed_files<<EOF"
-            printf '%s\n' "${files[@]}"
-            echo "EOF"
-          } >> "$GITHUB_OUTPUT"
-
           if [[ ${#files[@]} -eq 0 ]]; then
             echo "mode=full" >> "$GITHUB_OUTPUT"
             exit 0
@@ -45,6 +39,17 @@ jobs:
 
           mode="$(printf '%s\n' "${files[@]}" | bash scripts/classify_change_scope.sh)"
           echo "mode=$mode" >> "$GITHUB_OUTPUT"
+
+          # Full verification does not consume the changed-file list. Avoid
+          # exporting a large PR diff into the runner environment, where it
+          # can exceed the process argument-size limit before the gate starts.
+          if [[ "$mode" == "lightweight" ]]; then
+            {
+              echo "changed_files<<EOF"
+              printf '%s\n' "${files[@]}"
+              echo "EOF"
+            } >> "$GITHUB_OUTPUT"
+          fi
 
       - name: Initialize lightweight checker submodule
         if: steps.scope.outputs.mode == 'lightweight'
