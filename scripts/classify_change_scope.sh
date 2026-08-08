@@ -3,6 +3,7 @@
 set -euo pipefail
 
 has_files=0
+mode="lightweight"
 
 is_lightweight_path() {
   local path="$1"
@@ -39,13 +40,15 @@ while IFS= read -r path || [[ -n "$path" ]]; do
   [[ -z "$path" ]] && continue
   has_files=1
   if ! is_lightweight_path "$path"; then
-    echo "full"
-    exit 0
+    # Keep draining stdin after identifying a full-scope change. The GitHub
+    # workflow writes a complete changed-file list through a pipe; exiting
+    # here would close that pipe early and make its writer fail under pipefail.
+    mode="full"
   fi
 done
 
 if [[ "$has_files" -eq 0 ]]; then
-  echo "full"
-else
-  echo "lightweight"
+  mode="full"
 fi
+
+echo "$mode"
